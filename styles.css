@@ -445,6 +445,14 @@ button:hover {
   max-width: 100%;
 }
 
+.social-sidebar-text {
+  margin-top: 5em;
+}
+
+.socialmedia-title {
+  text-align: left;
+}
+
 .social-media {
   display: flex;
   flex-direction: row;
