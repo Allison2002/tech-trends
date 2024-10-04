@@ -348,6 +348,17 @@ body.modal-open {
     margin: 3em auto;  
   }
 
+  @media (max-width: 1024px) {
+  .content-container {
+    width: 90vw; /* Increase width for smaller screens */
+    max-width: 90vw;
+    padding: 1.5em; /* Adjust padding */
+  }
+}
+
+.main-content {
+  margin: 0 auto;
+}
 .search-popup.show {
   display: block;
   position: fixed;
@@ -381,6 +392,29 @@ body.modal-open {
   text-decoration: underline;
 }
 
+/* Mobile view */
+@media (max-width: 768px) {
+  .bottom-nav {
+    flex-direction: column; /* Stack items vertically */
+    padding: 1em 0;
+  }
+
+  .navbar-footer-items ul {
+    display: block; /* Stack vertically */
+    width: 95%; /* Ensure the navbar takes full width */
+    text-align: center;
+  }
+
+  .navbar-footer-items ul li {
+    list-style: none;
+    margin-bottom: 10px; /* Space between stacked items */
+  }
+
+  .navbar-footer-items ul li a {
+    font-size: 14px; /* Reduce font size for smaller devices */
+    padding: 8px; /* Adjust padding */
+  }
+}
 .grid-wrapper {
   grid-template-columns: 3fr .75fr;
 }
@@ -495,6 +529,7 @@ body.modal-open {
   .content-wrapper {
     margin: 0 auto;
   }
+
 }
 
 
@@ -605,83 +640,78 @@ body.modal-open {
 
 /* Subscribe */
 .subscribe-container {
-  display: relative;
+  display: flex;
   flex-direction: column;
-  position: relative;
-  width: 100%;
-  max-width: 100%;
-  max-height: 65vh;
-  padding-top: 2em;
+  background-color: #9EDBFF; /* Softer blue background */
+  border-radius: 1.5em;
+  padding: 2em;
+  text-align: center;
+  color: white; /* White text */
+  align-items: center;
+  max-width: 400px; /* Adjust the max width as needed */
   margin: 0 auto;
 }
 
 .subscribe-container img {
-  width: 100%;
-  max-width: 100%;
-  height: 65vh;
-  margin: 0 auto;
-  object-fit: cover;
-  border-radius: 1.5em;
-}
-
-.subscribe-textbox {
-  text-align: justify;
-  position: absolute;
-  text-align: left;
-  bottom: 5em;
-  left: .5em;
-  line-height: 1.3;
+  width: 120px; /* Adjust the size for better prominence */
+  height: auto;
+  margin-bottom: 1.5em;
 }
 
 .subscribe-title p {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   font-weight: 500;
-  color: white
+  margin-bottom: 1em;
+  color: white;
 }
 
 .subscribe-p p {
+  font-size: 1.5rem;
+  margin-bottom: 2em;
   color: white;
-  font-size: .80;
-  padding-top: .5em;
 }
+
+
+@media (max-width: 768px) {
+  .subscribe-title p {
+    font-size: 2.3rem;
+  }
+
+  .subscribe-p p {
+    font-size: 2rem;
+  }
 
 form {
   display: flex;
-  position: relative;
   flex-direction: column;
-  width: 90%;
-  max-width: 90%;
-  bottom: 7em;
-  left: .5em;
+  width: 100%;
+  margin: 0 auto;
   text-align: center;
+}
 }
 
 form input {
-  height: 2rem;
-  padding: .75em;
-  border-radius: .4em;
+  padding: 0.75em;
+  width: 90%;
+  border-radius: 0.4em;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  margin-bottom: 1em;
 }
 
 form button {
-  margin: .5em 0;
-  font-size: 1rem;
-  height: auto;
-  width: 40%;
-  color: white;
-  border-color: white;
-  border-radius: 10em;
-  border: 1px solid white;
-  min-width: min-content;
-  background: transparent;
+  padding: 0.75em;
+  width: 50%;
+  border-radius: 1em;
+  background-color: white;
+  color: #9EDBFF; /* Same as background color */
+  border: none;
   cursor: pointer;
-  padding: .5em;
-  box-shadow: rgb(0 0 0 / 10%) 0px 0px 5px 2px;  
 }
 
-button:hover {
-  border: 1.5px solid #a8a6a6;
-  background-color: #f7995ad0;
-  transition: 0.1s ease-in-out, opacity 0.2s ease-in-out;
+form button:hover {
+  background-color: #d0ecff; /* Slightly lighter hover effect */
 }
 
 .visually-hidden {
@@ -850,6 +880,11 @@ button:hover {
     grid-template-columns: 1fr; 
   }
 
+  .navbar-footer-items ul {
+    width: 95%;
+    max-width: 95vw;
+  }
+  
   .stay-connected-footer, .bottom-section {
     padding: 1em 0;
   }
@@ -862,7 +897,7 @@ button:hover {
     margin-right: 1em;
   }
 
-    .grid-wrapper {
+  .grid-wrapper {
     grid-template-columns: 1fr; /* Main content becomes full-width */
   }
 
@@ -872,11 +907,12 @@ button:hover {
     margin: 1em 0; /* Add margin to space it out */
   }
 
-    .bottom-nav {
+  .bottom-nav {
     display: flex;
     flex-direction: column; /* Stack the nav items vertically */
     text-align: center;
     padding: 1em 0;
+
   }
 
   .bottom-nav ul {
