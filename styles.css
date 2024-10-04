@@ -492,13 +492,11 @@ body.modal-open {
   .article-grid3 {
   grid-template-columns: 1fr;
   }
-}
-
-@media (max-width: 768px) {
-  .article-grid3 {
-  grid-template-columns: 1fr;
+  .content-wrapper {
+    margin: 0 auto;
   }
 }
+
 
 .article-grid1,
 .article-grid2,
@@ -874,6 +872,28 @@ button:hover {
     margin: 1em 0; /* Add margin to space it out */
   }
 
+    .bottom-nav {
+    display: flex;
+    flex-direction: column; /* Stack the nav items vertically */
+    text-align: center;
+    padding: 1em 0;
+  }
+
+  .bottom-nav ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  .bottom-nav ul li {
+    list-style: none;
+    margin-bottom: 10px;
+  }
+
+  .bottom-nav ul li a {
+    font-size: 16px; /* Reduce font size for better fit */
+    padding: 10px;
+    color: white;
+  }
 }
 
 
