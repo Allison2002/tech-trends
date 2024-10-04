@@ -15,24 +15,58 @@
 <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
   <body>
-      <nav>
-        <div class="logo-container">
-          <img src="https://i.ibb.co/Jd5F7dx/tech-trends-logo.png" border="0" alt="Tech Trends Logo">
-        </div>
-        <div class="navbar-items">
-          <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/categories/categorized.html">Topics</a></li>
-            <li><a href="/categories/uncategorized.html">View All</a></li>            
-            <li><a href="/categories/seo-tools.html">SEO Tools</a></li>
-            <li><a href="/categories/iot.html">IoT</a></li>
-            <li><a href="/categories/mobile.html">Mobile App Development</a></li>
-            <li><a href="/categories/ecommerce.html">eCommerce</a></li>
-            <li><a href="/articles/welcome.html">Welcome</a></li>  
-          </ul>
-        </div>
-      </nav>
-      
+
+        <nav class="navbar" id="navbar">
+          <!--tech trends logo-->
+          <div class="menu">
+            <div class="logo-container">
+              <img src="https://i.ibb.co/Jd5F7dx/tech-trends-logo.png" alt="Tech Trends logo" border="0" alt="Logo">
+            </div>
+            <!--full screen navbar-->
+            <div class="navbar-items">
+              <ul >
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/categories/categorized.html">Topics</a></li>
+                <li><a href="/categories/uncategorized.html">View All</a></li>            
+                <li><a href="/categories/seo-tools.html">SEO Tools</a></li>
+                <li><a href="/categories/iot.html">IoT</a></li>
+                <li><a href="/categories/mobile.html">Mobile App</a></li>
+                <li><a href="/categories/ecommerce.html">eCommerce</a></li>
+                <li><a href="/articles/welcome.html">Welcome</a></li>
+              </ul>
+            </div>
+            <div class="icons-container">  
+               <!--hamburger icon-->
+              <div class="menu-toggle" id="menu-toggle">
+                  <img src="https://i.ibb.co/zr9kRNB/hamburger-icon.png" alt="hamburger-icon" border="0" alt="Hamburger Menu Icon" class="hamburger-icon" border="0">
+              </div>            
+              <!-- search icon -->
+              <div class="search-icon" id="search-icon" title="Search">
+                <img src="https://i.ibb.co/CBBYJBp/search-icon.png" alt="search icon" border="0">
+              </div>
+                      <!-- search box popup -->
+              <div class="search-popup" id="search-popup">
+                <div class="search-container">
+                  <i class="fas fa-search"></i>
+                  <input type="text" placeholder="Search..." id="search-input">
+                </div>
+              </div>
+            </div>  
+                        <!-- Slide-in Menu -->
+            <div class="hamburger-menu" id="hamburger-menu">
+              <ul class="hamburger-menu-items">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/categories/categorized.html">Topics</a></li>
+                <li><a href="/categories/uncategorized.html">View All</a></li>            
+                <li><a href="/categories/seo-tools.html">SEO Tools</a></li>
+                <li><a href="/categories/iot.html">IoT</a></li>
+                <li><a href="/categories/mobile.html">Mobile App</a></li>
+                <li><a href="/categories/ecommerce.html">eCommerce</a></li>
+                <li><a href="/articles/welcome.html">Welcome</a></li>
+              </ul>
+            </div> 
+          </div>  
+        </nav>   
         <div class="content-container">
           <div class="grid-wrapper">
             <div class="main-content">
@@ -50,8 +84,8 @@
                       <h2>a blog dedicated to exploring the latest advancements<br> in technology and their impact on...</h2>
                     </div>  
                     <div class="cat-btn">
-                      <a href="/categories/categorized.html" class="btn">Categories</a>
-                      <a href="/categories/uncategorized.html" class="btn">All</a>
+                      <a href="/categories/categorized.html">Categories</a>
+                      <a href="/categories/uncategorized.html">All</a>
                     </div>
                   </div>
                 </section> 
@@ -276,14 +310,14 @@
           <nav class="bottom-nav">
             <div class="navbar-footer-items">
               <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/categories/categorized.html">Topics</a></li>
-            <li><a href="/categories/uncategorized.html">View All</a></li>            
-            <li><a href="/categories/seo-tools.html">SEO Tools</a></li>
-            <li><a href="/categories/iot.html">IoT</a></li>
-            <li><a href="/categories/mobile.html">Mobile App Development</a></li>
-            <li><a href="/categories/ecommerce.html">eCommerce</a></li>
-            <li><a href="/articles/welcome.html">Welcome</a></li>  
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/categories/categorized.html">Topics</a></li>
+                <li><a href="/categories/uncategorized.html">View All</a></li>            
+                <li><a href="/categories/seo-tools.html">SEO Tools</a></li>
+                <li><a href="/categories/iot.html">IoT</a></li>
+                <li><a href="/categories/mobile.html">Mobile App</a></li>
+                <li><a href="/categories/ecommerce.html">eCommerce</a></li>
+                <li><a href="/articles/welcome.html">Welcome</a></li>  
               </ul>
             </div>
           </nav>
@@ -307,6 +341,47 @@
             </div>
           </div>
         </footer>
-      </section>   
+      </section>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        console.log('JavaScript Loaded'); // Test if the script is loaded
+        const searchIcon = document.getElementById('search-icon');
+        const searchPopup = document.getElementById('search-popup');
+        const iconsContainer = document.querySelector('.icons-container');
+        const menuToggle = document.getElementById('menu-toggle');
+        const hamburgerMenu = document.getElementById('hamburger-menu');
+        const contentWrapper = document.querySelector('.content-wrapper'); // Target main content for blur
+        // Ensure elements are correctly selected
+        console.log(menuToggle, hamburgerMenu); 
+
+        
+        searchIcon.addEventListener('click', (e) => {
+            e.stopPropagation();
+            searchPopup.classList.toggle('show'); // Show/hide the popup
+            iconsContainer.classList.toggle('with-popup'); // Adjust padding if needed
+        });
+
+        // Toggle the menu and blur effect
+        menuToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            console.log('Hamburger clicked'); // Log when the icon is clicked
+
+            // Toggle the show class
+            hamburgerMenu.classList.toggle('show'); 
+            console.log('Classes on hamburgerMenu:', hamburgerMenu.classList); // Log applied classes
+            contentWrapper.classList.toggle('blurred');
+           
+        });
+
+        // Close the menu when clicking outside of it
+        window.addEventListener('click', (e) => {
+            if (!hamburgerMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+                hamburgerMenu.classList.remove('show');
+                contentWrapper.classList.remove('blurred');
+            }
+        });
+      });
+    </script>
   </body>
 </html>  
