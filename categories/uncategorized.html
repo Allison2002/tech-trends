@@ -8,6 +8,8 @@
     <meta name="description" content="A blog about the current Tech Trends" />
     <link rel="stylesheet" href="/styles.css">
     <link rel="icon" href="https://i.ibb.co/ZdfQY3s/Untitled-design-62.png" alt="Tech Trends Robot" border="0">
+    <link rel="preload" href="https://i.ibb.co/Jd5F7dx/tech-trends-logo.png" as="image">
+    <link rel="preload" href="https://i.ibb.co/4mmF3vt/welcome-to-tech-trends-hero.png" as="image">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,24 +17,58 @@
 <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
   <body>
-      <nav>
-        <div class="logo-container">
-          <img src="https://i.ibb.co/Jd5F7dx/tech-trends-logo.png" border="0" alt="Tech Trends Logo">
-        </div>
-        <div class="navbar-items">
-          <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/categories/categorized.html">Topics</a></li>
-            <li><a href="/categories/uncategorized.html">View All</a></li>            
-            <li><a href="/categories/seo-tools.html">SEO Tools</a></li>
-            <li><a href="/categories/iot.html">IoT</a></li>
-            <li><a href="/categories/mobile.html">Mobile App Development</a></li>
-            <li><a href="/categories/ecommerce.html">eCommerce</a></li>
-            <li><a href="/articles/welcome.html">Welcome</a></li>  
-          </ul>
-        </div>
-      </nav>
-      
+
+        <nav class="navbar" id="navbar">
+          <!--tech trends logo-->
+          <div class="menu">
+            <div class="logo-container">
+              <img src="https://i.ibb.co/Jd5F7dx/tech-trends-logo.png" alt="Tech Trends logo" border="0" alt="Logo">
+            </div>
+            <!--full screen navbar-->
+            <div class="navbar-items">
+              <ul >
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/categories/categorized.html">Topics</a></li>
+                <li><a href="/categories/uncategorized.html">View All</a></li>            
+                <li><a href="/categories/seo-tools.html">SEO Tools</a></li>
+                <li><a href="/categories/iot.html">IoT</a></li>
+                <li><a href="/categories/mobile.html">Mobile App</a></li>
+                <li><a href="/categories/ecommerce.html">eCommerce</a></li>
+                <li><a href="/articles/welcome.html">Welcome</a></li>
+              </ul>
+            </div>
+            <div class="icons-container">  
+               <!--hamburger icon-->
+              <div class="menu-toggle" id="menu-toggle">
+                  <img src="https://i.ibb.co/zr9kRNB/hamburger-icon.png" alt="hamburger-icon" border="0" alt="Hamburger Menu Icon" class="hamburger-icon" border="0">
+              </div>            
+              <!-- search icon -->
+              <div class="search-icon" id="search-icon" title="Search">
+                <img src="https://i.ibb.co/CBBYJBp/search-icon.png" alt="search icon" border="0">
+              </div>
+                      <!-- search box popup -->
+              <div class="search-popup" id="search-popup">
+                <div class="search-container">
+                  <i class="fas fa-search"></i>
+                  <input type="text" placeholder="Search..." id="search-input">
+                </div>
+              </div>
+            </div>  
+                        <!-- Slide-in Menu -->
+            <div class="hamburger-menu" id="hamburger-menu">
+              <ul class="hamburger-menu-items">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/categories/categorized.html">Topics</a></li>
+                <li><a href="/categories/uncategorized.html">View All</a></li>            
+                <li><a href="/categories/seo-tools.html">SEO Tools</a></li>
+                <li><a href="/categories/iot.html">IoT</a></li>
+                <li><a href="/categories/mobile.html">Mobile App</a></li>
+                <li><a href="/categories/ecommerce.html">eCommerce</a></li>
+                <li><a href="/articles/welcome.html">Welcome</a></li>
+              </ul>
+            </div> 
+          </div>  
+        </nav>   
         <div class="content-container">
           <div class="grid-wrapper">
             <div class="main-content">
@@ -73,8 +109,6 @@
                         <p>Welcome to Tech Trends and Innovations, a blog...</p>
                       </div>                     
                     </div>
-
-
                     <div class="article3">
                       <a href="/articles/headless-ecommerce.html"><img src="https://i.ibb.co/2qQVRkQ/headless-commerce.png" alt="headless-commerce" border="0" alt="a lady looking into a storefront"></a>
                       <div class="article-title">
@@ -94,7 +128,6 @@
                         <p>The world of eCommerce is evolving rapidly. With continuous technological advancements and the growing demand for seamless digital experiences, businesses must adapt to stay competitive...</p>
                       </div>                     
                     </div>
-
                     <div class="article3">
                       <a href="/articles/ai-ecommerce.html"><img src="https://i.ibb.co/FVtS4hX/ai-ecommerce-robot.png" alt="ai-ecommerce-robot" border="0" alt="an AI robot helping a customer"></a>
                       <div class="article-title">
@@ -114,9 +147,7 @@
                         <p>The rapid evolution of eCommerce is being driven not only by technological advancements but also by the need to offer personalized...</p>
                       </div>                     
                     </div>
-
                   </div>
-
                   <div class="article-grid3">
                     <div class="article3">
                       <a href="/articles/iot-industries.html"><img src="https://i.ibb.co/fpMDJ5y/iot-comic-style.png" alt="iot-comic-style" border="0" alt="a robot saying 'Welcome to tech trends' with the city skyline behind him"></a>
@@ -137,8 +168,6 @@
                         <p>The world of eCommerce is evolving at an unprecedented pace, driven by rapid technological advancements and the increasing demand for seamless digital experiences...</p>
                       </div>                     
                     </div>
-
-
                     <div class="article3">
                       <a href="/articles/iot-smart-cities.html"><img src="https://i.ibb.co/80n02Q9/iot-smart-city.png" alt="iot-smart-city" border="0" alt="a futuristic city skyline"></a>
                       <div class="article-title">
@@ -158,8 +187,6 @@
                         <p>The vision of smart cities is no longer just a futuristic concept. With the rapid advancement of Internet of Things (IoT) technology, urban areas around the world are transforming...</p>
                       </div>                     
                     </div>
-
-
                     <div class="article3">
                       <a href="/articles/top-mobile-app.html"><img src="https://i.ibb.co/MsLM83V/top-mobile-app2.png" alt="top-mobile-app2" border="0" alt="a cell phone"></a>
                       <div class="article-title">
@@ -365,6 +392,7 @@
             </div>
           </div>
         </footer>
-      </section>   
+      </section>
+    <script src="/script.js"></script>  
   </body>
 </html>  

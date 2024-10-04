@@ -8,6 +8,8 @@
     <meta name="description" content="A blog about the current Tech Trends" />
     <link rel="stylesheet" href="/styles.css">
     <link rel="icon" href="https://i.ibb.co/ZdfQY3s/Untitled-design-62.png" alt="Tech Trends Robot" border="0">
+    <link rel="preload" href="https://i.ibb.co/Jd5F7dx/tech-trends-logo.png" as="image">
+    <link rel="preload" href="https://i.ibb.co/4mmF3vt/welcome-to-tech-trends-hero.png" as="image">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,24 +17,58 @@
 <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
   <body>
-      <nav>
-        <div class="logo-container">
-          <img src="https://i.ibb.co/Jd5F7dx/tech-trends-logo.png" border="0" alt="Tech Trends Logo">
-        </div>
-        <div class="navbar-items">
-          <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/categories/categorized.html">Topics</a></li>
-            <li><a href="/categories/uncategorized.html">View All</a></li>            
-            <li><a href="/categories/seo-tools.html">SEO Tools</a></li>
-            <li><a href="/categories/iot.html">IoT</a></li>
-            <li><a href="/categories/mobile.html">Mobile App Development</a></li>
-            <li><a href="/categories/ecommerce.html">eCommerce</a></li>
-            <li><a href="/articles/welcome.html">Welcome</a></li>  
-          </ul>
-        </div>
-      </nav>
-      
+
+        <nav class="navbar" id="navbar">
+          <!--tech trends logo-->
+          <div class="menu">
+            <div class="logo-container">
+              <img src="https://i.ibb.co/Jd5F7dx/tech-trends-logo.png" alt="Tech Trends logo" border="0" alt="Logo">
+            </div>
+            <!--full screen navbar-->
+            <div class="navbar-items">
+              <ul >
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/categories/categorized.html">Topics</a></li>
+                <li><a href="/categories/uncategorized.html">View All</a></li>            
+                <li><a href="/categories/seo-tools.html">SEO Tools</a></li>
+                <li><a href="/categories/iot.html">IoT</a></li>
+                <li><a href="/categories/mobile.html">Mobile App</a></li>
+                <li><a href="/categories/ecommerce.html">eCommerce</a></li>
+                <li><a href="/articles/welcome.html">Welcome</a></li>
+              </ul>
+            </div>
+            <div class="icons-container">  
+               <!--hamburger icon-->
+              <div class="menu-toggle" id="menu-toggle">
+                  <img src="https://i.ibb.co/zr9kRNB/hamburger-icon.png" alt="hamburger-icon" border="0" alt="Hamburger Menu Icon" class="hamburger-icon" border="0">
+              </div>            
+              <!-- search icon -->
+              <div class="search-icon" id="search-icon" title="Search">
+                <img src="https://i.ibb.co/CBBYJBp/search-icon.png" alt="search icon" border="0">
+              </div>
+                      <!-- search box popup -->
+              <div class="search-popup" id="search-popup">
+                <div class="search-container">
+                  <i class="fas fa-search"></i>
+                  <input type="text" placeholder="Search..." id="search-input">
+                </div>
+              </div>
+            </div>  
+                        <!-- Slide-in Menu -->
+            <div class="hamburger-menu" id="hamburger-menu">
+              <ul class="hamburger-menu-items">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/categories/categorized.html">Topics</a></li>
+                <li><a href="/categories/uncategorized.html">View All</a></li>            
+                <li><a href="/categories/seo-tools.html">SEO Tools</a></li>
+                <li><a href="/categories/iot.html">IoT</a></li>
+                <li><a href="/categories/mobile.html">Mobile App</a></li>
+                <li><a href="/categories/ecommerce.html">eCommerce</a></li>
+                <li><a href="/articles/welcome.html">Welcome</a></li>
+              </ul>
+            </div> 
+          </div>  
+        </nav>   
         <article class="content-container">
           <div class="grid-wrapper">
             <div class="main-content">
@@ -88,8 +124,6 @@
                     </div>
                   </div> 
                 </section>
-
-
                 <section class="editors-pick">
                   <div class="section-title">
                     <h3>Editor's Pick</h3>
@@ -121,7 +155,6 @@
                     </div>
                   </div>
                 </section>
-
                 <section class="must-reads">
                   <div class="section-title">
                     <h3>Must Reads</h3>
@@ -147,7 +180,6 @@
                       </div>                                   
                   </div>
                 </section>
-
                 <section class="seo">
                   <div class="section-title">
                     <h3>SEO</h3>
@@ -173,8 +205,6 @@
                     </div>                                   
                   </div>
                 </section>
-
-
                 <section class="mobile">
                   <div class="section-title">
                     <h3>Mobile Apps</h3>
@@ -285,15 +315,15 @@
           </nav>
           <div class="stay-connected-footer">
             <div class="footer-social">
-              <a href="https://www.facebook.com/" target="_blank">
-                <img src="https://i.ibb.co/1q8gsdL/white-fb-icon.png" border="0" alt="Follow us on Facebook (opens in a new tab)">
-              </a>
-              <a href="https://www.twitter.com/" target="_blank">
-                <img src="https://i.ibb.co/QHrgny2/white-x-icon.png" border="0" alt="Follow us on Twitter (opens in a new tab)">
-              </a>
-              <a href="https://www.instagram.com" target="_blank">
-                <img src="https://i.ibb.co/JK0Nr6z/white-ig-icon.png"" border="0" alt="Follow us on Instagram (opens in a new tab)">
-              </a>
+                <a href="https://www.facebook.com/" target="_blank">
+                  <img src="https://i.ibb.co/1q8gsdL/white-fb-icon.png" border="0" alt="Follow us on Facebook (opens in a new tab)">
+                </a>
+                <a href="https://www.twitter.com/" target="_blank">
+                  <img src="https://i.ibb.co/QHrgny2/white-x-icon.png" border="0" alt="Follow us on Twitter (opens in a new tab)">
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                  <img src="https://i.ibb.co/JK0Nr6z/white-ig-icon.png"" border="0" alt="Follow us on Instagram (opens in a new tab)">
+                </a>
             </div>            
             <div class="copyright">
               <p>Copyright © All rights reserved | Allison Stock Inc.</p>
@@ -303,6 +333,7 @@
             </div>
           </div>
         </footer>
-      </section>   
+      </section>
+    <script src="/script.js"></script>
   </body>
 </html>  

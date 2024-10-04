@@ -534,6 +534,8 @@ body.modal-open {
   .content-wrapper {
     margin: 0 auto;
   }
+
+  
 }
 
 .article-grid1,
@@ -985,8 +987,10 @@ form button:hover {
 }
 
 .hero-content-all img {
-  height: 65vh;
+  width: 100%;
+  height: auto; 
   max-height: 65vh;
+  object-fit: cover;
 }
 
 @media (max-width: 768px) {

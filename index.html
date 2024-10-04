@@ -237,14 +237,12 @@
               <section id="subrscibe-sidebar">  
                 <div class="subscribe-container">
                   <img src="https://i.ibb.co/3SRqcP5/newsletter.png" alt="an envelope catching a ride on a paper plane" border="0">
-                  <div class="subscribe-textbox">
                     <div class="subscribe-title"> 
                       <p>Want to receive notifications when<br> new articles are released?</p>
                     </div>
                     <div class="subscribe-p"> 
                       <p>Subscribe to Our Newsletter!</p>
                     </div>   
-                  </div>  
                   <form action="#" target="_self" method="POST">
                     <label for="email" class="visually-hidden">Enter your email:</label>
                     <input type="email" id="email" name="email" placeholder="email@example.com" required>
@@ -344,46 +342,6 @@
           </div>
         </footer>
       </section>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        console.log('JavaScript Loaded'); // Test if the script is loaded
-        const searchIcon = document.getElementById('search-icon');
-        const searchPopup = document.getElementById('search-popup');
-        const iconsContainer = document.querySelector('.icons-container');
-        const menuToggle = document.getElementById('menu-toggle');
-        const hamburgerMenu = document.getElementById('hamburger-menu');
-        const contentWrapper = document.querySelector('.content-wrapper'); // Target main content for blur
-        // Ensure elements are correctly selected
-        console.log(menuToggle, hamburgerMenu); 
-
-        
-        searchIcon.addEventListener('click', (e) => {
-            e.stopPropagation();
-            searchPopup.classList.toggle('show'); // Show/hide the popup
-            iconsContainer.classList.toggle('with-popup'); // Adjust padding if needed
-        });
-
-        // Toggle the menu and blur effect
-        menuToggle.addEventListener('click', (e) => {
-            e.stopPropagation();
-            console.log('Hamburger clicked'); // Log when the icon is clicked
-
-            // Toggle the show class
-            hamburgerMenu.classList.toggle('show'); 
-            console.log('Classes on hamburgerMenu:', hamburgerMenu.classList); // Log applied classes
-            contentWrapper.classList.toggle('blurred');
-           
-        });
-
-        // Close the menu when clicking outside of it
-        window.addEventListener('click', (e) => {
-            if (!hamburgerMenu.contains(e.target) && !menuToggle.contains(e.target)) {
-                hamburgerMenu.classList.remove('show');
-                contentWrapper.classList.remove('blurred');
-            }
-        });
-      });
-    </script>
+    <script src="script.js"></script>  
   </body>
 </html>  
