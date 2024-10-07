@@ -228,6 +228,19 @@ body.modal-open {
 }
 
 @media (min-width: 1025px) {
+  .article3 img {
+    max-width: 100%; 
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .sidebar-article img {
+    height: 250px;
+    max-height: 250px;
+    object-fit: cover;
+  }
   
   .search-popup {
     display: none;
@@ -584,8 +597,7 @@ body.modal-open {
 
 .sidebar-article img,
 .article3 img {
-  height: 250px;
-  max-height: 250px;
+  max-height: auto;
 }
 
 .article2 img {
