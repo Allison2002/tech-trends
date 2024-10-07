@@ -28,6 +28,10 @@ document.addEventListener('DOMContentLoaded', () => {
            
         });
 
+        searchIcon.addEventListener('click', function() {
+        iconsContainer.classList.toggle('with-popup');
+        });
+
         // Close the menu when clicking outside of it
         window.addEventListener('click', (e) => {
             if (!hamburgerMenu.contains(e.target) && !menuToggle.contains(e.target)) {

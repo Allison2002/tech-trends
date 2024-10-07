@@ -293,7 +293,7 @@ body.modal-open {
     left: 0%;
     transform: translateX(-50%);
     z-index: 1000;
-}
+  }
 
 
   .search-icon {
@@ -305,11 +305,44 @@ body.modal-open {
     position: static;
   }
   /* Position the search and hamburger icons under the logo */
+  /* Align logo, search icon, and hamburger menu in one line */
   .menu {
     display: flex;
-    flex-direction: column;
-    padding: 10px 0;
-    border-bottom: 1px solid black;  
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Adjust padding as necessary */
+  }
+
+  .logo-container {
+    margin-right: auto; /* Ensures logo stays to the left */
+  }
+
+  .icons-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Adds space between the search and hamburger icons */
+  }
+
+  .search-icon,
+  .menu-toggle {
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+  .menu-toggle img,
+  .search-icon img {
+    width: 40px;
+    height: auto;
+  }
+
+  .navbar-items {
+    display: none; /* Hide the regular navbar items */
+  }
+
+  /* Ensure the icons and logo stay aligned horizontally */
+  .menu {
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .logo-container {
@@ -324,8 +357,9 @@ body.modal-open {
     padding-bottom: 0;
   }
 
+  .logo-container.with-popup,
   .icons-container.with-popup {
-    padding-bottom: 7em;
+    padding-bottom: 10em;
   }
 
   body, html {
@@ -418,6 +452,49 @@ body.modal-open {
 
     body {
     font-size: 0.8rem; /* Reduces font size to 14px */
+  }
+
+  /* Ensure the search bar doesn't overlap */
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 20px;
+    position: relative;
+    z-index: 10; /* Ensure it stays above the search bar */
+  }
+
+  .logo-container {
+    flex-shrink: 0;
+    z-index: 10; /* Keep the logo above the search bar */
+  }
+
+  .icons-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    z-index: 10; /* Ensure icons stay above the search bar */
+  }
+
+  /* Adjust when search bar is shown */
+  .icons-container.with-popup {
+    padding-bottom: 10em; /* Add space for search bar */
+  }
+
+  /* Style for search bar and preventing overlap */
+  .search-popup {
+    position: absolute;
+    top: 100%; /* Below the icons */
+    width: 100%;
+    padding: 1em;
+    background-color: white;
+    z-index: 9; /* Ensure it stays behind the logo and icons */
+  }
+  
+  .search-popup input {
+    width: 90%;
+    padding: 0.75em;
+    border-radius: 0.4em;
   }
 }
 .grid-wrapper {
@@ -535,7 +612,6 @@ body.modal-open {
     margin: 0 auto;
   }
 
-  
 }
 
 .article-grid1,
