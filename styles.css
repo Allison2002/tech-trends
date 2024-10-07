@@ -183,6 +183,7 @@ strong {
   transition: filter 0.4s ease;
 }
 .content-container {
+  margin: 0 auto;
   padding: 1.5em; 
 }
 
