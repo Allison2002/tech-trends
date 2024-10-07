@@ -1,42 +1,66 @@
 document.addEventListener('DOMContentLoaded', () => {
-        console.log('JavaScript Loaded'); // Test if the script is loaded
-        const searchIcon = document.getElementById('search-icon');
-        const searchPopup = document.getElementById('search-popup');
-        const iconsContainer = document.querySelector('.icons-container');
-        const menuToggle = document.getElementById('menu-toggle');
-        const hamburgerMenu = document.getElementById('hamburger-menu');
-        const contentWrapper = document.querySelector('.content-wrapper'); // Target main content for blur
-        // Ensure elements are correctly selected
-        console.log(menuToggle, hamburgerMenu); 
+    const searchIcon = document.getElementById('search-icon');
+    const searchPopup = document.getElementById('search-popup');
+    const hamburgerIcon = document.getElementById('menu-toggle');
+    const hamburgerMenu = document.getElementById('hamburger-menu');
+    const body = document.body;
 
-        
-        searchIcon.addEventListener('click', (e) => {
-            e.stopPropagation();
-            searchPopup.classList.toggle('show'); // Show/hide the popup
-            iconsContainer.classList.toggle('with-popup'); // Adjust padding if needed
-        });
+    // Function to handle search toggle
+    function toggleSearch() {
+        const windowWidth = window.innerWidth; // Get the current window width
 
-        // Toggle the menu and blur effect
-        menuToggle.addEventListener('click', (e) => {
-            e.stopPropagation();
-            console.log('Hamburger clicked'); // Log when the icon is clicked
-
-            // Toggle the show class
-            hamburgerMenu.classList.toggle('show'); 
-            console.log('Classes on hamburgerMenu:', hamburgerMenu.classList); // Log applied classes
-            contentWrapper.classList.toggle('blurred');
-           
-        });
-
-        searchIcon.addEventListener('click', function() {
-        iconsContainer.classList.toggle('with-popup');
-        });
-
-        // Close the menu when clicking outside of it
-        window.addEventListener('click', (e) => {
-            if (!hamburgerMenu.contains(e.target) && !menuToggle.contains(e.target)) {
-                hamburgerMenu.classList.remove('show');
-                contentWrapper.classList.remove('blurred');
+        if (searchPopup.classList.contains('show')) {
+            // Remove padding when search is hidden
+            searchPopup.classList.remove('show');
+            body.classList.remove('with-popup');
+            if (windowWidth <= 1024) {
+                body.style.paddingTop = '0'; // Reset padding only for small screens
             }
-        });
-      });
+        } else {
+            // Add padding when search is visible and screen is 1024px or smaller
+            searchPopup.classList.add('show');
+            body.classList.add('with-popup');
+            if (windowWidth <= 1024) {
+                body.style.paddingTop = '6em'; // Add padding for small screens
+            }
+        }
+    }
+
+    // Function to handle hamburger menu toggle
+    function toggleHamburger() {
+        if (hamburgerMenu.classList.contains('show')) {
+            hamburgerMenu.classList.remove('show');
+            document.body.classList.remove('modal-open');
+        } else {
+            hamburgerMenu.classList.add('show');
+            document.body.classList.add('modal-open');
+        }
+    }
+
+    // Search bar toggle event listener
+    searchIcon.addEventListener('click', toggleSearch);
+
+    // Hamburger menu toggle event listener
+    hamburgerIcon.addEventListener('click', (e) => {
+        e.stopPropagation();
+        toggleHamburger();
+    });
+
+    // Close the search popup and hamburger menu when clicking outside
+    window.addEventListener('click', (e) => {
+        // Close the search popup if clicked outside
+        if (!searchPopup.contains(e.target) && !searchIcon.contains(e.target)) {
+            searchPopup.classList.remove('show');
+            body.classList.remove('with-popup');
+            if (window.innerWidth <= 1024) {
+                body.style.paddingTop = '0'; // Reset padding if screen is small
+            }
+        }
+
+        // Close the hamburger menu if clicked outside
+        if (!hamburgerMenu.contains(e.target) && !hamburgerIcon.contains(e.target)) {
+            hamburgerMenu.classList.remove('show');
+            document.body.classList.remove('modal-open');
+        }
+    });
+});
