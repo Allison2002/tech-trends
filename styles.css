@@ -572,18 +572,24 @@ body.modal-open {
 }
 
 .article-grid1,
-.article-grid2,
 .article-grid3 {
     padding: 1em 0;
-    gap: 2em;
+    gap:2em;
 }
 
+.article-grid2 {
+  gap: 3em;
+  padding: 1em 0;
+}
 
-.article2 img,
 .sidebar-article img,
 .article3 img {
   height: 250px;
   max-height: 250px;
+}
+
+.article2 img {
+  height: auto;
 }
 
 .sidebar-article img,
