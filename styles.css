@@ -1515,6 +1515,7 @@ form button:hover {
     text-align: center;
   }
 
+  .social-media-icons img,
   .social-media img {
     max-width: 10vw;
   }
@@ -1538,6 +1539,7 @@ form button:hover {
     z-index: 10;
   }
   .content-container {
+    max-width: 90vw;
     padding-bottom: 5em;
   }
   .grid-wrapper {
