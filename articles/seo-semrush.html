@@ -3,337 +3,499 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Tech Trends</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="A blog about the current Tech Trends" />
+    <title>How to Use SEMrush for SEO: Features, Benefits, and Strategies to Boost Your Rankings</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Learn how to use SEMrush for SEO with this comprehensive guide. Discover SEMrush features and benefits that help you optimize your website, analyze competitors, and boost rankings."/>
     <link rel="stylesheet" href="/styles.css">
-    <link rel="icon" href="https://i.ibb.co/ZdfQY3s/Untitled-design-62.png" alt="Tech Trends Robot" border="0">
-    <link rel="preload" href="https://i.ibb.co/Jd5F7dx/tech-trends-logo.png" as="image">
-    <link rel="preload" href="https://i.ibb.co/4mmF3vt/welcome-to-tech-trends-hero.png" as="image">
+    <link rel="icon" href="/img/tab_logo_robot.png" alt="Tech Trends Robot">
+    <link rel="preload" href="/img/tech-trends-logo.png" as="image">
+    <link rel="preload" href="/img/semrush-hero.png" as="image">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "How to Use SEMrush for SEO: Features, Benefits, and Strategies to Boost Your Rankings",
+  "image": "",
+  "author": { 
+    "@type": "Person", 
+    "name": "Genny Allison" 
+  },
+  "publisher": { 
+    "@type": "Organization", 
+    "name": "Allison Stock Inc.", 
+    "logo": {
+      "@type": "ImageObject",
+      "url": "",
+      "width": 1600,
+      "height": 900
+    }
+  },
+  "datePublished": "2024-09-15",
+  "dateModified": "2024-11-15",
+  "url": "",
+  "description": "Learn how to use SEMrush for SEO with this comprehensive guide. Discover SEMrush features and benefits that help you optimize your website, analyze competitors, and boost rankings."
+}
+</script>
 </head>
   <body>
-
-        <nav class="navbar" id="navbar">
-          <!--tech trends logo-->
-          <div class="menu">
-            <div class="logo-container">
-              <img src="https://i.ibb.co/Jd5F7dx/tech-trends-logo.png" alt="Tech Trends logo" border="0" alt="Logo">
+    <nav class="navbar" id="navbar" role="navigation">
+      <!--tech trends logo-->
+      <div class="menu">
+        <div class="logo-container">
+          <img src="/img/tech-trends-logo.png" alt="Tech Trends logo">
+        </div>
+        <!--full screen navbar-->
+        <div class="navbar-items">
+          <ul >
+            <li><a href="/index.html" aria-label="Home">Home</a></li>
+            <li><a href="/categories/categorized.html" aria-label="Article category Topics">Topics</a></li>
+            <li><a href="/categories/uncategorized.html" aria-label="Article category View All">View All</a></li>            
+            <li><a href="/categories/seo-tools.html" aria-label="Article category SEO Tools">SEO Tools</a></li>
+            <li><a href="/categories/iot.html" aria-label="Article category IoT">IoT</a></li>
+            <li><a href="/categories/mobile.html" aria-label="Article category Mobile App">Mobile App</a></li>
+            <li><a href="/categories/ecommerce.html" aria-label="Article category eCommerce">eCommerce</a></li>
+            <li><a href="/categories/tech-trends.html" aria-label="Welcome">Welcome</a></li>
+          </ul>
+        </div>
+        <div class="icons-container">  
+            <!--hamburger icon-->
+          <div class="menu-toggle" id="menu-toggle" role="button">
+              <img src="/img/hamburger-icon.png" alt="Hamburger Menu Icon" class="hamburger-icon" aria-label="Menu">
+          </div>            
+          <!-- search icon -->
+          <div class="search-icon" id="search-icon" title="Search">
+            <img src="/img/search-icon.png" alt="search icon" aria-label="Search">
+          </div>
+                  <!-- search box popup -->
+          <div class="search-popup" id="search-popup">
+            <div class="search-container">
+              <i class="fas fa-search"></i>
+              <input type="text" placeholder="Search..." id="search-input">
             </div>
-            <!--full screen navbar-->
-            <div class="navbar-items">
-              <ul >
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/categories/categorized.html">Topics</a></li>
-                <li><a href="/categories/uncategorized.html">View All</a></li>            
-                <li><a href="/categories/seo-tools.html">SEO Tools</a></li>
-                <li><a href="/categories/iot.html">IoT</a></li>
-                <li><a href="/categories/mobile.html">Mobile App</a></li>
-                <li><a href="/categories/ecommerce.html">eCommerce</a></li>
-                <li><a href="/articles/welcome.html">Welcome</a></li>
-              </ul>
-            </div>
-            <div class="icons-container">  
-               <!--hamburger icon-->
-              <div class="menu-toggle" id="menu-toggle">
-                  <img src="https://i.ibb.co/zr9kRNB/hamburger-icon.png" alt="hamburger-icon" border="0" alt="Hamburger Menu Icon" class="hamburger-icon" border="0">
-              </div>            
-              <!-- search icon -->
-              <div class="search-icon" id="search-icon" title="Search">
-                <img src="https://i.ibb.co/CBBYJBp/search-icon.png" alt="search icon" border="0">
-              </div>
-                      <!-- search box popup -->
-              <div class="search-popup" id="search-popup">
-                <div class="search-container">
-                  <i class="fas fa-search"></i>
-                  <input type="text" placeholder="Search..." id="search-input">
+          </div>
+        </div>  
+                    <!-- Slide-in Menu -->
+        <div class="hamburger-menu" id="hamburger-menu">
+          <ul class="hamburger-menu-items">
+            <li><a href="/index.html" aria-label="Home">Home</a></li>
+            <li><a href="/categories/categorized.html" aria-label="Article category Topics">Topics</a></li>
+            <li><a href="/categories/uncategorized.html" aria-label="Article category View All">View All</a></li>            
+            <li><a href="/categories/seo-tools.html" aria-label="Article category SEO Tools">SEO Tools</a></li>
+            <li><a href="/categories/iot.html" aria-label="Article category IoT">IoT</a></li>
+            <li><a href="/categories/mobile.html" aria-label="Article category Mobile App">Mobile App</a></li>
+            <li><a href="/categories/ecommerce.html" aria-label="Article category eCommerce">eCommerce</a></li>
+            <li><a href="/categories/tech-trends.html" aria-label="Welcome">Welcome</a></li>
+          </ul>
+        </div> 
+      </div>  
+    </nav> 
+    <main role="main">    
+      <article class="content-container">
+        <div class="page-title">
+          <h1><i>How to Use SEMrush for SEO</i></h1>
+        </div>          
+        <div class="grid-wrapper">
+          <div class="main-content">
+            <header>
+              <section class="hero">                 
+                <div class="hero-content-all">
+                  <div class="hero">
+                    <img src="/img/semrush-hero.png" alt="SEMrush tools for SEO in action on a desktop screen." loading="lazy" width="1500" height="586">
+                  </div>
+                  <div class="cat-btn">
+                    <a href="/categories/categorized.html" class="btn" role="button">Categories</a>
+                    <a href="/categories/uncategorized.html" class="btn" role="button">All</a>
+                  </div>
                 </div>
-              </div>
-            </div>  
-                        <!-- Slide-in Menu -->
-            <div class="hamburger-menu" id="hamburger-menu">
-              <ul class="hamburger-menu-items">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/categories/categorized.html">Topics</a></li>
-                <li><a href="/categories/uncategorized.html">View All</a></li>            
-                <li><a href="/categories/seo-tools.html">SEO Tools</a></li>
-                <li><a href="/categories/iot.html">IoT</a></li>
-                <li><a href="/categories/mobile.html">Mobile App</a></li>
-                <li><a href="/categories/ecommerce.html">eCommerce</a></li>
-                <li><a href="/articles/welcome.html">Welcome</a></li>
-              </ul>
-            </div> 
-          </div>  
-        </nav>   
-        <article class="content-container">
-          <div class="grid-wrapper">
-            <div class="main-content">
-              <header>
-                <section class="hero">
-                  <div class="page-title">
-                    <h1><i>Improve Your Website’s Search Engine</i></h1>
-                  </div>                  
-                  <div class="hero-content-all">
-                    <div class="hero">
-                      <img src="https://i.ibb.co/JxBM25X/semrush-article.png" border="0" alt="Futuristic digital workspace with screens showing SEO tools, keyword research, and analytics, in a soft neon glow with floating holograms and modern devices" loading="lazy">
-                    </div>
-                    <div class="cat-btn">
-                      <a href="/categories/categorized.html" class="btn">Categories</a>
-                      <a href="/categories/uncategorized.html" class="btn">All</a>
-                    </div>
+              </section> 
+            </header>
+            <section>
+              <div class="welcome-container">                 
+                <div class="hero-post-author article-sub">
+                  <div class="author-img"><a href="https://gennyallison.netlify.app" target="_blank" rel="noopener noreferrer" aria-label="Visit Genny Allison's professional portfolio on a new tab"><img src="/img/b&wHeadShot.png" alt="Genny Allison | Allison Stock Inc"></a></div>
+                  <div>
+                    <p><a href="https://gennyallison.netlify.app" target="_blank" rel="noopener noreferrer" aria-label="Visit Genny Allison's professional portfolio on a new tab">by Allison Stock Inc | Genny Allison, AI Content Specialist</a></p>
+                    <p>Published on September 15, 2024</p>
+                  </div>                     
+                </div> 
+                <div class="article-text">
+                  <section class="article-title article-section" id="">
+                    <div class="article-sub">
+                      <h2>How to Use SEMrush for SEO: The Ultimate Guide</h2>
+                      <p>In today’s competitive digital landscape, search engine optimization (SEO) is crucial for businesses looking to improve their online visibility. Among the various tools available, SEMrush stands out as a comprehensive platform that simplifies SEO and digital marketing. This guide will delve into how to use SEMrush for SEO, highlighting its features and benefits while offering actionable strategies to enhance your website's performance.</p>
+                    </div>  
+                  </section>
+                  <div class="featured-topics">
+                    <h2>Key Topics Covered</h2>
+                    <ul>
+                      <li>
+                        <h3><a href="#overview-semrush">Overview of SEMrush for SEO</a></h3>
+                        <span>Discover why SEMrush is a leading tool for SEO professionals and businesses worldwide.</span>
+                      </li>
+                      <li>
+                        <h3><a href="#why-choose-semrush">Why Choose SEMrush for SEO?</a></h3>
+                        <span>Learn the core advantages of SEMrush, including comprehensive insights and ease of use.</span>
+                      </li>
+                      <li>
+                        <h3><a href="#keyword-research">Keyword Research with SEMrush</a></h3>
+                        <span>Understand how SEMrush's Keyword Magic Tool simplifies finding and analyzing impactful keywords.</span>
+                      </li>
+                      <li>
+                        <h3><a href="#competitor-analysis">Competitor Analysis Using SEMrush</a></h3>
+                        <span>Explore how to uncover competitors' strategies and gain an edge in the digital landscape.</span>
+                      </li>
+                      <li>
+                        <h3><a href="#on-page-seo">On-Page SEO Optimization</a></h3>
+                        <span>Learn how SEMrush provides actionable recommendations to improve your website's content and performance.</span>
+                      </li>
+                      <li>
+                        <h3><a href="#technical-seo">Site Audit: Ensuring Technical Excellence</a></h3>
+                        <span>Delve into the Site Audit tool and its role in maintaining a healthy and optimized website.</span>
+                      </li>
+                      <li>
+                        <h3><a href="#backlink-management">Backlink Analytics and Management</a></h3>
+                        <span>Find out how SEMrush helps you build a strong backlink profile for better authority and rankings.</span>
+                      </li>
+                      <li>
+                        <h3><a href="#getting-started">Getting Started with SEMrush</a></h3>
+                        <span>Begin your journey with SEMrush, from setting up your account to using its primary features effectively.</span>
+                      </li>
+                      <li>
+                        <h3><a href="#conclusion">Conclusion: Maximizing SEO with SEMrush</a></h3>
+                        <span>Summarize the benefits of using SEMrush and how it can transform your SEO strategy.</span>
+                      </li>
+                    </ul>
                   </div>
-                </section> 
-              </header>
-              <main>      
-                <section>
-                  <div class="welcome-container">
-                    <div class="article-title">
-                      <h3>Improve Your Website’s Search Engine Rankings with SEMrush</h3>
-                    </div>
-                    <div class="hero-post-author">
-                      <p>by Allison Stock Inc</p>
-                    </div>
-                    <div class="article-text">
-                      <p>
-                        As the world becomes more digital, businesses are constantly looking for ways to stay competitive and increase their online visibility. Search engine optimization (SEO) plays a crucial role in achieving this. It helps businesses optimize their websites to rank higher on search engines like Google, making them more accessible to potential customers. However, with a wide range of SEO tools and strategies available, it can be challenging to know where to start. This is where SEMrush comes in—a comprehensive, all-in-one digital marketing platform designed to streamline and enhance your SEO efforts.<br><br>
+                  <section>
+                    <section class="article-section" id="overview-semrush">
+                      <div class="article-sub">
+                        <h2>Why Choose SEMrush for SEO?</h2>
+                      </div>
+                      <div class="article-sub"> 
+                        <div class="image-left-small"><img src="/img/semrush1.webp" alt="" width="225" height="300" style="width: 25vw;"></div>
+                        <p>SEMrush has become a go-to tool for businesses and SEO professionals worldwide, offering an all-in-one platform to address a wide range of digital marketing needs. Its reputation as a comprehensive and user-friendly solution is well-deserved, as SEMrush equips users with the tools and insights necessary to improve website performance and stay competitive in ever-evolving online markets. By integrating data-driven strategies with its powerful features, SEMrush helps users achieve sustainable growth and online visibility.</p>
+                      </div>
+                      <div class="article-sub">
+                        <h3>Comprehensive SEO Insights</h3>
+                        <p>One of SEMrush's greatest strengths lies in its ability to provide a complete picture of your website's SEO performance. The platform delivers detailed insights into critical factors such as keyword rankings, organic traffic, backlink profiles, and more. Whether you're identifying high-performing keywords or diagnosing site health issues, SEMrush offers a data-rich environment to make informed decisions. These insights allow you to pinpoint strengths, address weaknesses, and capitalize on opportunities for growth.</p>
+                      </div>
+                      <div class="article-sub">
+                        <h3>Competitor Benchmarking</h3>
+                        <p>Staying ahead of the competition is crucial in digital marketing, and SEMrush excels in competitor analysis. With its competitor benchmarking tools, you can gain a deep understanding of what strategies your rivals are using to rank higher in search results. SEMrush enables you to analyze their top-performing keywords, backlink sources, and content strategies. This knowledge allows you to identify gaps in your own approach and refine your tactics to outperform competitors in your niche.</p>
+                      </div>
+                      <div class="article-sub">
+                        <h3>Content Optimization</h3>
+                        <p>Creating content that resonates with your audience is more important than ever in today's SEO landscape. SEMrush’s content optimization tools are designed to align your content with user intent and search engine algorithms. By analyzing factors such as keyword usage, readability, and topical relevance, SEMrush helps you craft high-quality content that meets the needs of your target audience. Whether you're writing blog posts, product descriptions, or landing pages, these tools ensure that your content remains engaging and optimized for maximum impact.</p>
+                        <p>Overall, SEMrush stands out as a versatile and indispensable tool for anyone serious about improving their SEO strategy. Its comprehensive insights, competitor analysis capabilities, and focus on content optimization provide a well-rounded approach to achieving online success. Choosing SEMrush means equipping yourself with the resources needed to thrive in competitive digital landscapes.</p>
+                      </div>
+                    </section>
+                    <section class="article-section" id="why-choose-semrush">
+                      <div class="article-sub">
+                        <h2>Why Choose SEMrush for SEO?</h2>
+                        <p>SEMrush has become a go-to tool for businesses and SEO professionals worldwide, offering an all-in-one platform to address a wide range of digital marketing needs. Its reputation as a comprehensive and user-friendly solution is well-deserved, as SEMrush equips users with the tools and insights necessary to improve website performance and stay competitive in ever-evolving online markets. By integrating data-driven strategies with its powerful features, SEMrush helps users achieve sustainable growth and online visibility.</p>
+                      </div>
+                      <div class="article-sub">
+                        <h3>Comprehensive SEO Insights</h3>
+                        <p>One of SEMrush's greatest strengths lies in its ability to provide a complete picture of your website's SEO performance. The platform delivers detailed insights into critical factors such as keyword rankings, organic traffic, backlink profiles, and more. Whether you're identifying high-performing keywords or diagnosing site health issues, SEMrush offers a data-rich environment to make informed decisions. These insights allow you to pinpoint strengths, address weaknesses, and capitalize on opportunities for growth.</p>
+                      </div>
+                      <div class="article-sub">
+                        <h3>Competitor Benchmarking</h3>
+                        <p>Staying ahead of the competition is crucial in digital marketing, and SEMrush excels in competitor analysis. With its competitor benchmarking tools, you can gain a deep understanding of what strategies your rivals are using to rank higher in search results. SEMrush enables you to analyze their top-performing keywords, backlink sources, and content strategies. This knowledge allows you to identify gaps in your own approach and refine your tactics to outperform competitors in your niche.</p>
+                      </div>
+                      <div class="article-sub">
+                        <h3>Content Optimization</h3>
+                        <p>Creating content that resonates with your audience is more important than ever in today's SEO landscape. SEMrush’s content optimization tools are designed to align your content with user intent and search engine algorithms. By analyzing factors such as keyword usage, readability, and topical relevance, SEMrush helps you craft high-quality content that meets the needs of your target audience. Whether you're writing blog posts, product descriptions, or landing pages, these tools ensure that your content remains engaging and optimized for maximum impact.</p> 
+                        <p>Overall, SEMrush stands out as a versatile and indispensable tool for anyone serious about improving their SEO strategy. Its comprehensive insights, competitor analysis capabilities, and focus on content optimization provide a well-rounded approach to achieving online success. Choosing SEMrush means equipping yourself with the resources needed to thrive in competitive digital landscapes.</p>
+                      </div>
+                    </section>
+                    <section class="article-section" id="keyword-research">
+                      <div class="article-sub">
+                        <div class="image-right-small"><img src="/img/semrush2.webp" alt="A modern interface displaying comprehensive SEO analysis, including keyword rankings and competitor research with SEMrush." width="225" height="300" style="width: 25vw;"></div>
+                        <h3>Keyword Research: Laying the Foundation for SEO Success</h3>
+                        <p>Effective keyword research is the cornerstone of a successful SEO strategy, and SEMrush's Keyword Magic Tool is a standout feature. This tool provides an expansive database of keyword ideas categorized by relevance, intent, and niche specificity. By analyzing search volume, keyword difficulty, and cost-per-click (CPC), SEMrush helps you identify opportunities that align with your goals. For instance, if you're optimizing for "best SEO tools," the tool can surface related long-tail phrases like "free SEO tools for beginners" or "SEO tools for startups," allowing you to broaden your content strategy while targeting niche audiences with high conversion potential.</p>
+                        <p>SEMrush also enables you to focus on long-tail keywords, which are often less competitive but highly specific. These terms cater to targeted audiences with clear search intent, providing an opportunity to rank higher and drive quality traffic to your site.</p>
+                      </div>
+                    </section>
 
-                        SEMrush is a versatile tool that offers solutions for SEO, content marketing, competitor analysis, social media management, and paid search advertising. Initially developed to help marketers optimize their websites for search engines, it has since evolved into a powerful platform that caters to businesses of all sizes. What makes SEMrush stand out is its ability to provide detailed insights into your website’s performance, competitors' strategies, and broader industry trends. Whether you’re an experienced SEO professional or a beginner, SEMrush has the tools you need to boost your website’s rankings and improve visibility.<br><br>
-
-                        One of the most valuable features SEMrush offers is its keyword research tool. This tool helps you identify high-performing keywords relevant to your niche, evaluate keyword competitiveness, and discover new ranking opportunities. By incorporating the right keywords into your content, you can significantly increase your chances of appearing at the top of search results. Another key feature is the Site Audit tool, which scans your website for technical SEO issues. It generates a comprehensive report that highlights errors, warnings, and factors that could negatively impact your search rankings. The audit covers essential aspects like broken links, duplicate content, and site loading speed, ensuring your website is fully optimized for better performance.<br><br>
-
-                        SEMrush also excels in competitor analysis. Its Competitive Research feature allows you to gain insights into your competitors’ organic and paid search strategies, keyword usage, and backlink profiles. By understanding what your competitors are doing well (or where they’re falling short), you can adjust your own strategy to outshine them in search engine results. Moreover, SEMrush’s Backlink Analytics tool helps you track your backlinks, identify new link-building opportunities, and analyze your competitors’ backlink profiles. Since high-quality backlinks are a crucial factor for improving search rankings, SEMrush makes it easier to build a strong backlink profile.<br><br>
-
-                        Another powerful tool SEMrush offers is the On-Page SEO Checker, which analyzes individual web pages and provides actionable recommendations. These insights can include keyword suggestions, content length optimization, and readability improvements. By applying these recommendations, you can optimize each page on your website for better SEO results. SEMrush’s Content Marketing Toolkit further helps you identify trending topics, create data-driven content strategies, and measure the success of your content. High-quality, engaging content is essential for driving organic traffic, and SEMrush enables you to craft content that resonates with your audience while improving your rankings.<br><br>
-
-                        Tracking the performance of your website is crucial for long-term success, and SEMrush’s Position Tracking tool makes this easy. This feature allows you to monitor your rankings for specific keywords and track how they evolve over time. You can even set up alerts for significant ranking changes, ensuring you stay informed about your SEO performance. SEMrush’s position tracking ensures that you can stay agile and adjust your SEO strategy based on real-time data.<br><br>
-
-                        SEMrush’s range of tools offers a holistic approach to SEO that helps businesses identify ranking opportunities, optimize content, fix technical issues, and build quality backlinks. With the platform’s keyword research and competitor analysis features, you can find the right keywords and spot gaps in your competitors' strategies. The On-Page SEO Checker and Content Marketing Toolkit allow you to ensure your content is optimized for both users and search engines. Regular site audits and backlink analysis ensure your website remains in top shape, and position tracking helps you monitor progress and adjust your strategy when necessary.<br><br>
-
-                        In conclusion, SEMrush is an invaluable tool for businesses looking to improve their search engine rankings. With its comprehensive set of SEO, content marketing, and competitor analysis tools, SEMrush simplifies the often complex world of digital marketing. By using SEMrush to guide your SEO efforts, you can improve your website’s visibility, drive more traffic, and gain a competitive edge in the ever-evolving digital landscape.<br><br>
-
-                        For more insights, visit <a href="https://www.semrush.com/">SEMrush's AI Content and SEO Trends for 2024</a>
-                      </p>
-                    </div>
-                  </div> 
-                </section>
-
-                <section class="editors-pick">
-                  <div class="section-title">
-                    <h3>Editor's Pick</h3>
-                  </div>
-                  <div class="article-grid3">
-                    <div class="article3">
-                      <a href="/Articles/iot-smart-cities.html"><img src="https://i.ibb.co/80n02Q9/iot-smart-city.png" loading="lazy" border="0" alt="a futuristic city skyline"></a>
-                      <h3>
-                        <a href="/Articles/iot-smart-cities.html">
-                          How IoT is Revolutionizing Smart Cities
-                        </a>
-                      </h3>
-                    </div>
-                    <div class="article3">
-                      <a href="/Articles/leveraging-google.html"><img src="https://i.ibb.co/txWWkHv/leveraging-google-lady.png" loading="lazy" border="0" alt="a lady holding a magnifying glass up to a computer"></a>
-                      <h3>
-                        <a href="/Articles/leveraging-google.html">
-                          Leveraging Google Search Console for Better SEO Insights
-                        </a>
-                      </h3>
-                    </div>                    
-                    <div class="article3">
-                      <a href="/articles/headless-ecommerce.html"><img src="https://i.ibb.co/2qQVRkQ/headless-commerce.png" loading="lazy" border="0" alt="a lady looking at a store digital store front"></a>
-                      <h3>
-                        <a href="/articles/headless-ecommerce.html">
-                          Headless Commerce: What It Is and Why It's Important
-                        </a>
-                      </h3>
-                    </div>
-                  </div>
-                </section>
-
+                    <section class="article-section" id="competitor-analysis">
+                      <div class="article-sub">
+                        <h2>Getting Started: SEMrush Features and Benefits</h2>
+                        <p>
+                          SEMrush is a comprehensive SEO tool designed to empower digital marketers with actionable insights and features that simplify complex tasks. Whether you're a beginner or an experienced professional, SEMrush offers a suite of tools to streamline your efforts, improve your strategy, and achieve tangible results. Let’s explore its core functionalities and their impact on your digital marketing success.
+                        </p>
+                      </div>
+                      <div class="article-sub">
+                        <h3>Keyword Research: The Foundation of SEO</h3>
+                        <p>
+                          At the heart of every successful SEO strategy is effective keyword research, and SEMrush excels in this critical area. The Keyword Magic Tool stands out by offering a vast database of keyword ideas, meticulously categorized by relevance and intent. This feature not only helps you identify high-impact terms but also provides detailed metrics such as search volume, keyword difficulty, and cost-per-click (CPC). By understanding these metrics, you can prioritize keywords that balance competition with potential traffic.
+                        </p>
+                        <p>
+                          One of SEMrush’s most valuable capabilities is its focus on long-tail keywords, which are often overlooked but offer significant benefits. These niche-specific phrases help you target audiences with precise search intent, improving your chances of ranking higher and attracting qualified leads. For instance, if your target keyword is "best SEO tools," SEMrush can suggest related phrases like "affordable SEO tools for small businesses" or "free SEO tools for beginners," enabling you to expand your content strategy while catering to specific user needs.
+                        </p>
+                      </div>
+                      <div class="article-sub">
+                        <h3>Competitor Analysis: Gaining an Edge in the Market</h3>
+                        <p>
+                          Understanding your competitors' strategies is essential for staying competitive in the digital landscape. SEMrush’s Competitive Research toolkit provides a wealth of insights, allowing you to identify the high-performing keywords your competitors are ranking for and analyze their backlink profiles. This data enables you to replicate their successes or uncover gaps in their strategy that you can capitalize on.
+                        </p>
+                        <p>
+                          Beyond keywords, SEMrush also reveals traffic sources and marketing channels that drive your competitors' success. For example, if a competitor is leveraging paid search campaigns effectively, SEMrush helps you analyze their strategies, empowering you to refine your approach and attract similar audiences. By continuously monitoring your competitors, you can adapt your tactics to maintain a competitive edge.
+                        </p>
+                      </div>
+                    </section>
+                    <section class="article-section" id="on-page-seo">  
+                      <div class="article-sub">
+                        <h3>On-Page SEO Checker: Optimizing Content for Search Engines</h3>
+                        <p>
+                          SEMrush’s On-Page SEO Checker is a powerful tool for fine-tuning individual pages on your website. It offers actionable recommendations tailored to your target keywords, ensuring that your content aligns with both search engine algorithms and user expectations. Suggestions typically include enhancing content readability, integrating target keywords more effectively, and optimizing internal and external links to boost page authority.
+                        </p>
+                        <p>
+                          For example, if a blog post on your site underperforms for a specific keyword, SEMrush might recommend breaking up dense text with headings, adding relevant visuals, or linking to authoritative sources. These improvements not only enhance your rankings but also create a better experience for your audience.
+                        </p>
+                      </div>
+                    </section>
+                    <section class="article-section" id="technical-seo">  
+                      <div class="article-sub">
+                        <h3>Site Audit: Ensuring Technical Excellence</h3>
+                        <div class="image-left-small"><img src="/img/semrush3.webp" alt="A sleek dashboard illustrating an intuitive approach to long-tail keyword research and SEO improvements." width="225" height="300" style="width: 25vw"></div>
+                        <p>
+                          A technically sound website is essential for maintaining strong search engine rankings, and SEMrush’s Site Audit tool provides a detailed overview of your website’s health. This feature identifies technical issues such as broken links, duplicate content, and slow page speeds, all of which can negatively impact your performance.
+                        </p>
+                        <p>
+                          For instance, fixing broken links not only improves user navigation but also prevents penalties from search engines. Similarly, addressing page speed issues ensures that visitors stay engaged, reducing bounce rates and boosting your site's credibility. The Site Audit tool simplifies this process by offering step-by-step recommendations to resolve these challenges effectively.
+                        </p>
+                      </div>
+                    </section>
+                    <section class="article-section" id="backlink-management">
+                      <div class="article-sub">
+                        <h3>Backlink Analytics: Building a Strong Link Profile</h3>
+                        <p>
+                          Backlinks remain a cornerstone of effective SEO, and SEMrush offers robust tools for analyzing and managing your link profile. The Backlink Analytics feature enables you to monitor your backlink growth, identify toxic links, and uncover opportunities for acquiring high-quality links. By maintaining a healthy link profile, you can enhance your website's authority and improve its chances of ranking higher in search results.
+                        </p>
+                        <p>
+                          For example, SEMrush allows you to identify websites that frequently link to your competitors. This information provides a starting point for outreach efforts, enabling you to pitch your content as a valuable resource. Additionally, the tool helps you disavow harmful links that could damage your reputation, ensuring that your backlink profile remains clean and authoritative.
+                        </p>                          
+                        <p>
+                          SEMrush’s features are designed to work seamlessly together, creating a comprehensive toolkit for achieving your SEO objectives. From keyword research to technical audits, SEMrush equips you with the insights and tools necessary to optimize every aspect of your digital marketing strategy.
+                        </p>
+                      </div>
+                    </section>
+                    <section class="article-section" id="getting-started"> 
+                      <div class="article-sub">
+                        <h2>Getting Started: SEMrush Features and Benefits</h2>
+                        <p>
+                          SEMrush is an indispensable tool for digital marketers and website owners looking to enhance their SEO strategies. Offering a wide array of features, SEMrush simplifies complex processes, provides actionable insights, and helps you achieve measurable results. Whether you're focusing on keyword research, competitor analysis, or technical SEO, SEMrush equips you with the tools you need to succeed. Below, we delve into its most impactful functionalities and explore how each feature can transform your digital marketing efforts.
+                        </p>
+                      </div>
+                      <div class="article-sub">
+                        <h3>Keyword Research: Laying the Foundation for SEO Success</h3>
+                        <p>
+                          At the heart of any successful SEO campaign lies effective keyword research, and SEMrush’s Keyword Magic Tool is designed to make this process seamless and data-driven. With access to an expansive database of keyword ideas, SEMrush categorizes suggestions by relevance, intent, and niche specificity, ensuring you can easily identify opportunities that align with your goals. The tool provides critical metrics such as search volume, keyword difficulty, and cost-per-click (CPC), helping you prioritize terms that balance competition with potential traffic.
+                        </p>
+                        <p>
+                          For example, if your target keyword is “best SEO tools,” SEMrush can suggest related long-tail phrases like “free SEO tools for beginners” or “SEO tools for startups.” These long-tail keywords are particularly valuable because they cater to highly specific queries. Unlike broader keywords, which often have high competition, long-tail keywords offer the opportunity to rank higher in search results and attract qualified leads. This makes them ideal for businesses aiming to target niche audiences or address precise customer needs.
+                        </p>
+                        <p>
+                          What sets SEMrush apart in keyword research is its ability to provide insight into user intent. By understanding whether a keyword aligns with informational, navigational, or transactional intent, you can create content that directly addresses what your audience is searching for. For instance, an informational keyword like "how to optimize SEO for startups" may lead to a detailed guide, while a transactional keyword like "best free SEO tools for small businesses" might inspire a product comparison or a listicle.
+                        </p>
+                        <p>
+                          Another notable feature is the ability to filter and segment keyword suggestions based on your specific needs. Whether you’re focusing on local SEO, voice search optimization, or mobile-first strategies, SEMrush provides the flexibility to tailor your research for maximum impact. By leveraging these tools, you can develop a comprehensive keyword strategy that serves as the foundation for your overall SEO efforts.
+                        </p>
+                      </div>
+                    </section>
+                    <section class="article-section" id="conclusion">
+                      <div class="article-sub article-list">
+                        <h2>Conclusion: Maximizing SEO with SEMrush</h2>
+                        <p>SEMrush is more than just an SEO tool; it’s a comprehensive platform designed to empower businesses and marketers with actionable insights and strategies for achieving digital success. From keyword research to competitor analysis, and from technical audits to content optimization, SEMrush covers all aspects of SEO with precision and user-friendly functionality.</p>
+                        <p>By integrating SEMrush into your digital marketing strategy, you gain access to a suite of tools that provide a holistic view of your online performance. The platform not only helps you identify opportunities but also equips you with the resources to capitalize on them. Whether you’re a beginner or a seasoned professional, SEMrush adapts to your needs, offering scalability and depth to match your growing expertise.</p>
+                        <h3>Key Takeaways:</h3>
+                        <ul>
+                          <li><span>Holistic Approach: </span>SEMrush provides insights across the entire spectrum of SEO, from technical fixes to strategic planning.</li>
+                          <li><span>Competitive Edge: </span>Its competitor analysis tools ensure you stay ahead in the ever-evolving digital landscape.</li>
+                          <li><span>User-Friendly Features: </span>The platform is intuitive, making complex processes accessible to all levels of expertise.</li>
+                          <li><span>Future-Proof Strategies: </span>With constant updates and advanced tools, SEMrush keeps you aligned with the latest trends and best practices in SEO.</li>
+                        </ul>
+                        <p>In a digital age where visibility equates to success, leveraging SEMrush is not just an option—it’s a necessity. Embrace the power of data-driven decision-making and watch as your online presence grows stronger, more competitive, and increasingly aligned with your business goals.</p>
+                        <p>Start exploring SEMrush today and take the first step toward unlocking your website’s full potential in the dynamic world of search engine optimization.</p>
+                      </div>
+                    </section>
+                  </section>   
+                </div>
+                <div class="author-bio">
+                  <img src="/img/portfolio-name-cyan.png" alt="Genny Allison | Allison Stock Inc">
+                  <p><i>About Allison Stock Inc. This article was generated by Allison Stock Inc., a leader in AI-powered content and web development. Specializing in the latest trends in technology, we use AI to create innovative, SEO-optimized content for digital platforms. Connect with us on <a href="https://www.linkedin.com/in/genny-allison/" target="_blank" rel="noopener noreferrer" aria-label="Visit Genny Allison's LinkedIn on a new tab">LinkedIn</a> or explore our <a href="https://gennyallison.netlify.app" target="_blank" rel="noopener noreferrer" aria-label="Visit Genny Allison's professional portfolio on a new tab">portfolio</a> for more information.</i></p>
+                </div>
+              </div> 
+            </section>
+            <section id="recommended-articles">
                 <section class="must-reads">
                   <div class="section-title">
-                    <h3>Must Reads</h3>
+                    <h2>Must Reads</h2>
                   </div>
                   <div class="article-grid2">
                     <div class="article2">
-                     <img src="https://i.ibb.co/JxBM25X/semrush-article.png" border="0" alt="Futuristic digital workspace with screens showing SEO tools, keyword research, and analytics, in a soft neon glow with floating holograms and modern devices" loading="lazy">
+                      <a href="/articles/seo-semrush.html"><img src="/img/semrush-article.png" loading="lazy" alt="A professional analyzing advanced SEO data visualizations to uncover insights into keyword research and optimize for long-tail keywords." width="1600" height="900"></a>
                       <h3>
                         <a href="/articles/seo-semrush.html">
-                          Improve Your Websites Search Engine Rankings with SEMrush
+                          Improve Your Websites Search
                         </a>
                       </h3>
-                      <p>The internet of things (IoT) is a rapidly growing industry that is transforming the way we live and work. IoT...</p>
+                      <p>As the world becomes more digital, businesses are constantly looking for ways to stay competitive and increase their online visibility. AI SEO Tools plays...</p>
                     </div>
                     <div class="article2">
-                      <img src="https://i.ibb.co/FVtS4hX/ai-ecommerce-robot.png" border="0" alt="an AI robot helping a customer" loading="lazy">
+                      <a href="/articles/ai-ecommerce.html" aria-label="A link to an article, The Future of eCommerce"><img src="/img/ai-commerce-thumbnail.png" loading="lazy" alt="A 1940s-style woman interacting with a futuristic robot in a modern store, symbolizing the future of eCommerce and the role of eCommerce AI in revolutionizing online retail." width="1600" height="900"></a>
                       <h3>
                         <a href="/articles/ai-ecommerce.html">
-                          AI in eCommerce
+                          The Future of eCommerce
                         </a>
                       </h3>
-                      <p>The rapid evolution of eCommerce is being driven not only by technological advancements but also by the need to offer personalized...</p>
-                      </div>                                   
+                      <p>Explore how AI is reshaping the future of online shopping, driving innovation and personalization...</p>
+                    </div>                                     
                   </div>
                 </section>
 
                 <section class="seo">
                   <div class="section-title">
-                    <h3>SEO</h3>
+                    <h2>SEO</h2>
                   </div>
                   <div class="article-grid2">
                     <div class="article2">
-                      <img src="https://i.ibb.co/txWWkHv/leveraging-google-lady.png" border="0" alt="a lady holding a magnifying glass up to a computer" loading="lazy">
+                      <a href="/articles/leveraging-google.html" aria-label="A link to an SEO article, Leveraging Google Search Console with AI SEO tools for superior insights"><img src="/img/leveraging-google-thumbnail.png" loading="lazy" alt="AI SEO Tools and Google Search Console: A magnifying glass zooming in on data, symbolizing advanced SEO insights and tools." width="1600" height="900"></a>
                       <h3>
-                        <a href="/articles/leveraging-google.html">
-                          Leveraging Google Search Console for Better SEO Insights
+                        <a href="/articles/leveraging-google.html" aria-label="A link to an SEO article, Leveraging Google Search Console with AI SEO tools for superior insights">  
+                          Leveraging Google Search Console with AI SEO Tools for Superior Insights
                         </a>
                       </h3>
-                      <p>In the constantly evolving world of SEO, staying ahead of the competition requires more than just optimizing content and building links…</p>
+                      <p>Understand how GSC plays a pivotal role in optimizing your website's search engine performance.…</p>
                     </div>
                     <div class="article2">
-                       <img src="https://i.ibb.co/gzTrXtc/ahrefs.png" border="0" alt="a person analyzing SEO data on holographic screens" loading="lazy">
+                      <a href="/articles/max-seo-ranking.html"><img src="/img/max-seo-thumbnail.png" loading="lazy" alt="A professional analyzing advanced SEO data visualizations to uncover insights into keyword research and optimize for long-tail keywords." width="1600" height="900"></a>
                       <h3>
-                        <a href="/articles/headless-ecommerce.html">
-                          Maximizing Keyword Research with Ahrefs
+                        <a href="/articles/max-seo-ranking.html">
+                          Maximizing Keyword Research with AI SEO tools such as Ahrefs
                         </a>
                       </h3>
                       <p>In the ever-evolving world of SEO, staying ahead of the competition requires a strong strategy...</p>
                     </div>                                   
                   </div>
                 </section>
-
-
                 <section class="mobile">
                   <div class="section-title">
-                    <h3>Mobile Apps</h3>
+                    <h2>Mobile Apps</h2>
                   </div>
                   <div class="article-grid2">
                     <div class="article2">
-                      <img src="https://i.ibb.co/MsLM83V/top-mobile-app2.png" border="0" alt="a cell phone" loading="lazy">
+                      <a href="/articles/top-mobile-app.html" aria-label="A link to a Mobile Apps article, Top Mobile App Development Tools Enhancing Mobile Development Platforms"><img src="/img/top-mobile-thumbnail.png" loading="lazy" alt="A futuristic smartphone interface showcasing advanced mobile development tools for iOS and Android, representing the top mobile app development solutions." width="1600" height="900"></a>
                       <h3>
-                        <a href="/articles/top-mobile-app.html">
-                          Top Mobile App Development Tools
+                        <a href="/articles/top-mobile-app.html" aria-label="A link to a Mobile Apps article, Top Mobile App Development Tools Enhancing Mobile Development Platforms">
+                          Top Mobile App Development Tools:<br> Enhancing Mobile Development Platforms
                         </a>
                       </h3>
-                      <p>Top Mobile App Development Tools: A Comprehensive Guide comments Mobile app...</p>
+                      <p>Learn why choosing the right tools is critical for mobile app success...</p>
                     </div>
                     <div class="article2">
-                      <img src="https://i.ibb.co/hWDQd8f/future-app-1940lady.png" border="0" alt="retro-futuristic 3D cityscape in neon colors" loading="lazy">    
+                      <a href="/articles/future-mobile-app.html" aria-label="A link to a mobile apps article, The future of mobile app development"><img src="/img/future-mobile-thumbnail.png" loading="lazy" alt="A retro-inspired comic illustration of a woman at a computer with a smartphone, representing trends in mobile development and apps development." width="1600" height="900"></a>  
                       <h3>
-                        <a href="/articles/future-mobile-app.html">
-                          The Future of Mobile App
+                        <a href="/articles/future-mobile-app.html" aria-label="A link to a mobile apps article, The future of mobile app development">
+                          The Future of Mobile Development: Key Trends Shaping the Next Era of App Development
                         </a>
                       </h3>
-                      <p>The Future of Mobile App Development: Trends to Watch in 2024 and Beyond comments As...</p>
+                      <p>Explore the transformative factors driving change in mobile development....</p>
                     </div>                                   
                   </div>
-                </section>
-              </main>
-            </div>
-            <aside class="sidebar">
-              <section id="articles-sidebar">
-                <div class="sidebar-article">
-                  <img src="https://i.ibb.co/MMCZrWR/lady-arriving-to-future-city.png" border="0" alt="A woman from the 1940's arriving to a futuristic city" loading="lazy">
-                  <div>
-                    <ul>
-                      <li><a href="/articles/iot-industries.html">The Latest Trends in IoT and How They're impacting Industries</a></li>
-                      <li><a href="/articles/top-mobile-app.html">Top Mobile App Development Tools: A Comprehensive Guide</a></li>
-                      <li><a href="/articles/headless-ecommerce.html">Headless Commerce: What It Is and Why It's Important</a></li>
-                    </ul>
-                  </div>                     
-                </div>
-              </section>
-              <section id="subrscibe-sidebar">  
-                <div class="subscribe-container">
-                  <img src="https://i.ibb.co/3SRqcP5/newsletter.png" alt="an envelope catching a ride on a paper plane" border="0" loading="lazy">
-                    <div class="subscribe-title"> 
-                      <p>Want to receive notifications when<br> new articles are released?</p>
-                    </div>
-                    <div class="subscribe-p"> 
-                      <p>Subscribe to Our Newsletter!</p>
-                    </div>   
-                  <form action="#" target="_self" method="POST">
-                    <label for="email" class="visually-hidden">Enter your email:</label>
-                    <input type="email" id="email" name="email" placeholder="email@example.com" required>
-                    <button type="submit" aria-label="Subscribe to Newsletter">Submit</button>
-                  </form>
-                </div>
-              </section>
-              <section id="social-media-sidebar">
-                <div class="stay-connected-sidebar">
-                  <h3>Stay Connected</h3>
-                  <a href="#" target="_blank" >
-                    <div class="social-media">
-                      <img src="https://i.ibb.co/7QvWJ9D/facebook-icon.png" border="0" alt="Facebook" aria-label="Follow us on Facebook (opens in a new tab)" loading="lazy">
-                      <div class="socialmedia-title">
-                        <p>Facebook</p>
-                        <p>2m+ Followers</p>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="#" target="_blank">
-                    <div class="social-media">
-                      <img src="https://i.ibb.co/f4K0b03/twitter-x-icon.png" border="0" alt="Twitter" aria-label="Follow us on Twitter (opens in a new tab)" loading="lazy">
-                      <div class="socialmedia-title">
-                        <p>Twitter</p>
-                        <p>5m+ Followers</p>
-                      </div>
-                    </div>
-                  </a>     
-                  <a href="#" target="_blank">
-                    <div class="social-media">
-                      <img src="https://i.ibb.co/MfTYWDq/instagram.png" border="0" alt="Instagram" aria-label="Follow us on Instagram (opens in a new tab)" loading="lazy">
-                      <div class="socialmedia-title">
-                        <p>Instagram</p>
-                        <p>1.2m+ Followers</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </section>    
-            </aside>
+                </section> 
+            </section>  
           </div>
-        </article>
-      <section>
-        <footer>
-          <nav class="bottom-nav">
-            <div class="navbar-footer-items">
-              <ul>
+          <aside class="sidebar" role="complementary">
+            <section id="articles-sidebar">
+              <div class="sidebar-article">
+                <img src="/img/sidebar-future-city.png" alt="A woman from the 1940's arriving to a futuristic city" loading="lazy">
+                <div>
+                  <ul>
+                    <li class="featured-topics"><a href="/articles/iot-industries.html">The Latest Trends in IoT and How They're impacting Industries</a></li>
+                    <li class="featured-topics"><a href="/articles/top-mobile-app.html">Top Mobile App Development Tools: A Comprehensive Guide</a></li>
+                    <li class="featured-topics"><a href="/articles/headless-ecommerce.html">Headless Commerce: What It Is and Why It's Important</a></li>
+                  </ul>
+                </div>                     
+              </div>
+            </section>
+            <section id="stay-connected-sidebar">
+              <div class="stay-connected featured-topics">
+                <h3>Stay Connected</h3>
+                <p>Follow us on social media for updates and insights.</p>
+                <div class="social-media-icons">
+                  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
+                    <img src="/img/facebook-icon.png" alt="Facebook" loading="lazy">
+                    <span>Facebook</span>
+                  </a>
+                  <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter">
+                    <img src="/img/twitter-x-icon.png" alt="Twitter" loading="lazy">
+                    <span>Twitter</span>
+                  </a>
+                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+                    <img src="/img/instagram.png" alt="Instagram" loading="lazy">
+                    <span>Instagram</span>
+                  </a>
+                </div>
+              </div>
+            </section>
+            <section id="subrscibe-sidebar">  
+              <div class="cta-section sidebar-cta">
+                <div>
+                  <img src="/img/newsletter.png" alt="Envelope on a paper plane representing updates" loading="lazy">
+                </div>
+                <div class="cta-sub article-sub">
+                  <h2>Discover Tech Trends and More</h2>
+                  <p><i>Dive into the latest in AI-driven tools, IoT innovations, and eCommerce advancements right here on Tech Trends. Explore a wealth of articles designed to inspire and inform.</i></p>
+                  <p>If you're seeking an experienced Content Specialist or Web Developer, <a href="https://gennyallison.netlify.app" target="_blank" rel="noopener noreferrer" aria-label="Visit Genny Allison's professional portfolio on a new tab">visit my portfolio</a> to see how I can bring your vision to life.</p>
+                </div>
+              </div>
+            </section>
+          </aside>
+        </div>  
+      </article>
+    </main>
+    <footer role="contentinfo">
+      <nav class="bottom-nav">
+        <div class="navbar-footer-items">
+          <ul>
             <li><a href="/index.html">Home</a></li>
             <li><a href="/categories/categorized.html">Topics</a></li>
             <li><a href="/categories/uncategorized.html">View All</a></li>            
             <li><a href="/categories/seo-tools.html">SEO Tools</a></li>
             <li><a href="/categories/iot.html">IoT</a></li>
-            <li><a href="/categories/mobile.html">Mobile App Development</a></li>
+            <li><a href="/categories/mobile.html">Mobile App</a></li>
             <li><a href="/categories/ecommerce.html">eCommerce</a></li>
-            <li><a href="/articles/welcome.html">Welcome</a></li>  
-              </ul>
-            </div>
-          </nav>
-          <div class="stay-connected-footer">
-            <div class="footer-social">
-                <a href="https://www.facebook.com/" target="_blank">
-                  <img src="https://i.ibb.co/1q8gsdL/white-fb-icon.png" border="0" alt="Follow us on Facebook (opens in a new tab)">
-                </a>
-                <a href="https://www.twitter.com/" target="_blank">
-                  <img src="https://i.ibb.co/QHrgny2/white-x-icon.png" border="0" alt="Follow us on Twitter (opens in a new tab)">
-                </a>
-                <a href="https://www.instagram.com" target="_blank">
-                  <img src="https://i.ibb.co/JK0Nr6z/white-ig-icon.png"" border="0" alt="Follow us on Instagram (opens in a new tab)">
-                </a>
-            </div>            
-            <div class="copyright">
-              <p>Copyright © All rights reserved | Allison Stock Inc.</p>
-            </div>
-            <div class="address">
-              <address>123 Main St, Texas City, Texas</address>
-            </div>
-          </div>
-        </footer>
-      </section>
-    <script src="/script.js"></script>
+            <li><a href="/categories/tech-trends.html">Welcome</a></li>  
+          </ul>
+        </div>
+      </nav>
+      <div class="stay-connected-footer">
+        <div class="footer-social">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+              <img src="/img/white-fb-icon.png" alt="Follow us on Facebook (opens in a new tab)" loading="lazy">
+            </a>
+            <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
+              <img src="/img/white-x-icon.png" alt="Follow us on Twitter (opens in a new tab)" loading="lazy">
+            </a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+              <img src="/img/white-ig-icon.png" alt="Follow us on Instagram (opens in a new tab)" loading="lazy">
+            </a>
+        </div>            
+        <div class="copyright">
+          <p>Copyright © All rights reserved | <a href="https://gennyallison.netlify.app" target="_blank" rel="noopener noreferrer" aria-label="Visit Genny Allison's professional portfolio on a new tab">Allison Stock Inc.</a></p>
+        </div>
+        <div class="address">
+          <address aria-label="Company Address">123 Main St, Texas City, Texas</address>
+        </div>
+      </div>
+    </footer>
+    <div id="back-to-top" title="Back to top" role="button">↑</div>
+    <script src="/script.js"></script>  
   </body>
 </html>  
