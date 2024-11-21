@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://tech-trends-blog.netlify.app/sitemap.xml
