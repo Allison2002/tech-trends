@@ -265,7 +265,7 @@ body.modal-open {
   overflow: hidden;
 }
 
-.content-container {
+main {
   max-width: 75vw;
   background-color: rgb(247 247 247 / 1);
   padding: 2em;
