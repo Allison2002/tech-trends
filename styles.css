@@ -6,7 +6,7 @@
 
 body,
 h1 {
-  font-family: 'Alegreya Sans', sans-serif;
+  font-family: 'Alegreya Sans', 'Arial', sans-serif;
   font-style: normal;
   font-display: swap;
   transition: background-color 0.4s ease-in-out, opacity 0.4s ease-in-out;
@@ -40,7 +40,8 @@ html {
 }
 
 h2 {
-  font-family: "Exo 2", sans-serif;
+  font-family: 'Exo 2', 'Roboto', 'Arial', 'Helvetica', sans-serif;
+  font-display: swap;
   font-size: 1.8rem;
   font-weight: 700;
   font-style: normal;
@@ -1521,7 +1522,7 @@ form button:hover {
   }
 
   .footer-social a img {
-    width: min(40px, 2.08vw);
+    width: 10vw;
   }
 
   .footer-social a img {
@@ -1578,6 +1579,7 @@ form button:hover {
   .social-media-icons img,
   .social-media img {
     max-width: 10vw;
+    width: 10vw;
   }
 
   .bottom-nav {
