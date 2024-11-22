@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="/styles.css">
 <link rel="icon" href="/img/tab_logo_robot.webp" alt="Tech Trends Robot">
 <link rel="preload" href="/img/tech-trends-logo.webp" as="image">
-<link rel="preload" href="/img/tech-trends-category.webp" as="image">
+<link rel="preload" href="/img/tech_trends_welcome_hero_desktop.webp" as="image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -84,7 +84,11 @@
             <section class="hero">                 
               <div class="hero-content-all">
                 <div class="hero">
-                  <img src="/img/tech-trends-category-hero.webp" alt="a cute robot in a futuristic neon city holding a sign that says 'Tech Trends'" loading="lazy">
+                  <picture>
+                    <source srcset="/img/tech_trends_welcome_hero_desktop.webp" media="(min-width: 1200px)">
+                    <source srcset="/img/tech_trends_welcome_hero_tablet.webp" media="(min-width: 768px)">
+                    <img src="/img/tech_trends_welcome_hero-mobile.webp" alt="a cute robot in a futuristic neon city holding a sign that says 'Tech Trends'" loading="lazy" width="1920" height="1080">
+                  </picture>
                 </div>
                 <div class="cat-btn">
                   <a href="/categories/categorized.html" class="btn">Categories</a>

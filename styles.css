@@ -540,12 +540,10 @@ body.modal-open {
 }
 
 .hero img {
-  opacity: 1;
-  border-radius: 1.5em;
-  width: 100vw; height: calc(100vw * aspect ratio);
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  object-fit: cover; 
+  object-fit: cover;
+  border-radius: 1.5em;
   box-shadow: rgb(0 0 0 / 20%) 0px 0px 25px 8px;
 }
 
@@ -1313,6 +1311,10 @@ form button:hover {
 }  
 
 @media (max-width: 768px) {
+  .hero img {
+    border-radius: 1em;
+  }
+
   .hero-post-author {
     display: flex;
     flex-direction: row;
