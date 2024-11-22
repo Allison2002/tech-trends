@@ -398,6 +398,7 @@ body.modal-open {
   font-size: 1rem;
 }
 
+.newsletter-img img,
 .cta-section img {
   width: 25vw;
   height: auto;
@@ -463,65 +464,44 @@ body.modal-open {
 }
 
 /* Right-floating image for the Healthcare section in IoT industry*/
-.image-right {
-    float: right;
-    width: 20vw; 
-    margin: 0 0 1em 1em; 
-    display: block;
-}
-
-.image-right img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.image-right-small {
-    float: right;
-    width: 25vw; 
-    height: auto;
-    margin: 0 0 1em 1em; 
-    display: block;
-}
-
-.image-right-small img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-/* Left-floating image for the Manufacturing section in IoT industry */
-.image-left {
+.image-left, .image-left-small {
     float: left;
-    width: 20vw; 
-    margin: 0 1em 1em 0; 
+    max-width: 25%; /* Ensures a responsive size */
+    margin: 0 1em 1em 0; /* Margin to create spacing with text */
     display: block;
 }
 
-.image-left img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px; 
+.image-left img, .image-left-small img {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Consistent rounded corners */
+    object-fit: cover; /* Ensures proper fit */
 }
 
-.image-left-small {
-    float: left;
-    width: 25vw; 
-    margin: 0 1em 1em 0; 
+/* Right-floating image for articles */
+.image-right, .image-right-small {
+    float: right;
+    max-width: 25%; /* Ensures a responsive size */
+    margin: 0 0 1em 1em; /* Margin to create spacing with text */
     display: block;
-
 }
 
-.image-left-small img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px; 
+.image-right img, .image-right-small img {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Consistent rounded corners */
+    object-fit: cover; /* Ensures proper fit */
 }
 
+/* Adjust text around images for better spacing */
 .text-around-img {
-  padding: 1em 6em 2em 0;
+    margin: 0; /* Remove unnecessary padding */
+    padding: 1em; /* Add space between text and image */
+    line-height: 1.6; /* Improve readability */
+    overflow: hidden; /* Clears floated elements */
 }
 
+/* Clear floats after sections */
 .article-section::after {
     content: "";
     display: table;
@@ -639,8 +619,8 @@ body.modal-open {
 
 .sidebar-article img {
   max-height: auto;
+  width: 100%;
 }
-
 
 .article3 img,
 .article-grid1 img,
@@ -650,6 +630,7 @@ body.modal-open {
   box-shadow: rgb(0 0 0 / 20%) 0px 0px 3px 3px; 
   height: 30vh;
   object-fit: cover;
+  object-position: bottom center;
 }
 
 .article3 {
@@ -1430,6 +1411,10 @@ form button:hover {
     max-width: 100%;
   }
 
+  .newsletter-img img {
+    max-width: 30vw;
+    height: auto;
+  }
   .cta-section img {
   width: 60vw;
   padding: 1em 0 0;
@@ -1549,12 +1534,6 @@ form button:hover {
     flex-direction: column;
     max-width: 100%;
   }
-
-  .sidebar-article img {
-    width: 100%;
-    height: auto;
-  }
-
 }
 
 
