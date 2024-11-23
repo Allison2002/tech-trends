@@ -10,9 +10,8 @@
 <link rel="icon" href="/img/tab_logo_robot.webp">
 <link rel="preload" href="/img/tech-trends-logo.webp" as="image">
 <link rel="preload" href="/img/future_mobile__article_hero_mobile.webp" as="image">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preload" href="./Alegreya_Sans/AlegreyaSans-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="./Exo_2/Exo2-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -39,13 +38,66 @@
   "description": "Explore the future of mobile development and the trends shaping app development, including AI, cross-platform tools, 5G, blockchain security, and immersive AR/VR experiences."
 }
 </script>
+<style>
+  @font-face {
+    font-family: 'Alegreya Sans';
+    src: url('./Alegreya_Sans/AlegreyaSans-Regular.woff2') format('woff2'),
+        url('./Alegreya_Sans/AlegreyaSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Exo 2';
+    src: url('./Exo_2/Exo2-Regular.woff2') format('woff2'),
+        url('./Exo_2/Exo2-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .hero {
+  position: relative;
+  }
+
+  .hero-content {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+  }
+
+  .hero img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    height: auto;
+    object-fit: cover;
+    border-radius: 1.5em;
+    box-shadow: rgb(0 0 0 / 20%) 0px 0px 1.5625em 0.5em;
+  }
+
+  @media (max-width: 768px) {
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000; /* Fallback background */
+    height: 100vh;
+    text-align: center;
+  }
+  .hero img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    object-fit: cover;
+  }
+  }
+</style>
 </head>
   <body>
     <nav class="navbar" id="navbar">
       <!--tech trends logo-->
       <div class="menu">
         <div class="logo-container">
-          <img src="/img/tech-trends-logo.webp" alt="Tech Trends logo" loading="eager">
+          <img src="/img/tech-trends-logo.webp" alt="Tech Trends logo" loading="eager" width="150" height="85" >
         </div>
         <!--full screen navbar-->
         <div class="navbar-items">
@@ -116,8 +168,8 @@
           <article>      
             <section class="welcome-container">                 
               <div class="hero-post-author article-sub">
-                <div class="author-img"><a href="https://gennyallison.netlify.app" target="_blank" rel="noopener noreferrer" aria-label="Visit Genny Allison's professional portfolio on a new tab"><img src="/img/b&wHeadShot.webp" alt="Genny Allison with Allison Stock Inc"></a></div>
-                <div>
+                <div class="author-img"><a href="https://gennyallison.netlify.app" target="_blank" rel="noopener noreferrer" aria-label="Visit Genny Allison's professional portfolio on a new tab"><img src="/img/b&wHeadShot.webp" alt="Genny Allison with Allison Stock Inc" width="138" height="138"></a></div>
+                  <div>
                   <p><a href="https://gennyallison.netlify.app" aria-label="Visit Genny Allison's professional portfolio on a new tab" target="_blank" rel="noopener noreferrer">by Allison Stock Inc | Genny Allison, AI Content Specialist</a></p>
                   <p>Published on March 3, 2024</p>
                 </div>                     
