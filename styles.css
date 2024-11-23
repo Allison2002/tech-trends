@@ -508,24 +508,6 @@ main {
 }
 
 /* hero */
-.hero {
-  position: relative;
-}
-
-.hero-content {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-}
-
-.hero img {
-  width: 100%;
-  aspect-ratio: 16/9;
-  height: auto;
-  object-fit: cover;
-  border-radius: 1.5em;
-  box-shadow: rgb(0 0 0 / 20%) 0px 0px 1.5625em 0.5em;
-}
 
 .page-title h1 {
   font-size: 3rem;
@@ -1348,9 +1330,6 @@ form button:hover {
 }  
 
 @media (max-width: 768px) {
-  .hero img {
-    border-radius: 1em;
-  }
 
   .grid-wrapper {
       grid-template-columns: 1fr; /* Single column layout */
