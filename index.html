@@ -10,9 +10,8 @@
 <link rel="icon" href="/img/tab_logo_robot.webp">
     <link rel="preload" href="/img/tech-trends-logo.webp" as="image">
     <link rel="preload" as="image" href="/img/welcome_to_tech_trends_hero-mobile.webp">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preload" href="/Alegreya_Sans/" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/Exo_2/static/" as="font" type="font/woff2" crossorigin="anonymous">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -245,6 +244,22 @@
 }
 </script>
 <style>
+  @font-face {
+    font-family: 'Alegreya Sans';
+    src: url('./Alegreya_Sans/AlegreyaSans-Regular.woff2') format('woff2'),
+        url('./Alegreya_Sans/AlegreyaSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Exo 2';
+    src: url('./Exo_2/Exo2-Regular.woff2') format('woff2'),
+        url('./Exo_2/Exo2-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
   .hero {
   position: relative;
   }
