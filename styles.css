@@ -6,11 +6,10 @@
 
 body,
 h1 {
-  font-family: 'Alegreya Sans', 'Arial', sans-serif;
-  font-style: normal;
-  font-display: swap;
   transition: background-color 0.4s ease-in-out, opacity 0.4s ease-in-out;
- 
+  font-family: 'Alegreya Sans', Arial, sans-serif;  font-style: normal;
+  font-display: swap;
+
 }
 
 body {
@@ -40,7 +39,7 @@ html {
 }
 
 h2 {
-  font-family: 'Exo 2', 'Roboto', 'Arial', 'Helvetica', sans-serif;
+  font-family: 'Exo 2', 'Roboto', Arial, Helvetica, sans-serif;
   font-display: swap;
   font-size: 1.8rem;
   font-weight: 700;
@@ -521,7 +520,7 @@ main {
   bottom: 3em;
   left: 1em;
   color: #f7f7f7;
-  font-family: "Exo 2", sans-serif;
+  font-family: sans-serif;
   font-weight: 900;
   font-style: normal;
   text-decoration: none;
