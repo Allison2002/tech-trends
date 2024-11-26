@@ -581,12 +581,12 @@ main {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  color: #262626; 
+  color: white; 
   font-weight: 700;
   margin: 0 1em 0 0;
   width: auto;
   min-width: min(120px, 6.25vw);
-  background-color: #ffffff; 
+  background-color: #247b91; 
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
@@ -607,8 +607,6 @@ main {
 
 .section-title {
   padding: 2em 0 0;
-}
-.section-title h3 {
 }
 
 .article-grid3 {
