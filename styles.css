@@ -1489,7 +1489,14 @@ form button:hover {
     width: 100%;
   }
 
-  
+  .article-sub p a:hover {
+    color: #b45406; /* Ensure the hover color changes */
+    text-decoration: underline;
+    transform: scale(1.05); /* GPU-accelerated */
+    opacity: 0.9; /* GPU-accelerated */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Use supported properties */
+  }
+
 /* Adjust left-aligned images */
   .image-left, .image-left-small {
     float: none; 
