@@ -33,6 +33,11 @@ html {
   overflow-x: hidden;
 }
 
+img {
+    aspect-ratio: 16 / 9; /* Maintain ratio */
+    object-fit: cover;
+}
+
 html {
   background-color: #f7f7f7;
   color: #333333;
@@ -1375,7 +1380,8 @@ form button:hover {
 @media (max-width: 768px) {
 
   .grid-wrapper {
-      grid-template-columns: 1fr; /* Single column layout */
+    grid-template-columns: 1fr; 
+    min-height: 800px;
   }
 
   .hero-post-author {
