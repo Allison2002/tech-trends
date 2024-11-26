@@ -7,7 +7,8 @@
 body,
 h1 {
   transition: background-color 0.4s ease-in-out, opacity 0.4s ease-in-out;
-  font-family: 'Alegreya Sans', Arial, sans-serif;  font-style: normal;
+  font-family: 'Alegreya Sans', Arial, sans-serif;  
+  font-style: normal;
   font-display: swap;
 
 }
