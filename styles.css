@@ -845,31 +845,42 @@ form button:hover {
 }
 
 /* social media sidebar */
-.stay-connected-sidebar {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 100%;
-  margin-top: 3em;
-}
-
-.stay-connected {
-  background-color: #ffffff;
-  padding: 1.5em;
-  border-radius: 0.625em;
-  text-align: center;
+#stay-connected-sidebar {
+    margin: 1em auto;
+    padding: 1em;
+    border-radius: 1.5em;
+    background-color: #ffffff; /* Keep the same background */
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 1.5625em 0.5em; /* Match sidebar-article */
+    text-align: center;
+    max-width: 100%;
 }
 
 .stay-connected h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1em;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #262626;
+    margin-bottom: 0.5em;
 }
 
 .stay-connected p {
-  font-size: 1rem;
-  margin-bottom: 1.5em;
+    font-size: 1rem;
+    color: #7a7a7a;
+    margin-bottom: 1.5em;
+}
+
+.stay-connected .social-media-icons a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0.5em;
+    color: #262626;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.stay-connected .social-media-icons a:hover {
+    transform: scale(1.05);
+    color: #247b91; /* Slightly highlight on hover */
 }
 
 .social-media-icons {
@@ -881,7 +892,7 @@ form button:hover {
 .social-media-icons a {
   text-decoration: none;
   color: #262626;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   display: flex;
   flex-direction: column;
   align-items: center;
