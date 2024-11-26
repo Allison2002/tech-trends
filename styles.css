@@ -35,7 +35,7 @@ html {
 
 html {
   background-color: #f7f7f7;
-  color: #7a7a7a;
+  color: #333333;
 }
 
 h2 {
@@ -47,12 +47,13 @@ h2 {
   color: #359ab4;
 }
 
+.article-lit ul li::marker,
 .article-list ol li::marker,
 .article-list ol li {
   font-size: 1.8rem;
   font-weight: 700;
   padding: 0.5em 0;
-  color: #4c4c4c;  
+  color: #333333;  
 }
 
 .article-list ul li {
@@ -76,7 +77,7 @@ h4 {
 p a,
 .article-grid1 h2 a,
 h3 a {
-  color: #7a7a7a;
+  color: #333333;
   text-decoration: none;
 }
 
@@ -108,7 +109,7 @@ input:focus {
 }
 
 span {
- color: #4c4c4c;
+ color: #333333;
  font-weight: bold;
 }
 
@@ -445,7 +446,7 @@ main {
 .author-bio p a,
 .article-list ol li a,
 .article-sub p a {
-  color: #f7985aaf; /* Matches the existing color scheme */
+  color: #dc5908; /* Matches the existing color scheme */
   font-weight: bold; /* Improves readability */
   text-decoration: underline; /* Adds visual distinction */
   transition: color 0.2s ease-in-out;
@@ -559,7 +560,7 @@ main {
 
 .hero h2 {
   font-size: 2rem;
-  color: #7a7a7a;
+  color: #262626;
   letter-spacing: .5px;
 }
 
@@ -726,7 +727,7 @@ article {
   font-size: 1rem;
   text-align: center;
   padding: 0;
-  color: #7a7a7a;
+  color: #262626;
   font-weight: 700;
 }
 
@@ -877,7 +878,7 @@ form button:hover {
 
 .social-media-icons a {
   text-decoration: none;
-  color: #7a7a7a;
+  color: #262626;
   font-size: 0.9rem;
   display: flex;
   flex-direction: column;
@@ -1110,7 +1111,7 @@ form button:hover {
 }
 
 .article-sub {
-  padding:  1em 0;
+  padding:  1em;
 }
 
 .challenges-section {
