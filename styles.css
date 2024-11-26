@@ -218,7 +218,7 @@ span {
 }
 
 .hamburger-menu-items li a:hover {
-  color: #b45406; 
+  color: #853E05; 
 }
 
 .content-wrapper.blurred {
@@ -301,7 +301,7 @@ main {
 }
 
 .navbar-items ul li a:hover {
-  color: #b45406;
+  color: #843F06;
   border-radius: 0.25em;
   text-decoration: underline;
 }
@@ -358,7 +358,7 @@ main {
 
 .article-index ul li a:hover,
 .featured-topics h3 a:hover {
-  color: #b45406; 
+  color: #843F06; 
 }
 
 .featured-topics span {
@@ -565,7 +565,7 @@ main {
 
 .page-title h1 a:hover,
 .hero h1 a:hover {
-  color: #b45406;
+  color: #843F06;
   transition: 0.1s ease-in-out, opacity 0.2s ease-in-out;
 }
 
@@ -820,7 +820,7 @@ article {
 }
 
 .sidebar-cta a:hover {
-  color: #b45406; 
+  color: #843F06; 
 }
 
 form input {
@@ -1490,7 +1490,7 @@ form button:hover {
   }
 
   .article-sub p a:hover {
-    color: #b45406; /* Ensure the hover color changes */
+    color: #843F06; /* Ensure the hover color changes */
     text-decoration: underline;
     transform: scale(1.05); /* GPU-accelerated */
     opacity: 0.9; /* GPU-accelerated */
