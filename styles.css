@@ -93,6 +93,7 @@ input:focus {
   outline-offset: 0.125em;
 }
 
+
 /* navbar */
 .menu {
   display: flex;
@@ -447,10 +448,10 @@ main {
 .author-bio p a,
 .article-list ol li a,
 .article-sub p a {
-  color: #dc5908; /* Matches the existing color scheme */
-  font-weight: bold; /* Improves readability */
-  text-decoration: underline; /* Adds visual distinction */
+  color: #dc5908; 
+  font-weight: bold; 
   transition: color 0.2s ease-in-out;
+
 }
 
 .article-section {
@@ -466,18 +467,22 @@ main {
   font-weight: bold; 
 }
 
+.navbar-footer-items ul li a:hover,
 .article-sub ul li a span:hover,
 .article-sub ol li a:hover,
 .article-sub ul li a:hover,
 .article-sub p a:hover {
-  color: #d97539;
+  color: #f7c5a6;
   text-decoration: underline; 
+  transform: scale(1.05);
+  opacity: 0.9;
 }
 
 .article-list p {
   padding: 0 0 0.5em;
 }
 
+.navbar-footer-items ul li a:hover,
 .article-sub ul li a:hover,
 .article-sub ul li a span:hover,
 .author-bio p a:hover,
@@ -990,10 +995,6 @@ form button:hover {
   font-weight: 500;
   padding: 2em;
   color: white;
-}
-
-.navbar-footer-items ul li a:hover {
-  color: #f7985aaf;
 }
 
 .copyright p a {
