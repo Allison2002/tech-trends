@@ -33,11 +33,6 @@ html {
   overflow-x: hidden;
 }
 
-img {
-    aspect-ratio: 16 / 9; /* Maintain ratio */
-    object-fit: cover;
-}
-
 html {
   background-color: #f7f7f7;
   color: #333333;
@@ -223,7 +218,7 @@ span {
 }
 
 .hamburger-menu-items li a:hover {
-  color: #f7985a; 
+  color: #b45406; 
 }
 
 .content-wrapper.blurred {
@@ -306,7 +301,7 @@ main {
 }
 
 .navbar-items ul li a:hover {
-  color: #d97539;
+  color: #b45406;
   border-radius: 0.25em;
   text-decoration: underline;
 }
@@ -364,7 +359,7 @@ main {
 
 .article-index ul li a:hover,
 .featured-topics h3 a:hover {
-  color: #f7985a; 
+  color: #b45406; 
 }
 
 .featured-topics span {
@@ -564,7 +559,7 @@ main {
 
 .page-title h1 a:hover,
 .hero h1 a:hover {
-  color: #f7985aaf;
+  color: #b45406;
   transition: 0.1s ease-in-out, opacity 0.2s ease-in-out;
 }
 
@@ -764,7 +759,7 @@ article {
 }
 
 .sidebar-article ul li a {
-  color: #7a7a7a;
+  color: #595959;
 }
 
 .social-media:hover,
@@ -812,7 +807,7 @@ article {
 }
 
 .sidebar-cta a:hover {
-  color: #f7985aaf; 
+  color: #b45406; 
 }
 
 form input {
@@ -874,7 +869,7 @@ form button:hover {
 
 .stay-connected p {
     font-size: 1rem;
-    color: #7a7a7a;
+    color: #595959;
     margin-bottom: 1.5em;
 }
 
