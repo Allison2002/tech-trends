@@ -118,6 +118,7 @@ span {
   grid-template-columns: 3fr 0.75fr; /* Consistent sizing */
   gap: 1em;
   margin: 0 auto;
+  min-height: 400px
 }
 
 .grid-wrapper img {
