@@ -436,6 +436,10 @@ main {
   text-align: center;
 }
 
+.article-sub p {
+  padding: 1em;
+}
+
 .article-sub ul li a,
 .article-sub ul li a span,
 .author-bio p a,
@@ -450,7 +454,7 @@ main {
 .article-section {
   background-color: #ffffff; 
   color: #262626; 
-  padding: 2em;
+  padding: 1em;
   border-radius: 0.5em; 
   box-shadow: rgb(0 0 0 / 10%) 0px 4px 8px; 
 }
@@ -1052,7 +1056,7 @@ form button:hover {
 .welcome-container {
   width: 95%;
   max-width: 95%;
-  text-align: justify;
+  text-align: left;
 }
 
 .hero-post-author {
@@ -1073,6 +1077,7 @@ form button:hover {
 .article-title h2 {
   font-size: 1.75rem;
   font-style: italic;
+  padding: 0 0 1em;
 }
 
 .challenge-list,
@@ -1101,7 +1106,7 @@ form button:hover {
 }
 
 .article-sub h2 {
-  padding: 1em 0 0.5em;
+  padding: 1em 1em 0.5em 1em;
 }
 
 .article-sub {
@@ -1360,13 +1365,16 @@ form button:hover {
 
   .hero-post-author {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: left;
     align-items: flex-end;
   }
 
   .author-img {
+    display: flex;
+    justify-content: center;
     height: 10vh;
+    text-align: left;
   }
 
   .hero-post-author p {
@@ -1376,6 +1384,11 @@ form button:hover {
   .author-img img {
     height: 100%;
     width: auto;
+    text-align: left;
+  }
+
+  .featured-topics {
+    padding: 1em;
   }
 
   .content-container {
@@ -1410,6 +1423,7 @@ form button:hover {
   .article-list h2,
   .article-sub h2 {
     text-align: left;
+    font-size: 1.2rem;
   }
 
   .section-title {
