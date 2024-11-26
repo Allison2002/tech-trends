@@ -13,7 +13,7 @@ h1 {
 }
 
 body {
-  color: #7a7a7a; 
+  color: #333333; 
 }
 
 h1 {
@@ -63,12 +63,12 @@ h3 {
   font-size: 1.7rem; 
   font-weight: 700;
   padding: 0.5em 0;
-  color: #4c4c4c;
+  color: #333333;
 }
 
 h4 {
   font-size: 1.5rem;
-  color: #4c4c4c;
+  color: #333333;
   font-weight: 500;
   text-decoration: underline;
 }
@@ -298,7 +298,7 @@ main {
 }
 
 .navbar-items ul li a:hover {
-  color: #f7985aaf;
+  color: #d97539;
   border-radius: 0.25em;
   text-decoration: underline;
 }
@@ -308,11 +308,10 @@ main {
 .author-bio,
 .featured-topics {
   background-color: #ffffff; 
-  border-left: 0.3125em solid #359ab4;
-  box-shadow: rgb(0 0 0 / 20%) 0px 0px 1.5625em 0.5em;
+  color: #262626; 
   padding: 2em;
-  margin: 2em 0;
-  border-radius: 1em;
+  border-radius: 0.5em;
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 8px; 
 }
 
 .article-index h2,
@@ -362,13 +361,17 @@ main {
 
 .featured-topics span {
   display: block;
-  color: #7a7a7a;
+  color: #262626;
   font-size: 1rem;
   margin-top: 0.2em;
   line-height: 1.5;
 }
 
 /* hero post author */
+
+#intro-paragraph {
+  text-align: justify;
+}
 .hero-post-author {
   display: flex;
   flex-direction: row;
@@ -433,29 +436,47 @@ main {
   text-align: center;
 }
 
-.article-list ul li a,
-.article-list ul li a span,
+.article-sub ul li a,
+.article-sub ul li a span,
 .author-bio p a,
 .article-list ol li a,
 .article-sub p a {
-  text-decoration: underline;
-  color: #f7985aaf;
-  font-weight: 500;
-  transition: color 0.3s ease;
+  color: #f7985aaf; /* Matches the existing color scheme */
+  font-weight: bold; /* Improves readability */
+  text-decoration: underline; /* Adds visual distinction */
+  transition: color 0.2s ease-in-out;
 }
 
-.article-section p {
-  padding: 0 0 1em;
+.article-section {
+  background-color: #ffffff; 
+  color: #262626; 
+  padding: 2em;
+  border-radius: 0.5em; 
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 8px; 
+}
+
+.article-sub p a {
+  color: #f7985aaf; 
+  text-decoration: underline; 
+  font-weight: bold; 
+}
+
+.article-sub ul li a span:hover,
+.article-sub ol li a:hover,
+.article-sub ul li a:hover,
+.article-sub p a:hover {
+  color: #d97539;
+  text-decoration: none; 
 }
 
 .article-list p {
   padding: 0 0 0.5em;
 }
 
-.article-list ul li a:hover,
-.article-list ul li a span:hover,
+.article-sub ul li a:hover,
+.article-sub ul li a span:hover,
 .author-bio p a:hover,
-.article-list ol li a:hover,
+.article-sub ol li a:hover,
 .article-sub p a:hover,
 .article-sub a:hover {
   font-weight: bold;
@@ -464,39 +485,39 @@ main {
 /* Right-floating image for the Healthcare section in IoT industry*/
 .image-left, .image-left-small {
     float: left;
-    max-width: 25%; /* Ensures a responsive size */
-    margin: 0 1em 1em 0; /* Margin to create spacing with text */
+    max-width: 25%;
+    margin: 0 1em 1em 0;
     display: block;
 }
 
 .image-left img, .image-left-small img {
-    width: 100%; /* Full width of the container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 0.625em; /* Consistent rounded corners */
-    object-fit: cover; /* Ensures proper fit */
+    width: 100%; 
+    height: auto; 
+    border-radius: 0.625em; 
+    object-fit: cover; 
 }
 
 /* Right-floating image for articles */
 .image-right, .image-right-small {
     float: right;
-    max-width: 25%; /* Ensures a responsive size */
-    margin: 0 0 1em 1em; /* Margin to create spacing with text */
+    max-width: 25%; 
+    margin: 0 0 1em 1em; 
     display: block;
 }
 
 .image-right img, .image-right-small img {
-    width: 100%; /* Full width of the container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 0.625em; /* Consistent rounded corners */
-    object-fit: cover; /* Ensures proper fit */
+    width: 100%; 
+    height: auto; 
+    border-radius: 0.625em; 
+    object-fit: cover; 
 }
 
 /* Adjust text around images for better spacing */
 .text-around-img {
-    margin: 0; /* Remove unnecessary padding */
-    padding: 1em; /* Add space between text and image */
-    line-height: 1.6; /* Improve readability */
-    overflow: hidden; /* Clears floated elements */
+    margin: 0; 
+    padding: 1em; 
+    line-height: 1.6; 
+    overflow: hidden;
 }
 
 /* Clear floats after sections */
@@ -556,17 +577,20 @@ main {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  color: #7a7a7a;
+  color: #262626; 
   font-weight: 700;
   margin: 0 1em 0 0;
   width: auto;
   min-width: min(120px, 6.25vw);
+  background-color: #ffffff; 
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
 .cat-btn a:hover {
   border: 0.09375em solid #a8a6a6;
-  background-color: #f7985aaf;
-  transition: 0.1s ease-in-out, opacity 0.2s ease-in-out;
+  background-color: #f7985aaf; 
+  color: #FFFFFF; 
+  transition: background-color 0.1s ease-in-out, opacity 0.2s ease-in-out;
 }  
 
 .editors-pick {
