@@ -14,6 +14,8 @@ h1 {
 
 body {
   color: #262626; 
+  overflow-wrap: break-word;
+  word-break: keep-all;
 }
 
 h1 {
@@ -274,7 +276,7 @@ main {
   border-radius: 1.5em;
   box-shadow: rgb(0 0 0 / 40%) 0px 0px 3.125em 0.5em;
   margin: 3em auto;  
-  box-sizing: border-box;
+  word-break: keep-all;
 }
 
 .main-content {
@@ -303,7 +305,7 @@ main {
 .navbar-items ul li a:hover {
   color: #843F06;
   border-radius: 0.25em;
-  text-decoration: underline;
+  word-break: keep-all;
 }
 
 /* Featured Topics Styling */
@@ -323,6 +325,7 @@ main {
   padding-bottom: 1em;
   text-align: left; 
   font-weight: 700;
+  word-break: keep-all;  
 }
 
 .article-index ul,
@@ -336,6 +339,7 @@ main {
 .featured-topics li {
   padding: 1em 0;
   border-bottom: 0.0625em solid #e0e0e0; 
+  word-break: keep-all;
 }
 
 .article-index li:last-child,
@@ -377,6 +381,7 @@ main {
 
 #intro-paragraph {
   text-align: justify;
+  word-break: keep-all;
 }
 .hero-post-author {
   display: flex;
@@ -402,6 +407,7 @@ main {
 .author-bio p {
   font-size: 1rem;
   padding: 1em;
+  word-break: keep-all;
 }
 
 .newsletter-img img {
@@ -440,14 +446,17 @@ main {
 
 .cta-sub h2 {
   text-align: center;
+ word-break: keep-all;
 }
 
 .cta-sub p {
   text-align: center;
+  word-break: keep-all;
 }
 
 .article-sub p {
   padding: 1em;
+  word-break: keep-all;
 }
 
 .article-sub ul li a,
@@ -458,7 +467,7 @@ main {
   color: #853E05; 
   font-weight: bold; 
   transition: color 0.2s ease-in-out;
-
+  word-break: keep-all;
 }
 
 .article-section {
@@ -486,6 +495,7 @@ main {
 
 .article-list p {
   padding: 0 0 0.5em;
+  overflow-wrap: break-word;
 }
 
 .navbar-footer-items ul li a:hover,
@@ -549,6 +559,7 @@ main {
   font-size: 3rem;
   text-decoration: none;
   padding: 1em 0 0 0.5em;
+  overflow-wrap: break-word;
 }
 
 .hero h1 a {
@@ -561,6 +572,7 @@ main {
   font-weight: 900;
   font-style: normal;
   text-decoration: none;
+  overflow-wrap: break-word;
 }
 
 .page-title h1 a:hover,
@@ -573,6 +585,7 @@ main {
   font-size: 2rem;
   color: #262626;
   letter-spacing: .5px;
+  overflow-wrap: break-word;
 }
 
 .article-grid1 img {
@@ -598,6 +611,7 @@ main {
   padding: 1em;
   box-shadow: rgb(0 0 0 / 10%) 0px 0px 0.3125em 0.125em;
   text-align: center;
+  overflow-wrap: break-word;
   align-items: center;
   justify-content: center;
   text-decoration: none;
@@ -744,6 +758,7 @@ article {
   font-size: 1.368rem;
   font-size: 1rem;
   text-align: center;
+  overflow-wrap: break-word;
   padding: 0;
   color: #262626;
   font-weight: 700;
@@ -793,6 +808,7 @@ article {
   background-color: #247b91; 
   border-radius: 1.5em;
   text-align: center;
+  overflow-wrap: break-word;
 }
 
 .sidebar-cta img {
@@ -877,6 +893,7 @@ form button:hover {
     font-size: 1.5rem;
     font-weight: bold;
     color: #262626;
+    overflow-wrap: break-word;
     margin-bottom: 0.5em;
 }
 
@@ -884,6 +901,7 @@ form button:hover {
     font-size: 1rem;
     color: #262626;
     margin-bottom: 1.5em;
+    overflow-wrap: break-word;
 }
 
 .stay-connected .social-media-icons a {
@@ -894,6 +912,7 @@ form button:hover {
     margin: 0 0.5em;
     color: #262626;
     transition: transform 0.3s ease, color 0.3s ease;
+    overflow-wrap: break-word;
 }
 
 .stay-connected .social-media-icons a:hover {
@@ -915,6 +934,7 @@ form button:hover {
   flex-direction: column;
   align-items: center;
   transition: transform 0.3s ease, color 0.3s ease;
+  overflow-wrap: break-word;
 }
 
 .social-media-icons a:hover {
@@ -1122,6 +1142,7 @@ form button:hover {
 .article-list ul li {
   padding: 0.5em;
   font-size: 1.3rem;
+  overflow-wrap: break-word;
 }
 
 .article-list ol,
@@ -1161,6 +1182,7 @@ form button:hover {
   font-size: 1.5rem;
   color: #247b91 ;
   padding: 0 0.625em;
+  overflow-wrap: break-word;
 }
 
 .article-title h3 {
@@ -1168,6 +1190,7 @@ form button:hover {
   text-align: left;
   padding: 1.2vh 30vw 0.9vh 0;
   width: 55vw;
+  overflow-wrap: break-word;
 }
 
 .article-author p,
@@ -1175,10 +1198,12 @@ form button:hover {
   font-size: 1.1rem;
   padding: 0 0.625em;
   font-weight: 400;
+  overflow-wrap: break-word;
 }
 
 .article-descr p {
   font-size: 1.2rem;
+  overflow-wrap: break-word;
 }
 
 
