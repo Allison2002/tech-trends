@@ -6,7 +6,8 @@
 
 body,
 h1 {
-  transition: background-color 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
   font-family: 'Alegreya Sans', Arial, sans-serif; 
   font-style: normal;
   font-display: fallback;
@@ -38,6 +39,22 @@ html {
 html {
   background-color: #f7f7f7;
   color: #262626;
+}
+
+@font-face {
+    font-family: 'Alegreya Sans';
+    src: url('./fonts/Alegreya_Sans/AlegreyaSans-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Exo 2';
+    src: url('./fonts/Exo_2/Exo2-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
 h2 {
@@ -160,20 +177,23 @@ span {
 
 /* search icon styling */
 .search-icon {
-    position: relative;
-    font-size: 1.8rem;
-    color: #247b91 ; 
-    margin-right: 1.25em;
-    transition: color 0.3s ease-in-out;
+  position: relative;
+  font-size: 1.8rem;
+  color: #247b91 ; 
+  margin-right: 1.25em;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .search-icon:hover {
   color: #f7985aaf;
+   opacity: 0.8;
 }
 
 .menu-items {
   transform: translateX(100%); 
-  transition: transform 0.3s ease-in-out;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .menu-items.open {
@@ -190,7 +210,8 @@ span {
   background-color: rgba(0, 0, 0, 0.9); 
   z-index: 1002;
   padding-top: 3.75em;
-  transition: left 0.4s ease;
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
 }
 
 .hamburger-menu.show {
@@ -216,16 +237,19 @@ span {
   padding: 0.9375em 1.25em;
   display: block;
   font-weight: bold;
-  transition: color 0.3s ease;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .hamburger-menu-items li a:hover {
   color: #853E05; 
+  opacity: 0.8;
 }
 
 .content-wrapper.blurred {
   filter: blur(0.3125em); 
-  transition: filter 0.4s ease;
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
 }
 
 .menu-toggle img, 
@@ -357,7 +381,8 @@ main {
 .featured-topics h3 a {
   text-decoration: none;
   color: inherit;
-  transition: color 0.3s ease;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .article-index ul li a:hover,
@@ -466,7 +491,8 @@ main {
 .article-sub p a {
   color: #853E05; 
   font-weight: bold; 
-  transition: color 0.2s ease-in-out;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
   word-break: keep-all;
 }
 
@@ -578,7 +604,8 @@ main {
 .page-title h1 a:hover,
 .hero h1 a:hover {
   color: #843F06;
-  transition: 0.1s ease-in-out, opacity 0.2s ease-in-out;
+  opacity: 1;
+  transition: opacity 0.1s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .hero h2 {
@@ -621,14 +648,16 @@ main {
   width: auto;
   min-width: min(120px, 6.25vw);
   background-color: #247b91; 
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .cat-btn a:hover {
   border: 0.09375em solid #a8a6a6;
   background-color: #f7985aaf; 
   color: #FFFFFF; 
-  transition: background-color 0.1s ease-in-out, opacity 0.2s ease-in-out;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }  
 
 .editors-pick {
@@ -832,7 +861,8 @@ article {
   text-decoration: underline;
   color: white;
   font-weight: bold;
-  transition: color 0.3s ease-in-out;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .sidebar-cta a:hover {
@@ -905,14 +935,15 @@ form button:hover {
 }
 
 .stay-connected .social-media-icons a {
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 0.5em;
-    color: #262626;
-    transition: transform 0.3s ease, color 0.3s ease;
-    overflow-wrap: break-word;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0.5em;
+  color: #262626;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  overflow-wrap: break-word;
 }
 
 .stay-connected .social-media-icons a:hover {
@@ -933,7 +964,8 @@ form button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: transform 0.3s ease, color 0.3s ease;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
   overflow-wrap: break-word;
 }
 
@@ -985,6 +1017,7 @@ form button:hover {
   aspect-ratio: 4 / 3; 
   object-fit: cover; 
 }
+
 .stay-connected-footer,
 .bottom-nav {
   display: flex;
@@ -1037,7 +1070,8 @@ form button:hover {
 .copyright p a:hover {
   opacity: 0.5;
   transform: scale(1.1);
-  transition: 0.2s ease-in-out; 
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out, transform 0.3s ease-in-out;
   color: white;
 }
 
@@ -1069,7 +1103,7 @@ form button:hover {
 .footer-social a img:hover {
   opacity: 0.5;
   transform: scale(1.1);
-  transition: 0.2s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .footer a:focus {
@@ -1090,7 +1124,8 @@ form button:hover {
     cursor: pointer;
     box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.2);
     display: none; /* Hidden by default */
-    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
     z-index: 1000;
 }
 
@@ -1519,7 +1554,7 @@ form button:hover {
     text-decoration: underline;
     transform: scale(1.05); /* GPU-accelerated */
     opacity: 0.9; /* GPU-accelerated */
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Use supported properties */
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
   }
 
 /* Adjust left-aligned images */
