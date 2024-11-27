@@ -173,6 +173,7 @@ span {
 .logo-container img {
   max-height: 9.26vh; 
   width: auto; 
+  aspect-ratio: 16 / 9;
 }
 
 /* search icon styling */
@@ -702,6 +703,7 @@ main {
   box-shadow: rgb(0 0 0 / 20%) 0px 0px 0.1875em 0.1875em; 
   object-fit: cover;
   object-position: bottom center;
+  aspect-ratio: 16 / 9;
 }
 
 .article3 {
@@ -1657,6 +1659,7 @@ form button:hover {
 
   .bottom-img-box img {
     height: 4.63vh;
+    aspect-ratio: 16 / 9;
   }
 
   #recommended-articles img {
@@ -1667,6 +1670,7 @@ form button:hover {
     border-radius: 1.5em;
     box-shadow: rgb(0 0 0 / 20%) 0px 0px 1.5625em 0.5em;
     height: auto;
+    aspect-ratio: 16 / 9;
     }
 
     #recommended-articles {
@@ -1697,6 +1701,7 @@ form button:hover {
 
   .grid-wrapper {
     grid-template-columns: 1fr; 
+    min-height: 400px;
   }
 
   .sidebar {
