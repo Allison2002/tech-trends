@@ -524,6 +524,19 @@ main {
   overflow-wrap: break-word;
 }
 
+.article-list ul li::marker,
+.article-list ol li::marker,
+.article-list ol li {
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 0.5em 0;
+  color: #262626;  
+}
+
+.article-list ul li {
+  font-weight: normal;
+}
+
 .navbar-footer-items ul li a:hover,
 .article-sub ul li a:hover,
 .article-sub ul li a span:hover,
