@@ -610,7 +610,7 @@ main {
 
 /* hero */
 
-.page-title h1 {
+.page-title h1 i {
   font-size: 3rem;
   text-decoration: none;
   padding: 1em 0 0 0.5em;
@@ -772,7 +772,6 @@ main {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 0.125em;
   margin-top: 0.625em;
 }
 
@@ -1523,8 +1522,16 @@ form button:hover {
     margin-bottom: 3em;
   }
 
-  .page-title h1 {
+
+  .page-title h1 i {
     font-size: 2rem;
+    text-decoration: none;
+    padding: 0.5em 0 0;
+    overflow-wrap: break-word;
+  }
+
+  .hero {
+    max-height: 300px;
   }
 
   .hero h2 {
@@ -1684,7 +1691,6 @@ form button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 1em;
   }
 
   .sidebar {
@@ -1828,6 +1834,7 @@ form button:hover {
   .content-container {
     max-width: 90vw;
     padding-bottom: 5em;
+    margin-top: 2em;
   }
 
   .grid-wrapper {
