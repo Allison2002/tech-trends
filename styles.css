@@ -726,8 +726,9 @@ main {
 
 .article3 img,
 .article2 img {
-  max-width: 26.04vw;
-  height: 27.78vh;
+  max-width: 270px;
+  width: 270px;
+  height: 270px;
   border-radius: 1.5em;
   box-shadow: rgb(0 0 0 / 20%) 0px 0px 0.1875em 0.1875em;
   object-fit: cover;
@@ -1058,6 +1059,7 @@ form button:hover {
 .bottom-nav {
   display: flex;
   flex-direction: column;
+  max-width: 100%;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -1093,7 +1095,7 @@ form button:hover {
 
 .navbar-footer-items ul li a {
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 500;
   padding: 2em;
   color: white;
