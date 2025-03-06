@@ -46,10 +46,11 @@
         position: relative;
       }
 
-      .hero-content {
+      .hero-content-all {
         display: flex;
         position: relative;
         flex-direction: column;
+        border-radius: 1.5em;
       }
 
       .hero img {
@@ -130,21 +131,23 @@
           <!--hamburger icon-->
           <div class="menu-toggle" id="menu-toggle" role="button">
             <img
-              src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_40/v1732944513/hamburger-icon_ubuwj0.webp"
+              src="https://res.cloudinary.com/dnptzisuf/image/upload/q_auto,w_40,fl_lossy/v1741274766/hamburger-icon_k4midx.svg"
               alt="Hamburger Menu Icon"
               class="hamburger-icon"
+              type="image/svg"
               aria-label="Menu"
               width="40"
               height="40"
-              loading="lazy"
+              loading="eager"
             />
           </div>
           <!-- search icon -->
           <div class="search-icon" id="search-icon" title="Search">
             <img
-              src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_40/v1732944513/search-icon_en1jpt.webp"
+              src="https://res.cloudinary.com/dnptzisuf/image/upload/q_auto,w_40,fl_lossy/v1741274767/search-icon_lcdcrr.svg"
               alt="search icon"
               aria-label="Search"
+              type="image/svg"
               width="40"
               height="40"
               loading="lazy"
@@ -220,23 +223,55 @@
           <header>
             <section class="hero" role="banner">
               <div class="hero-content-all">
-                <picture>
+                <picture class="hero-img">
+                  <!-- Mobile Image (480px) -->
                   <source
-                    srcset="/img/iot_hero_desktop.webp"
-                    media="(min-width: 1200px)"
+                    srcset="
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:good,w_480,h_270,fl_lossy/v1741282606/iot_hero_desktop_b8n3vx.avif
+                    "
+                    media="(max-width: 480px)"
+                    type="image/avif"
+                    width="480"
+                    height="270"
+                    fetchpriority="high"
                   />
+                  <!-- Tablet Image (768px) -->
                   <source
-                    srcset="/img/iot_hero_tablet.webp"
-                    media="(min-width: 768px)"
+                    srcset="
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:good,w_768,fl_lossy/v1741237706/all_articles_hero_desktop_x0q23u.avif
+                    "
+                    media="(max-width: 768px)"
+                    type="image/avif"
+                    width="768"
+                    height="auto"
+                    fetchpriority="high"
                   />
+                  <!-- Desktop Image (1920px) -->
+                  <source
+                    srcset="
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:good,w_1080,h_612,fl_lossy/v1741282606/iot_hero_desktop_b8n3vx.avif
+                    "
+                    media="(min-width: 1024px)"
+                    type="image/avif"
+                    width="1080"
+                    height="612"
+                    fetchpriority="high"
+                  />
+                  <!-- Fallback Image -->
                   <img
-                    src="/img/iot_hero_mobile.webp"
+                    src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:low,w_1080,h_612,c_fill,g_auto,fl_lossy/v1741282606/iot_hero_desktop_b8n3vx.avif"
                     alt="An AI-powered SEO tool helping optimize digital content"
-                    width="320"
-                    height="180"
+                    type="image/avif"
+                    width="1080"
+                    height="612"
                     loading="eager"
+                    fetchpriority="high"
+                    style="object-fit: cover; aspect-ratio: 16/9"
+                    decoding="async"
+                    importance="high"
                   />
                 </picture>
+
                 <div class="cat-btn">
                   <a href="/categories/categorized.html">Categories</a>
                   <a href="/categories/uncategorized.html">All</a>
@@ -245,7 +280,7 @@
             </section>
           </header>
           <div class="article-grid3">
-            <div class="article3 article3-viewall">
+            <div class="article3-viewall">
               <a href="/articles/iot-industries.html"
                 ><img
                   src="/img/iot-comic-style.webp"
@@ -272,7 +307,7 @@
                 </p>
               </div>
             </div>
-            <div class="article3 article3-viewall">
+            <div class="article3-viewall">
               <a href="/articles/iot-smart-cities.html"
                 ><img
                   src="/img/iot-smart-cites-thumbnail.webp"
@@ -301,27 +336,31 @@
                 </p>
               </div>
             </div>
-            <div class="article3 article3-viewall"></div>
+            <div class="article3-viewall"></div>
           </div>
           <div class="cta-section featured-topics">
             <div>
               <picture>
                 <source
                   srcset="
-                    https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1200/v1732833805/genny_allison_portfolio_large_x6gzpi.png
+                    https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1200,fl_lossy/v1741221193/genny_allison_portfolio_mobile_eakltj.avif
                   "
                   media="(min-width: 1200px)"
                 />
                 <source
-                  srcset="/img/genny_allison_portfolio_tablet.webp"
+                  srcset="
+                    https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_768,fl_lossy/v1741221193/genny_allison_portfolio_mobile_eakltj.avif
+                  "
                   media="(min-width: 768px)"
                 />
                 <img
-                  src="/img/genny_allison_portfolio_mobile.webp"
+                  src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_422,fl_lossy/v1741221193/genny_allison_portfolio_mobile_eakltj.webp"
                   alt="Genny Allison | Allison Stock Inc"
-                  width="274"
-                  height="105"
+                  type="image/avif"
                   loading="lazy"
+                  width="422"
+                  height="281"
+                  style="object-fit: fit"
                 />
               </picture>
             </div>

@@ -47,10 +47,11 @@
         position: relative;
       }
 
-      .hero-content {
+      .hero-content-all {
         display: flex;
         position: relative;
         flex-direction: column;
+        border-radius: 1.5em;
       }
 
       .hero img {
@@ -61,41 +62,6 @@
         border-radius: 1.5em;
         box-shadow: rgb(0 0 0 / 20%) 0px 0px 1.5625em 0.5em;
       }
-
-      @media (max-width: 768px) {
-        .hero,
-        .hero-content-all {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-direction: column;
-          background-color: #f7f7f7;
-          height: auto;
-          text-align: left;
-          max-width: 100%;
-          width: 100%;
-        }
-
-        .hero img,
-        .hero-content-all img {
-          width: 100%;
-          max-width: 100%;
-          height: auto;
-          object-fit: cover;
-        }
-
-        .hero-content-all .cat-btn {
-          display: flex;
-          justify-content: left;
-          text-align: left;
-          width: 100%;
-          margin: 1em 0 4em;
-        }
-
-        .page-title {
-          padding-bottom: 1em;
-        }
-      }
     </style>
   </head>
   <body>
@@ -104,8 +70,9 @@
       <div class="menu">
         <div class="logo-container">
           <img
-            src="/img/tech-trends-logo.webp"
+            src="https://res.cloudinary.com/dnptzisuf/image/upload/q_auto,w_150,h_85,fl_lossy/v1741280547/tech-trends-logo_oxkjcx.avif"
             alt="Tech Trends logo"
+            type="image/svg"
             loading="eager"
             width="150"
             height="85"
@@ -262,7 +229,7 @@
                   <!-- Mobile Image (480px) -->
                   <source
                     srcset="
-                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:good,w_480,h_270/v1741237706/all_articles_hero_desktop_x0q23u.avif
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:good,w_480,h_270,fl_lossy/v1741237706/all_articles_hero_desktop_x0q23u.avif
                     "
                     media="(max-width: 480px)"
                     type="image/avif"
@@ -273,7 +240,7 @@
                   <!-- Tablet Image (768px) -->
                   <source
                     srcset="
-                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:good,w_768/v1741237706/all_articles_hero_desktop_x0q23u.avif
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:good,w_768,fl_lossy/v1741237706/all_articles_hero_desktop_x0q23u.avif
                     "
                     media="(max-width: 768px)"
                     type="image/avif"
@@ -284,7 +251,7 @@
                   <!-- Desktop Image (1920px) -->
                   <source
                     srcset="
-                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:good,w_1080,h_612/v1741237706/all_articles_hero_desktop_x0q23u.avif
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:good,w_1080,h_612,fl_lossy/v1741237706/all_articles_hero_desktop_x0q23u.avif
                     "
                     media="(min-width: 1024px)"
                     type="image/avif"
@@ -294,7 +261,7 @@
                   />
                   <!-- Fallback Image -->
                   <img
-                    src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:low,w_1080,h_612,c_fill,g_auto/v1741237706/all_articles_hero_desktop_x0q23u.avif"
+                    src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:low,w_1080,h_612,c_fill,g_auto,fl_lossy/v1741237706/all_articles_hero_desktop_x0q23u.avif"
                     alt="Sports Community Hub"
                     type="image/avif"
                     width="1080"
@@ -315,13 +282,13 @@
           </header>
           <section>
             <div class="article-grid3">
-              <div class="article3 article3-viewall">
+              <div class="article3-viewall">
                 <a href="/articles/welcome.html"
                   ><img
-                    src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_324,c_fill,fl_lossy/v1741221202/welcome-techtrends_j7ksbd.avif"
+                    src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_270,c_fill,fl_lossy/v1741221202/welcome-techtrends_j7ksbd.avif"
                     alt="a robot saying 'Welcome to tech trends' with the city skyline behind him"
                     loading="lazy"
-                    width="324"
+                    width="270"
                     height="auto"
                     style="object-fit: cover; aspect-ratio: 16/9"
                     type="image/avif"
@@ -341,7 +308,7 @@
                   <p>Welcome to Tech Trends and Innovations, a blog...</p>
                 </div>
               </div>
-              <div class="article3 article3-viewall">
+              <div class="article3-viewall">
                 <img
                   src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_324,c_fill,fl_lossy/v1741221192/ai-commerce-thumbnail_sqpje9.avif"
                   loading="lazy"
@@ -372,7 +339,7 @@
                   </p>
                 </div>
               </div>
-              <div class="article3 article3-viewall">
+              <div class="article3-viewall">
                 <a href="/articles/future-mobile-app.html"
                   ><img
                     src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_324,c_fill,fl_lossy/v1741221192/future_mobile_thumbnail_mp3xni.avif"
@@ -405,7 +372,7 @@
               </div>
             </div>
             <div class="article-grid3">
-              <div class="article3 article3-viewall">
+              <div class="article3-viewall">
                 <img
                   src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_324,c_fill,fl_lossy/v1741221195/headless-commerce-thumbnail_jcm5ze.avif"
                   alt="A futuristic storefront with a professional exploring headless commerce solutions, showcasing the flexibility and scalability of headless eCommerce."
@@ -435,7 +402,7 @@
                   </p>
                 </div>
               </div>
-              <div class="article3 article3-viewall">
+              <div class="article3-viewall">
                 <a href="/articles/iot-industries.html"
                   ><img
                     src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_324,c_fill,fl_lossy/v1741221196/iot-comic-style_esymjf.avif"
@@ -466,7 +433,7 @@
                   </p>
                 </div>
               </div>
-              <div class="article3 article3-viewall">
+              <div class="article3-viewall">
                 <a href="/articles/iot-smart-cities.html"
                   ><img
                     src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_324,c_fill,fl_lossy/v1741221196/iot-smart-cites-thumbnail_ntl1wr.avif"
@@ -499,7 +466,7 @@
               </div>
             </div>
             <div class="article-grid3">
-              <div class="article3 article3-viewall">
+              <div class="article3-viewall">
                 <a href="/articles/leveraging-google.html"
                   ><img
                     src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_324,c_fill,fl_lossy/v1741221197/leveraging-google-thumbnail_s6hkfn.avif"
@@ -530,7 +497,7 @@
                   </p>
                 </div>
               </div>
-              <div class="article3 article3-viewall">
+              <div class="article3-viewall">
                 <a href="/articles/max-seo-ranking.html"
                   ><img
                     src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_324,c_fill,fl_lossy/v1741221198/max-seo-thumbnail_llbltj.avif"
@@ -561,7 +528,7 @@
                   </p>
                 </div>
               </div>
-              <div class="article3 article3-viewall">
+              <div class="article3-viewall">
                 <a
                   href="/articles/top-mobile-app.html"
                   aria-label="A link to a Mobile Apps article, Top Mobile App Development Tools Enhancing Mobile Development Platforms"
@@ -599,7 +566,7 @@
               </div>
             </div>
             <div class="article-grid3">
-              <div class="article3 article3-viewall">
+              <div class="article3-viewall">
                 <a href="/articles/seo-semrush.html"
                   ><img
                     src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_324,c_fill,fl_lossy/v1741221199/semrush-article_kpkomc.avif"
@@ -630,8 +597,8 @@
                   </p>
                 </div>
               </div>
-              <div class="article3 article3-viewall"></div>
-              <div class="article3 article3-viewall"></div>
+              <div class="article3-viewall"></div>
+              <div class="article3-viewall"></div>
             </div>
           </section>
           <section id="content-creator">
@@ -657,7 +624,7 @@
                     type="image/avif"
                     loading="lazy"
                     width="422"
-                    height="auto"
+                    height="281"
                     style="object-fit: fit"
                   />
                 </picture>

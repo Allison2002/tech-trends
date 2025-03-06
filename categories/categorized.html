@@ -47,10 +47,11 @@
         position: relative;
       }
 
-      .hero-content {
+      .hero-content-all {
         display: flex;
         position: relative;
         flex-direction: column;
+        border-radius: 1.5em;
       }
 
       .hero img {
@@ -131,21 +132,23 @@
           <!--hamburger icon-->
           <div class="menu-toggle" id="menu-toggle" role="button">
             <img
-              src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_40/v1732944513/hamburger-icon_ubuwj0.webp"
+              src="https://res.cloudinary.com/dnptzisuf/image/upload/q_auto,w_40,fl_lossy/v1741274766/hamburger-icon_k4midx.svg"
               alt="Hamburger Menu Icon"
               class="hamburger-icon"
+              type="image/svg"
               aria-label="Menu"
               width="40"
               height="40"
-              loading="lazy"
+              loading="eager"
             />
           </div>
           <!-- search icon -->
           <div class="search-icon" id="search-icon" title="Search">
             <img
-              src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_40/v1732944513/search-icon_en1jpt.webp"
+              src="https://res.cloudinary.com/dnptzisuf/image/upload/q_auto,w_40,fl_lossy/v1741274767/search-icon_lcdcrr.svg"
               alt="search icon"
               aria-label="Search"
+              type="image/svg"
               width="40"
               height="40"
               loading="lazy"
@@ -221,27 +224,55 @@
           <header>
             <section class="hero" role="banner">
               <div class="hero-content-all">
-                <picture>
+                <picture class="hero-img">
+                  <!-- Mobile Image (480px) -->
                   <source
                     srcset="
-                      https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1200/v1741237680/topic_hero_desktop_zpuflw.webp
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:good,w_480,h_270,fl_lossy/v1741237680/topic_hero_desktop_zpuflw.avif
                     "
-                    media="(min-width: 1200px)"
+                    media="(max-width: 480px)"
+                    type="image/avif"
+                    width="480"
+                    height="270"
+                    fetchpriority="high"
                   />
+                  <!-- Tablet Image (768px) -->
                   <source
                     srcset="
-                      https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_768/v1741237680/topic_hero_desktop_zpuflw.webp
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:good,w_768,fl_lossy/v1741237680/topic_hero_desktop_zpuflw.avif
                     "
-                    media="(min-width: 768px)"
+                    media="(max-width: 768px)"
+                    type="image/avif"
+                    width="768"
+                    height="auto"
+                    fetchpriority="high"
                   />
+                  <!-- Desktop Image (1920px) -->
+                  <source
+                    srcset="
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:good,w_1080,h_612,fl_lossy/v1741237680/topic_hero_desktop_zpuflw.avif
+                    "
+                    media="(min-width: 1024px)"
+                    type="image/avif"
+                    width="1080"
+                    height="612"
+                    fetchpriority="high"
+                  />
+                  <!-- Fallback Image -->
                   <img
-                    src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_320/v1741237680/topic_hero_desktop_zpuflw.webp"
-                    alt="An AI-powered SEO tool helping optimize digital content"
-                    width="320"
-                    height="180"
+                    src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:low,w_1080,h_612,c_fill,g_auto,fl_lossy/v1741237680/topic_hero_desktop_zpuflw.avif"
+                    alt="Sports Community Hub"
+                    type="image/avif"
+                    width="1080"
+                    height="612"
                     loading="eager"
+                    fetchpriority="high"
+                    style="object-fit: cover; aspect-ratio: 16/9"
+                    decoding="async"
+                    importance="high"
                   />
                 </picture>
+
                 <div class="cat-btn">
                   <a href="/categories/uncategorized.html">All</a>
                 </div>
@@ -249,7 +280,7 @@
             </section>
           </header>
           <div class="article-grid3">
-            <div class="article3">
+            <div class="article3-viewall">
               <a href="/categories/ecommerce.html"
                 ><img
                   src="/img/robot-ecommerce.webp"
@@ -268,7 +299,7 @@
                 </a>
               </h3>
             </div>
-            <div class="article3">
+            <div class="article3-viewall">
               <a href="/categories/iot.html"
                 ><img
                   src="/img/iot-robot.jpg"
@@ -287,7 +318,7 @@
                 </a>
               </h3>
             </div>
-            <div class="article3">
+            <div class="article3-viewall">
               <a
                 href="/categories/mobile.html"
                 aria-label="A link to articles categorized under Mobile App"
@@ -310,7 +341,7 @@
             </div>
           </div>
           <div class="article-grid3">
-            <div class="article3">
+            <div class="article3-viewall">
               <a href="/categories/seo-tools.html"
                 ><img
                   src="/img/seo-tools-robot.webp"
@@ -329,7 +360,7 @@
                 </a>
               </h3>
             </div>
-            <div class="article3">
+            <div class="article3-viewall">
               <a href="/categories/tech-trends.html"
                 ><img
                   src="/img/tech-trends-category.webp"
@@ -348,7 +379,7 @@
                 </a>
               </h3>
             </div>
-            <div class="article3"></div>
+            <div class="article3-viewall"></div>
           </div>
           <section id="content-creator">
             <hr class="hr" />
@@ -356,19 +387,25 @@
               <div>
                 <picture>
                   <source
-                    srcset="/img/genny_allison_portfolio_large.webp"
+                    srcset="
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1200,fl_lossy/v1741221193/genny_allison_portfolio_mobile_eakltj.avif
+                    "
                     media="(min-width: 1200px)"
                   />
                   <source
-                    srcset="/img/genny_allison_portfolio_tablet.webp"
+                    srcset="
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_768,fl_lossy/v1741221193/genny_allison_portfolio_mobile_eakltj.avif
+                    "
                     media="(min-width: 768px)"
                   />
                   <img
-                    src="/img/genny_allison_portfolio_mobile.webp"
+                    src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_422,fl_lossy/v1741221193/genny_allison_portfolio_mobile_eakltj.webp"
                     alt="Genny Allison | Allison Stock Inc"
-                    width="274"
-                    height="105"
-                    loading="eager"
+                    type="image/avif"
+                    loading="lazy"
+                    width="422"
+                    height="281"
+                    style="object-fit: fit"
                   />
                 </picture>
               </div>
