@@ -1530,10 +1530,6 @@ form button:hover {
     overflow-wrap: break-word;
   }
 
-  .hero {
-    max-height: 300px;
-  }
-
   .hero h2 {
     font-size: 1.5rem;
   }
@@ -1737,11 +1733,18 @@ form button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 540px;
+    margin: 0 auto;
+  }
+
+  .article3-viewall {
+    max-width: 540px;
+    width: 540px;
   }
 
   .article3-viewall img {
-    width: 100%;
-    max-width: 100%;
+    width: 540px;
+    max-width: 540px;
     height: auto;
   }
 

@@ -63,20 +63,37 @@
       }
 
       @media (max-width: 768px) {
-        .hero {
+        .hero,
+        .hero-content-all {
           display: flex;
           align-items: center;
           justify-content: center;
-          background-color: #f7f7f7; /* Fallback background */
-          height: 40vh;
+          flex-direction: column;
+          background-color: #f7f7f7;
+          height: auto;
           text-align: left;
+          max-width: 100%;
+          width: 100%;
         }
 
-        .hero img {
+        .hero img,
+        .hero-content-all img {
           width: 100%;
-          max-width: 320px;
+          max-width: 100%;
           height: auto;
           object-fit: cover;
+        }
+
+        .hero-content-all .cat-btn {
+          display: flex;
+          justify-content: left;
+          text-align: left;
+          width: 100%;
+          margin: 1em 0 4em;
+        }
+
+        .page-title {
+          padding-bottom: 1em;
         }
       }
     </style>
@@ -241,28 +258,55 @@
           <header>
             <section class="hero" role="banner">
               <div class="hero-content-all">
-                <picture>
+                <picture class="hero-img">
+                  <!-- Mobile Image (480px) -->
                   <source
                     srcset="
-                      https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1200/v1741237706/all_articles_hero_desktop_x0q23u.avif
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:good,w_480,h_270/v1741237706/all_articles_hero_desktop_x0q23u.avif
                     "
-                    media="(min-width: 1200px)"
-                  />
-                  <source
-                    srcset="
-                      https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_768/v1741237706/all_articles_hero_desktop_x0q23u.avif
-                    "
-                    media="(min-width: 768px)"
-                  />
-                  <img
-                    src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_320/v1741237706/all_articles_hero_desktop_x0q23u.avif"
-                    alt="An AI-powered SEO tool helping optimize digital content"
-                    width="320"
-                    height="180"
-                    loading="eager"
+                    media="(max-width: 480px)"
                     type="image/avif"
+                    width="480"
+                    height="270"
+                    fetchpriority="high"
+                  />
+                  <!-- Tablet Image (768px) -->
+                  <source
+                    srcset="
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:good,w_768/v1741237706/all_articles_hero_desktop_x0q23u.avif
+                    "
+                    media="(max-width: 768px)"
+                    type="image/avif"
+                    width="768"
+                    height="auto"
+                    fetchpriority="high"
+                  />
+                  <!-- Desktop Image (1920px) -->
+                  <source
+                    srcset="
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:good,w_1080,h_612/v1741237706/all_articles_hero_desktop_x0q23u.avif
+                    "
+                    media="(min-width: 1024px)"
+                    type="image/avif"
+                    width="1080"
+                    height="612"
+                    fetchpriority="high"
+                  />
+                  <!-- Fallback Image -->
+                  <img
+                    src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:low,w_1080,h_612,c_fill,g_auto/v1741237706/all_articles_hero_desktop_x0q23u.avif"
+                    alt="Sports Community Hub"
+                    type="image/avif"
+                    width="1080"
+                    height="612"
+                    loading="eager"
+                    fetchpriority="high"
+                    style="object-fit: cover; aspect-ratio: 16/9"
+                    decoding="async"
+                    importance="high"
                   />
                 </picture>
+
                 <div class="cat-btn">
                   <a href="/categories/categorized.html">Categories</a>
                 </div>
