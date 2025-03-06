@@ -315,6 +315,7 @@ span {
   color: #262626
 }
 
+.article2-viewall img,
 .article3-viewall img,
 main {
   border-radius: 1.5em
@@ -543,6 +544,10 @@ main {
 .article-sub p a {
   color: #853e05;
   font-weight: 700
+}
+
+.article2-viewall img {
+  height: 234px;
 }
 
 .article3-viewall {
@@ -1622,7 +1627,7 @@ form button:hover {
     padding: .75em
   }
 
-  .article3-viewall,
+  .article2-viewall,
   .article3-viewall img {
     width: 90%;
     max-width: 100vw
@@ -1666,6 +1671,7 @@ form button:hover {
     flex-direction: column
   }
 
+  .article2-viewall,
   .article3-viewall img {
     height: auto
   }
