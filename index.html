@@ -34,7 +34,14 @@
       type="font/woff2"
       crossorigin="anonymous"
     />
-    <link rel="preload" as="image" href="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1200/v1732720733/welcome_to_tech_trends_hero-desktop_uuz3wh.avif" type="image/avif" media="(min-width: 768px)" />
+    <link rel="preload" 
+      as="image" 
+      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_1200,fl_lossy/v1732720733/welcome_to_tech_trends_hero-desktop_uuz3wh.avif" 
+      type="image/avif" 
+      media="(min-width: 768px)" 
+      fetchpriority="high" 
+      importance="high">
+
     <link
       rel="icon"
       href="https://res.cloudinary.com/dnptzisuf/image/upload/v1741315755/tab_logo_robot_g86mfy.webp"
@@ -474,25 +481,28 @@
               <div class="hero-content">
                 <picture>
                   <source
-                    srcset="
-                     https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_1200,fl_lossy/v1732720733/welcome_to_tech_trends_hero-desktop_uuz3wh.avif
-                    "
+                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_1200,fl_lossy/v1732720733/welcome_to_tech_trends_hero-desktop_uuz3wh.avif"
                     media="(min-width: 1200px)"
+                    type="image/avif"
+                    fetchpriority="high"
                   />
                   <source
                     srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_768,fl_lossy/v1732720733/welcome_to_tech_trends_hero-desktop_uuz3wh.avif"
                     media="(min-width: 768px)"
+                    type="image/avif"
+                    fetchpriority="high"
                   />
-                  <img
+                  <img 
                     src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_320,fl_lossy/v1732720733/welcome_to_tech_trends_hero-desktop_uuz3wh.avif"
                     alt="Welcome to Tech Trends! An AI-powered SEO tool helping optimize digital content"
-                    width="320"
-                    height="180"
-                    fetchpriority="high"
-                    style="object-fit: cover; aspect-ratio: 16/9"
-                    type="image/avif"
+                    width="320" height="180"
+                    fetchpriority="high" 
+                    loading="eager"
+                    decoding="async"
+                    style="object-fit:cover;aspect-ratio:16/9;" 
                   />
                 </picture>
+
                 <div class="page-title article-sub">
                   <h2><i>Welcome to Tech Trends and Innovations</i></h2>
                   <h3>
