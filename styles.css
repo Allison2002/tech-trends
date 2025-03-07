@@ -1,6 +1,28 @@
+#back-to-top,
+.cat-btn a,
+.cat-btn a:hover,
+.featured-topics h3 a,
+.footer-social a img:hover,
+.hamburger-menu-items li a,
+.menu-items,
+.search-icon,
+.sidebar-cta a,
+.social-media-icons a,
+.stay-connected .social-media-icons a {
+  transition: opacity .3s ease-in-out, transform .3s ease-in-out
+}
+
+.article-sub a:hover,
+.article-sub ol li a:hover,
+.article-sub p a:hover,
+.article-sub ul li a span:hover,
+.article-sub ul li a:hover,
+.author-bio p a:hover,
+.navbar-footer-items ul li a:hover,
 h1,
 h2,
-h3 {
+h3,
+span {
   font-weight: 700
 }
 
@@ -17,11 +39,11 @@ h2 {
   font-size: 1.8rem
 }
 
-.featured-topics h3 a,
-.hamburger-menu-items li a,
-.menu-items,
-.search-icon {
-  transition: opacity .3s ease-in-out, transform .3s ease-in-out
+.content-wrapper.blurred,
+.hamburger-menu,
+body,
+h1 {
+  transition: opacity .4s ease-in-out, transform .4s ease-in-out
 }
 
 .grid-wrapper,
@@ -51,7 +73,6 @@ h2 {
 body,
 h1 {
   opacity: 1;
-  transition: opacity .4s ease-in-out, transform .4s ease-in-out;
   font-family: 'Alegreya Sans', Arial, sans-serif
 }
 
@@ -152,10 +173,6 @@ input:focus {
   box-shadow: 0 .125em .3125em rgba(0, 0, 0, .1)
 }
 
-span {
-  font-weight: 700
-}
-
 .grid-wrapper {
   display: grid;
   grid-template-columns: 3fr 0.75fr;
@@ -230,7 +247,6 @@ span {
 
 .content-wrapper.blurred,
 .hamburger-menu {
-  transition: opacity .4s ease-in-out, transform .4s ease-in-out;
   opacity: 1
 }
 
@@ -547,9 +563,10 @@ main {
 }
 
 .article2-viewall img {
-  height: 234px;
+  height: 234px
 }
 
+.article3,
 .article3-viewall {
   height: auto
 }
@@ -565,7 +582,8 @@ main {
   opacity: .9
 }
 
-.article-list p {
+.article-list p,
+.hero-post-author {
   padding: 0 0 .5em
 }
 
@@ -580,16 +598,6 @@ main {
 
 .article-list ul li {
   font-weight: 400
-}
-
-.article-sub a:hover,
-.article-sub ol li a:hover,
-.article-sub p a:hover,
-.article-sub ul li a span:hover,
-.article-sub ul li a:hover,
-.author-bio p a:hover,
-.navbar-footer-items ul li a:hover {
-  font-weight: 700
 }
 
 .image-left,
@@ -663,7 +671,6 @@ main {
 .cat-btn a,
 .cat-btn a:hover {
   color: #fff;
-  transition: opacity .3s ease-in-out, transform .3s ease-in-out;
   opacity: 1
 }
 
@@ -756,8 +763,7 @@ main {
 }
 
 .article3 {
-  max-width: 100%;
-  height: auto
+  max-width: 100%
 }
 
 .sidebar-article img {
@@ -898,8 +904,7 @@ form input {
   text-decoration: underline;
   color: #fff;
   font-weight: 700;
-  opacity: 1;
-  transition: opacity .3s ease-in-out, transform .3s ease-in-out
+  opacity: 1
 }
 
 .social-media-icons a,
@@ -979,8 +984,7 @@ form button:hover {
   flex-direction: column;
   align-items: center;
   margin: 0 .5em;
-  opacity: 1;
-  transition: opacity .3s ease-in-out, transform .3s ease-in-out
+  opacity: 1
 }
 
 .stay-connected .social-media-icons a:hover {
@@ -1000,8 +1004,7 @@ form button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  opacity: 1;
-  transition: opacity .3s ease-in-out, transform .3s ease-in-out
+  opacity: 1
 }
 
 .social-media-icons a:hover {
@@ -1108,11 +1111,6 @@ form button:hover {
   color: #fff
 }
 
-#back-to-top,
-.footer-social a img:hover {
-  transition: opacity .3s ease-in-out, transform .3s ease-in-out
-}
-
 .social-media {
   display: flex;
   justify-content: space-evenly;
@@ -1163,10 +1161,6 @@ form button:hover {
   width: 95%;
   max-width: 95%;
   text-align: left
-}
-
-.hero-post-author {
-  padding: 0 0 .5em
 }
 
 .article-text {
@@ -1306,7 +1300,8 @@ form button:hover {
     padding: 1em
   }
 
-  .navbar-footer-item {
+  .navbar-footer-item,
+  .sidebar {
     max-width: 100%
   }
 
@@ -1339,10 +1334,6 @@ form button:hover {
 
   .icons-container {
     position: relative
-  }
-
-  .sidebar {
-    max-width: 100%
   }
 
   .search-popup {
@@ -1436,10 +1427,6 @@ form button:hover {
   ol li,
   ul li {
     text-align: left
-  }
-
-  .grid-wrapper {
-    grid-template-columns: 1fr
   }
 
   .hero-post-author {
@@ -1627,12 +1614,6 @@ form button:hover {
     padding: .75em
   }
 
-  .article2-viewall,
-  .article3-viewall img {
-    width: 90%;
-    max-width: 100vw
-  }
-
   .bottom-img-box img {
     height: 4.63vh;
     aspect-ratio: 16/9
@@ -1673,9 +1654,12 @@ form button:hover {
 
   .article2-viewall,
   .article3-viewall img {
+    width: 90%;
+    max-width: 100vw;
     height: auto
   }
 
+  .bottom-nav,
   .bottom-section,
   .stay-connected-footer {
     padding: 1em 0
@@ -1686,18 +1670,19 @@ form button:hover {
     margin-right: 1em
   }
 
+  .bottom-nav ul li,
+  .sidebar,
+  form {
+    width: 100%
+  }
+
   .sidebar {
-    width: 100%;
     max-width: 100%;
     margin: 1em 0
   }
 
   .bottom-nav ul {
     display: block;
-    width: 100%
-  }
-
-  .bottom-nav ul li {
     width: 100%
   }
 
@@ -1715,7 +1700,6 @@ form button:hover {
 
   form {
     display: flex;
-    width: 100%;
     margin: 0 auto
   }
 
@@ -1723,10 +1707,6 @@ form button:hover {
   .social-media-icons img {
     max-width: 10vw;
     width: 10vw
-  }
-
-  .bottom-nav {
-    padding: 1em 0
   }
 
   body {
@@ -1750,6 +1730,7 @@ form button:hover {
   }
 
   .grid-wrapper {
+    grid-template-columns: 1fr;
     min-height: 400px;
     display: flex;
     flex-direction: column;
