@@ -178,7 +178,8 @@ input:focus {
   grid-template-columns: 3fr 0.75fr;
   gap: 1em;
   max-width: 100%;
-  margin: 0 auto
+  margin: 0 auto;
+  min-height: 500px;
 }
 
 .grid-wrapper img {
