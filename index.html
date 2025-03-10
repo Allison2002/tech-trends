@@ -283,54 +283,6 @@
       }
     </script>
     <style>
-      @font-face {
-        font-family: 'Alegreya Sans';
-        src: url('./fonts/Alegreya_Sans/AlegreyaSans-Regular.woff2') format('woff2');
-        font-weight: 400;
-        font-style: normal;
-        font-display: swap;
-      }
-
-      @font-face {
-        font-family: 'Alegreya Sans';
-        src: url('./fonts/Alegreya_Sans/AlegreyaSans-Medium.woff2') format('woff2');
-        font-weight: 500;
-        font-style: normal;
-        font-display: swap;
-      }
-
-      @font-face {
-        font-family: 'Alegreya Sans';
-        src: url('./fonts/Alegreya_Sans/AlegreyaSans-Bold.woff2') format('woff2');
-        font-weight: 700;
-        font-style: normal;
-        font-display: swap;
-      }
-
-      /* Do the same for Exo 2 */
-      @font-face {
-        font-family: 'Exo 2';
-        src: url('./fonts/Exo_2/Exo2-Regular.woff2') format('woff2');
-        font-weight: 400;
-        font-style: normal;
-        font-display: swap;
-      }
-
-      @font-face {
-        font-family: 'Exo 2';
-        src: url('./fonts/Exo_2/Exo2-Medium.woff2') format('woff2');
-        font-weight: 500;
-        font-style: normal;
-        font-display: swap;
-      }
-
-      @font-face {
-        font-family: 'Exo 2';
-        src: url('./fonts/Exo_2/Exo2-Bold.woff2') format('woff2');
-        font-weight: 700;
-        font-style: normal;
-        font-display: swap;
-      }
       .menu {
         display: flex;
         position: fixed;
@@ -754,26 +706,21 @@
             <section class="hero" role="banner">
               <div class="hero-content">
                 <picture>
-                  <source 
-                      srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,fl_lossy,q_auto:good,w_480/v1732720733/welcome_to_tech_trends_hero-desktop_uuz3wh.avif" 
-                      media="(max-width: 480px)" 
-                      type="image/avif">
-                  
-                  <source 
-                      srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,fl_lossy,q_auto:good,w_768/v1732720733/welcome_to_tech_trends_hero-desktop_uuz3wh.avif" 
-                      media="(max-width: 768px)" 
-                      type="image/avif">
-                  
-                  <source 
-                      srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,fl_lossy,q_auto:good,w_1200/v1732720733/welcome_to_tech_trends_hero-desktop_uuz3wh.avif" 
-                      media="(min-width: 769px)" 
-                      type="image/avif">
+                  <!-- Keep high priority only for mobile -->
+                  <source srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,fl_lossy,q_auto:good,w_480/v1732720733/welcome_to_tech_trends_hero-desktop_uuz3wh.avif" 
+                          media="(max-width: 480px)" 
+                          type="image/avif"
+                          fetchpriority="high">
 
-                  <img 
-                      src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,fl_lossy,q_auto:good,w_1200/v1732720733/welcome_to_tech_trends_hero-desktop_uuz3wh.avif" 
+                  <!-- Lower priority for larger screens -->
+                  <source srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,fl_lossy,q_auto:good,w_1200/v1732720733/welcome_to_tech_trends_hero-desktop_uuz3wh.avif" 
+                          media="(min-width: 769px)" 
+                          type="image/avif"
+                          fetchpriority="low">
+
+                  <img src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,fl_lossy,q_auto:good,w_1200/v1732720733/welcome_to_tech_trends_hero-desktop_uuz3wh.avif" 
                       alt="Welcome to Tech Trends!" 
                       width="1200" height="675"
-                      fetchpriority="high"
                       loading="eager"
                       decoding="async"
                       style="object-fit:cover;aspect-ratio:16/9;display:block;border-radius:1.5em;">
