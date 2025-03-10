@@ -3,11 +3,19 @@
     <head>
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="preload" 
-      as="image" 
-      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_1200,fl_lossy/v1732720733/welcome_to_tech_trends_hero-desktop_uuz3wh.avif" 
-      type="image/avif" 
-      fetchpriority="high">
+      <link rel="preload" 
+            as="image" 
+            href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_1200,fl_lossy/v1732720733/welcome_to_tech_trends_hero-desktop_uuz3wh.avif" 
+            type="image/avif" 
+            media="(min-width: 769px)" 
+            fetchpriority="high">
+
+      <link rel="preload" 
+            as="image" 
+            href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_480,fl_lossy/v1732720733/welcome_to_tech_trends_hero-desktop_uuz3wh.avif" 
+            type="image/avif" 
+            media="(max-width: 768px)" 
+            fetchpriority="high">
 
       <noscript>
         <img 
@@ -708,15 +716,18 @@
                   <picture>
                     <source srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_480,fl_lossy/v1732720733/welcome_to_tech_trends_hero-desktop_uuz3wh.avif" 
                             media="(max-width: 480px)" 
-                            type="image/avif">
+                            type="image/avif"
+                            fetchpriority="high">
 
                     <source srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_768,fl_lossy/v1732720733/welcome_to_tech_trends_hero-desktop_uuz3wh.avif" 
                             media="(max-width: 768px)" 
-                            type="image/avif">
+                            type="image/avif"
+                            fetchpriority="high">
 
                     <source srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_1200,fl_lossy/v1732720733/welcome_to_tech_trends_hero-desktop_uuz3wh.avif" 
                             media="(min-width: 769px)" 
-                            type="image/avif">
+                            type="image/avif"
+                            fetchpriority="high">
 
                     <img src="https://res.cloudinary.com/dnptzisuf/image/upload/q_auto,w_1200,fl_lossy/v1732720733/welcome_to_tech_trends_hero-desktop_uuz3wh.jpg" 
                         alt="Welcome to Tech Trends!" 
