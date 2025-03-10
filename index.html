@@ -4,15 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="preload" 
-        as="image" 
-        href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,fl_lossy,q_auto:good,w_1200/v1732720733/welcome_to_tech_trends_hero-desktop_uuz3wh.avif" 
-        type="image/avif" 
-        fetchpriority="high">
-    <link rel="preload" 
-      as="image"
-      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,fl_lossy,q_auto:good,w_480/v1732720733/welcome_to_tech_trends_hero-desktop_uuz3wh.avif"
-      type="image/avif"
-      fetchpriority="high">
+          as="image" 
+          href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,fl_lossy,q_auto:good,w_1200/v1732720733/welcome_to_tech_trends_hero-desktop_uuz3wh.avif" 
+          type="image/avif" 
+          fetchpriority="high">
+
     <noscript>
       <img 
         src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,fl_lossy,q_auto:good,w_1200/v1732720733/welcome_to_tech_trends_hero-desktop_uuz3wh.avif" 
@@ -710,30 +706,27 @@
             <section class="hero" role="banner">
               <div class="hero-content">
                 <picture>
-                  <!-- Mobile (≤480px) -->
                   <source 
                       srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,fl_lossy,q_auto:good,w_480/v1732720733/welcome_to_tech_trends_hero-desktop_uuz3wh.avif" 
                       media="(max-width: 480px)" 
                       type="image/avif">
                   
-                  <!-- Tablet (≤768px) -->
                   <source 
                       srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,fl_lossy,q_auto:good,w_768/v1732720733/welcome_to_tech_trends_hero-desktop_uuz3wh.avif" 
                       media="(max-width: 768px)" 
                       type="image/avif">
                   
-                  <!-- Desktop (≥769px) -->
                   <source 
                       srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,fl_lossy,q_auto:good,w_1200/v1732720733/welcome_to_tech_trends_hero-desktop_uuz3wh.avif" 
                       media="(min-width: 769px)" 
                       type="image/avif">
 
-                  <!-- Fallback -->
                   <img 
                       src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,fl_lossy,q_auto:good,w_1200/v1732720733/welcome_to_tech_trends_hero-desktop_uuz3wh.avif" 
                       alt="Welcome to Tech Trends!" 
                       width="1200" height="675"
-                      loading="eager" 
+                      fetchpriority="high"
+                      loading="eager"
                       decoding="async"
                       style="object-fit:cover;aspect-ratio:16/9;display:block;border-radius:1.5em;">
                 </picture>
