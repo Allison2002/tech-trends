@@ -6,7 +6,7 @@
     <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_1200,fl_lossy/v1741237680/topic_hero_desktop_zpuflw.avif" as="image" type="image/avif" media="(min-width: 1200px)" fetchpriority="high">
     <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_768,fl_lossy/v1741237680/topic_hero_desktop_zpuflw.avif" as="image" type="image/avif" media="(min-width: 768px) and (max-width: 1199px)" fetchpriority="high">
     <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741237680/topic_hero_desktop_zpuflw.avif" as="image" type="image/avif" media="(max-width: 767px)" fetchpriority="high">
-
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_1200,fl_lossy/v1741237680/topic_hero_desktop_zpuflw.webp" as="image" type="image/webp" fetchpriority="high">
     <meta name="description" content="Discover the latest in AI SEO tools, IoT innovations, eCommerce trends, and mobile app development at Tech Trends Blog. Explore categorized articles to stay ahead in the tech world with expert insights on SEO, IoT, eCommerce, and more. Learn about cutting-edge technologies shaping the digital landscape in 2024." />
     <link rel="preconnect" href="https://res.cloudinary.com" crossorigin />
     <link rel="dns-prefetch" href="https://res.cloudinary.com" />
@@ -473,26 +473,41 @@
             <section class="hero" role="banner">
               <div class="hero-content-all">
                 <picture>
-                  <source srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_1200,fl_lossy/v1741237680/topic_hero_desktop_zpuflw.avif 1200w, 
-                                https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_768,fl_lossy/v1741237680/topic_hero_desktop_zpuflw.avif 768w" 
-                          media="(min-width: 1200px)" type="image/avif">
+                  <!-- AVIF image for large screens -->
+                  <source 
+                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_1200,fl_lossy/v1741237680/topic_hero_desktop_zpuflw.avif 1200w, 
+                            https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_768,fl_lossy/v1741237680/topic_hero_desktop_zpuflw.avif 768w" 
+                    media="(min-width: 1200px)" type="image/avif" fetchpriority="high">
 
-                  <source srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_768,fl_lossy/v1741237680/topic_hero_desktop_zpuflw.avif 768w,
-                                https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741237680/topic_hero_desktop_zpuflw.avif 480w" 
-                          media="(min-width: 768px) and (max-width: 1199px)" type="image/avif">
+                  <!-- AVIF image for medium screens -->
+                  <source 
+                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_768,fl_lossy/v1741237680/topic_hero_desktop_zpuflw.avif 768w,
+                            https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741237680/topic_hero_desktop_zpuflw.avif 480w" 
+                    media="(min-width: 768px) and (max-width: 1199px)" type="image/avif" fetchpriority="high">
 
-                  <source srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741237680/topic_hero_desktop_zpuflw.avif 480w" 
-                          media="(max-width: 767px)" type="image/avif">
+                  <!-- AVIF image for small screens -->
+                  <source 
+                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741237680/topic_hero_desktop_zpuflw.avif 480w" 
+                    media="(max-width: 767px)" type="image/avif" fetchpriority="high">
 
-                  <!-- Fallback image for unsupported formats or browsers -->
-                  <img src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_1200,fl_lossy/v1741237680/topic_hero_desktop_zpuflw.webp" 
-                      alt="Welcome to Tech Trends! An AI-powered SEO tool helping optimize digital content"
-                      width="1200" height="675"
-                      fetchpriority="high" 
-                      loading="eager"
-                      decoding="async"
-                      style="object-fit: cover; aspect-ratio: 16/9; background-color: #f4f4f4; display: block; border-radius: 1.5em;">
+                  <!-- Fallback WebP image for browsers that don't support AVIF -->
+                  <source 
+                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_1200,fl_lossy/v1741237680/topic_hero_desktop_zpuflw.webp 1200w, 
+                            https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_768,fl_lossy/v1741237680/topic_hero_desktop_zpuflw.webp 768w, 
+                            https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_480,fl_lossy/v1741237680/topic_hero_desktop_zpuflw.webp 480w" 
+                    media="(min-width: 480px)" type="image/webp" fetchpriority="high">
+
+                  <!-- Fallback image for unsupported formats -->
+                  <img 
+                    src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_1200,fl_lossy/v1741237680/topic_hero_desktop_zpuflw.webp" 
+                    alt="Welcome to Tech Trends! An AI-powered SEO tool helping optimize digital content" 
+                    width="1200" height="675"
+                    fetchpriority="high" 
+                    loading="eager" 
+                    decoding="async"
+                    style="object-fit: cover; aspect-ratio: 16/9; background-color: #f4f4f4; display: block; border-radius: 1.5em;">
                 </picture>
+
                 <div class="cat-btn">
                   <a href="/categories/uncategorized.html">All</a>
                 </div>
