@@ -531,8 +531,6 @@ main {
   clear: both
 }
 
-
-
 .cat-btn a,
 .cat-btn a:hover {
   color: #fff;
@@ -1532,9 +1530,16 @@ form button:hover {
     width: 100%
   }
 
+
   .sidebar {
     max-width: 100%;
-    margin: 1em 0
+    margin: 1em 0;
+    height: auto;
+    position: relative;
+  }
+
+  main {
+    margin-bottom: 4em;
   }
 
   .bottom-nav ul {
