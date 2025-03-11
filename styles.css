@@ -187,6 +187,10 @@ p a {
   text-decoration: none
 }
 
+.article3-viewall h3 a {
+  font-size: 1.3rem;
+}
+
 p {
   font-size: 1.3rem
 }
@@ -220,12 +224,27 @@ input:focus {
   overflow: hidden
 }
 
-.article-grid1,
-.article-grid2,
+.article-grid1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+.article-grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  width: 100%;
+  height: auto
+}
+
 .article-grid3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
+  width: 100%;
+  height: auto
 }
 
 .article-grid3 img {
@@ -365,8 +384,7 @@ main {
   height: auto
 }
 
-.author-bio,
-.cta-section {
+.author-bio {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -377,6 +395,19 @@ main {
   margin: 0 auto
 }
 
+.cta-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  padding: 1rem;
+  line-height: 1.75em;
+  border-radius: .5em;
+  margin: 0 auto
+}
+
+
 .cta-sub {
   display: flex;
   flex-direction: column
@@ -385,7 +416,8 @@ main {
 .cta-sub h2,
 .cta-sub p {
   text-align: center;
-  word-break: keep-all
+  word-break: keep-all;
+  width: 100%;
 }
 
 .article-sub p {
@@ -519,7 +551,7 @@ main {
   flex-wrap: wrap;
   justify-content: left;
   gap: .625em;
-  padding: 1em 0 1.5em
+  padding: 1em 0 1.5em;
 }
 
 #back-to-top,
@@ -530,8 +562,8 @@ main {
 .cat-btn a {
   display: inline-flex;
   border-radius: 6.25em;
+  padding: .5em 1em;
   border: .0625em solid #262626;
-  padding: 1em;
   box-shadow: rgb(0 0 0 / 10%) 0 0 .3125em .125em;
   text-align: center;
   align-items: center;
@@ -539,7 +571,7 @@ main {
   text-decoration: none;
   font-weight: 700;
   margin: 0 1em 0 0;
-  width: auto;
+  width: 90px;
   min-width: min(120px, 6.25vw)
 }
 
@@ -600,9 +632,9 @@ main {
 }
 
 .sidebar-article img {
-  max-height: auto;
-  height: 27.78vh;
-  width: 100%;
+  max-height: 350px;
+  height: 484px;
+  width: 169px;
   border-radius: 1.5em
 }
 
@@ -649,10 +681,10 @@ article {
 }
 
 .sidebar {
-  width: 100%;
-  max-width: 100%;
+  max-width: 200px;
+  height: 484px;
+  width: 169px;
   flex-grow: 0;
-  height: auto;
   overflow: visible;
   margin: 0 auto
 }
@@ -827,6 +859,7 @@ form button:hover {
 
 .social-media-icons {
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   max-width: 100%
 }
@@ -1039,7 +1072,8 @@ form button:hover {
 }
 
 .article-sub h2 {
-  padding: 1em 1em .5em
+  padding: 1em 0 .5em;
+  font-size: 2.3rem;
 }
 
 .article-sub {
@@ -1410,12 +1444,12 @@ form button:hover {
   }
 
   .newsletter-img img {
-    max-width: 30vw;
-    height: auto
+    max-width: 120px;
+    height: 120px;
   }
 
   .cta-section img {
-    width: 60vw;
+    width: 100%;
     padding: 1em 0 0
   }
 

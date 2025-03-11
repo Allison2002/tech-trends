@@ -509,41 +509,41 @@
             <section class="hero" role="banner">
               <div class="hero-content-all">
                 <picture>
-                    <!-- AVIF image for large screens -->
-                    <source 
-                      srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_1200,fl_lossy/v1741694037/topic-hero-desktop_j20kyu.avif 1200w, 
-                              https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_768,fl_lossy/v1741694037/topic-hero-desktop_j20kyu.avif 768w" 
-                      media="(min-width: 1200px)" type="image/avif" fetchpriority="high">
+                  <!-- AVIF image for large screens (min-width: 1200px) -->
+                  <source 
+                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_1200,fl_lossy/v1741694037/topic-hero-desktop_j20kyu.avif 1200w, 
+                            https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_768,fl_lossy/v1741694037/topic-hero-desktop_j20kyu.avif 768w" 
+                    media="(min-width: 1200px)" type="image/avif" fetchpriority="high" width="1200" height="675">
+                  
+                  <!-- AVIF image for medium screens (768px to 1199px) -->
+                  <source 
+                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_768,fl_lossy/v1741694037/topic-hero-desktop_j20kyu.avif 768w, 
+                            https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741694037/topic-hero-desktop_j20kyu.avif 480w" 
+                    media="(min-width: 768px) and (max-width: 1199px)" type="image/avif" fetchpriority="high" width="768" height="432">
 
-                    <!-- AVIF image for medium screens -->
-                    <source 
-                      srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_768,fl_lossy/v1741694037/topic-hero-desktop_j20kyu.avif 768w,
-                              https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741694037/topic-hero-desktop_j20kyu.avif 480w" 
-                      media="(min-width: 768px) and (max-width: 1199px)" type="image/avif" fetchpriority="high">
+                  <!-- AVIF image for small screens (max-width: 767px) -->
+                  <source 
+                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741694037/topic-hero-desktop_j20kyu.avif 480w" 
+                    media="(max-width: 767px)" type="image/avif" fetchpriority="high" width="480" height="270">
 
-                    <!-- AVIF image for small screens -->
-                    <source 
-                      srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741694037/topic-hero-desktop_j20kyu.avif 480w" 
-                      media="(max-width: 767px)" type="image/avif" fetchpriority="high">
+                  <!-- Fallback WebP image for browsers that don't support AVIF -->
+                  <source 
+                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_1200,fl_lossy/v1741694037/topic-hero-desktop_j20kyu.webp 1200w, 
+                            https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_768,fl_lossy/v1741694037/topic-hero-desktop_j20kyu.webp 768w, 
+                            https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_480,fl_lossy/v1741694037/topic-hero-desktop_j20kyu.webp 480w" 
+                    media="(min-width: 480px)" type="image/webp" fetchpriority="high" width="1200" height="675">
 
-                    <!-- Fallback WebP image for browsers that don't support AVIF -->
-                    <source 
-                      srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_1200,fl_lossy/v1741694037/topic-hero-desktop_j20kyu.webp 1200w, 
-                              https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_768,fl_lossy/v1741694037/topic-hero-desktop_j20kyu.webp 768w, 
-                              https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_480,fl_lossy/v1741694037/topic-hero-desktop_j20kyu.webp 480w" 
-                      media="(min-width: 480px)" type="image/webp" fetchpriority="high">
-
-                    <!-- Fallback image for unsupported formats -->
-                    <img 
-                      src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_1200,fl_lossy/v1741694037/topic-hero-desktop_j20kyu.webp" 
-                      alt="Welcome to Tech Trends! An AI-powered SEO tool helping optimize digital content" 
-                      width="1200" 
-                      height="675"
-                      fetchpriority="high" 
-                      loading="eager" 
-                      decoding="async"
-                      style="object-fit: cover; aspect-ratio: 16/9; background-color: #f4f4f4; display: block; border-radius: 1.5em;">
-                  </picture>
+                  <!-- Fallback image for unsupported formats -->
+                  <img 
+                    src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_1200,fl_lossy/v1741694037/topic-hero-desktop_j20kyu.webp" 
+                    alt="Welcome to Tech Trends! An AI-powered SEO tool helping optimize digital content" 
+                    width="1200" 
+                    height="675"
+                    fetchpriority="high" 
+                    loading="eager" 
+                    decoding="async" 
+                    style="object-fit: cover; aspect-ratio: 16/9; background-color: #f4f4f4; display: block; border-radius: 1.5em;">
+                </picture>
                 <div class="cat-btn">
                   <a href="/categories/uncategorized.html">All</a>
                 </div>
@@ -662,28 +662,24 @@
             <div class="cta-section featured-topics">
               <div>
                 <picture>
-                  <source
-                    srcset="
-                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_1200,fl_lossy/v1741221193/genny_allison_portfolio_mobile_eakltj.avif
-                    "
-                    type="image/avif"
-                    media="(min-width: 1200px)"
-                  />
-                  <source
-                    srcset="
-                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_768,fl_lossy/v1741221193/genny_allison_portfolio_mobile_eakltj.avif
-                    "
-                    media="(min-width: 768px)"
-                    type="image/avif"
-                  />
+                  <!-- AVIF image for large screens (min-width: 1200px) -->
+                  <source 
+                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_1200,fl_lossy/v1741221193/genny_allison_portfolio_mobile_eakltj.avif 1200w" 
+                    media="(min-width: 1200px)" type="image/avif">
+
+                  <!-- AVIF image for medium screens (768px to 1199px) -->
+                  <source 
+                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_768,fl_lossy/v1741221193/genny_allison_portfolio_mobile_eakltj.avif 768w" 
+                    media="(min-width: 768px)" type="image/avif">
+
+                  <!-- Fallback image for smaller screens or unsupported formats -->
                   <img
                     src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_422,fl_lossy/v1741221193/genny_allison_portfolio_mobile_eakltj.webp"
                     alt="Genny Allison | Allison Stock Inc"
-                    type="image/avif"
-                    loading="lazy"
                     width="422"
-                    height="281"
-                    style="object-fit: fit"
+                    height="162" 
+                    style="object-fit: cover; aspect-ratio: 2.60; background-color: #f4f4f4;"
+                    loading="lazy"
                   />
                 </picture>
               </div>
@@ -735,8 +731,8 @@
                 type="image/avif"
                 loading="eager"
                 width="264"
-                height="300"
-                style="object-fit: cover; aspect-ratio: 16/9"
+                height="500"
+                style="object-fit: cover;"
               />
               <div class="sidebar-text">
                 <ul>
