@@ -911,10 +911,10 @@ form button:hover {
 }
 
 .bottom-img-box img {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 4/3;
-  object-fit: cover
+  width: 380px;
+  height: 210px;
+  aspect-ratio: 1.81/1;
+  object-fit: cover;
 }
 
 .bottom-nav,
