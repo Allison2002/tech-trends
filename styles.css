@@ -1433,7 +1433,7 @@ form button:hover {
   }
 
   .navbar-footer-items ul li a {
-    font-size: 1rem;
+    font-size: rem;
     padding: 1em
   }
 
