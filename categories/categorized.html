@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- Preload AVIF image for large screens -->
-    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_1200,fl_lossy/v1741237680/topic_hero_desktop_zpuflw.avif" as="image" type="image/avif" media="(min-width: 1200px)" fetchpriority="high">
-    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_768,fl_lossy/v1741237680/topic_hero_desktop_zpuflw.avif" as="image" type="image/avif" media="(min-width: 768px) and (max-width: 1199px)" fetchpriority="high">
-    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741237680/topic_hero_desktop_zpuflw.avif" as="image" type="image/avif" media="(max-width: 767px)" fetchpriority="high">
+    <!-- Preload image for large screens (min-width: 1200px) -->
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_1200,fl_lossy/v1741694037/topic-hero-desktop_j20kyu.avif" as="image" type="image/avif" fetchpriority="high">
+    <!-- Preload image for medium screens (768px to 1199px) -->
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_768,fl_lossy/v1741694037/topic-hero-desktop_j20kyu.avif" as="image" type="image/avif" media="(min-width: 768px) and (max-width: 1199px)" fetchpriority="high">
+    <!-- Preload image for small screens (max-width: 767px) -->
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741694037/topic-hero-desktop_j20kyu.avif" as="image" type="image/avif" media="(max-width: 767px)" fetchpriority="high">
     <meta name="description" content="Discover the latest in AI SEO tools, IoT innovations, eCommerce trends, and mobile app development at Tech Trends Blog. Explore categorized articles to stay ahead in the tech world with expert insights on SEO, IoT, eCommerce, and more. Learn about cutting-edge technologies shaping the digital landscape in 2024." />
     <link rel="preconnect" href="https://res.cloudinary.com" crossorigin />
     <link rel="dns-prefetch" href="https://res.cloudinary.com" />
@@ -541,27 +544,17 @@
             <section class="hero" role="banner">
               <div class="hero-content-all">
                 <picture>
-                  <source 
-                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_1200,fl_lossy/v1741694037/topic-hero-desktop_j20kyu.avif 1200w, 
-                            https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_768,fl_lossy/v1741694037/topic-hero-desktop_j20kyu.avif 768w" 
-                    media="(min-width: 1200px)" type="image/avif" fetchpriority="high" width="1200" height="675">
-                  <source 
-                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_768,fl_lossy/v1741694037/topic-hero-desktop_j20kyu.webp 768w, 
-                            https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_480,fl_lossy/v1741694037/topic-hero-desktop_j20kyu.webp 480w" 
-                    media="(max-width: 1199px)" type="image/webp" fetchpriority="high" width="768" height="432">
-                  <source 
-                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741694037/topic-hero-desktop_j20kyu.avif 480w" 
-                    media="(max-width: 767px)" type="image/avif" fetchpriority="high" width="480" height="270">
-
-                  <img 
-                    src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_480,fl_lossy/v1741694037/topic-hero-desktop_j20kyu.webp" 
-                    alt="Welcome to Tech Trends! An AI-powered SEO tool helping optimize digital content" 
-                    width="480" 
-                    height="270"
-                    fetchpriority="high" 
-                    loading="eager" 
-                    decoding="async" 
-                    style="object-fit: cover; aspect-ratio: 16/9; background-color: #f4f4f4; display: block; border-radius: 1.5em;">
+                  <!-- For large screens -->
+                  <source srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_1200,fl_lossy/v1741694037/topic-hero-desktop_j20kyu.avif 1200w" media="(min-width: 1200px)" type="image/avif">
+                  
+                  <!-- For medium screens -->
+                  <source srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_768,fl_lossy/v1741694037/topic-hero-desktop_j20kyu.webp 768w" media="(max-width: 1199px)" type="image/webp">
+                  
+                  <!-- For small screens, and fallback image -->
+                  <source srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_480,fl_lossy/v1741694037/topic-hero-desktop_j20kyu.webp 480w" media="(max-width: 767px)" type="image/webp">
+                  
+                  <!-- Fallback blurred LQIP image (Base64 or small-sized) -->
+                  <img src="https://res.cloudinary.com/dnptzisuf/image/upload/q_auto:eco,w_480,fl_lossy/v1741694037/topic-hero-desktop_j20kyu.webp" alt="Welcome to Tech Trends" width="1200" height="675" fetchpriority="high" loading="eager" decoding="async" style="object-fit: cover; aspect-ratio: 16 / 9; background-color: #f4f4f4; display: block; border-radius: 1.5em;">
                 </picture>
                 <div class="cat-btn">
                   <a href="/categories/uncategorized.html">All</a>
