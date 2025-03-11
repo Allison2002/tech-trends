@@ -299,6 +299,34 @@
         overflow-wrap: break-word
       }  
 
+      .article-grid3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+      }
+
+      .article-grid3 img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        aspect-ratio: 16 / 9;
+      }
+
+      .article2-viewall img,
+      .article3-viewall img,
+      main {
+        border-radius: 1.5em
+      }
+
+      .article2-viewall img {
+        height: 234px
+      }
+
+      .article3,
+      .article3-viewall {
+        height: auto
+      }
+
       @media (max-width: 768px) {
         .hero {
           display: flex;
@@ -509,7 +537,8 @@
                     <img 
                       src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_1200,fl_lossy/v1741694037/topic-hero-desktop_j20kyu.webp" 
                       alt="Welcome to Tech Trends! An AI-powered SEO tool helping optimize digital content" 
-                      width="1200" height="675"
+                      width="1200" 
+                      height="675"
                       fetchpriority="high" 
                       loading="eager" 
                       decoding="async"

@@ -224,9 +224,8 @@ input:focus {
 .article-grid2,
 .article-grid3 {
   display: grid;
-  max-width: 100%;
-  height: auto;
-  object-fit: cover
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
 }
 
 .article-grid3 img {
