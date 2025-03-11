@@ -913,7 +913,7 @@ form button:hover {
 .bottom-img-box img {
   width: 480px;
   height: 230px;
-  aspect-ratio: 3:2;
+  aspect-ratio: 3/2;
   object-fit: cover;
 }
 
@@ -1283,6 +1283,9 @@ form button:hover {
 }
 
 @media (max-width:768px) {
+  .bottom-img-container {
+    display: none;
+  }
 
   .article-list h2,
   .article-sub h2,
