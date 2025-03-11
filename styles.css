@@ -109,8 +109,7 @@ h2 {
   font-style: normal
 }
 
-.article-grid1 img,
-.sidebar-article ul li {
+.article-grid1 img {
   box-shadow: rgb(0 0 0 / 20%) 0 0 1.5625em .5em
 }
 
@@ -413,7 +412,7 @@ main {
   flex-direction: column
 }
 
-.cta-sub h2,
+.cta-sub h3,
 .cta-sub p {
   text-align: center;
   word-break: keep-all;
@@ -755,11 +754,11 @@ form input {
 }
 
 .sidebar-cta h2 {
-  font-size: 1.5rem
+  font-size: 1.2rem
 }
 
 .sidebar-cta p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #fff
 }
 
@@ -825,7 +824,7 @@ form button:hover {
   padding: 1em;
   border-radius: 1.5em;
   background-color: #fff;
-  box-shadow: rgba(0, 0, 0, .2) 0 0 1.5625em .5em;
+  box-shadow: rgb(0 0 0 / 10%) 0 4px 8px;
   text-align: center;
   max-width: 100%
 }
@@ -1315,8 +1314,9 @@ form button:hover {
     width: auto
   }
 
-  .featured-topics {
-    padding: 1em
+  .sidebar-text ul {
+    padding: 1em;
+
   }
 
   .content-container {
