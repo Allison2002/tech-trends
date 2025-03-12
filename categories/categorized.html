@@ -10,7 +10,7 @@
     <title>
       Explore Tech Trends Topics: AI SEO, IoT, eCommerce, Mobile Apps, and More
     </title>
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/styles.css?v=1.0" />
     <meta
       name="google-site-verification"
       content="P19ZwIYzDuW5Qi-e7ps4IF88g_mqUgXB67kU3sQep78"
@@ -70,6 +70,10 @@
       }
     </script>
     <style>
+      .navbar.hidden {
+        display: none;
+      }
+
         .menu {
           display: flex;
           position: fixed;
@@ -214,6 +218,10 @@
           filter: blur(.3125em)
         }
 
+        .menu-toggle {
+          display: none;
+        }
+
         .menu-toggle img,
         .search-icon img {
           width: min(40px, 2.08vw);
@@ -334,8 +342,78 @@
         height: auto
       }
 
-      .author-section {
-        margin-top: 800px;
+      .empty {
+        height: 1000px;
+        width: 100%;
+      }
+
+      #stay-connected-sidebar {
+        margin: 1em auto;
+        padding: 1em;
+        border-radius: 1.5em;
+        background-color: #fff;
+        box-shadow: rgb(0 0 0 / 10%) 0 4px 8px;
+        text-align: center;
+        max-width: 100%
+      }
+
+      .stay-connected h3 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: .5em
+      }
+
+      .stay-connected p {
+        font-size: 1rem;
+        margin-bottom: 1.5em
+      }
+
+      .stay-connected .social-media-icons a {
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 .5em;
+        opacity: 1
+      }
+
+      .stay-connected .social-media-icons a:hover {
+        transform: scale(1.05);
+        color: #247b91
+      }
+
+      .social-media-icons {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        max-width: 100%
+      }
+
+      .social-media-icons a {
+        text-decoration: none;
+        font-size: .8rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        opacity: 1
+      }
+
+      .social-media-icons a:hover {
+        transform: scale(1.1);
+        color: #247b91
+      }
+
+      .social-media-icons img {
+        max-width: min(48px, 2.5vw);
+        width: min(48px, 2.5vw);
+        height: auto;
+        margin-bottom: .5em
+      }
+      .logo-container,
+      .menu-toggle,
+      .search-icon,
+      .search-icon img {
+        position: static
       }
 
       @media (max-width: 768px) {
@@ -343,7 +421,6 @@
           display: flex;
           flex-direct-column;
           margin: 0 auto;
-          
         }
 
       @media (max-width: 768px) {
@@ -540,40 +617,44 @@
               <div class="hero-content-all">
                 <picture class="hero-img">
                   <!-- Mobile Image (480px) -->
-                  <source
-                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:good,w_320,h_180/v1741694037/topic-hero-desktop_j20kyu.avif"
+                  <source 
+                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_320,h_180/v1741694037/topic-hero-desktop_j20kyu.avif 320w,
+                            https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,h_270/v1741694037/topic-hero-desktop_j20kyu.avif 480w"
                     media="(max-width: 480px)"
                     type="image/avif"
                     fetchpriority="high"
+                    sizes="(max-width: 480px) 320px"
                   />
-                  
+
                   <!-- Tablet Image (768px) -->
                   <source
-                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_768,h_432/v1741694037/topic-hero-desktop_j20kyu.avif"
+                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_768,h_432/v1741694037/topic-hero-desktop_j20kyu.avif 768w,
+                            https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_1088,h_612/v1741694037/topic-hero-desktop_j20kyu.avif 1088w"
                     media="(max-width: 768px)"
                     type="image/avif"
                     fetchpriority="high"
+                    sizes="(max-width: 768px) 768px"
                   />
 
                   <!-- Desktop Image (1024px and larger) -->
                   <source
-                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_1088,h_612/v1741694037/topic-hero-desktop_j20kyu.avif"
+                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_1088,h_612/v1741694037/topic-hero-desktop_j20kyu.avif 1088w"
                     media="(min-width: 1024px)"
                     type="image/avif"
                     fetchpriority="high"
                   />
 
                   <!-- Fallback Image -->
-                  <img
-                    src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:low,w_1088,h_612,c_fill,g_auto/v1741694037/topic-hero-desktop_j20kyu.avif"
-                    alt="Welcome to Tech Trends"
-                    type="image/avif"
-                    width="1088"
-                    height="612"
-                    loading="eager"
-                    fetchpriority="high"
-                    decoding="async"
-                    importance="high"
+                  <img 
+                    src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:low,w_1088,h_612,c_fill,g_auto/v1741694037/topic-hero-desktop_j20kyu.avif" 
+                    alt="Welcome to Tech Trends" 
+                    type="image/avif" 
+                    width="1088" 
+                    height="612" 
+                    loading="eager" 
+                    fetchpriority="high" 
+                    decoding="async" 
+                    importance="high" 
                     style="border-radius: 1.5em;"
                   />
                 </picture>
@@ -690,6 +771,9 @@
             </div>
             <div class="article3-viewall"></div>
           </div>
+          <div class="empty">
+
+          </div>
 
         </div>
           <aside class="sidebar">
@@ -699,8 +783,8 @@
                 alt="A woman from the 1940's arriving to a futuristic city"
                 type="image/avif"
                 loading="eager"
-                width="264"
-                height="500"
+                width="169"
+                height="350"
                 style="object-fit: cover;"
               />
               <div class="sidebar-text">
@@ -1022,6 +1106,6 @@
         </div>
       </footer>
       <div id="back-to-top" title="Back to top" role="button">↑</div>
-      <script src="/script.js" defer></script>
+      <script src="/script.js?v=1.0" defer></script>
   </body>
 </html>
