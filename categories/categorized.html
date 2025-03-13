@@ -422,18 +422,26 @@
           width: 100%;
         }
 
-        ..article-viewall img,
+        .article-viewall img,
         .hero img {
           width: 100%;
-          max-width: 100%x;
+          max-width: 100%;
           height: auto;
           object-fit: cover;
           aspect-ratio: 16/9;
         }
 
-      .empty {
-        display: none;
-      }
+        .sidebar-article img {
+          width: 100%;
+          max-width: 100%;
+          height: auto;
+          object-fit: cover;
+          aspect-ratio: 12/25;
+        }
+
+        .empty {
+          display: none;
+        }
       }   
 
 
@@ -757,15 +765,19 @@
         </div>
           <aside class="sidebar">
             <div class="sidebar-article">
-              <img
-                src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_400,fl_lossy/v1741221199/sidebar-future-city_eoy5fp.avif"
-                alt="A woman from the 1940's arriving to a futuristic city"
+              <img 
+                src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_200,fl_lossy/v1741221199/sidebar-future-city_eoy5fp.avif"
                 type="image/avif"
                 loading="eager"
+                alt="A woman from the 1940's arriving to a futuristic city"
                 width="169"
                 height="350"
-                style="object-fit: cover;"
-              />
+                style="aspect-ratio: 12 / 25; object-fit: cover"
+                srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_320,fl_lossy/v1741221199/sidebar-future-city_eoy5fp.avif 320w,
+                        https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741221199/sidebar-future-city_eoy5fp.avif 480w,
+                        https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_640,fl_lossy/v1741221199/sidebar-future-city_eoy5fp.avif 640w"
+                sizes="(max-width: 480px) 100vw, (max-width: 640px) 50vw, 480px"
+              />             
               <div class="sidebar-text">
                 <ul>
                   <li class="featured-topics">
