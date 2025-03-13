@@ -30,29 +30,22 @@
       crossorigin="anonymous"
     />
     <link 
-      rel="preload" 
-      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741694037/topic-hero-desktop_j20kyu.avif" 
-      as="image" 
-      type="image/avif" 
-      media="(max-width: 480px)" 
-      fetchpriority="high" />
-    
-    <link 
-      rel="preload" 
-      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_768,fl_lossy/v1741694037/topic-hero-desktop_j20kyu.avif" 
-      as="image" 
-      type="image/avif" 
-      media="(max-width: 768px)" 
-      fetchpriority="high" />
-
-    <link 
-      rel="preload" 
-      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_1088,fl_lossy/v1741694037/topic-hero-desktop_j20kyu.avif" 
-      as="image" 
-      type="image/avif" 
-      media="(min-width: 1024px)" 
-      fetchpriority="high" />
-    
+        rel="preload" 
+        href="/img/topic-hero-desktop@2x.png" 
+        as="image" 
+        type="image/png" 
+        media="(min-width: 1024px)" 
+        fetchpriority="high" />
+      
+      <!-- Preload the hero image for mobile and tablet sizes -->
+      <link 
+        rel="preload" 
+        href="/img/topic-hero-desktop@2x.png" 
+        as="image" 
+        type="image/png" 
+        media="(max-width: 768px)" 
+        fetchpriority="high" />
+  
     <!-- Favicon -->
     <link 
       rel="icon" 
@@ -636,26 +629,29 @@
               <div class="hero-content-all">
                 <picture class="hero-img">
                   <source 
-                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741904556/topic-hero-desktop_2x_kep36j.avif 320w,
-                            https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741904556/topic-hero-desktop_2x_kep36j.avif 480w"
+                    srcset="/img/topic-hero-desktop@2x.png 320w, 
+                            /img/topic-hero-desktop@2x.png 480w"
                     media="(max-width: 480px)"
-                    type="image/avif"
+                    type="image/png"
                     sizes="100vw" />
+                    
                   <source
-                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_768,fl_lossy/v1741904556/topic-hero-desktop_2x_kep36j.avif 768w,
-                            https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_1088,fl_lossy/v1741904556/topic-hero-desktop_2x_kep36j.avif 1088w"
+                    srcset="/img/topic-hero-desktop@2x.png 768w, 
+                            /img/topic-hero-desktop@2x.png 1088w"
                     media="(max-width: 768px)"
-                    type="image/avif"
+                    type="image/png"
                     sizes="100vw" />
+                    
                   <source
-                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_1088,fl_lossy/v1741904556/topic-hero-desktop_2x_kep36j.avif 1088w"
+                    srcset="/img/topic-hero-desktop@2x.png 1088w"
                     media="(min-width: 1024px)"
-                    type="image/avif"
+                    type="image/png"
                     sizes="(min-width: 1024px) 100vw" />
+                    
                   <img 
-                    src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:low,w_1088,h_612,c_fill,g_auto,fl_lossy/v1741904556/topic-hero-desktop_2x_kep36j.avif" 
+                    src="/img/topic-hero-desktop@2x.png" 
                     alt="Welcome to Tech Trends" 
-                    type="image/avif" 
+                    type="image/png" 
                     width="1088" 
                     height="612" 
                     loading="eager" 
