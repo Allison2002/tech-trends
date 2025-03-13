@@ -75,6 +75,19 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
+    if ('PerformanceObserver' in window) {
+        const observer = new PerformanceObserver((entryList) => {
+            const entries = entryList.getEntries();
+            entries.forEach(entry => {
+                if (entry.entryType === 'largest-contentful-paint') {
+                    console.log('LCP: ', entry.startTime); // LCP metric
+                }
+            });
+        });
+        observer.observe({ type: 'largest-contentful-paint', buffered: true });
+    }
+
+
     // Smooth scroll to top when button clicked
     backToTopButton.addEventListener('click', () => {
         window.scrollTo({
