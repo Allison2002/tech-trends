@@ -422,13 +422,18 @@
           width: 100%;
         }
 
+        ..article-viewall img,
         .hero img {
           width: 100%;
-          max-width: 320px;
+          max-width: 100%x;
           height: auto;
           object-fit: cover;
           aspect-ratio: 16/9;
         }
+
+      .empty {
+        display: none;
+      }
       }   
 
 
@@ -599,20 +604,19 @@
                   <!-- Mobile Image (480px) -->
                   <source 
                     srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_320,h_180/v1741694037/topic-hero-desktop_j20kyu.avif 320w,
-                            https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,h_270/v1741694037/topic-hero-desktop_j20kyu.avif 480w"
+                    https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,h_270/v1741694037/topic-hero-desktop_j20kyu.avif 480w"
                     media="(max-width: 480px)"
                     type="image/avif"
-                    sizes="(max-width: 480px) 100vw"
-                  />
+                    sizes="100vw
 
                   <!-- Tablet Image (768px) -->
                   <source
                     srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_768,h_432/v1741694037/topic-hero-desktop_j20kyu.avif 768w,
-                            https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_1088,h_612/v1741694037/topic-hero-desktop_j20kyu.avif 1088w"
+                          https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_1088,h_612/v1741694037/topic-hero-desktop_j20kyu.avif 1088w"
                     media="(max-width: 768px)"
                     type="image/avif"
-                    sizes="(max-width: 768px) 100vw"
-                  />
+                    sizes="100vw"
+                    />
 
                   <!-- Desktop Image (1024px and larger) -->
                   <source
@@ -749,9 +753,7 @@
             <div class="article3-viewall"></div>
           </div>
           <div class="empty">
-
           </div>
-
         </div>
           <aside class="sidebar">
             <div class="sidebar-article">
@@ -870,8 +872,7 @@
                 </p>
               </div>
             </div>
-          </aside>
-          
+          </aside>        
       </div>
                 <section id="content-creator">
             <hr class="hr" />
