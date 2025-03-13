@@ -400,11 +400,10 @@
       @media (max-width: 768px) {
         .article-grid3 {
           display: flex;
-          flex-direct-column;
+          flex-direction: column;
           margin: 0 auto;
         }
 
-      @media (max-width: 768px) {
         .hero {
           display: flex;
           align-items: center;
@@ -603,8 +602,7 @@
                             https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,h_270/v1741694037/topic-hero-desktop_j20kyu.avif 480w"
                     media="(max-width: 480px)"
                     type="image/avif"
-                    fetchpriority="high"
-                    sizes="(max-width: 480px) 320px"
+                    sizes="(max-width: 480px) 100vw"
                   />
 
                   <!-- Tablet Image (768px) -->
@@ -613,8 +611,7 @@
                             https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_1088,h_612/v1741694037/topic-hero-desktop_j20kyu.avif 1088w"
                     media="(max-width: 768px)"
                     type="image/avif"
-                    fetchpriority="high"
-                    sizes="(max-width: 768px) 768px"
+                    sizes="(max-width: 768px) 100vw"
                   />
 
                   <!-- Desktop Image (1024px and larger) -->
@@ -622,7 +619,7 @@
                     srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_1088,h_612/v1741694037/topic-hero-desktop_j20kyu.avif 1088w"
                     media="(min-width: 1024px)"
                     type="image/avif"
-                    fetchpriority="high"
+                    sizes="(min-width: 1024px) 100vw"
                   />
 
                   <!-- Fallback Image -->
@@ -635,11 +632,9 @@
                     loading="eager" 
                     fetchpriority="high" 
                     decoding="async" 
-                    importance="high" 
                     style="border-radius: 1.5em;"
                   />
                 </picture>
-
                 <div class="cat-btn">
                   <a href="/categories/uncategorized.html">All</a>
                 </div>
@@ -886,12 +881,16 @@
                   <!-- AVIF image for large screens (min-width: 1200px) -->
                   <source 
                     srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_1200,fl_lossy/v1741221193/genny_allison_portfolio_mobile_eakltj.avif 1200w" 
-                    media="(min-width: 1200px)" type="image/avif">
+                    media="(min-width: 1200px)" type="image/avif"
+                     sizes="(min-width: 1200px) 1200px">
 
                   <!-- AVIF image for medium screens (768px to 1199px) -->
                   <source 
                     srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_768,fl_lossy/v1741221193/genny_allison_portfolio_mobile_eakltj.avif 768w" 
-                    media="(min-width: 768px)" type="image/avif">
+                    media="(min-width: 768px)" 
+                    type="image/avif"
+                    sizes="(min-width: 768px) 768px" 
+                    >
 
                   <!-- Fallback image for smaller screens or unsupported formats -->
                   <img
@@ -948,35 +947,33 @@
         <div class="bottom-section">
           <div class="bottom-img-container">
             <div class="bottom-img-box">
-              <img
-                src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741645926/footer-comic1_pjhsjk.avif"
-                type="image/avif"
-                loading="lazy"
-                alt="A 1940s comic-style image featuring a lady driving and a robot waving"
-                width: 480;
-                height: 230;
-                style=" 
-                  aspect-ratio: 3/2;
-                  object-fit: cover"
-                srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_320,fl_lossy/v1741645926/footer-comic1_pjhsjk.avif 320w,
-                        https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741645926/footer-comic1_pjhsjk.avif 480w,
-                        https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_640,fl_lossy/v1741645926/footer-comic1_pjhsjk.avif 640w"
-              />
-            </div>
-            <div class="bottom-img-box">
-              <img
+              <img 
                 src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741645926/footer-comic2_msckfs.avif"
                 type="image/avif"
                 loading="lazy"
                 alt="A 1940s comic-style image featuring a lady driving and a robot waving"
-                width: 480;
-                height: 230;
-                style=" 
-                  aspect-ratio: 3/2;
-                  object-fit: cover"
-                srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741645926/footer-comic2_msckfs.avif w_480,
+                width="480"
+                height="230"
+                style="aspect-ratio: 3/2; object-fit: cover"
+                srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_320,fl_lossy/v1741645926/footer-comic2_msckfs.avif 320w,
                         https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741645926/footer-comic2_msckfs.avif 480w,
                         https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_640,fl_lossy/v1741645926/footer-comic2_msckfs.avif 640w"
+                sizes="(max-width: 480px) 100vw, (max-width: 640px) 50vw, 480px"
+              />
+            </div>
+            <div class="bottom-img-box">
+              <img 
+                src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741645925/footer-comic4_qx0km4.avif"
+                type="image/avif"
+                loading="lazy"
+                alt="A 1940s comic-style image featuring a lady driving and a robot waving"
+                width="480"
+                height="230"
+                style="aspect-ratio: 3/2; object-fit: cover"
+                srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_320,fl_lossy/v1741645925/footer-comic4_qx0km4.avif 320w,
+                        https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741645925/footer-comic4_qx0km4.avif 480w,
+                        https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_640,fl_lossy/v1741645925/footer-comic4_qx0km4.avif 640w"
+                sizes="(max-width: 480px) 100vw, (max-width: 640px) 50vw, 480px"
               />
             </div>
             <div class="bottom-img-box">
@@ -985,14 +982,13 @@
                 type="image/avif"
                 loading="lazy"
                 alt="A 1940s comic-style image featuring a lady driving and a robot waving"
-                width: 480;
-                height: 230;
-                style=" 
-                  aspect-ratio: 3/2;
-                  object-fit: cover"
-                srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741645925/footer-comic3_atowkg.avif w_480,
+                width="480"
+                height="230"
+                style="aspect-ratio: 3/2; object-fit: cover"
+                srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_320,fl_lossy/v1741645925/footer-comic3_atowkg.avif 320w,
                         https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741645925/footer-comic3_atowkg.avif 480w,
                         https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_640,fl_lossy/v1741645925/footer-comic3_atowkg.avif 640w"
+                sizes="(max-width: 480px) 100vw, (max-width: 640px) 50vw, 480px"
               />
             </div>
             <div class="bottom-img-box">
@@ -1001,14 +997,13 @@
                 type="image/avif"
                 loading="lazy"
                 alt="A 1940s comic-style image featuring a lady driving and a robot waving"
-                width: 480;
-                height: 230;
-                style=" 
-                  aspect-ratio: 3/2;
-                  object-fit: cover"
-                srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741645925/footer-comic4_qx0km4.avif w_480,
+                width="480"
+                height="230"
+                style="aspect-ratio: 3/2; object-fit: cover"
+                srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_320,fl_lossy/v1741645925/footer-comic4_qx0km4.avif 320w,
                         https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741645925/footer-comic4_qx0km4.avif 480w,
                         https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_640,fl_lossy/v1741645925/footer-comic4_qx0km4.avif 640w"
+                sizes="(max-width: 480px) 100vw, (max-width: 640px) 50vw, 480px"
               />
             </div>
           </div>
