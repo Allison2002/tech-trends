@@ -364,14 +364,26 @@
       <!--tech trends logo-->
       <div class="menu">
           <div class="logo-container">
-            <img
-              src="https://res.cloudinary.com/dnptzisuf/image/upload/q_auto:best,w_300,fl_lossy/v1741280547/tech-trends-logo_oxkjcx.avif"
-              alt="Tech Trends logo"
-              type="image/avif"
-              loading="eager"
-              width="150"
-              height="85"
-            />
+            <picture>
+              <source
+                srcset="
+                  https://res.cloudinary.com/dnptzisuf/image/upload/q_auto:best,w_300,fl_lossy/v1741280547/tech-trends-logo_oxkjcx.avif
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="/img/tech-trends-logo.webp"
+                media="(min-width: 768px)"
+              />
+              <img
+                src="/img/tech-trends-logo.webp"
+                alt="Tech Trends logo"
+                type="image/avif"
+                loading="eager"
+                width="150"
+                height="85"
+              />
+            </picture>
           </div>
         <!--full screen navbar-->
         <div class="navbar-items">
@@ -427,28 +439,51 @@
         <div class="icons-container">
           <!--hamburger icon-->
             <div class="menu-toggle" id="menu-toggle" role="button">
-              <img
-                src="https://res.cloudinary.com/dnptzisuf/image/upload/fl_lossy,q_auto:best,w_52,fl_lossy/v1741313863/hamburger_ozf2so.png"
-                alt="Hamburger Menu Icon"
-                class="hamburger-icon"
-                type="image/png"
-                aria-label="Menu"
-                width="48"
-                height="48"
-                loading="eager"
-              />
+              <picture>
+                <source
+                  srcset="
+                    https://res.cloudinary.com/dnptzisuf/image/upload/fl_lossy,q_auto:best,w_52,fl_lossy/v1741313863/hamburger_ozf2so.png
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="/img/hamburger-icon.webp"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="/img/hamburger-icon.webp"
+                  alt="search icon"
+                  aria-label="Search"
+                  type="image/png"
+                  width="48"
+                  height="48"
+                  loading="lazy"
+                />
+              </picture>
             </div>
             <!-- search icon -->
             <div class="search-icon" id="search-icon" title="Search">
-              <img
-                src="https://res.cloudinary.com/dnptzisuf/image/upload/fl_lossy,q_auto:best,w_52,fl_lossy/v1741313864/search_fk7mcc.png"
-                alt="search icon"
-                aria-label="Search"
-                type="image/png"
-                width="48"
-                height="48"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  srcset="
+                    https://res.cloudinary.com/dnptzisuf/image/upload/fl_lossy,q_auto:best,w_52,fl_lossy/v1741313864/search_fk7mcc.png
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="/img/search-icon.webp"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="/img/search-icon.webp"
+                  alt="search icon"
+                  aria-label="Search"
+                  type="image/png"
+                  width="48"
+                  height="48"
+                  loading="lazy"
+                />
+              </picture>
             </div>
           <!-- search box popup -->
           <div class="search-popup" id="search-popup">
