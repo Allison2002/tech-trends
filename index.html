@@ -7,11 +7,10 @@
       
       <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1200,fl_lossy/v1732720733/welcome_to_tech_trends_hero-desktop_uuz3wh.avif" as="image" media="(min-width: 1200px)" fetchpriority="high">
 
-      <!-- Preload the critical mobile image -->
-      <link rel="preload" href="/img/welcome_to_tech_trends_hero-mobile.webp" as="image" media="(max-width: 767px)" fetchpriority="high">
+      <link rel="preload" href="/img/welcome_to_tech_trends_hero-tablet.webp" as="image" media="(min-width: 768px)" fetchpriority="high">
       
-      <!-- Preload other critical assets like fonts -->
       <link rel="preload" as="font" href="/fonts/Alegreya_Sans/AlegreyaSans-Regular.woff2" type="font/woff2" crossorigin="anonymous" />
+      
       <link rel="preload" as="font" href="/fonts/Exo_2/Exo2-Regular.woff2" type="font/woff2" crossorigin="anonymous" />
 
       <!-- Preload CSS -->
@@ -573,28 +572,32 @@
             <section class="hero" role="banner">
               <div class="hero-content">
                 <picture>
+                  <!-- Desktop image (large screens) -->
                   <source
                     srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1200,fl_lossy/v1732720733/welcome_to_tech_trends_hero-desktop_uuz3wh.avif"
                     media="(min-width: 1200px)"
+                    fetchpriority="high"
                   />
                   
                   <!-- Tablet image (medium screen) -->
                   <source
                     srcset="/img/welcome_to_tech_trends_hero-tablet.webp"
                     media="(min-width: 768px)"
+                    fetchpriority="high"
                   />
-
+                  
                   <!-- Mobile image (small screen) -->
                   <img
                     src="/img/welcome_to_tech_trends_hero-mobile.webp"
                     alt="Welcome to Tech Trends! An AI-powered SEO tool helping optimize digital content"
                     width="100%"  <!-- Ensure it stretches correctly on mobile -->
                     height="auto"
-                    loading="lazy"  <!-- Lazy load for mobile to reduce initial load -->
-                    fetchpriority="high"
+                    loading="eager"  <!-- Eager load for mobile image to improve LCP -->
+                    fetchpriority="high"  <!-- High fetch priority for the mobile image -->
                     style="border-radius:1.5em; object-fit: cover;"  <!-- Keep aspect ratio intact -->
                   />
                 </picture>
+
 
 
                 <div class="page-title article-sub">
