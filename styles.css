@@ -23,10 +23,6 @@ h1 {
   color: #247b91;
 }
 
-body {
-  margin: 6em 0;
-}
-
 body,
 html {
   width: auto;
@@ -2072,6 +2068,7 @@ form button:hover {
 }
 
 @media (max-width: 480px) {
+
   .hero-content img {
     width: 100%;
     height: auto;
@@ -2089,7 +2086,7 @@ form button:hover {
   }
 
   .hero img {
-    width: 332px;
+    width: 90%;
     margin: 0 auto;
     height: auto;
   }
@@ -2166,6 +2163,7 @@ form button:hover {
     width: 75%;
     height: auto;
     aspect-ratio: 16/9;
+    margin: 0 auto;
   }
 
   .article-grid3 {
