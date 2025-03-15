@@ -12,8 +12,7 @@
       name="description"
       content="Discover the latest advancements and expert insights in AI, IoT innovations, SEO tools, mobile app development, and eCommerce trends on Tech Trends. Stay ahead with cutting-edge tech knowledge!"
     />
-    <link rel="preload" href="/subfont/fonts-d10cb8b42b.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="/subfont/fonts-d10cb8b42b.css"></noscript>
+    
     <link rel="stylesheet" href="/styles.css" />
     <link rel="icon" href="/img/tab_logo_robot.webp" />
     <link rel="preload" href="/img/tech-trends-logo.webp" as="image" />
@@ -36,9 +35,6 @@
       type="font/woff2"
       crossorigin="anonymous"
     />
-    <noscript
-      ><link rel="stylesheet" href="/subfont-output/fallback-f95ea018c3.css"
-    /></noscript>
 
     <script type="application/ld+json">
       {
@@ -50,188 +46,8 @@
       }
     </script>
     <style>
-      .menu {
-        display: flex;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 1003;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1em 3em;
-        border-bottom: .0625em solid #000;
-        background-color: rgba(255, 255, 255, .9);
-        box-shadow: 0 .125em .3125em rgba(0, 0, 0, .1)
-      }
-
-      main {
-        max-width: 75vw;
-        background-color: rgb(247 247 247 / 1);
-        padding: 2em;
-        box-shadow: rgb(0 0 0 / 40%) 0 0 3.125em .5em;
-        margin: 3em auto;
-        word-break: keep-all;
-      }
-
-      .main-content {
-        margin: 0 auto;
-        max-width: 100%;
-      }
-
-      .navbar-items ul {
-        list-style-type: none;
-        display: flex;
-        margin-left: auto;
-      }
-
-      .navbar-items ul li {
-        margin-left: .125em;
-      }
-
-      .navbar-items ul li a {
-        text-decoration: none;
-        font-size: 1.25rem;
-        font-weight: 700;
-        padding: .625em;
-        color: #247b91
-      }
-
-      .navbar-items ul li a:hover {
-        color: #843f06;
-        border-radius: .25em;
-        word-break: keep-all
-      }
-
-      .navbar-items {
-        flex-grow: 1;
-        display: flex;
-        justify-content: flex-end;
-        padding-right: 1.25em
-      }
-
-      .logo-container {
-        position: absolute;
-        left: 0;
-        top: 0;
-        z-index: 10
-      }
-
-      .logo-container img {
-        max-height: 9.26vh;
-        width: auto;
-        aspect-ratio: 16/9
-      }
-
-      .search-icon {
-        position: relative;
-        color: #247b91;
-        margin-right: 1.25em;
-        opacity: 1
-      }
-
-      .search-icon:hover {
-        color: #f7985aaf;
-        opacity: .8
-      }
-
-      .menu-items {
-        transform: translateX(100%);
-        opacity: 1
-      }
-
-      .content-wrapper.blurred,
-      .hamburger-menu {
-        opacity: 1
-      }
-
-      .menu-items.open {
-        transform: translateX(0)
-      }
-
-      .hamburger-menu {
-        position: fixed;
-        top: 0;
-        left: -100%;
-        width: 40vw;
-        height: 100vh;
-        background-color: rgba(0, 0, 0, .9);
-        z-index: 1002;
-        padding-top: 3.75em
-      }
-
-      .hamburger-menu.show {
-        left: 0
-      }
-
-      .hamburger-menu-items {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        text-align: left
-      }
-
-      .hamburger-menu-items li {
-        margin-bottom: 1.25em
-      }
-
-      .hamburger-menu-items li a {
-        color: #fff;
-        text-decoration: none;
-        font-size: 1.3rem;
-        padding: .9375em 1.25em;
-        display: block;
-        font-weight: 700;
-        opacity: 1
-      }
-
-      .hamburger-menu-items li a:hover {
-        color: #853e05;
-        opacity: .8
-      }
-
-      .content-wrapper.blurred {
-        filter: blur(.3125em)
-      }
-
-      .menu-toggle img,
-      .search-icon img {
-        width: min(40px, 2.08vw);
-        height: auto;
-        top: 20%
-      }
-
-      .search-container {
-        display: flex;
-        align-items: center;
-        padding: .625em;
-        border: .125em solid #247b91;
-        background-color: rgba(255, 255, 255, .95);
-        border-radius: 3.125em
-      }
-
-      .search-container i {
-        font-size: 1.5rem;
-        color: #247b91
-      }
-
-      #search-input {
-        border: none;
-        outline: 0;
-        font-size: 1.2rem;
-        margin-left: .625em;
-        padding: .3125em;
-        background-color: transparent;
-        color: #262626
-      }
-
-      #search-input::placeholder {
-        color: #262626
-      }     
-
       .hero {
         position: relative;
-        background-color: #f4f4f4;
       }
 
       .hero-content {
@@ -242,152 +58,45 @@
 
       .hero img {
         width: 100%;
-        max-width: 1200px;
         aspect-ratio: 16/9;
         height: auto;
         object-fit: cover;
-        background: url(data:image/png;
-      }
-
-      .page-title h1 i {
-        font-size: 3rem;
-        text-decoration: none;
-        padding: 1em 0 0 .5em
-      }
-
-      .hero h1 a {
-        font-size: 2.5rem;
-        position: absolute;
-        bottom: 3em;
-        left: 1em;
-        color: #f7f7f7;
-        font-family: sans-serif;
-        font-weight: 900;
-        text-decoration: none
-      }
-
-      .hero h1 a:hover,
-      .page-title h1 a:hover {
-        color: #843f06;
-        opacity: 1;
-        transition: opacity .1s ease-in-out, transform .2s ease-in-out
-      }
-
-      .hero h2 {
-        font-size: 2rem;
-        color: #262626;
-        letter-spacing: .5px
-      }
-
-      .hero h2,
-      h2 a {
-        font-size: 1.5rem
-      }
-
-      .page-title h1 i {
-        font-size: 2rem;
-        text-decoration: none;
-        padding: .5em 0 0;
-        overflow-wrap: break-word
-      }     
-
-      #stay-connected-sidebar {
-        margin: 1em auto;
-        padding: 1em;
         border-radius: 1.5em;
-        background-color: #fff;
-        box-shadow: rgb(0 0 0 / 10%) 0 4px 8px;
-        text-align: center;
-        max-width: 100%
+        box-shadow: rgb(0 0 0 / 20%) 0px 0px 1.5625em 0.5em;
       }
 
-      .stay-connected h3 {
-        font-size: 1.5rem;
-        font-weight: 700;
-        margin-bottom: .5em
+      .content-creator {
+        width: 100%;
       }
-
-      .stay-connected p {
-        font-size: 1rem;
-        margin-bottom: 1.5em
-      }
-
-      .stay-connected .social-media-icons a {
-        text-decoration: none;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0 .5em;
-        opacity: 1
-      }
-
-      .stay-connected .social-media-icons a:hover {
-        transform: scale(1.05);
-        color: #247b91
-      }
-
-      .social-media-icons {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        max-width: 100%
-      }
-
-      .social-media-icons a {
-        text-decoration: none;
-        font-size: .8rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        opacity: 1
-      }
-
-      .social-media-icons a:hover {
-        transform: scale(1.1);
-        color: #247b91
-      }
-
-      .social-media-icons img {
-        max-width: min(48px, 2.5vw);
-        width: min(48px, 2.5vw);
-        height: auto;
-        margin-bottom: .5em
-      }
-
-      @media (max-width: 768px) {
-        .hero {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          background-color: #f7f7f7; /* Fallback background */
-          height: 50vh;
-          text-align: left;
-        }
-
-        .hero img {
-          width: 100%;
-          max-width: 320px;
-          height: auto;
-          object-fit: cover;
-          aspect-ratio: 16/9;
-        }
-      }       
+      
     </style>
   </head>
   <body>
     <nav class="navbar" id="navbar">
       <!--tech trends logo-->
       <div class="menu">
-        <div class="logo-container">
-          <img
-            src="https://res.cloudinary.com/dnptzisuf/image/upload/q_auto,w_150,h_85,fl_lossy/v1741280547/tech-trends-logo_oxkjcx.avif"
-            alt="Tech Trends logo"
-            type="image/svg"
-            loading="eager"
-            width="150"
-            height="85"
-          />
-        </div>
+          <div class="logo-container">
+            <picture>
+              <source
+                srcset="
+                  https://res.cloudinary.com/dnptzisuf/image/upload/q_auto:best,w_300,fl_lossy/v1741280547/tech-trends-logo_oxkjcx.avif
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="/img/tech-trends-logo.webp"
+                media="(min-width: 768px)"
+              />
+              <img
+                src="/img/tech-trends-logo.webp"
+                alt="Tech Trends logo"
+                type="image/avif"
+                loading="eager"
+                width="150"
+                height="85"
+              />
+            </picture>
+          </div>
         <!--full screen navbar-->
         <div class="navbar-items">
           <ul>
@@ -441,30 +150,53 @@
         </div>
         <div class="icons-container">
           <!--hamburger icon-->
-          <div class="menu-toggle" id="menu-toggle" role="button">
-            <img
-              src="https://res.cloudinary.com/dnptzisuf/image/upload/q_auto,w_40,fl_lossy/v1741274766/hamburger-icon_k4midx.svg"
-              alt="Hamburger Menu Icon"
-              class="hamburger-icon"
-              type="image/svg"
-              aria-label="Menu"
-              width="40"
-              height="40"
-              loading="eager"
-            />
-          </div>
-          <!-- search icon -->
-          <div class="search-icon" id="search-icon" title="Search">
-            <img
-              src="https://res.cloudinary.com/dnptzisuf/image/upload/q_auto,w_40,fl_lossy/v1741274767/search-icon_lcdcrr.svg"
-              alt="search icon"
-              aria-label="Search"
-              type="image/svg"
-              width="40"
-              height="40"
-              loading="lazy"
-            />
-          </div>
+            <div class="menu-toggle" id="menu-toggle" role="button">
+              <picture>
+                <source
+                  srcset="
+                    https://res.cloudinary.com/dnptzisuf/image/upload/fl_lossy,q_auto:best,w_52,fl_lossy/v1741313863/hamburger_ozf2so.png
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="/img/hamburger-icon.webp"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="/img/hamburger-icon.webp"
+                  alt="search icon"
+                  aria-label="Search"
+                  type="image/png"
+                  width="48"
+                  height="48"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <!-- search icon -->
+            <div class="search-icon" id="search-icon" title="Search">
+              <picture>
+                <source
+                  srcset="
+                    https://res.cloudinary.com/dnptzisuf/image/upload/fl_lossy,q_auto:best,w_52,fl_lossy/v1741313864/search_fk7mcc.png
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="/img/search-icon.webp"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="/img/search-icon.webp"
+                  alt="search icon"
+                  aria-label="Search"
+                  type="image/png"
+                  width="48"
+                  height="48"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
           <!-- search box popup -->
           <div class="search-popup" id="search-popup">
             <div class="search-container">
@@ -527,57 +259,33 @@
       </div>
     </nav>
     <main class="content-container">
+      <div class="page-title">
+        <h1><i>SEO Tools</i></h1>
+      </div>
       <div class="grid-wrapper">
         <div class="main-content">
           <header>
             <section class="hero" role="banner">
               <div class="hero-content-all">
-                <picture class="hero-img">
-                  <!-- Mobile Image (480px) -->
+                <picture>
                   <source
                     srcset="
-                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:good,w_480,h_270,fl_lossy/v1732800846/tech_trends_welcome_hero_desktop_wsh8tc.avif
+                     https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1200,fl_lossy/v1732800846/tech_trends_welcome_hero_desktop_wsh8tc.avif
                     "
-                    media="(max-width: 480px)"
-                    type="image/avif"
-                    width="480"
-                    height="270"
-                    fetchpriority="high"
+                    media="(min-width: 1200px)"
                   />
-                  <!-- Tablet Image (768px) -->
                   <source
-                    srcset="
-                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:good,w_768,fl_lossy/v1732800846/tech_trends_welcome_hero_desktop_wsh8tc.avif
-                    "
-                    media="(max-width: 768px)"
-                    type="image/avif"
-                    width="768"
-                    height="auto"
-                    fetchpriority="high"
+                    srcset="/img/tech_trends_welcome_hero_tablet.webp"
+                    media="(min-width: 768px)"
                   />
-                  <!-- Desktop Image (1920px) -->
-                  <source
-                    srcset="
-                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:good,w_1080,h_612,fl_lossy/v1732800846/tech_trends_welcome_hero_desktop_wsh8tc.avif
-                    "
-                    media="(min-width: 1024px)"
-                    type="image/avif"
-                    width="1080"
-                    height="612"
-                    fetchpriority="high"
-                  />
-                  <!-- Fallback Image -->
                   <img
-                    src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:low,w_1080,h_612,c_fill,g_auto,fl_lossy/v1732800846/tech_trends_welcome_hero_desktop_wsh8tc.avif"
+                    src="/img/tech_trends_welcome_hero-mobile.webp"
                     alt="a cute robot in a futuristic neon city holding a sign that says 'Tech Trends'"
-                    type="image/avif"
-                    width="1080"
-                    height="612"
+                    width="332"
+                    height="186"
                     loading="eager"
                     fetchpriority="high"
-                    style="object-fit: cover; aspect-ratio: 16/9"
-                    decoding="async"
-                    importance="high"
+                    style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
                   />
                 </picture>
                 <div class="cat-btn">
@@ -589,113 +297,32 @@
               </div>
             </section>
           </header>
-          <div class="article-grid3">
-            <div class="article3-viewall">
-              <a href="/articles/welcome.html"
-                ><img
-                  src="/img/welcome-techtrends.webp"
-                  alt="a robot saying 'Welcome to tech trends' with the city skyline behind him"
-                  loading="lazy"
-                  width="612"
-                  height="275"
-              /></a>
-              <div id="article-title">
-                <h3>
-                  <a href="/articles/welcome.html"> Welcome! </a>
-                </h3>
-              </div>
-              <div class="article-date">
-                <p>January 8, 2024</p>
-              </div>
-              <div class="article-author">
-                <p><i>Allison Stock Inc.</i></p>
-              </div>
-              <div class="article-descr">
-                <p>Welcome to Tech Trends and Innovations, a blog...</p>
-              </div>
-            </div>
-            <div class="article3-viewall"></div>
-            <div class="article3-viewall"></div>
-          </div>
-          <section id="content-creator">
-            <hr class="hr" />
-            <div class="cta-section featured-topics">
-              <div>
+          <div class="article3-viewall empty-box"></div>
+        </div>
+        <section id="sidebar">
+          <aside class="sidebar">
+            <div class="sidebar-article">
                 <picture>
                   <source
                     srcset="
-                      https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1200,fl_lossy/v1741221193/genny_allison_portfolio_mobile_eakltj.avif
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_520,fl_lossy/v1741221199/sidebar-future-city_eoy5fp.avif
                     "
                     media="(min-width: 1200px)"
                   />
                   <source
-                    srcset="
-                      https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_768,fl_lossy/v1741221193/genny_allison_portfolio_mobile_eakltj.avif
-                    "
+                    srcset="/img/sidebar-future-city.webp"
                     media="(min-width: 768px)"
                   />
                   <img
-                    src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_422,fl_lossy/v1741221193/genny_allison_portfolio_mobile_eakltj.webp"
-                    alt="Genny Allison | Allison Stock Inc"
+                    src="/img/sidebar-future-city.webp"
+                    alt="A woman from the 1940's arriving to a futuristic city"
                     type="image/avif"
-                    loading="lazy"
-                    width="422"
-                    height="281"
-                    style="object-fit: fit"
-                  />
+                    loading="eager"
+                    width="265"
+                    height="472"
+                    style="object-fit: cover;  aspect-ratio: 9 / 16; border-radius: 1.5em"
+                    />
                 </picture>
-              </div>
-              <div class="cta-sub article-sub">
-                <h2>Partner with an AI Content Specialist & Web Developer</h2>
-                <p>
-                  <i
-                    >Looking for someone who can combine creativity,
-                    cutting-edge AI tools, and technical expertise to build<br />
-                    stunning web platforms and engaging content? You've come to
-                    the right place.</i
-                  >
-                </p>
-                <p>
-                  At <strong>Allison Stock Inc.</strong>, I specialize in
-                  AI-powered content creation and web development using tools
-                  like ChatGPT, Midjourney, Figma, and Uizard. My portfolio
-                  showcases my ability to integrate AI solutions seamlessly into
-                  modern web design, delivering high-performing, SEO-optimized
-                  websites and content tailored to today's digital demands.
-                </p>
-                <p>
-                  <a
-                    href="https://www.linkedin.com/in/genny-allison/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Visit Genny Allison's LinkedIn on a new tab"
-                    >Connect with me on LinkedIn</a
-                  >
-                  or
-                  <a
-                    href="https://gennyallison.netlify.app"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Visit Genny Allison's professional portfolio on a new tab"
-                    >explore my portfolio</a
-                  >
-                  to see how I can help bring your vision to life.
-                </p>
-              </div>
-            </div>
-          </section>
-        </div>
-          <aside class="sidebar">
-            <div class="sidebar-article">
-              <img
-                src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_400,fl_lossy/v1741221199/sidebar-future-city_eoy5fp.avif"
-                alt="A woman from the 1940's arriving to a futuristic city"
-                type="image/avif"
-                loading="eager"
-                width="264"
-                height="300"
-                style="object-fit: cover; aspect-ratio: 16/9"
-              />
               <div class="sidebar-text">
                 <ul>
                   <li class="featured-topics">
@@ -717,7 +344,7 @@
                 </ul>
               </div>
             </div>
-            <div id="stay-connected-sidebar">
+            <div id="stay-connected-sidebar" class="featured-topics2">
               <div class="stay-connected">
                 <h3>Stay Connected</h3>
                 <p>Follow us on social media for updates and insights.</p>
@@ -729,7 +356,7 @@
                     aria-label="Follow us on Facebook"
                   >
                     <img
-                      src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_80/v1741221192/facebook-icon_cfmjwc.webp"
+                      src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_80,fl_lossy/v1741221192/facebook-icon_cfmjwc.webp"
                       alt="Follow us on Facebook (opens in a new tab)"
                       loading="lazy"
                       width="47"
@@ -744,7 +371,7 @@
                     aria-label="Follow us on Twitter"
                   >
                     <img
-                      src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_80/v1741221202/twitter-x-icon_bx3vua.webp"
+                      src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_80,fl_lossy/v1741221202/twitter-x-icon_bx3vua.webp"
                       alt="Follow us on Twitter (opens in a new tab)"
                       loading="lazy"
                       width="47"
@@ -759,7 +386,7 @@
                     aria-label="Follow us on Instagram"
                   >
                     <img
-                      src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_80/v1741221589/instagram_oajfgx.webp"
+                      src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_80,fl_lossy/v1741221589/instagram_oajfgx.webp"
                       alt="Follow us on Instagram (opens in a new tab)"
                       loading="lazy"
                       width="47"
@@ -773,7 +400,7 @@
             <div class="cta-section sidebar-cta">
               <div class="newsletter-img">
                 <img
-                  src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_200/v1741221199/newsletter_oxwway.webp"
+                  src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_200,fl_lossy/v1741221199/newsletter_oxwway.webp"
                   alt="Envelope on a paper plane representing updates"
                   loading="lazy"
                   width="120"
@@ -804,124 +431,249 @@
               </div>
             </div>
           </aside>
-        </div>
-      </main>
-      <footer>
-        <div class="bottom-section">
-          <div class="bottom-img-container">
-            <div class="bottom-img-box">
-              <img
-                src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_520/v1741645926/footer-comic1_pjhsjk.avif"
-                type="image/avif"
-                loading="lazy"
-                alt="A 1940s comic-style image featuring a lady driving and a robot waving, symbolizing how AI SEO tools welcome you to the future of technology."
-                style="width: 25vw; height: 12vw"
+        </section>
+      </div>
+      <section id="content-creator">
+        <hr class="hr" />
+        <div class="cta-section featured-topics">
+          <div>
+            <picture>
+              <source
+                srcset="
+                  https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_460,fl_lossy/v1741221193/genny_allison_portfolio_mobile_eakltj.webp
+                "
+                media="(min-width: 1200px)"
               />
-            </div>
-            <div class="bottom-img-box">
-              <img
-                src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_520/v1741645926/footer-comic2_msckfs.avif"
-                type="image/avif"
-                loading="lazy"
-                alt="A 1940s comic-style image featuring a lady driving and a robot waving, symbolizing how AI SEO tools welcome you to the future of technology."
-                style="width: 25vw; height: 12vw"
+              <source
+                srcset="/img/genny_allison_portfolio_tablet.webp"
+                media="(min-width: 768px)"
               />
-            </div>
-            <div class="bottom-img-box">
               <img
-                src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_520/v1741645925/footer-comic3_atowkg.avif"
-                type="image/avif"
-                loading="lazy"
-                alt="A 1940s comic-style image featuring a lady driving and a robot waving, symbolizing how AI SEO tools welcome you to the future of technology."
-                style="width: 25vw; height: 12vw"
+                src="/img/genny_allison_portfolio_mobile.webp"
+                alt="Welcome to Tech Trends! An AI-powered SEO tool helping optimize digital content"
+                width="250"
+                height="110"
+                loading="eager"
+                fetchpriority="high"
+                style="border-radius:1.5em;"
+                type="image/webp"
               />
-            </div>
-            <div class="bottom-img-box">
-              <img
-                src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_520/v1741645925/footer-comic4_qx0km4.avif"
-                type="image/avif"
-                loading="lazy"
-                alt="A 1940s comic-style image featuring a lady driving and a robot waving, symbolizing how AI SEO tools welcome you to the future of technology."
-                style="width: 25vw; height: 12vw"
-              />
-            </div>
+            </picture>
           </div>
-          <hr />
-        </div>
-        <nav class="bottom-nav">
-          <div class="navbar-footer-items">
-            <ul>
-              <li><a href="/index.html">Home</a></li>
-              <li><a href="/categories/categorized.html">Topics</a></li>
-              <li><a href="/categories/uncategorized.html">View All</a></li>
-              <li><a href="/categories/seo-tools.html">SEO Tools</a></li>
-              <li><a href="/categories/iot.html">IoT</a></li>
-              <li><a href="/categories/mobile.html">Mobile App</a></li>
-              <li><a href="/categories/ecommerce.html">eCommerce</a></li>
-              <li><a href="/categories/tech-trends.html">Welcome</a></li>
-            </ul>
-          </div>
-        </nav>
-        <div class="stay-connected-footer">
-          <div class="footer-social">
-            <a
-              href="https://www.facebook.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_80/v1741221202/white-fb-icon_fxqbpm.webp"
-                alt="Follow us on Facebook (opens in a new tab)"
-                loading="lazy"
-                width="40"
-                height="40"
-              />
-            </a>
-            <a
-              href="https://www.twitter.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_80/v1741221205/white-x-icon_q0unqu.webp"
-                alt="Follow us on Twitter (opens in a new tab)"
-                loading="lazy"
-                width="40"
-                height="40"
-              />
-            </a>
-            <a
-              href="https://www.instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_80/v1741221203/white-ig-icon_swy2wb.webp"
-                alt="Follow us on Instagram (opens in a new tab)"
-                loading="lazy"
-                width="40"
-                height="40"
-              />
-            </a>
-          </div>
-          <div class="copyright">
+          <div class="cta-sub article-sub">
+            <h2>Partner with an AI Content Specialist & Web Developer</h2>
             <p>
-              Copyright © All rights reserved |
+              <i
+                >Looking for someone who can combine creativity,
+                cutting-edge AI tools, and technical expertise to build<br />
+                stunning web platforms and engaging content? You've come to
+                the right place.</i
+              >
+            </p>
+            <p>
+              At <strong>Allison Stock Inc.</strong>, I specialize in
+              AI-powered content creation and web development using tools
+              like ChatGPT, Midjourney, Figma, and Uizard. My portfolio
+              showcases my ability to integrate AI solutions seamlessly into
+              modern web design, delivering high-performing, SEO-optimized
+              websites and content tailored to today's digital demands.
+            </p>
+            <p>
+              <a
+                href="https://www.linkedin.com/in/genny-allison/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit Genny Allison's LinkedIn on a new tab"
+                >Connect with me on LinkedIn</a
+              >
+              or
               <a
                 href="https://gennyallison.netlify.app"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Visit Genny Allison's professional portfolio on a new tab"
-                >Allison Stock Inc.</a
+                >explore my portfolio</a
               >
+              to see how I can help bring your vision to life.
             </p>
           </div>
-          <div class="address">
-            <address>123 Main St, Texas City, Texas</address>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="bottom-section">
+        <div class="bottom-img-container">
+          <div class="bottom-img-box">
+            <picture>
+                <source
+                  srcset="
+                    https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_480,fl_lossy/v1741645926/footer-comic1_pjhsjk.avif
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="/img/footer-comic1.webp"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="/img/footer-comic1.webp"
+                  alt="A 1940s comic-style image featuring a lady driving and a robot waving, symbolizing how AI SEO tools welcome you to the future of technology."
+                  type="image/webp"
+                  loading="lazy"
+                  width="480"
+                  height="320" 
+                  style="object-fit: cover; aspect-ratio: 3/2;"
+                />
+            </picture>
+          
+          
+          </div>
+          <div class="bottom-img-box">
+              <picture>
+                <source
+                  srcset="
+                    https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_480,fl_lossy/v1741645926/footer-comic2_msckfs.avif
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="/img/footer-comic2.webp"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="/img/footer-comic2.webp"
+                  alt="A 1940s comic-style image featuring a lady driving and a robot waving, symbolizing how AI SEO tools welcome you to the future of technology."
+                  type="image/webp"
+                  loading="lazy"
+                  width="480"
+                  height="320" 
+                  style="object-fit: cover; aspect-ratio: 3/2;"
+                />
+              </picture>
+          </div>
+          <div class="bottom-img-box">
+              <picture>
+                <source
+                  srcset="
+                    https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_480,fl_lossy/v1741645925/footer-comic3_atowkg.avif
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="/img/footer-comic3.webp"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="/img/footer-comic3.webp"
+                  alt="A 1940s comic-style image featuring a lady driving and a robot waving, symbolizing how AI SEO tools welcome you to the future of technology."
+                  type="image/webp"
+                  loading="lazy"
+                  width="480"
+                  height="320" 
+                  style="object-fit: cover; aspect-ratio: 3/2;"
+                />
+              </picture>
+          </div>
+          <div class="bottom-img-box">
+              <picture>
+                <source
+                  srcset="
+                    https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_480,fl_lossy/v1741645925/footer-comic4_qx0km4.avif
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="/img/footer-comic4.webp"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="/img/footer-comic4.webp"
+                  alt="A 1940s comic-style image featuring a lady driving and a robot waving, symbolizing how AI SEO tools welcome you to the future of technology."
+                  type="image/webp"
+                  loading="lazy"
+                  width="480"
+                  height="320" 
+                  style="object-fit: cover; aspect-ratio: 3/2;"
+                />
+              </picture>
           </div>
         </div>
-      </footer>
-      <div id="back-to-top" title="Back to top" role="button">↑</div>
-      <script src="/script.js" defer></script>
-    </body>
-  </html>
+        <hr />
+      </div>
+      <nav class="bottom-nav">
+        <div class="navbar-footer-items">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/categories/categorized.html">Topics</a></li>
+            <li><a href="/categories/uncategorized.html">View All</a></li>
+            <li><a href="/categories/seo-tools.html">SEO Tools</a></li>
+            <li><a href="/categories/iot.html">IoT</a></li>
+            <li><a href="/categories/mobile.html">Mobile App</a></li>
+            <li><a href="/categories/ecommerce.html">eCommerce</a></li>
+            <li><a href="/categories/tech-trends.html">Welcome</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="stay-connected-footer">
+        <div class="footer-social">
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_80,fl_lossy/v1741221202/white-fb-icon_fxqbpm.webp"
+              alt="Follow us on Facebook (opens in a new tab)"
+              loading="lazy"
+              width="40"
+              height="40"
+            />
+          </a>
+          <a
+            href="https://www.twitter.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_80,fl_lossy/v1741221205/white-x-icon_q0unqu.webp"
+              alt="Follow us on Twitter (opens in a new tab)"
+              loading="lazy"
+              width="40"
+              height="40"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_80,fl_lossy/v1741221203/white-ig-icon_swy2wb.webp"
+              alt="Follow us on Instagram (opens in a new tab)"
+              loading="lazy"
+              width="40"
+              height="40"
+            />
+          </a>
+        </div>
+        <div class="copyright">
+          <p>
+            Copyright © All rights reserved |
+            <a
+              href="https://gennyallison.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visit Genny Allison's professional portfolio on a new tab"
+              >Allison Stock Inc.</a
+            >
+          </p>
+        </div>
+        <div class="address">
+          <address>123 Main St, Texas City, Texas</address>
+        </div>
+      </div>
+    </footer>
+    <div id="back-to-top" title="Back to top" role="button">↑</div>
+    <script src="/script.js" defer></script>
+  </body>
+</html>

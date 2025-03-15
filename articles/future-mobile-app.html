@@ -12,8 +12,6 @@
 <link rel="preload" href="/img/future_mobile__article_hero_mobile.webp" as="image">
 <link rel="preload" href="/fonts/Alegreya_Sans/AlegreyaSans-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 <link rel="preload" href="/fonts/Exo_2/Exo2-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<noscript><link rel="stylesheet" href="/subfont-output/fallback-f95ea018c3.css"></noscript>
-
 
 <script type="application/ld+json">
 {
@@ -43,7 +41,7 @@
 </script>
 <style>
   .hero {
-  position: relative;
+    position: relative;
   }
 
   .hero-content {
@@ -62,22 +60,61 @@
   }
 
   @media (max-width: 768px) {
-  .hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f7f7f7; /* Fallback background */
-    height: 40vh;
-    text-align: left;
+    .hero-content-all {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #f7f7f7; /* Fallback background */
+      height: 40vh;
+      text-align: left;
+      margin-top: 3rem;
+    }
+
+    .hero-content-all img {
+      width: 100%;
+      max-width: 640px;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .page-title h1 {
+      font-size: 2rem;
+    }
+
+    .cat-btn {
+      width: 60%;
+    }
   }
 
-  .hero img {
-    width: 100%;
-    max-width: 320px;
-    height: auto;
-    object-fit: cover;
+  @media (max-width: 480px) {
+    body {
+      margin-top: 3em;
+    }
+    main {
+      margin: 0 auto;
+      padding: 1em;
+    }
+
+    .page-title h1 {
+      font-size: 2rem;
+    }
+
+    .hero-content-all {
+      margin-top: 1em;
+    }
+
+    .welcome-container {
+      padding: 0;
+    }
+
+    .featured-topics {
+      border-radius: 0;
+    }
+
   }
-  }
+
+
 </style>
 </head>
   <body>
@@ -85,7 +122,7 @@
       <!--tech trends logo-->
       <div class="menu">
         <div class="logo-container">
-          <img src="/img/tech-trends-logo.webp" alt="Tech Trends logo" loading="eager" width="150" height="85" >
+          <img src="/img/tech-trends-logo.webp" alt="Tech Trends Blog Logo featuring AI-powered insights and technology" loading="eager" width="150" height="85" >
         </div>
         <!--full screen navbar-->
         <div class="navbar-items">
@@ -107,7 +144,7 @@
           </div>            
           <!-- search icon -->
           <div class="search-icon" id="search-icon" title="Search">
-            <img src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_40/v1732944513/search-icon_en1jpt.webp" alt="search icon" aria-label="Search" width="40" height="40" loading="lazy">
+            <img src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_40/v1732944513/search-icon_en1jpt.webp" alt="Search icon for AI-powered content insights" aria-label="Search" width="40" height="40" loading="lazy">
           </div>
                   <!-- search box popup -->
           <div class="search-popup" id="search-popup">
@@ -154,10 +191,14 @@
             </div> 
           </header>
           <article>      
-            <section class="welcome-container">                 
+            <div class="welcome-container">                 
               <div class="hero-post-author article-sub">
-                <div class="author-img"><a href="https://gennyallison.netlify.app" target="_blank" rel="noopener noreferrer" aria-label="Visit Genny Allison's professional portfolio on a new tab"><img src="/img/b&wHeadShot.webp" alt="Genny Allison with Allison Stock Inc" width="138" height="138" loading="lazy"></a></div>
-                  <div>
+                <div class="author-img">
+                  <a href="https://gennyallison.netlify.app"     target="_blank" rel="noopener noreferrer" aria-label="Visit Genny Allison's professional portfolio on a new tab">
+                    <img src="/img/b&wHeadShot.webp" alt="Genny Allison, AI Content Specialist at Allison Stock Inc." width="138" height="138" loading="lazy">
+                  </a>
+                </div>
+                <div>
                   <p><a href="https://gennyallison.netlify.app" aria-label="Visit Genny Allison's professional portfolio on a new tab" target="_blank" rel="noopener noreferrer">by Allison Stock Inc | Genny Allison, AI Content Specialist</a></p>
                   <p>Published on March 3, 2024</p>
                 </div>                     
@@ -211,7 +252,9 @@
                     <p>
                       The landscape of mobile development is rapidly evolving, driven by advancements in technology, changing consumer expectations, and the increasing integration of mobile apps in our daily lives. App development today is not just about functionality but about creating engaging, seamless experiences that meet the demands of modern users. Trends like artificial intelligence (AI), 5G technology, blockchain, and augmented reality (AR) are shaping how apps are designed and built, requiring developers to stay adaptable and forward-thinking.
                     </p>
-                    <p>As businesses compete for user attention, mobile development has become an essential component in business strategy. Apps are no longer limited to basic utilities but are a gateway for brands to interact with customers, collect valuable insights, and enhance user loyalty. Staying ahead of these trends is crucial for developers who aim to deliver innovative, high-performance apps that stand out in a crowded market.</p>
+                    <p>
+                      As businesses compete for user attention, mobile development has become an essential component in business strategy. Apps are no longer limited to basic utilities but are a gateway for brands to interact with customers, collect valuable insights, and enhance user loyalty. Staying ahead of these trends is crucial for developers who aim to deliver innovative, high-performance apps that stand out in a crowded market.
+                    </p>
                   </div>  
                 </section>
                 <section class="article-section" id="cross-platform-tools">
@@ -222,7 +265,9 @@
                     <p>
                       In the past, developing separate apps for iOS and Android was standard practice, often requiring twice the resources and development time. However, with the rise of <span>cross-platform development tools</span> like <span>Flutter</span>, <span>React Native</span>, and <span>Xamarin</span>, developers can now create a single codebase that works seamlessly across multiple platforms. This innovation is a game-changer for the app development industry, allowing for faster development cycles and reduced costs, which is particularly beneficial for startups and smaller businesses.
                     </p>
-                    <p>These tools are not only helping developers achieve consistency across devices but are also improving app performance and user experience. For instance, <span>Flutter</span>, developed by Google, enables developers to build natively compiled applications for mobile, web, and desktop from a single codebase, creating a consistent look and feel across devices without sacrificing speed. As cross-platform development tools evolve, they are becoming an indispensable trend in mobile development, offering flexibility, efficiency, and scalability.</p>
+                    <p>
+                      These tools are not only helping developers achieve consistency across devices but are also improving app performance and user experience. For instance, <span>Flutter</span>, developed by Google, enables developers to build natively compiled applications for mobile, web, and desktop from a single codebase, creating a consistent look and feel across devices without sacrificing speed. As cross-platform development tools evolve, they are becoming an indispensable trend in mobile development, offering flexibility, efficiency, and scalability.
+                    </p>
                   </div>  
                 </section>
                 <section class="article-section" id="5g-impact">
@@ -233,7 +278,9 @@
                     <p>
                       The deployment of <span>5G technology</span> is one of the most significant advancements in recent years, and its impact on mobile development is profound. With speeds up to 100 times faster than 4G and significantly lower latency, 5G allows developers to build apps that offer real-time processing capabilities, making it ideal for <span>augmented reality (AR)</span>, <span>virtual reality (VR)</span>, and <a href="/categories/iot.html"><span>Internet of Things (IoT) applications</span></a>.
                     </p>
-                    <p>For example, 5G technology allows <span>AR and VR applications</span> to function smoothly on mobile devices, providing immersive experiences that were previously limited to high-powered desktop setups. In the retail sector, this could mean offering customers virtual try-ons or real-time product visualizations. Meanwhile, in industries like healthcare, 5G enables faster and more reliable telemedicine services, empowering doctors to offer real-time diagnoses and consultations. The potential applications of 5G are vast, and as the technology becomes widespread, it will open up new possibilities for app developers to create engaging, high-performance mobile experiences.</p>
+                    <p>
+                      For example, 5G technology allows <span>AR and VR applications</span> to function smoothly on mobile devices, providing immersive experiences that were previously limited to high-powered desktop setups. In the retail sector, this could mean offering customers virtual try-ons or real-time product visualizations. Meanwhile, in industries like healthcare, 5G enables faster and more reliable telemedicine services, empowering doctors to offer real-time diagnoses and consultations. The potential applications of 5G are vast, and as the technology becomes widespread, it will open up new possibilities for app developers to create engaging, high-performance mobile experiences.
+                    </p>
                   </div>  
                 </section>    
                 <section class="article-section" id="ai-machine-learning">
@@ -266,7 +313,9 @@
                     <p>
                       Security remains a top priority in <span>app development</span>, especially for apps that handle sensitive data, such as financial or healthcare applications. <span>Blockchain technology</span> is emerging as a robust solution for mobile app security, offering decentralized data storage, encryption, and transparency that protect against data breaches and unauthorized access.
                     </p>
-                    <p>Blockchain can be especially valuable in sectors where trust and data integrity are paramount. For instance, blockchain can secure transactions in mobile banking apps, providing a verifiable record of all transactions without needing a central authority. In healthcare apps, blockchain can safeguard patient data, ensuring that only authorized personnel have access. As mobile security becomes increasingly important, blockchain integration is likely to become a standard practice in the future of mobile development.</p>
+                    <p>
+                      Blockchain can be especially valuable in sectors where trust and data integrity are paramount. For instance, blockchain can secure transactions in mobile banking apps, providing a verifiable record of all transactions without needing a central authority. In healthcare apps, blockchain can safeguard patient data, ensuring that only authorized personnel have access. As mobile security becomes increasingly important, blockchain integration is likely to become a standard practice in the future of mobile development.
+                    </p>
                   </div>  
                 </section>   
                 <section class="article-section" id="ar-vr">
@@ -277,7 +326,9 @@
                     <p>
                       <span>Augmented Reality (AR)</span> and <span>Virtual Reality (VR)</span> are not just buzzwords; they are transforming the landscape of <span>mobile development</span> by creating immersive and engaging experiences. From gaming to retail, AR and VR allow users to interact with digital content in new and innovative ways. For example, apps like IKEA Place use AR to let users visualize furniture in their home before making a purchase, enhancing the shopping experience and reducing the likelihood of returns.
                     </p>
-                    <p>In the education sector, AR and VR apps are used to create interactive learning environments, helping students understand complex subjects through 3D visualization. As demand for experiential, real-world interactions grows, AR and VR will continue to be a major focus in mobile development, providing new opportunities for developers to create captivating apps across various industries.</p>
+                    <p>
+                      In the education sector, AR and VR apps are used to create interactive learning environments, helping students understand complex subjects through 3D visualization. As demand for experiential, real-world interactions grows, AR and VR will continue to be a major focus in mobile development, providing new opportunities for developers to create captivating apps across various industries.
+                    </p>
                   </div>  
                 </section>          
                 <section class="article-section" id="conclusion">
@@ -288,42 +339,123 @@
                     <p>
                       The future of <span>mobile development</span> is filled with opportunities, driven by advancements in <span>app development</span> technologies like AI, 5G, blockchain, and AR/VR. As the mobile landscape continues to evolve, developers will need to embrace these trends to create innovative, high-performance apps that meet user expectations. Staying updated with these emerging technologies and incorporating them into development strategies will not only improve user engagement but also ensure long-term relevance in a competitive market.
                     </p>
-                    <p>For developers, the journey of mobile development is one of continuous learning and adaptation. By staying informed and being willing to adopt new tools and technologies, developers can lead the way in creating the next generation of mobile experiences..</p>
-                  </div>  
-                </section>                                                                                                                               
+                    <p>
+                      For developers, the journey of mobile development is one of continuous learning and adaptation. By staying informed and being willing to adopt new tools and technologies, developers can lead the way in creating the                     
+                    </p>
+                  </div>
+                </section>                       
               </div>
-              <div class="author-bio">
-                <picture>
-                  <source srcset="/img/genny_allison_portfolio_large.webp" media="(min-width: 1200px)">
-                  <source srcset="/img/genny_allison_portfolio_tablet.webp" media="(min-width: 768px)">
-                  <img src="/img/genny_allison_portfolio_mobile.webp" alt="Genny Allison | Allison Stock Inc" width="164" height="63" loading="lazy">
-                </picture>
-                <p><i>About Allison Stock Inc. This article was generated by Allison Stock Inc., a leader in AI-powered content and web development. Specializing in the latest trends in technology, we use AI to create innovative, SEO-optimized content for digital platforms. Connect with us on <a href="https://www.linkedin.com/in/genny-allison/" target="_blank" rel="noopener noreferrer" aria-label="Visit Genny Allison's LinkedIn on a new tab">LinkedIn</a> or explore our <a href="https://gennyallison.netlify.app" target="_blank" rel="noopener noreferrer" aria-label="Visit Genny Allison's professional portfolio on a new tab">portfolio</a> for more information.</i></p>
-              </div>
-            </section> 
-            <section class="editors-pick" id="recommended-articles">
+              <hr class="hr">
+            </div>
+          </article>
+          <hr class="hr">
+          <section id="recommended-articles">
+            <div class="editors-pick" id="editor-pick">
               <div class="section-title">
-                <h3>Editor's Pick</h3>
+                <h2>Editor's Pick</h2>
               </div>
               <div class="article-grid3">
-                <div class="article3">
-                  <a href="/Articles/iot-smart-cities.html" aria-label="A link to an Editor's Pick Article, IoT in Smart Cities"><img src="/img/iot-smart-cites-thumbnail.webp" alt="A futuristic neon-lit cityscape illustrating IoT innovations and their transformative impact on industry, showcasing how to use IoT in industry for smarter, connected solutions." loading="lazy" width="500" height="300"></a>
+                <div class="article3-viewall">
+                  <a
+                    href="/articles/iot-smart-cities.html"
+                    aria-label="A link to an Editor's Pick Article, IoT in Smart Cities"
+                    >
+                    <picture>
+                      <source
+                        srcset="
+                          https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_470,c_fill,fl_lossy/v1741221196/iot-smart-cites-thumbnail_ntl1wr.webp
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="/img/iot-smart-cites-thumbnail.webp"
+                        media="(min-width: 768px)"
+                      />
+                      <img
+                        src="/img/iot-smart-cites-thumbnail.webp"
+                        alt="A futuristic neon-lit cityscape illustrating IoT
+                        innovations and their transformative impact on industry,
+                        showcasing how to use IoT in industry for smarter, connected
+                        solutions."
+                        loading="lazy"
+                        width="317"
+                        height="179"
+                        style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
+                        type="image/webp"
+                      />
+                    </picture>                    
+                  </a>
                   <h3>
-                    <a href="/Articles/iot-smart-cities.html" aria-label="A link to an Editor's Pick Article, IoT in Smart Cities">
-                      IoT in Smart Cities: Revolutionizing Urban Living with Smart Cities Technology
+                    <a
+                      href="/Articles/iot-smart-cities.html"
+                      aria-label="A link to an Editor's Pick Article, IoT in Smart Cities"
+                    >
+                      IoT in Smart Cities: Revolutionizing Urban Living with
+                      Smart Cities Technology
                     </a>
                   </h3>
                 </div>
-                <div class="article3">
-                  <a href="/Articles/leveraging-google.html" aria-label="A link to an Editor's Pick Article, Leveraging Google Search Console"><img src="/img/leveraging-google-thumbnail.webp" loading="lazy" alt="AI SEO Tools and Google Search Console: A magnifying glass zooming in on data, symbolizing advanced SEO insights and tools." width="500" height="300"></a>
+                <div class="article3-viewall">
+                  <a
+                    href="/Articles/leveraging-google.html"
+                    aria-label="A link to an Editor's Pick Article, Leveraging Google Search Console"
+                    >
+                    <picture>
+                      <source
+                        srcset="
+                          https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_470,c_fill,fl_lossy/v1741221197/leveraging-google-thumbnail_s6hkfn.webp
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="/img/leverage_google_search_thumbnail.webp"
+                        media="(min-width: 768px)"
+                      />
+                      <img
+                        src="/img/leverage_google_search_thumbnail.webp"
+                        loading="lazy"
+                        alt="AI SEO Tools and Google Search Console: A magnifying glass zooming in on data, symbolizing advanced SEO insights and tools."
+                        width="317"
+                        height="179"
+                        style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
+                        type="image/webp"
+                      />
+                    </picture> 
+                    
+                  </a>
                   <h3>
                     <a href="/Articles/leveraging-google.html">
                       Leveraging Google Search Console
                     </a>
                   </h3>
-                </div>                    
-                <div class="article3">
-                  <a href="/articles/headless-ecommerce.html" aria-label="A link to an Editor's Pick Article, Headless Commerce What is it and Why it's Important "><img src="/img/headless_thumbnail.webp" loading="lazy" alt="A futuristic storefront with a professional exploring headless commerce solutions, showcasing the flexibility and scalability of headless eCommerce." width="500" height="300"></a>
+                </div>
+                <div class="article3-viewall">
+                  <a
+                    href="/articles/headless-ecommerce.html"
+                    aria-label="A link to an Editor's Pick Article, Headless Commerce What is it and Why it's Important "
+                    >
+                    <picture>
+                      <source
+                        srcset="
+                          https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_470,c_fill,fl_lossy/v1741221195/headless-commerce-thumbnail_jcm5ze.webp
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="/img/headless-commerce-thumbnail.webp"
+                        media="(min-width: 768px)"
+                      />
+                      <img
+                        src="/img/headless-commerce-thumbnail.webp"
+                          alt="A futuristic storefront with a professional exploring headless commerce solutions, showcasing the flexibility and scalability of headless eCommerce."
+                          loading="lazy"
+                        width="317"
+                        height="179"
+                          style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
+                          type="image/webp"
+                      />
+                    </picture> 
+                  </a>
                   <h3>
                     <a href="/articles/headless-ecommerce.html">
                       Headless eCommerce: What It Is and Why It's Important
@@ -331,111 +463,399 @@
                   </h3>
                 </div>
               </div>
-              <div class="must-reads">
-                <div class="section-title">
-                  <h2>Must Reads</h2>
-                </div>
-                <div class="article-grid2">
-                  <div class="article2">
-                    <a href="/articles/seo-semrush.html"><img src="/img/seo_semrush_thumbnail.webp" loading="lazy" alt="A professional analyzing advanced SEO data visualizations to uncover insights into keyword research and optimize for long-tail keywords." width="500" height="300"></a>
-                    <h3>
-                      <a href="/articles/seo-semrush.html">
-                        Improve Your Websites Search
-                      </a>
-                    </h3>
-                    <p>As the world becomes more digital, businesses are constantly looking for ways to stay competitive and increase their online visibility. AI SEO Tools plays...</p>
-                  </div>
-                  <div class="article2">
-                    <a href="/articles/ai-ecommerce.html" aria-label="A link to an article, The Future of eCommerce"><img src="/img/ecommerce_thumbnail.webp" loading="lazy" alt="A 1940s-style woman interacting with a futuristic robot in a modern store, symbolizing the future of eCommerce and the role of eCommerce AI in revolutionizing online retail." width="500" height="300"></a>
-                    <h3>
-                      <a href="/articles/ai-ecommerce.html">
-                        The Future of eCommerce
-                      </a>
-                    </h3>
-                    <p>Explore how AI is reshaping the future of online shopping, driving innovation and personalization...</p>
-                  </div>                                     
-                </div>
-              </div>
-
-              <div class="seo">
-                <div class="section-title">
-                  <h2>SEO</h2>
-                </div>
-                <div class="article-grid2">
-                  <div class="article2">
-                    <a href="/articles/leveraging-google.html" aria-label="A link to an SEO article, Leveraging Google Search Console with AI SEO tools for superior insights"><img src="/img/leveraging-google-thumbnail.webp" loading="lazy" alt="AI SEO Tools and Google Search Console: A magnifying glass zooming in on data, symbolizing advanced SEO insights and tools." width="500" height="300"></a>
-                    <h3>
-                      <a href="/articles/leveraging-google.html" aria-label="A link to an SEO article, Leveraging Google Search Console with AI SEO tools for superior insights">  
-                        Leveraging Google Search Console with AI SEO Tools for Superior Insights
-                      </a>
-                    </h3>
-                    <p>Understand how GSC plays a pivotal role in optimizing your website's search engine performance.…</p>
-                  </div>
-                  <div class="article2">
-                    <a href="/articles/max-seo-ranking.html"><img src="/img/ahrefs_keyword_thumbnail.webp" loading="lazy" alt="A professional analyzing advanced SEO data visualizations to uncover insights into keyword research and optimize for long-tail keywords." width="500" height="300"></a>
-                    <h3>
-                      <a href="/articles/max-seo-ranking.html">
-                        Maximizing Keyword Research with AI SEO tools such as Ahrefs
-                      </a>
-                    </h3>
-                    <p>In the ever-evolving world of SEO, staying ahead of the competition requires a strong strategy...</p>
-                  </div>                                   
-                </div>
-              </div>
-              <div class="mobile">
-                <div class="section-title">
-                  <h2>Mobile Apps</h2>
-                </div>
-                <div class="article-grid2">
-                  <div class="article2">
-                    <a href="/articles/top-mobile-app.html" aria-label="A link to a Mobile Apps article, Top Mobile App Development Tools Enhancing Mobile Development Platforms"><img src="/img/top_mobile_thumbnail.webp" loading="lazy" alt="A futuristic smartphone interface showcasing advanced mobile development tools for iOS and Android, representing the top mobile app development solutions." width="500" height="300"></a>
-                    <h3>
-                      <a href="/articles/top-mobile-app.html" aria-label="A link to a Mobile Apps article, Top Mobile App Development Tools Enhancing Mobile Development Platforms">
-                        Top Mobile App Development Tools:<br> Enhancing Mobile Development Platforms
-                      </a>
-                    </h3>
-                    <p>Learn why choosing the right tools is critical for mobile app success...</p>
-                  </div>
-                  <div class="article2">
-                    <a href="/articles/future-mobile-app.html" aria-label="A link to a mobile apps article, The future of mobile app development"><img src="/img/future_mobile_thumbnail.webp" loading="lazy" alt="A retro-inspired comic illustration of a woman at a computer with a smartphone, representing trends in mobile development and apps development." width="500" height="300"></a>  
-                    <h3>
-                      <a href="/articles/future-mobile-app.html" aria-label="A link to a mobile apps article, The future of mobile app development">
-                        The Future of Mobile Development: Key Trends Shaping the Next Era of App Development
-                      </a>
-                    </h3>
-                    <p>Explore the transformative factors driving change in mobile development....</p>
-                  </div>                                   
-                </div>
-              </div> 
-            </section>
-          </article>
-        </div>
-        <aside class="sidebar">
-            <div class="sidebar-article">
-              <img src="/img/sidebar-future-city.webp" alt="A woman from the 1940's arriving to a futuristic city" loading="eager" width="264" height="300" loading="lazy">
-              <div>
-                <ul>
-                  <li class="featured-topics"><a href="/articles/iot-industries.html">The Latest Trends in IoT and How They're impacting Industries</a></li>
-                  <li class="featured-topics"><a href="/articles/top-mobile-app.html">Top Mobile App Development Tools: A Comprehensive Guide</a></li>
-                  <li class="featured-topics"><a href="/articles/headless-ecommerce.html">Headless Commerce: What It Is and Why It's Important</a></li>
-                </ul>
-              </div>                     
             </div>
-            <div id="stay-connected-sidebar">
+            <div class="iot-updates">
+              <div class="section-title">
+                <h2>IoT Updates</h2>
+              </div>
+              <div class="article-grid1">
+                <picture>
+                  <source
+                    srcset="
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_1200,fl_lossy/v1732800119/iot_innovations_desktop_tpoo0t.avif
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="/img/iot_innovations_tablet.webp"
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="/img/iot_innovations_mobile.webp"
+                      alt="A retro comic-style depiction of IoT innovations, highlighting how industries use IoT to drive transformation and enhance connectivity."
+                      width="317"
+                      height="179"
+                      loading="lazy"
+                      style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
+                      type="image/webp"
+                  />
+                </picture> 
+                <h3>
+                  <a
+                    href="/articles/iot-industries.html"
+                    aria-label="A link to the article IoT Innovations Transforming Industries and Revolutionizing Connected Technology"
+                  >
+                    IoT Innovations: Transforming Industries and Revolutionizing
+                  </a>
+                </h3>
+                <p>
+                  <a
+                    href="/articles/iot-industries.html"
+                    aria-label="A link to the article IoT Innovations Transforming Industries and Revolutionizing Connected Technology"
+                    >The internet of things (IoT) is a rapidly growing industry
+                    that is transforming the way we live and work. IoT...</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="must-reads">
+              <div class="section-title">
+                <h2>Must Reads</h2>
+              </div>
+              <div class="article-grid2">
+                <div class="article2-viewall">
+                  <a href="/articles/seo-semrush.html"
+                    >
+                    <picture>
+                      <source
+                        srcset="
+                          https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_520,fl_lossy/v1741221199/semrush-article_kpkomc.avif
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="/img/semrush_article_hero_tablet.webp"
+                        media="(min-width: 768px)"
+                      />
+                      <img
+                        src="/img/semrush_article_hero_mobile.webp"
+                        loading="lazy"
+                        alt="A professional analyzing advanced SEO data visualizations to uncover insights into keyword research and optimize for long-tail keywords."
+                        width="317"
+                        height="179"
+                        style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
+                        type="image/webp"
+                      />
+                    </picture>  
+                  </a>
+                  <h3>
+                    <a href="/articles/seo-semrush.html">
+                      Improve Your Websites Search
+                    </a>
+                  </h3>
+                  <p>
+                    As the world becomes more digital, businesses are constantly
+                    looking for ways to stay competitive and increase their
+                    online visibility. AI SEO Tools plays...
+                  </p>
+                </div>
+                <div class="article2-viewall">
+                  <a
+                    href="/articles/ai-ecommerce.html"
+                    aria-label="A link to an article, The Future of eCommerce"
+                    >
+                    <picture>
+                      <source
+                        srcset="
+                          https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_520,fl_lossy/v1741221192/ai-commerce-thumbnail_sqpje9.avif
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="/img/ai-commerce-thumbnail.webp"
+                        media="(min-width: 768px)"
+                      />
+                      <img
+                        src="/img/ai-commerce-thumbnail.webp"
+                        loading="lazy"
+                        alt="AI-powered chatbots revolutionizing customer service and online retail"
+                        width="317"
+                        height="179"
+                        style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
+                        type="image/webp"
+                      />
+                    </picture>  
+                  </a>
+                  <h3>
+                    <a href="/articles/ai-ecommerce.html">
+                      The Future of eCommerce
+                    </a>
+                  </h3>
+                  <p>
+                    Explore how AI is reshaping the future of online shopping,
+                    driving innovation and personalization...
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="seo">
+              <div class="section-title">
+                <h2>SEO</h2>
+              </div>
+              <div class="article-grid2">
+                <div class="article2-viewall">
+                  <a
+                    href="/articles/leveraging-google.html"
+                    aria-label="A link to an SEO article, Leveraging Google Search Console with AI SEO tools for superior insights"
+                    >
+                    <picture>
+                      <source
+                        srcset="
+                          https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_520,fl_lossy/v1741221197/leveraging-google-thumbnail_s6hkfn.avif
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="/img/leverage_google_search_thumbnail.webp"
+                        media="(min-width: 768px)"
+                      />
+                      <img
+                        src="/img/leverage_google_search_thumbnail.webp"
+                        alt="AI SEO Tools and Google Search Console: A magnifying glass zooming in on data, symbolizing advanced SEO insights and tools."
+                        loading="lazy"
+                        width="317"
+                        height="179"
+                        style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
+                        type="image/webp"
+                      />
+                    </picture>
+                  </a>
+                  <h3>
+                    <a
+                      href="/articles/leveraging-google.html"
+                      aria-label="A link to an SEO article, Leveraging Google Search Console with AI SEO tools for superior insights"
+                    >
+                      Leveraging Google Search Console with AI SEO Tools for
+                      Superior Insights
+                    </a>
+                  </h3>
+                  <p>
+                    Understand how GSC plays a pivotal role in optimizing your
+                    website's search engine performance.…
+                  </p>
+                </div>
+                <div class="article2-viewall">
+                  <a href="/articles/max-seo-ranking.html"
+                    >
+                    <picture>
+                      <source
+                        srcset="
+                          https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_520,fl_lossy/v1741221198/max-seo-thumbnail_llbltj.avif
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="/img/max-seo-thumbnail.webp"
+                        media="(min-width: 768px)"
+                      />
+                      <img
+                        src="/img/max-seo-thumbnail.webp"
+                        loading="lazy"
+                        alt="A professional analyzing advanced SEO data visualizations to uncover insights into keyword research and optimize for long-tail keywords."
+                        width="317"
+                        height="179"
+                        style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
+                        type="image/webp"
+                      />
+                    </picture>
+                  </a>
+                  <h3>
+                    <a href="/articles/max-seo-ranking.html">
+                      Maximizing Keyword Research with AI SEO tools such as
+                      Ahrefs
+                    </a>
+                  </h3>
+                  <p>
+                    In the ever-evolving world of SEO, staying ahead of the
+                    competition requires a strong strategy...
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="mobile">
+              <div class="section-title">
+                <h2>Mobile Apps</h2>
+              </div>
+              <div class="article-grid2">
+                <div class="article2-viewall">
+                  <a
+                    href="/articles/top-mobile-app.html"
+                    aria-label="A link to a Mobile Apps article, Top Mobile App Development Tools Enhancing Mobile Development Platforms"
+                    >
+                    <picture>
+                      <source
+                        srcset="
+                          https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_520,fl_lossy/v1741221200/top-mobile-thumbnail_nayors.avif
+                        "
+                          media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="/img/top-mobile-thumbnail.webp"
+                           media="(min-width: 768px)"
+                      />
+                      <img
+                        src="/img/top-mobile-thumbnail.webp"
+                          alt="A futuristic smartphone interface showcasing advanced mobile development tools for iOS and Android, representing the top mobile app development solutions."
+                          width="319"
+                          height="179"
+                          style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
+                          type="image/webp"
+                      />
+                    </picture>
+                  </a>
+                  <h3>
+                    <a
+                      href="/articles/top-mobile-app.html"
+                      aria-label="A link to a Mobile Apps article, Top Mobile App Development Tools Enhancing Mobile Development Platforms"
+                    >
+                      Top Mobile App Development Tools:<br />
+                      Enhancing Mobile Development Platforms
+                    </a>
+                  </h3>
+                  <p>
+                    Learn why choosing the right tools is critical for mobile
+                    app success...
+                  </p>
+                </div>
+                <div class="article2-viewall">
+                  <a
+                    href="/articles/future-mobile-app.html"
+                    aria-label="A link to a mobile apps article, The future of mobile app development"
+                    >
+                  <picture>
+                    <source
+                      srcset="
+                        https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_520,fl_lossy/v1741221192/future_mobile_thumbnail_mp3xni.avif
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="/img/future_mobile_thumbnail.webp"
+                      media="(min-width: 768px)"
+                    />
+                    <img
+                      src="/img/future_mobile_thumbnail.webp"
+                      loading="lazy"
+                        alt="A retro-inspired comic illustration of a woman at a computer with a smartphone, representing trends in mobile development and apps development."
+                        width="319"
+                        height="179"
+                        style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
+                        type="image/webp"
+                    />
+                  </picture>
+                  </a>
+                  <h3>
+                    <a
+                      href="/articles/future-mobile-app.html"
+                      aria-label="A link to a mobile apps article, The future of mobile app development"
+                    >
+                      The Future of Mobile Development: Key Trends Shaping the
+                      Next Era of App Development
+                    </a>
+                  </h3>
+                  <p>
+                    Explore the transformative factors driving change in mobile
+                    development....
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <section id="sidebar">
+          <aside class="sidebar">
+            <div class="sidebar-article">
+                <picture>
+                  <source
+                    srcset="
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_520,fl_lossy/v1741221199/sidebar-future-city_eoy5fp.avif
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="/img/sidebar-future-city.webp"
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="/img/sidebar-future-city.webp"
+                    alt="A woman from the 1940's arriving to a futuristic city"
+                    type="image/avif"
+                    loading="eager"
+                    width="265"
+                    height="472"
+                    style="object-fit: cover;  aspect-ratio: 9 / 16; border-radius: 1.5em"
+                    type="image/webp"
+                    />
+                </picture>
+              <div class="sidebar-text">
+                <ul>
+                  <li class="featured-topics">
+                    <a href="/articles/iot-industries.html"
+                      >The Latest Trends in IoT and How They're impacting
+                      Industries</a
+                    >
+                  </li>
+                  <li class="featured-topics">
+                    <a href="/articles/top-mobile-app.html"
+                      >Top Mobile App Development Tools: A Comprehensive Guide</a
+                    >
+                  </li>
+                  <li class="featured-topics">
+                    <a href="/articles/headless-ecommerce.html"
+                      >Headless Commerce: What It Is and Why It's Important</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div id="stay-connected-sidebar" class="featured-topics2">
               <div class="stay-connected">
                 <h3>Stay Connected</h3>
                 <p>Follow us on social media for updates and insights.</p>
                 <div class="social-media-icons">
-                  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
-                    <img src="/img/facebook-icon.webp" alt="Follow us on Facebook (opens in a new tab)" loading="lazy" width="47" height="47">
+                  <a
+                    href="https://facebook.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Follow us on Facebook"
+                  >
+                    <img
+                      src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_80,fl_lossy/v1741221192/facebook-icon_cfmjwc.webp"
+                      alt="Follow us on Facebook (opens in a new tab)"
+                      loading="lazy"
+                      width="47"
+                      height="47"
+                    />
                     <span>Facebook</span>
                   </a>
-                  <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter">
-                    <img src="/img/twitter-x-icon.webp" alt="Follow us on Twitter (opens in a new tab)"" loading="lazy" width="47" height="47">
+                  <a
+                    href="https://twitter.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Follow us on Twitter"
+                  >
+                    <img
+                      src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_80,fl_lossy/v1741221202/twitter-x-icon_bx3vua.webp"
+                      alt="Follow us on Twitter (opens in a new tab)"
+                      loading="lazy"
+                      width="47"
+                      height="47"
+                    />
                     <span>Twitter</span>
                   </a>
-                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
-                    <img src="/img/instagram.webp" alt="Follow us on Instagram (opens in a new tab)" loading="lazy" width="47" height="47">
+                  <a
+                    href="https://instagram.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Follow us on Instagram"
+                  >
+                    <img
+                      src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_80,fl_lossy/v1741221589/instagram_oajfgx.webp"
+                      alt="Follow us on Instagram (opens in a new tab)"
+                      loading="lazy"
+                      width="47"
+                      height="47"
+                    />
                     <span>Instagram</span>
                   </a>
                 </div>
@@ -443,46 +863,272 @@
             </div>
             <div class="cta-section sidebar-cta">
               <div class="newsletter-img">
-                <img src="/img/newsletter.webp" alt="Envelope on a paper plane representing updates" loading="lazy" width="120" height="120">
+                <img
+                  src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_200,fl_lossy/v1741221199/newsletter_oxwway.webp"
+                  alt="Envelope on a paper plane representing updates"
+                  loading="lazy"
+                  width="120"
+                  height="120"
+                />
               </div>
               <div class="cta-sub">
                 <h2>Discover Tech Trends and More</h2>
-                <p><i>Dive into the latest in AI-driven tools, IoT innovations, and eCommerce advancements right here on Tech Trends. Explore a wealth of articles designed to inspire and inform.</i></p>
-                <p>If you're seeking an experienced Content Specialist or Web Developer, <a href="https://gennyallison.netlify.app" target="_blank" rel="noopener noreferrer" aria-label="Visit Genny Allison's professional portfolio on a new tab">visit my portfolio</a> to see how I can bring your vision to life.</p>
+                <p>
+                  <i
+                    >Dive into the latest in AI-driven tools, IoT innovations, and
+                    eCommerce advancements right here on Tech Trends. Explore a
+                    wealth of articles designed to inspire and inform.</i
+                  >
+                </p>
+                <p>
+                  If you're seeking an experienced Content Specialist or Web
+                  Developer,
+                  <a
+                    href="https://gennyallison.netlify.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit Genny Allison's professional portfolio on a new tab"
+                    >visit my portfolio</a
+                  >
+                  to see how I can bring your vision to life.
+                </p>
               </div>
             </div>
-        </aside>
+          </aside>
+        </section>
       </div>
+      <section id="content-creator">
+        <hr class="hr" />
+        <div class="cta-section featured-topics">
+          <div>
+            <picture>
+              <source
+                srcset="
+                  https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_460,fl_lossy/v1741221193/genny_allison_portfolio_mobile_eakltj.webp
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="/img/genny_allison_portfolio_tablet.webp"
+                media="(min-width: 768px)"
+              />
+              <img
+                src="/img/genny_allison_portfolio_mobile.webp"
+                alt="Welcome to Tech Trends! An AI-powered SEO tool helping optimize digital content"
+                width="250"
+                height="110"
+                loading="eager"
+                fetchpriority="high"
+                style="border-radius:1.5em;"
+                type="image/webp"
+              />
+            </picture>
+          </div>
+          <div class="cta-sub article-sub">
+            <h2>Partner with an AI Content Specialist & Web Developer</h2>
+            <p>
+              <i
+                >Looking for someone who can combine creativity,
+                cutting-edge AI tools, and technical expertise to build<br />
+                stunning web platforms and engaging content? You've come to
+                the right place.</i
+              >
+            </p>
+            <p>
+              At <strong>Allison Stock Inc.</strong>, I specialize in
+              AI-powered content creation and web development using tools
+              like ChatGPT, Midjourney, Figma, and Uizard. My portfolio
+              showcases my ability to integrate AI solutions seamlessly into
+              modern web design, delivering high-performing, SEO-optimized
+              websites and content tailored to today's digital demands.
+            </p>
+            <p>
+              <a
+                href="https://www.linkedin.com/in/genny-allison/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit Genny Allison's LinkedIn on a new tab"
+                >Connect with me on LinkedIn</a
+              >
+              or
+              <a
+                href="https://gennyallison.netlify.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit Genny Allison's professional portfolio on a new tab"
+                >explore my portfolio</a
+              >
+              to see how I can help bring your vision to life.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
+      <div class="bottom-section">
+        <div class="bottom-img-container">
+          <div class="bottom-img-box">
+            <picture>
+              <source
+                srcset="
+                  https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_480,fl_lossy/v1741645926/footer-comic1_pjhsjk.avif
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="/img/footer-comic1.webp"
+                media="(min-width: 768px)"
+              />
+              <img
+                src="/img/footer-comic1.webp"
+                alt="AI technology and futuristic robotics leading the way to the future of eCommerce and SEO tools"
+                type="image/webp"
+                loading="lazy"
+                width="480"
+                height="320" 
+                style="object-fit: cover; aspect-ratio: 3/2;"
+              />
+            </picture>
+          </div>
+          <div class="bottom-img-box">
+            <picture>
+              <source
+                srcset="
+                  https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_480,fl_lossy/v1741645926/footer-comic2_msckfs.avif
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="/img/footer-comic2.webp"
+                media="(min-width: 768px)"
+              />
+              <img
+                src="/img/footer-comic2.webp"
+                alt="A 1940s comic-style image featuring a lady driving and a robot waving, symbolizing how AI SEO tools welcome you to the future of technology."
+                type="image/webp"
+                loading="lazy"
+                width="480"
+                height="320" 
+                style="object-fit: cover; aspect-ratio: 3/2;"
+              />
+            </picture>
+          </div>
+          <div class="bottom-img-box">
+            <picture>
+              <source
+                srcset="
+                  https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_480,fl_lossy/v1741645925/footer-comic3_atowkg.avif
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="/img/footer-comic3.webp"
+                media="(min-width: 768px)"
+              />
+              <img
+                src="/img/footer-comic3.webp"
+                alt="A 1940s comic-style image featuring a lady driving and a robot waving, symbolizing how AI SEO tools welcome you to the future of technology."
+                type="image/webp"
+                loading="lazy"
+                width="480"
+                height="320" 
+                style="object-fit: cover; aspect-ratio: 3/2;"
+              />
+            </picture>
+          </div>
+          <div class="bottom-img-box">
+            <picture>
+              <source
+                srcset="
+                  https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_480,fl_lossy/v1741645925/footer-comic4_qx0km4.avif
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="/img/footer-comic4.webp"
+                media="(min-width: 768px)"
+              />
+              <img
+                src="/img/footer-comic4.webp"
+                alt="A 1940s comic-style image featuring a lady driving and a robot waving, symbolizing how AI SEO tools welcome you to the future of technology."
+                type="image/webp"
+                loading="lazy"
+                width="480"
+                height="320" 
+                style="object-fit: cover; aspect-ratio: 3/2;"
+              />
+            </picture>
+          </div>
+        </div>
+        <hr />
+      </div>
       <nav class="bottom-nav">
         <div class="navbar-footer-items">
           <ul>
             <li><a href="/index.html">Home</a></li>
             <li><a href="/categories/categorized.html">Topics</a></li>
-            <li><a href="/categories/uncategorized.html">View All</a></li>            
+            <li><a href="/categories/uncategorized.html">View All</a></li>
             <li><a href="/categories/seo-tools.html">SEO Tools</a></li>
             <li><a href="/categories/iot.html">IoT</a></li>
             <li><a href="/categories/mobile.html">Mobile App</a></li>
             <li><a href="/categories/ecommerce.html">eCommerce</a></li>
-            <li><a href="/categories/tech-trends.html">Welcome</a></li>  
+            <li><a href="/categories/tech-trends.html">Welcome</a></li>
           </ul>
         </div>
       </nav>
       <div class="stay-connected-footer">
         <div class="footer-social">
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-              <img src="/img/white-fb-icon.webp" alt="Follow us on Facebook (opens in a new tab)" loading="lazy" width="40" height="40">
-            </a>
-            <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
-              <img src="/img/white-x-icon.webp" alt="Follow us on Twitter (opens in a new tab)" loading="lazy" width="40" height="40">
-            </a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-              <img src="/img/white-ig-icon.webp" alt="Follow us on Instagram (opens in a new tab)" loading="lazy" width="40" height="40">
-            </a>
-        </div>            
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_80,fl_lossy/v1741221202/white-fb-icon_fxqbpm.webp"
+              alt="Follow us on Facebook (opens in a new tab)"
+              loading="lazy"
+              width="40"
+              height="40"
+            />
+          </a>
+          <a
+            href="https://www.twitter.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_80,fl_lossy/v1741221205/white-x-icon_q0unqu.webp"
+              alt="Follow us on Twitter (opens in a new tab)"
+              loading="lazy"
+              width="40"
+              height="40"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_80,fl_lossy/v1741221203/white-ig-icon_swy2wb.webp"
+              alt="Follow us on Instagram (opens in a new tab)"
+              loading="lazy"
+              width="40"
+              height="40"
+            />
+          </a>
+        </div>
         <div class="copyright">
-          <p>Copyright © All rights reserved | <a href="https://gennyallison.netlify.app" target="_blank" rel="noopener noreferrer" aria-label="Visit Genny Allison's professional portfolio on a new tab">Allison Stock Inc.</a></p>
+          <p>
+            Copyright © All rights reserved |
+            <a
+              href="https://gennyallison.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visit Genny Allison's professional portfolio on a new tab"
+              >Allison Stock Inc.</a
+            >
+          </p>
         </div>
         <div class="address">
           <address>123 Main St, Texas City, Texas</address>
@@ -492,4 +1138,4 @@
     <div id="back-to-top" title="Back to top" role="button">↑</div>
     <script src="/script.js" defer></script>
   </body>
-</html>  
+</html>
