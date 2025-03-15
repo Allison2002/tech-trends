@@ -3,26 +3,30 @@
     <head>
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       
       <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1200,fl_lossy/v1732720733/welcome_to_tech_trends_hero-desktop_uuz3wh.avif" as="image" media="(min-width: 1200px)" fetchpriority="high">
 
+      <!-- Preload the critical mobile image -->
       <link rel="preload" href="/img/welcome_to_tech_trends_hero-mobile.webp" as="image" media="(max-width: 767px)" fetchpriority="high">
+      
+      <!-- Preload other critical assets like fonts -->
+      <link rel="preload" as="font" href="/fonts/Alegreya_Sans/AlegreyaSans-Regular.woff2" type="font/woff2" crossorigin="anonymous" />
+      <link rel="preload" as="font" href="/fonts/Exo_2/Exo2-Regular.woff2" type="font/woff2" crossorigin="anonymous" />
 
+      <!-- Preload CSS -->
       <link rel="preload" href="/styles.css" as="style">
       <link rel="stylesheet" href="/styles.css" />
 
+      <!-- Preconnect to Cloudinary -->
       <link rel="preconnect" href="https://res.cloudinary.com" crossorigin />
       <link rel="dns-prefetch" href="https://res.cloudinary.com" />
-
-      <link rel="preload" as="font" href="/fonts/Alegreya_Sans/AlegreyaSans-Regular.woff2" type="font/woff2" crossorigin="anonymous" />
-      <link rel="preload" as="font" href="/fonts/Exo_2/Exo2-Regular.woff2" type="font/woff2" crossorigin="anonymous" />
       
       <link rel="icon" href="https://res.cloudinary.com/dnptzisuf/image/upload/v1741372982/tab_logo_robot_xk0ank.png" type="image/png" />
       
       <meta name="description" content="Stay updated with the latest in SEO optimization using AI, headless commerce, IoT, and eCommerce trends. Discover tools and insights on Tech Trends Blog to enhance your digital strategy in 2024." />
       <title>Tech Trends Blog | Explore the Latest in AI, SEO, IoT, and eCommerce in 2024</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
+
       <meta
         name="google-site-verification"
         content="P19ZwIYzDuW5Qi-e7ps4IF88g_mqUgXB67kU3sQep78"
