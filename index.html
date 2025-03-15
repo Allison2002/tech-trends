@@ -305,59 +305,6 @@
           box-shadow: rgb(0 0 0 / 20%) 0px 0px 1.5625em 0.5em;
         }
 
-        @media (max-width: 768px) {
-          .hero-content {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #f7f7f7; /* Fallback background */
-            text-align: left;
-            height: auto;
-            max-height: 750px;
-          }
-
-          .hero-content img {
-            width: 100%;
-            max-width: 640px;
-            height: auto;
-            object-fit: cover;
-            margin-top: 1em;
-          }
-
-          .page-title h2 {
-            font-size: 2.5rem;
-            padding: 1em;
-          }
-
-           .article-sub p {
-            font-size: 1.5rem;
-            padding: 1em;
-           }
-        }
-
-        @media (max-width: 480px) {
-          .hero-content img {
-          width: 100%;
-          height: auto;
-          }
-
-          .page-title h1 {
-            font-size: 1.8rem;
-            padding: 1em 1em 0;
-          }
-
-          .page-title h2 {
-            font-size: 1.5rem;
-          }
-
-          .page-title h3 {
-            padding: 0 1em;
-          }
-
-          .cat-btn {
-            width: 80%;
-          }
-        }
       </style>
     </head>
   <body>
@@ -577,7 +524,7 @@
                     style="border-radius:1.5em;"
                   />
                 </picture>
-                <div class="page-title article-sub"">
+                <div class="page-title article-sub">
                   <h2><i>Welcome to Tech Trends and Innovations</i></h2>
                   <h3>
                     a blog dedicated to exploring the latest advancements in
@@ -668,8 +615,8 @@
             </ul>
           </div>
           <section id="recommended-articles">
-            <div class="editors-pick" id="editor-pick">
-              <div class="section-title">
+            <div class="editors-pick">
+              <div class="section-title" id="editors-pick">
                 <h2>Editor's Pick</h2>
               </div>
               <div class="article-grid3">

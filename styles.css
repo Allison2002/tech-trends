@@ -1486,6 +1486,56 @@ form button:hover {
 }
 
 @media (max-width: 768px) {
+  .hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f7f7;
+    /* Fallback background */
+    text-align: left;
+    height: auto;
+    max-height: 750px;
+  }
+
+  .hero-content img {
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    object-fit: cover;
+    margin-top: 1em;
+  }
+
+  .section-title {
+    width: 640px;
+    max-width: 100%;
+  }
+
+  .article-sub p {
+    font-size: 1.5rem;
+  }
+
+  .page-title p,
+  .page-title h3 {
+    padding: 0 2em 1.3em;
+    margin: 0 auto;
+    width: 640px;
+    max-width: 100%;
+  }
+
+  .page-title h2 {
+    padding: 0 2em;
+    margin: 0 auto;
+    width: 640px;
+    font-size: 2.5rem;
+    max-width: 100%;
+  }
+
+  .page-title h1 {
+    font-size: 2.5rem;
+    padding: 2em 1em 1em;
+    width: 640px;
+  }
+
   body {
     margin-top: 3em;
   }
@@ -1816,6 +1866,7 @@ form button:hover {
   .article-grid3 {
     display: flex;
     flex-direction: column;
+    padding: 0;
   }
 
   .article-grid3 img {
@@ -1823,26 +1874,30 @@ form button:hover {
     height: auto;
   }
 
+  #editors-pick h2 {
+    margin: 2em auto 0;
+    padding: 0 0 0 1em;
+  }
+
   .section-title h2 {
     max-width: 500px;
     width: 475px;
-    margin: 0 auto;
+    margin: 1em auto 0;
+    padding-left: 1em;
   }
 
-  .section-title {
-    padding: 1em;
-  }
-
-  .article2-viewall h3,
-  .article2-viewall p,
-  .article-grid1 h3,
-  .article-grid1 p,
-  .article3-viewall p,
-  .article3-viewall h3,
-  .article3-viewall h2 a {
+  #featured-topics,
+  #intro-paragraph,
+  #recommended-articles h3,
+  #recommended-articles p,
+  #recommended-articles h2 a {
     margin: 0 0.5em 0;
     width: 475px;
     margin: 0 auto;
+  }
+
+  #intro-paragraph {
+    margin-top: 2em;
   }
 
   .stay-connected-footer,
@@ -1952,11 +2007,6 @@ form button:hover {
     height: 348.75px;
   }
 
-  .page-title h1 {
-    padding-left: 1em;
-    padding-bottom: 0.5em;
-  }
-
   .cat-btn {
     margin: 0 auto;
     display: flex;
@@ -1964,7 +2014,7 @@ form button:hover {
   }
 
   .article-grid3 {
-    margin-top: 2em;
+    margin-top: 1em;
 
   }
 
@@ -2022,6 +2072,11 @@ form button:hover {
 }
 
 @media (max-width: 480px) {
+  .hero-content img {
+    width: 100%;
+    height: auto;
+  }
+
   body {
     position: relative;
     margin-top: 0;
@@ -2040,24 +2095,70 @@ form button:hover {
   }
 
   .cat-btn {
+    width: 80%;
     margin: 0 auto;
   }
 
-  .page-title h1 {
-    font-size: 1.8rem;
-    padding: 1em 1em 0;
+  .page-title h3 {
+    font-size: 1.2rem;
+  }
+
+  .page-title p,
+  .page-title h3 {
+    padding: 0.5em 1em 0.8em;
+    margin: 0 auto;
+    width: 320px;
+    max-width: 480px;
   }
 
   .page-title h2 {
-    font-size: 1.5rem;
+    padding: 0.5em 1em 0;
+    margin: 0 auto;
+    width: 320px;
+    max-width: 480px;
+    font-size: 1.4rem;
+    max-width: 100%;
   }
 
-  .page-title h3 {
-    padding: 0 1em;
+  .page-title h1 {
+    font-size: 1.5rem;
+    padding: 1em 0 1em 0.5em 0;
+    width: 320px;
+    max-width: 480px;
+  }
+
+  #intro-paragraph p {
+    font-size: 1.2rem;
+  }
+
+  .article2-viewall p {
+    font-size: 1.2rem;
+  }
+
+  .article-sub p {
+    padding: 0.5em;
+    font-size: 1.2rem;
   }
 
   .cat-btn {
     width: 80%;
+  }
+
+  #featured-topics,
+  #intro-paragraph,
+  #recommended-articles h3,
+  #recommended-articles p,
+  #recommended-articles h2 a {
+    margin: 0 0.5em 0;
+    width: 319px;
+    margin: 0 auto;
+  }
+
+  #recommended-articles img {
+    max-width: 480px;
+    width: 319px;
+    height: 179px;
+    aspect-ratio: 16/9;
   }
 
   .article3-viewall img {
