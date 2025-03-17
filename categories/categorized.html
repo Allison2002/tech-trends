@@ -428,15 +428,20 @@
             <section class="hero" role="banner">
               <div class="hero-content-all">
                 <picture>
+                  <!-- AVIF sources at 6 breakpoints -->
                   <source
                     srcset="
-                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_1200,fl_lossy/v1741904556/topic-hero-desktop_2x_kep36j.avif 1100w,
-                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_768,fl_lossy/v1741904556/topic-hero-desktop_2x_kep36j.avif 768w,
-                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741904556/topic-hero-desktop_2x_kep36j.avif 480w,
-                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_340,fl_lossy/v1741904556/topic-hero-desktop_2x_kep36j.avif 340w,
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_1600,fl_lossy/v1741904556/topic-hero-desktop_2x_kep36j.png 1600w,
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_1280,fl_lossy/v1741904556/topic-hero-desktop_2x_kep36j.png 1280w,
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_992,fl_lossy/v1741904556/topic-hero-desktop_2x_kep36j.png   992w,
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_768,fl_lossy/v1741904556/topic-hero-desktop_2x_kep36j.png   768w,
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741904556/topic-hero-desktop_2x_kep36j.png   480w,
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_340,fl_lossy/v1741904556/topic-hero-desktop_2x_kep36j.png   340w
                     "
                     sizes="
-                      (min-width: 992px) 1100px,
+                      (min-width: 1600px) 1600px,
+                      (min-width: 1280px) 1280px,
+                      (min-width: 992px) 992px,
                       (min-width: 768px) 768px,
                       (min-width: 480px) 480px,
                       340px
@@ -444,11 +449,12 @@
                     type="image/avif"
                     fetchpriority="high"
                   />
+                  <!-- Fallback <img> if AVIF isn’t supported -->
                   <img
-                    src="/img/topics-hero-tablet.avif"
+                    src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_1280,fl_lossy/v1741904556/topic-hero-desktop_2x_kep36j.png"
                     alt="Welcome to Tech Trends! An AI-powered SEO tool helping optimize digital content"
-                    width="1100"
-                    height="619"
+                    width="1600"
+                    height="900"
                     style="width: 100%; height: auto; border-radius: 1.5em; object-fit: cover;"
                     loading="eager"
                     fetchpriority="high"
