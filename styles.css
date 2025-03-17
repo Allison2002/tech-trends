@@ -2172,11 +2172,15 @@ form button:hover {
   }
 
   .article3-viewall {
-    width: 70%;
-    max-width: 90%;
     height: 140px;
     max-height: auto;
-    margin: 1em auto;
+    margin: 2em auto;
+    width: 230px;
+    max-width: 300px
+  }
+
+  .empty-box {
+    display: none;
   }
 
   .article3-viewall img {
