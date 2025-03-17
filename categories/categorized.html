@@ -70,6 +70,7 @@
       }
     </script>
     <style>
+      
         .hero {
           position: relative;
         }
@@ -179,57 +180,54 @@
           margin-top: 0.625em;
         }
 
+        .content-creator {
+          width: 100%;
+        }
 
-      </stye>
+        @media (max-width: 480px) {
+            .hero img {
+              width: 95%;
+              margin: 0 auto;
+              height: auto;
+            }
 
-      .content-creator {
-        width: 100%;
-      }
+            .cat-btn {
+              width: 80%;
+              margin: 0 auto;
+            }
 
-      @media (max-width: 480px) {
-          .hero img {
-            width: 95%;
-            margin: 0 auto;
-            height: auto;
-          }
+            .page-title h3 {
+              font-size: 1.2rem;
+            }
 
-          .cat-btn {
-            width: 80%;
-            margin: 0 auto;
-          }
+            .page-title p,
+            .page-title h3 {
+              padding: 0.5em 1em 0.8em;
+              margin: 0 auto;
+              width: 320px;
+              max-width: 480px;
+            }
 
-          .page-title h3 {
-            font-size: 1.2rem;
-          }
+            .page-title h2 {
+              padding: 0.5em 1em 0;
+              margin: 0 auto;
+              width: 320px;
+              max-width: 480px;
+              font-size: 1.4rem;
+              max-width: 100%;
+            }
 
-          .page-title p,
-          .page-title h3 {
-            padding: 0.5em 1em 0.8em;
-            margin: 0 auto;
-            width: 320px;
-            max-width: 480px;
-          }
+            .page-title h1 {
+              font-size: 1.5rem;
+              padding: 1em 0 1em 0.5em;
+              width: 320px;
+              max-width: 480px;
+            }
 
-          .page-title h2 {
-            padding: 0.5em 1em 0;
-            margin: 0 auto;
-            width: 320px;
-            max-width: 480px;
-            font-size: 1.4rem;
-            max-width: 100%;
-          }
-
-          .page-title h1 {
-            font-size: 1.5rem;
-            padding: 1em 0 1em 0.5em 0;
-            width: 320px;
-            max-width: 480px;
-          }
-
-          #intro-paragraph p {
-            font-size: 1.2rem;
-          }
-      }
+            #intro-paragraph p {
+              font-size: 1.2rem;
+            }
+        }
 
     </style>
   </head>
@@ -464,24 +462,26 @@
                 >
                 <picture>
                   <source 
-                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_1200,fl_lossy/v1741696027/robot-ecommerce_ht8owp.avif 1200w,
-                            https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_768,fl_lossy/v1741696027/robot-ecommerce_ht8owp.avif 768w,
-                            https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_340,fl_lossy/v1741696027/robot-ecommerce_ht8owp.avif 340w"
+                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_1200,fl_lossy/v1741696027/future-mobile-robot_fcnjez.avif 1200w,
+                            https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_768,fl_lossy/v1741696027/future-mobile-robot_fcnjez.avif 768w,
+                            https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_340,fl_lossy/v1741696027/future-mobile-robot_fcnjez.avif 340w"
                     media="(min-width: 1200px)"
+                    fetchpriority="high"
                   />
                   <source 
-                    srcset="/img/robot-ecommerce.webp 768w, /img/robot-ecommerce.webp 340w"
+                    srcset="/img/robot-ecommerce.webp 768w, /img/future-mobile-robot-small.webp 340w"
                     media="(min-width: 768px)"
+                    fetchpriority="high"
                   />
                   <img
                     src="/img/robot-ecommerce.webp"
                     alt="a cute robot shopping online"
                     type="image/webp"
                     loading="eager"
-                    width="245"  
-                    height="138"  
-                    style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;" />
-                </picture>             
+                    width="100%"  
+                    height="auto"  
+                    style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"/>
+                </picture>         
               </a>
               <h2>
                 <a
@@ -496,25 +496,30 @@
               <a href="/categories/iot.html"
                 >
                 <picture>
+                  <!-- For large screens (desktop) -->
                   <source 
-                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_1200,fl_lossy/v1741696027/iot-robot_eshc1l.avif 1200w,
-                            https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_768,fl_lossy/v1741696027/iot-robot_eshc1l.avif 768w,
-                            https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_340,fl_lossy/v1741696027/iot-robot_eshc1l.avif 340w"
+                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_1200,fl_lossy/v1741696027/iot-robot_eshc1l.avif 1200w,
+                            https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_768,fl_lossy/v1741696027/iot-robot_eshc1l.avif 768w,
+                            https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_340,fl_lossy/v1741696027/iot-robot_eshc1l.avif 340w"
                     media="(min-width: 1200px)"
+                    fetchpriority="high"
                   />
+                  <!-- For tablet screens -->
                   <source 
-                    srcset="/img/iot_hero_tablet.webp 768w, /img/iot_hero_mobile.webp 340w"
+                    srcset="/img/iot_hero_mobile.webp 768w, /img/future-mobile-robot-small.webp 340w"
                     media="(min-width: 768px)"
+                    fetchpriority="high"
                   />
+                  <!-- Default (mobile) -->
                   <img
                     src="/img/iot_hero_mobile.webp"
                     alt="a cute robot shopping online"
                     type="image/webp"
                     loading="eager"
-                    width="245"  
-                    height="138"  
-                    style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;" />
-                </picture>         
+                    width="100%"  
+                    height="auto" 
+                    style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"/>
+                </picture>      
               </a>
               <h2>
                 <a
@@ -532,25 +537,26 @@
                 >
                 <picture>
                   <source 
-                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_1200,fl_lossy/v1741696027/future-mobile-robot_fcnjez.avif 1200w,
-                            https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_768,fl_lossy/v1741696027/future-mobile-robot_fcnjez.avif 768w,
-                            https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_340,fl_lossy/v1741696027/future-mobile-robot_fcnjez.avif 340w"
-                    media="(min-width: 1200px)"
+                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_1200,fl_lossy/v1741696027/future-mobile-robot_fcnjez.avif 1200w,
+                            https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_768,fl_lossy/v1741696027/future-mobile-robot_fcnjez.avif 768w,
+                            https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_340,fl_lossy/v1741696027/future-mobile-robot_fcnjez.avif 340w"
+                            media="(min-width: 1200px)"
+                            fetchpriority="high"
                   />
                   <source 
-                    srcset="/img/future-mobile-robot.webp 768w, 
-                    /img/future-mobile-robot.webp 340w"
+                    srcset="/img/future-mobile-robot.webp 768w, /img/future-mobile-robot-small.webp 340w"
                     media="(min-width: 768px)"
+                    fetchpriority="high"
                   />
                   <img
                     src="/img/future-mobile-robot.webp"
                     alt="a cute robot shopping online"
                     type="image/webp"
                     loading="eager"
-                    width="245"  
-                    height="138"  
-                    style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;" />
-                </picture>                
+                    width="100%"  
+                    height="auto" 
+                    style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"/>
+                </picture>           
               </a>
               <h2>
                 <a
@@ -568,26 +574,26 @@
                 >
                 <picture>
                   <source 
-                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_1200,fl_lossy/v1741696027/seo-tools-robot_jin5qc.avif 1200w,
-                            https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_768,fl_lossy/v1741696027/seo-tools-robot_jin5qc.avif 768w,
-                            https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_340,fl_lossy/v1741696027/seo-tools-robot_jin5qc.avif 340w"
+                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_1200,fl_lossy/v1741696027/seo-tools-robot_jin5qc.avif 1200w,
+                            https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_768,fl_lossy/v1741696027/seo-tools-robot_jin5qc.avif 768w,
+                            https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_340,fl_lossy/v1741696027/seo-tools-robot_jin5qc.avif 340w"
                     media="(min-width: 1200px)"
+                    fetchpriority="high"
                   />
                   <source 
-                    srcset="/img/seo-tools-robot.webp 768w, 
-                    /img/seo-tools-robot.webp 340w"
+                    srcset="/img/future-mobile-robot.webp 768w, /img/future-mobile-robot-small.webp 340w"
                     media="(min-width: 768px)"
+                    fetchpriority="high"
                   />
                   <img
-                    src="/img/seo-tools-robot.webp"
+                    src="/img/future-mobile-robot.webp"
                     alt="a cute robot shopping online"
                     type="image/webp"
                     loading="eager"
-                    width="245"  
-                    height="138"  
-                    style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;" />
-                </picture>      
-                
+                    width="100%"  
+                    height="auto" 
+                    style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"/>
+                </picture>                
               </a>
               <h2>
                 <a
@@ -603,25 +609,26 @@
                 >
                 <picture>
                   <source 
-                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_1200,fl_lossy/v1741696026/tech-trends-category_e2j18j.avif 1200w,
-                            https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_768,fl_lossy/v1741696026/tech-trends-category_e2j18j.avif 768w,
-                            https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_340,fl_lossy/v1741696026/tech-trends-category_e2j18j.avif 340w"
+                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_1200,fl_lossy/v1741696026/tech-trends-category_e2j18j.avif 1200w,
+                            https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_768,fl_lossy/v1741696026/tech-trends-category_e2j18j.avif 768w,
+                            https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_340,fl_lossy/v1741696026/tech-trends-category_e2j18j.avif 340w"
                     media="(min-width: 1200px)"
+                    fetchpriority="high"
                   />
                   <source 
-                    srcset="/img/tech-trends-category.webp 768w, 
-                    /img/seo-tools-robot.webp 340w"
+                    srcset="/img/tech-trends-category.webp 768w, /img/future-mobile-robot-small.webp 340w"
                     media="(min-width: 768px)"
+                    fetchpriority="high"
                   />
                   <img
                     src="/img/tech-trends-category.webp"
                     alt="a cute robot shopping online"
                     type="image/webp"
                     loading="eager"
-                    width="245"  
-                    height="138"   
-                    style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;" />
-                </picture>           
+                    width="100%"  
+                    height="auto"  
+                    style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"/>
+                </picture>        
               </a>
               <h2>
                 <a

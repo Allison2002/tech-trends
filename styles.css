@@ -161,7 +161,6 @@ span {
   object-fit: cover;
 }
 
-
 .navbar-items {
   flex-grow: 1;
   display: flex;
@@ -303,11 +302,15 @@ body.modal-open {
 main {
   max-width: 75vw;
   background-color: rgb(247 247 247 / 1);
-  padding: 2em;
+  padding: 3em;
   border-radius: 1.5em;
   box-shadow: rgb(0 0 0 / 40%) 0px 0px 3.125em 0.5em;
-  margin: 3em auto;
+  margin: 5em auto;
   word-break: keep-all;
+}
+
+.content-container {
+  margin-top: 8em;
 }
 
 .main-content {
@@ -422,7 +425,7 @@ main {
 }
 
 #intro-paragraph p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .hero-post-author {
@@ -618,7 +621,6 @@ main {
 .page-title h1 {
   font-size: 3rem;
   text-decoration: none;
-  padding: 1em 0 0 0.5em;
   overflow-wrap: break-word;
 }
 
@@ -937,6 +939,17 @@ form button:hover {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
+.article3-viewall h3,
+.article2-viewall h3 {
+  font-size: 1.3rem;
+}
+
+.article3-viewall h3,
+.article2-viewall h3 {
+  font-size: 1.2rem;
+}
+
 
 /* social media sidebar */
 #stay-connected-sidebar {
@@ -2158,9 +2171,17 @@ form button:hover {
     aspect-ratio: 16/9;
   }
 
-  .article3-viewall img {
-    max-width: 350px;
+  .article3-viewall {
     width: 70%;
+    max-width: 90%;
+    height: 140px;
+    max-height: auto;
+    margin: 1em auto;
+  }
+
+  .article3-viewall img {
+    max-width: 100%;
+    width: 100%;
     height: auto;
     aspect-ratio: 16/9;
     margin: 0 auto;
