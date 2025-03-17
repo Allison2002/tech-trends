@@ -462,32 +462,30 @@
               <a href="/categories/ecommerce.html"
                 >
                 <picture>
-                  <!-- AVIF source with three scaled widths -->
                   <source
                     srcset="
-                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_640,fl_lossy/v1741696027/robot-ecommerce_ht8owp.avif 640w,
-
-                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741696027/robot-ecommerce_ht8owp.avif 480w,
-
-                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_340,fl_lossy/v1741696027/robot-ecommerce_ht8owp.avif 340w
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_230,fl_lossy/v1741696027/robot-ecommerce_ht8owp.avif 230w,
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_332,fl_lossy/v1741696027/robot-ecommerce_ht8owp.avif 332w,
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741696027/robot-ecommerce_ht8owp.avif 480w
                     "
-                    sizes="(min-width: 768px) 456px, 100vw"
+                    sizes="(min-width: 992px) 332px,
+                          (min-width: 768px) 480px,
+                          230px"
                     type="image/avif"
                     fetchpriority="high"
                   />
 
+                  <!-- Fallback <img> (biggest variant, to cover all breakpoints) -->
                   <img
                     src="/img/ecommerce-thumbnail-tablet.avif"
-                    alt="Welcome to Tech Trends! An AI-powered SEO tool helping optimize digital content"
-                    type="image/avif"
-                    width="100%"  
-                    height="auto"           
+                    alt="A futuristic robot showcasing AI-driven eCommerce trends, symbolizing modern online shopping solutions"
+                    width="480"
+                    height="270"
                     loading="eager"
                     fetchpriority="high"
-                    style="border-radius:1.5em; object-fit: cover;"
+                    style="border-radius:1.5em; object-fit:cover; width:100%; height:auto;"
                   />
                 </picture>
-
               </a>
               <h2>
                 <a
@@ -504,26 +502,26 @@
                 <picture>
                   <source
                     srcset="
-                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_640,fl_lossy/v1741696027/iot-robot_eshc1l.avif 640w,
-
-                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741696027/iot-robot_eshc1l.avif 480w,
-
-                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_340,fl_lossy/v1741696027/iot-robot_eshc1l.avif 340w
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_230,fl_lossy/v1741696027/iot-robot_eshc1l.avif 230w,
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_332,fl_lossy/v1741696027/iot-robot_eshc1l.avif 332w,
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741696027/iot-robot_eshc1l.avif 480w
                     "
-                    sizes="(min-width: 768px) 456px, 100vw"
+                    sizes="(min-width: 992px) 332px,
+                          (min-width: 768px) 480px,
+                          230px"
                     type="image/avif"
                     fetchpriority="high"
                   />
-                  <!-- Fallback image if AVIF isn't supported -->
+
+                  <!-- Fallback <img> (biggest variant, to cover all breakpoints) -->
                   <img
                     src="/img/iot-thumbnail-tablet.avif"
-                    alt="Welcome to Tech Trends! An AI-powered SEO tool helping optimize digital content"
-                    type="image/avif"
-                    width="100%"  
-                    height="auto" 
+                    alt="A futuristic robot showcasing IoT innovations, symbolizing connected devices and data-driven solutions"
+                    width="480"
+                    height="270"
                     loading="eager"
                     fetchpriority="high"
-                    style="border-radius:1.5em; object-fit: cover;"
+                    style="border-radius:1.5em; object-fit:cover; width:100%; height:auto;"
                   />
                 </picture>
               </a>
@@ -541,39 +539,29 @@
                 href="/categories/mobile.html"
                 aria-label="A link to articles categorized under Mobile App"
                 >
-                  <picture>
-                    <source
-                      srcset="
-                        https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_640,fl_lossy/v1741696027/future-mobile-robot_fcnjez.avif 640w,
-                        https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_480,fl_lossy/v1741696027/future-mobile-robot_fcnjez.avif 480w,
-                        https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_340,fl_lossy/v1741696027/future-mobile-robot_fcnjez.avif 340w
-                      "
-                      sizes="(min-width: 768px) 456px, 100vw"
-                      fetchpriority="high"
-                      type="image/avif"
-                    />
-                    <source
-                      srcset="
-                        /img/future-mobile-tablet.avif 768w,
-                        /img/future-mobile-robot-mobile.avif 340w
-                      "
-                      sizes="(min-width: 768px) 456px, 100vw"
-                      media="(min-width: 768px)"
-                      fetchpriority="high"
-                      type="image/avif"
-                    />
-
-                    <img
-                      src="/img/future-mobile-robot-mobile.avif"
-                      alt="a cute robot shopping online"
-                      type="image/avif"
-                      width="100%"  
-                      height="auto" 
-                      loading="eager"
-                      style="object-fit: cover; aspect-ratio: 16/9; border-radius:1.5em;"
-                    />
-                  </picture>
-          
+                <picture>
+                  <source
+                    srcset="
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_230,fl_lossy/v1741696027/future-mobile-robot_fcnjez.avif 230w,
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_332,fl_lossy/v1741696027/future-mobile-robot_fcnjez.avif 332w,
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741696027/future-mobile-robot_fcnjez.avif 480w
+                    "
+                    sizes="(min-width: 992px) 332px,
+                          (min-width: 768px) 480px,
+                          230px"
+                    type="image/avif"
+                    fetchpriority="high"
+                  />
+                  <img
+                    src="/img/future-mobile-tablet.avif"
+                    alt="A futuristic robot illustrating advanced mobile app development and AI-driven user experiences"
+                    width="480"
+                    height="270"
+                    loading="eager"
+                    fetchpriority="high"
+                    style="border-radius:1.5em; object-fit:cover; width:100%; height:auto;"
+                  />
+                </picture>
               </a>
               <h2>
                 <a
@@ -590,27 +578,28 @@
               <a href="/categories/seo-tools.html"
                 >
                 <picture>
-                  <source 
-                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_1200,fl_lossy/v1741696027/seo-tools-robot_jin5qc.avif 1200w,
-                            https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_768,fl_lossy/v1741696027/seo-tools-robot_jin5qc.avif 768w,
-                            https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_340,fl_lossy/v1741696027/seo-tools-robot_jin5qc.avif 340w"
-                    media="(min-width: 1200px)"
-                    fetchpriority="high"
-                  />
-                  <source 
-                    srcset="/img/seo-tools-thumbnail-tablet.avif 768w , /img/seo-tools-thumbnail-mobile.avif 340w"
-                    media="(min-width: 768px)"
+                  <source
+                    srcset="
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_230,fl_lossy/v1741696027/seo-tools-robot_jin5qc.avif 230w,
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_332,fl_lossy/v1741696027/seo-tools-robot_jin5qc.avif 332w,
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741696027/seo-tools-robot_jin5qc.avif 480w
+                    "
+                    sizes="(min-width: 992px) 332px,
+                          (min-width: 768px) 480px,
+                          230px"
+                    type="image/avif"
                     fetchpriority="high"
                   />
                   <img
-                    src="/img/seo-tools-thumbnail-mobile.avif"
-                    alt="a cute robot shopping online"
-                    type="image/avif"
+                    src="/img/future-mobile-tablet.avif"
+                    alt="A futuristic robot analyzing SEO tasks, symbolizing advanced AI-powered SEO tools and optimization strategies"
+                    width="480"
+                    height="270"
                     loading="eager"
-                    width="100%"  
-                    height="auto" 
-                    style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"/>
-                </picture>                
+                    fetchpriority="high"
+                    style="border-radius:1.5em; object-fit:cover; width:100%; height:auto;"
+                  />
+                </picture>          
               </a>
               <h2>
                 <a
@@ -625,29 +614,28 @@
               <a href="/categories/tech-trends.html"
                 >
                 <picture>
-                  <source 
-                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_1200,fl_lossy/v1741696026/tech-trends-category_e2j18j.avif 1200w,
-
-                            https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_768,fl_lossy/v1741696026/tech-trends-category_e2j18j.avif 768w,
-
-                            https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_340,fl_lossy/v1741696026/tech-trends-category_e2j18j.avif 340w"
-                    media="(min-width: 1200px)"
-                    fetchpriority="high"
-                  />
-                  <source 
-                    srcset="/img/tech-trends-category-tablet.avif 768w, /img/tech-trends-category-mobile.avif 340w"
-                    media="(min-width: 768px)"
+                  <source
+                    srcset="
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_230,fl_lossy/v1741696026/tech-trends-category_e2j18j.avif 230w,
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_332,fl_lossy/v1741696026/tech-trends-category_e2j18j.avif 332w,
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741696026/tech-trends-category_e2j18j.avif 480w
+                    "
+                    sizes="(min-width: 992px) 332px,
+                          (min-width: 768px) 480px,
+                          230px"
+                    type="image/avif"
                     fetchpriority="high"
                   />
                   <img
-                    src="/img/tech-trends-category-mobile.avif"
-                    alt="a cute robot shopping online"
-                    type="image/avif"
+                    src="/img/future-mobile-tablet.avif"
+                    alt="An AI-powered robot analyzing SEO metrics, symbolizing advanced SEO tools and optimization techniques"
+                    width="480"
+                    height="270"
                     loading="eager"
-                    width="100%"  
-                    height="auto" 
-                    style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"/>
-                </picture>      
+                    fetchpriority="high"
+                    style="border-radius:1.5em; object-fit:cover; width:100%; height:auto;"
+                  />
+                </picture>    
               </a>
               <h2>
                 <a
