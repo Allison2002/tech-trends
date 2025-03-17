@@ -435,23 +435,28 @@
                     media="(min-width: 1200px)"
                     fetchpriority="high"
                   />
-                  
-                  <!-- Tablet image (medium screen) -->
+
+                  <!-- Tablet image (medium screens) -->
                   <source
                     srcset="/img/topics-hero-tablet.avif"
                     media="(min-width: 768px)"
                     fetchpriority="high"
                   />
-                  
-                  <!-- Mobile image (small screen) -->
+
+                  <!-- Mobile fallback (small screens) -->
                   <img
                     src="/img/topics-hero-mobile.avif"
                     alt="Welcome to Tech Trends! An AI-powered SEO tool helping optimize digital content"
-                    width="95%"  
-                    height="auto"
-                    loading="eager"  
-                    fetchpriority="high"  
-                    style="border-radius:1.5em; object-fit: cover;"  
+                    width="320"       
+                    height="181"
+                    style="
+                      width: 320;
+                      height: 181;
+                      border-radius: 1.5em;
+                      object-fit: cover;
+                    "
+                    loading="eager"
+                    fetchpriority="high"
                   />
                 </picture>
                 <div class="cat-btn">
