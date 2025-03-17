@@ -265,8 +265,10 @@
       <style>
         .hero {
           position: relative;
+          max-width: 1600px;
+          max-height:1168px;
         }
-
+        
         .hero-content {
           display: flex;
           position: relative;
@@ -275,6 +277,8 @@
 
         .hero img {
           width: 100%;
+          max-width: 1200px;
+          max-height: 675px;
           aspect-ratio: 16/9;
           height: auto;
           object-fit: cover;
@@ -371,6 +375,54 @@
           gap: 0.125em;
           margin-top: 0.625em;
         }
+      
+      @media (max-width: 480px) {
+        .hero img {
+          width: 304px;
+          margin: 0 auto;
+          height: 181px;
+          max-width: 95%;
+          max-height: auto;
+        }
+
+        .cat-btn {
+          width: 80%;
+          margin: 0 auto;
+        }
+
+        .page-title h3 {
+          font-size: 1.2rem;
+        }
+
+        .page-title p,
+        .page-title h3 {
+          padding: 0.5em 1em 0.8em;
+          margin: 0 auto;
+          width: 320px;
+          max-width: 480px;
+        }
+
+        .page-title h2 {
+          padding: 0.5em 1em 0;
+          margin: 0 auto;
+          width: 320px;
+          max-width: 480px;
+          font-size: 1.4rem;
+          max-width: 100%;
+        }
+
+        .page-title h1 {
+          font-size: 1.5rem;
+          padding: 1em 0 1em 0.5em;
+          width: 320px;
+          max-width: 480px;
+        }
+
+        #intro-paragraph p {
+          font-size: 1.2rem;
+        }
+    }
+
 
 
       </style>
@@ -715,9 +767,10 @@
                         innovations and their transformative impact on industry,
                         showcasing how to use IoT in industry for smarter, connected
                         solutions."
+                        width="100%"
+                        height="auto"
                         loading="lazy"
-                        width="317"
-                        height="179"
+                        fetchpriority="low"
                         style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
                         type="image/webp"
                       />
@@ -753,8 +806,10 @@
                         src="/img/leverage_google_search_thumbnail.webp"
                         loading="lazy"
                         alt="AI SEO Tools and Google Search Console: A magnifying glass zooming in on data, symbolizing advanced SEO insights and tools."
-                        width="317"
-                        height="179"
+                        width="100%"
+                        height="auto"
+                        loading="lazy"
+                        fetchpriority="low"
                         style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
                         type="image/webp"
                       />
@@ -787,8 +842,10 @@
                         src="/img/headless-commerce-thumbnail.webp"
                           alt="A futuristic storefront with a professional exploring headless commerce solutions, showcasing the flexibility and scalability of headless eCommerce."
                           loading="lazy"
-                        width="317"
-                        height="179"
+                          width="100%"
+                          height="auto"
+                          loading="lazy"
+                          fetchpriority="low"
                           style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
                           type="image/webp"
                       />
@@ -821,9 +878,10 @@
                   <img
                     src="/img/iot_innovations_mobile.webp"
                       alt="A retro comic-style depiction of IoT innovations, highlighting how industries use IoT to drive transformation and enhance connectivity."
-                      width="317"
-                      height="179"
+                      width="100%"
+                      height="auto"
                       loading="lazy"
+                      fetchpriority="low"
                       style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
                       type="image/webp"
                   />
@@ -869,8 +927,10 @@
                         src="/img/semrush_article_hero_mobile.webp"
                         loading="lazy"
                         alt="A professional analyzing advanced SEO data visualizations to uncover insights into keyword research and optimize for long-tail keywords."
-                        width="317"
-                        height="179"
+                        width="100%"
+                        height="auto"
+                        loading="lazy"
+                        fetchpriority="low"
                         style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
                         type="image/webp"
                       />
@@ -907,8 +967,10 @@
                         src="/img/ai-commerce-thumbnail.webp"
                         loading="lazy"
                         alt="A 1940s-style woman interacting with a futuristic robot in a modern store, symbolizing the future of eCommerce and the role of eCommerce AI in revolutionizing online retail."
-                        width="317"
-                        height="179"
+                        width="100%"
+                        height="auto"
+                        loading="lazy"
+                        fetchpriority="low"
                         style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
                         type="image/webp"
                       />
@@ -951,8 +1013,10 @@
                         src="/img/leverage_google_search_thumbnail.webp"
                         alt="AI SEO Tools and Google Search Console: A magnifying glass zooming in on data, symbolizing advanced SEO insights and tools."
                         loading="lazy"
-                        width="317"
-                        height="179"
+                        width="100%"
+                        height="auto"
+                        loading="lazy"
+                        fetchpriority="low"
                         style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
                         type="image/webp"
                       />
@@ -990,8 +1054,10 @@
                         src="/img/max-seo-thumbnail.webp"
                         loading="lazy"
                         alt="A professional analyzing advanced SEO data visualizations to uncover insights into keyword research and optimize for long-tail keywords."
-                        width="317"
-                        height="179"
+                        width="100%"
+                        height="auto"
+                        loading="lazy"
+                        fetchpriority="low"
                         style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
                         type="image/webp"
                       />
@@ -1034,8 +1100,10 @@
                       <img
                         src="/img/top-mobile-thumbnail.webp"
                           alt="A futuristic smartphone interface showcasing advanced mobile development tools for iOS and Android, representing the top mobile app development solutions."
-                          width="319"
-                          height="179"
+                          width="100%"
+                          height="auto"
+                          loading="lazy"
+                          fetchpriority="low"
                           style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
                           type="image/webp"
                       />
@@ -1075,8 +1143,10 @@
                       src="/img/future_mobile_thumbnail.webp"
                       loading="lazy"
                         alt="A retro-inspired comic illustration of a woman at a computer with a smartphone, representing trends in mobile development and apps development."
-                        width="319"
-                        height="179"
+                        width="100%"
+                        height="auto"
+                        loading="lazy"
+                        fetchpriority="low"
                         style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
                         type="image/webp"
                     />

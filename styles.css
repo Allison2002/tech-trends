@@ -2163,6 +2163,11 @@ form button:hover {
     padding: 1em;
   }
 
+  .hero {
+    width: 305px;
+    height: 293px
+  }
+
   .hero img {
     width: 304px;
     margin: 0 auto;
@@ -2272,6 +2277,11 @@ form button:hover {
     flex-direction: column;
   }
 
+  .sidebar {
+    max-width: 308px;
+    max-height: 2317px;
+  }
+
   .sidebar-article {
     display: flex;
     flex-direction: column;
@@ -2298,6 +2308,8 @@ form button:hover {
   .sidebar-cta,
   #stay-connected-sidebar,
   .sidebar-article ul li {
+    max-width: 300px;
+    max-height: auto;
     width: 75%;
   }
 
