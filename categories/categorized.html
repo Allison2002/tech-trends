@@ -451,8 +451,6 @@
                     style="width: 95%; height: auto; border-radius:1.5em; object-fit: cover;"
                   />
                 </picture>
-
-
                 <div class="cat-btn">
                   <a href="/categories/uncategorized.html">All</a>
                 </div>
@@ -464,29 +462,32 @@
               <a href="/categories/ecommerce.html"
                 >
                 <picture>
+                  <!-- AVIF source with three scaled widths -->
                   <source
                     srcset="
-                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_1200,fl_lossy/v1741696027/robot-ecommerce_ht8owp.avif 1200w,
-                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_768,fl_lossy/v1741696027/robot-ecommerce_ht8owp.avif 768w,
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_640,fl_lossy/v1741696027/robot-ecommerce_ht8owp.avif 640w,
+
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741696027/robot-ecommerce_ht8owp.avif 480w,
+
                       https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_340,fl_lossy/v1741696027/robot-ecommerce_ht8owp.avif 340w
                     "
-                    sizes="(min-width: 1200px) 1200px,
-                          (min-width: 768px) 768px,
-                          100vw"
+                    sizes="(min-width: 768px) 456px, 100vw"
                     type="image/avif"
                     fetchpriority="high"
                   />
+
                   <img
                     src="/img/ecommerce-thumbnail-tablet.avif"
                     alt="Welcome to Tech Trends! An AI-powered SEO tool helping optimize digital content"
                     type="image/avif"
-                    width="1200"  
-                    height="675"
+                    width="640"            
+                    height="360"           
                     loading="eager"
                     fetchpriority="high"
-                    style="width: 95%; height: auto; border-radius:1.5em; object-fit: cover;"
+                    style="width:95%; height:auto; border-radius:1.5em; object-fit: cover;"
                   />
-                </picture>  
+                </picture>
+
               </a>
               <h2>
                 <a
@@ -500,30 +501,31 @@
             <div class="article3-viewall">
               <a href="/categories/iot.html"
                 >
-                                <picture>
+                <picture>
                   <source
                     srcset="
-                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_1200,fl_lossy/v1741696027/iot-robot_eshc1l.avif 1200w,
-                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_768,fl_lossy/v1741696027/iot-robot_eshc1l.avif 768w,
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_640,fl_lossy/v1741696027/iot-robot_eshc1l.avif 640w,
+
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741696027/iot-robot_eshc1l.avif 480w,
+
                       https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_340,fl_lossy/v1741696027/iot-robot_eshc1l.avif 340w
                     "
-                    sizes="(min-width: 1200px) 1200px,
-                          (min-width: 768px) 768px,
-                          100vw"
+                    sizes="(min-width: 768px) 456px, 100vw"
                     type="image/avif"
                     fetchpriority="high"
                   />
+                  <!-- Fallback image if AVIF isn't supported -->
                   <img
                     src="/img/iot-thumbnail-tablet.avif"
                     alt="Welcome to Tech Trends! An AI-powered SEO tool helping optimize digital content"
                     type="image/avif"
-                    width="1200"  
-                    height="675"
+                    width="640"   
+                    height="360"
                     loading="eager"
                     fetchpriority="high"
                     style="width: 95%; height: auto; border-radius:1.5em; object-fit: cover;"
                   />
-                </picture>     
+                </picture>
               </a>
               <h2>
                 <a
@@ -539,28 +541,43 @@
                 href="/categories/mobile.html"
                 aria-label="A link to articles categorized under Mobile App"
                 >
-                <picture>
-                  <source 
-                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_1200,fl_lossy/v1741696027/future-mobile-robot_fcnjez.avif 1200w,
-                            https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_768,fl_lossy/v1741696027/future-mobile-robot_fcnjez.avif 768w,
-                            https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_340,fl_lossy/v1741696027/future-mobile-robot_fcnjez.avif 340w"
-                            media="(min-width: 1200px)"
-                            fetchpriority="high"
-                  />
-                  <source 
-                    srcset="/img/future-mobile-tablet.webp 768w, /img/future-mobile-robot-small.webp 340w"
-                    media="(min-width: 768px)"
-                    fetchpriority="high"
-                  />
-                  <img
-                    src="/img/future-mobile-robot-mobile.webp"
-                    alt="a cute robot shopping online"
-                    type="image/webp"
-                    loading="eager"
-                    width="100%"  
-                    height="auto" 
-                    style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"/>
-                </picture>           
+                  <picture>
+                    <!-- AVIF for screens ≥1200px -->
+                    <source
+                      srcset="
+                        https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_640,fl_lossy/v1741696027/future-mobile-robot_fcnjez.avif 640w,
+                        https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_480,fl_lossy/v1741696027/future-mobile-robot_fcnjez.avif 480w,
+                        https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_340,fl_lossy/v1741696027/future-mobile-robot_fcnjez.avif 340w
+                      "
+                      sizes="(min-width: 768px) 456px, 100vw"
+                      fetchpriority="high"
+                      type="image/avif"
+                    />
+
+                    <!-- WebP for screens ≥768px -->
+                    <source
+                      srcset="
+                        /img/future-mobile-tablet.avif 768w,
+                        /img/future-mobile-robot-mobile.avif 340w
+                      "
+                      sizes="(min-width: 768px) 456px, 100vw"
+                      media="(min-width: 768px)"
+                      fetchpriority="high"
+                      type="image/avif"
+                    />
+
+                    <!-- Default fallback (mobile and non-AVIF/non-WebP) -->
+                    <img
+                      src="/img/future-mobile-robot-mobile.avif"
+                      alt="a cute robot shopping online"
+                      type="image/avif"
+                      width="640"
+                      height="360"
+                      loading="eager"
+                      style="width: 100%; height: auto; object-fit: cover; aspect-ratio: 16/9; border-radius:1.5em;"
+                    />
+                  </picture>
+          
               </a>
               <h2>
                 <a
@@ -585,14 +602,14 @@
                     fetchpriority="high"
                   />
                   <source 
-                    srcset="/img/seo-tools-thumbnail-tablet.webp 768w, /img/future-mobile-robot-small.webp 340w"
+                    srcset="/img/seo-tools-thumbnail-tablet.avif 768w , /img/seo-tools-thumbnail-mobile.avif 340w"
                     media="(min-width: 768px)"
                     fetchpriority="high"
                   />
                   <img
-                    src="/img/seo-tools-thumbnail-mobile.webp"
+                    src="/img/seo-tools-thumbnail-mobile.avif"
                     alt="a cute robot shopping online"
-                    type="image/webp"
+                    type="image/avif"
                     loading="eager"
                     width="100%"  
                     height="auto" 
@@ -611,6 +628,7 @@
             <div class="article3-viewall">
               <a href="/categories/tech-trends.html"
                 >
+
                 <picture>
                   <source 
                     srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto:eco,w_1200,fl_lossy/v1741696026/tech-trends-category_e2j18j.avif 1200w,
@@ -620,19 +638,19 @@
                     fetchpriority="high"
                   />
                   <source 
-                    srcset="/img/tech-trends-category-tablet.webp 768w, /img/tech-trends-category-tablet.webp 340w"
+                    srcset="/img/tech-trends-category-tablet.avif 768w, /img/tech-trends-category-mobile.avif 340w"
                     media="(min-width: 768px)"
                     fetchpriority="high"
                   />
                   <img
-                    src="/img/tech-trends-category-mobile.webp"
+                    src="/img/tech-trends-category-mobile.avif"
                     alt="a cute robot shopping online"
-                    type="image/webp"
+                    type="image/avif"
                     loading="eager"
                     width="100%"  
-                    height="auto"  
+                    height="auto" 
                     style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"/>
-                </picture>        
+                </picture>      
               </a>
               <h2>
                 <a
