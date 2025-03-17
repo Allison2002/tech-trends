@@ -189,9 +189,11 @@
 
         @media (max-width: 480px) {
             .hero img {
-              width: 95%;
+              width: 304px;
               margin: 0 auto;
-              height: auto;
+              height: 181px;
+              max-width: 95%;
+              max-height: auto;
             }
 
             .cat-btn {
@@ -490,8 +492,8 @@
                     alt="A futuristic robot showcasing AI-driven eCommerce trends, symbolizing modern online shopping solutions"
                     width="100%"
                     height="auto"
-                    loading="eager"
-                    fetchpriority="high"
+                    loading="lazy"
+                    fetchpriority="low"
                     style="border-radius:1.5em; object-fit:cover; width:100%; height:auto;"
                   />
                 </picture>
@@ -528,8 +530,8 @@
                     alt="A futuristic robot showcasing IoT innovations, symbolizing connected devices and data-driven solutions"
                     width="100%"
                     height="auto"
-                    loading="eager"
-                    fetchpriority="high"
+                    loading="lazy"
+                    fetchpriority="low"
                     style="border-radius:1.5em; object-fit:cover; width:100%; height:auto;"
                   />
                 </picture>
@@ -678,6 +680,7 @@
                     alt="A woman from the 1940's arriving to a futuristic city"
                     type="image/avif"
                     loading="eager"
+                    fetchpriority="high"
                     width="165"
                     height="293"
                     style="object-fit: cover;  aspect-ratio: 9 / 16; border-radius: 1.5em"
