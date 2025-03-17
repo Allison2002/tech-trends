@@ -432,27 +432,27 @@
                     srcset="
                       https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_1200,fl_lossy/v1741904556/topic-hero-desktop_2x_kep36j.avif 1200w,
                       https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_768,fl_lossy/v1741904556/topic-hero-desktop_2x_kep36j.avif 768w,
-                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741904556/topic-hero-desktop_2x_kep36j.avif 480w                      
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741904556/topic-hero-desktop_2x_kep36j.avif 480w,
                       https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_340,fl_lossy/v1741904556/topic-hero-desktop_2x_kep36j.avif 340w
                     "
                     sizes="
                       (min-width: 1200px) 1200px,
-                      (min-width: 768px)  768px,
-                      (min-width: 480px)  480px,
+                      (min-width: 768px) 768px,
+                      (min-width: 480px) 480px,
                       340px
                     "
                     type="image/avif"
                     fetchpriority="high"
                   />
+                  <!-- Fallback: Provide numeric width/height to preserve aspect ratio -->
                   <img
                     src="/img/topics-hero-tablet.avif"
                     alt="Welcome to Tech Trends! An AI-powered SEO tool helping optimize digital content"
-                    type="image/avif"
-                    width="90%"  
-                    height="auto"
+                    width="1200"
+                    height="675"
                     loading="eager"
                     fetchpriority="high"
-                    style="border-radius:1.5em; object-fit: cover;"
+                    style="border-radius:1.5em; object-fit: cover; width: 100%; height: auto;"
                   />
                 </picture>
                 <div class="cat-btn">
