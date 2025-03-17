@@ -427,16 +427,27 @@
                     fetchpriority="high"
                   />
 
-                  <!-- Mobile fallback (small screens) -->
+                  <!-- Mobile image for small screens (480px and up) -->
+                  <source
+                    srcset="/img/topics-hero-mobile.avif"
+                    media="(min-width: 480px)"
+                    fetchpriority="high"
+                  />
+
+                  <!-- Mobile image for extra-small screens (less than 480px) -->
+                  <source
+                    srcset="/img/topics-hero-mobile.avif"
+                    media="(max-width: 479px)"
+                    fetchpriority="high"
+                  />
+
+                  <!-- Fallback: if none of the sources match -->
                   <img
                     src="/img/topics-hero-mobile.avif"
                     alt="Welcome to Tech Trends! An AI-powered SEO tool helping optimize digital content"
-                    width="304"       
-                    height="181"
-                    style="
-                      border-radius: 1.5em;
-                      object-fit: cover;
-                    "
+                    width="1200"
+                    height="675"
+                    style="border-radius: 1.5em; object-fit: cover;"
                     loading="eager"
                     fetchpriority="high"
                   />
