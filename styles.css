@@ -38,7 +38,7 @@ html {
 
 @font-face {
   font-family: 'Alegreya Sans';
-  src: url('./fonts/Alegreya_Sans/AlegreyaSans-Regular.woff2') format('woff2');
+  src: url('/fonts/Alegreya_Sans/AlegreyaSans-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -46,7 +46,7 @@ html {
 
 @font-face {
   font-family: 'Exo 2';
-  src: url('./fonts/Exo_2/Exo2-Regular.woff2') format('woff2');
+  src: url('/fonts/Exo_2/Exo2-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
