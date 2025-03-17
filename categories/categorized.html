@@ -433,6 +433,7 @@
                   <source
                     srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1200,fl_lossy/v1741904556/topic-hero-desktop_2x_kep36j.avif"
                     media="(min-width: 1200px)"
+                    type="image/avif"
                     fetchpriority="high"
                   />
 
@@ -450,8 +451,6 @@
                     width="304"       
                     height="181"
                     style="
-                      width: 304;
-                      height: 181;
                       border-radius: 1.5em;
                       object-fit: cover;
                     "
@@ -558,15 +557,15 @@
                           (min-width: 768px) 480px,
                           230px"
                     type="image/avif"
-                    fetchpriority="high"
+                    fetchpriority="low"
                   />
                   <img
                     src="/img/future-mobile-tablet.avif"
                     alt="A futuristic robot illustrating advanced mobile app development and AI-driven user experiences"
                     width="100%"
                     height="auto"
-                    loading="eager"
-                    fetchpriority="high"
+                    loading="lazy"
+                    fetchpriority="low"
                     style="border-radius:1.5em; object-fit:cover; width:100%; height:auto;"
                   />
                 </picture>
@@ -596,15 +595,15 @@
                           (min-width: 768px) 480px,
                           230px"
                     type="image/avif"
-                    fetchpriority="high"
+                    fetchpriority="low"
                   />
                   <img
                     src="/img/future-mobile-tablet.avif"
                     alt="A futuristic robot analyzing SEO tasks, symbolizing advanced AI-powered SEO tools and optimization strategies"
                     width="100%"
                     height="auto"
-                    loading="eager"
-                    fetchpriority="high"
+                    loading="lazy"
+                    fetchpriority="low"
                     style="border-radius:1.5em; object-fit:cover; width:100%; height:auto;"
                   />
                 </picture>          
@@ -632,15 +631,15 @@
                           (min-width: 768px) 480px,
                           230px"
                     type="image/avif"
-                    fetchpriority="high"
+                    fetchpriority="low"
                   />
                   <img
                     src="/img/future-mobile-tablet.avif"
                     alt="An AI-powered robot analyzing SEO metrics, symbolizing advanced SEO tools and optimization techniques"
                     width="100%"
                     height="auto"
-                    loading="eager"
-                    fetchpriority="high"
+                    loading="lazy"
+                    fetchpriority="low"
                     style="border-radius:1.5em; object-fit:cover; width:100%; height:auto;"
                   />
                 </picture>    
@@ -669,11 +668,11 @@
                     media="(min-width: 1200px)"
                   />
                   <source
-                    srcset="/img/sidebar-future-city.webp"
+                    srcset="/img/sidebar-future-city.avif"
                     media="(min-width: 768px)"
                   />
                   <img
-                    src="/img/sidebar-future-city.webp"
+                    src="/img/sidebar-future-city.avif"
                     alt="A woman from the 1940's arriving to a futuristic city"
                     type="image/avif"
                     loading="eager"
@@ -758,6 +757,29 @@
             </div>
             <div class="cta-section sidebar-cta" id="sidebar-cta">
               <div class="newsletter-img">
+                <picture>
+                  <source
+                    srcset="
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_120,fl_lossy/v1741221199/newsletter_oxwway.webp
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="/img/newsletter.webp"
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="/img/newsletter.webp"
+                    alt="Envelope on a paper plane representing updates"
+                    type="image/webp"
+                    loading="lazy"
+                    width="120"
+                    height="auto"
+                    style="object-fit: cover;  aspect-ratio: 9 / 16; border-radius: 1.5em"
+                    />
+                </picture>
+
+
                 <img
                   src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_120,fl_lossy/v1741221199/newsletter_oxwway.webp"
                   alt="Envelope on a paper plane representing updates"
