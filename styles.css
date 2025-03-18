@@ -944,7 +944,19 @@ form button:hover {
   border: 0;
 }
 
-.article3-viewall h2,
+.article3-viewall {
+  width: 342px;
+  height: auto;
+  max-width: 400px;
+  max-height: auto;
+}
+
+.article3-viewall {
+  width: 100%;
+  height: auto;
+}
+
+.article3-viewall img .article3-viewall h2,
 .article2-viewall h2 {
   font-size: 1.3rem;
 }
