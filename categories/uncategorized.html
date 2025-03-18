@@ -263,25 +263,36 @@
           <header>
             <section class="hero" role="banner">
               <div class="hero-content-all">
-                <picture>
+                                <picture>
                   <source
-                    srcset="
-                    https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1200,fl_lossy/v1741237706/all_articles_hero_desktop_x0q23u.avif
-                    "
+                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1200,fl_lossy/v1741237706/all_articles_hero_desktop_x0q23u.avif"
                     media="(min-width: 1200px)"
+                    type="image/avif"
+                    fetchpriority="high"
                   />
                   <source
-                    srcset="/img/tech_trends_welcome_hero_tablet.webp"
+                    srcset="/img/all_articles_hero_tablet.avif"
                     media="(min-width: 768px)"
+                    fetchpriority="high"
+                  />
+                  <source
+                    srcset="/img/all_articles_hero_mobile.avif"
+                    media="(min-width: 480px)"
+                    fetchpriority="high"
+                  />
+                  <source
+                    srcset="/img/all_articles_hero_mobile.avif"
+                    media="(max-width: 479px)"
+                    fetchpriority="high"
                   />
                   <img
-                    src="/img/tech_trends_welcome_hero-mobile.webp"
+                    src="/img/all_articles_hero_mobile.avif"
                     alt="a cute robot in a futuristic neon city holding a sign that says 'Tech Trends'"
-                    width="332"
-                    height="186"
+                    width="1200"
+                    height="675"
+                    style="border-radius: 1.5em; object-fit: cover;"
                     loading="eager"
                     fetchpriority="high"
-                    style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
                   />
                 </picture>
                 <div class="cat-btn">
@@ -297,16 +308,16 @@
                   <picture>
                     <source
                       srcset="
-                        https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_480/v1741221202/welcome-techtrends_j7ksbd.webp
+                        https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_480/v1741696026/tech-trends-category_e2j18j.webp
                       "
                       media="(min-width: 1200px)"
                     />
                     <source
-                      srcset="/img/welcome-techtrends.webp"
+                      srcset="/img/tech_trends_welcome_hero-mobile.avif"
                       media="(min-width: 768px)"
                     />
                     <img
-                      src="/img/welcome-techtrends.webp"
+                      src="/img/tech_trends_welcome_hero-mobile.avif"
                       loading="lazy"
                       alt="a robot saying 'Welcome to tech trends' with the city skyline behind him"
                       width="317"
@@ -333,27 +344,29 @@
               </div>
               <div class="article3-viewall">
                 <a href="/articles/ai-ecommerce.html">
-                  <picture>
-                    <source
-                      srcset="
-                        https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_520,fl_lossy/v1741221192/ai-commerce-thumbnail_sqpje9.avif
-                      "
-                      media="(min-width: 1200px)"
-                    />
-                    <source
-                      srcset="/img/ai-commerce-thumbnail.webp"
-                      media="(min-width: 768px)"
-                    />
-                    <img
-                      src="/img/ai-commerce-thumbnail.webp"
-                      loading="lazy"
-                      alt="A 1940s-style woman interacting with a futuristic robot in a modern store, symbolizing the future of eCommerce and the role of eCommerce AI in revolutionizing online retail."
-                      width="340"
-                      height="200"
-                      style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
-                      type="image/webp"
-                    />
-                  </picture>  
+                 <picture>
+                  <source
+                    srcset="
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_230,fl_lossy/v1741221192/ai-commerce-thumbnail_sqpje9.avif 230w,
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_332,fl_lossy/v1741221192/ai-commerce-thumbnail_sqpje9.avif 332w,
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741221192/ai-commerce-thumbnail_sqpje9.avif 480w
+                    "
+                    sizes="(min-width: 992px) 332px,
+                          (min-width: 768px) 480px,
+                          230px"
+                    type="image/avif"
+                    fetchpriority="high"
+                  />
+                  <img
+                    src="/img/ai-ecommerce-hero-mobile.avif"
+                    alt="A 1940s-style woman interacting with a futuristic robot in a modern store, symbolizing the future of eCommerce and the role of eCommerce AI in revolutionizing online retail."
+                    width="100%"
+                    height="auto"
+                    loading="lazy"
+                    fetchpriority="low"
+                    style="border-radius:1.5em; object-fit:cover; width:100%; height:auto;"
+                  />
+                </picture> 
                 </a>
                 <div>
                   <h3>
@@ -380,22 +393,24 @@
                   <picture>
                     <source
                       srcset="
-                        https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_520,fl_lossy/v1741221192/future_mobile_thumbnail_mp3xni.avif
+                        https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_230,fl_lossy/v1741221192/future_mobile_thumbnail_mp3xni.avif 230w,
+                        https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_332,fl_lossy/v1741221192/future_mobile_thumbnail_mp3xni.avif 332w,
+                        https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741221192/future_mobile_thumbnail_mp3xni.avif 480w
                       "
-                      media="(min-width: 1200px)"
-                    />
-                    <source
-                      srcset="/img/future_mobile_thumbnail.webp"
-                      media="(min-width: 768px)"
+                      sizes="(min-width: 992px) 332px,
+                            (min-width: 768px) 480px,
+                            230px"
+                      type="image/avif"
+                      fetchpriority="high"
                     />
                     <img
-                      src="/img/future_mobile_thumbnail.webp"
+                      src="/img/future_mobile_thumbnail.avif"
+                      alt="A retro-inspired comic illustration of a woman at a computer with a smartphone, representing trends in mobile development and apps development."
+                      width="100%"
+                      height="auto"
                       loading="lazy"
-                        alt="A retro-inspired comic illustration of a woman at a computer with a smartphone, representing trends in mobile development and apps development."
-                        width="340"
-                        height="200"
-                        style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
-                        type="image/webp"
+                      fetchpriority="low"
+                      style="border-radius:1.5em; object-fit:cover; width:100%; height:auto;"
                     />
                   </picture>
                 </a>
@@ -426,24 +441,26 @@
                   <picture>
                     <source
                       srcset="
-                        https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_470,c_fill,fl_lossy/v1741221195/headless-commerce-thumbnail_jcm5ze.webp
+                        https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_230,fl_lossy/v1741221195/headless-commerce-thumbnail_jcm5ze.avif 230w,
+                        https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_332,fl_lossy/v1741221195/headless-commerce-thumbnail_jcm5ze.avif 332w,
+                        https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741221195/headless-commerce-thumbnail_jcm5ze.avif 480w
                       "
-                      media="(min-width: 1200px)"
-                    />
-                    <source
-                      srcset="/img/headless-commerce-thumbnail.webp"
-                      media="(min-width: 768px)"
+                      sizes="(min-width: 992px) 332px,
+                            (min-width: 768px) 480px,
+                            230px"
+                      type="image/avif"
+                      fetchpriority="high"
                     />
                     <img
-                      src="/img/headless-commerce-thumbnail.webp"
-                        alt="A futuristic storefront with a professional exploring headless commerce solutions, showcasing the flexibility and scalability of headless eCommerce."
-                        loading="lazy"
-                        width="340"
-                        height="200"
-                        style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
-                        type="image/webp"
+                      src="/img/headless-commerce-hero-mobile.avif"
+                      alt="A futuristic storefront with a professional exploring headless commerce solutions, showcasing the flexibility and scalability of headless eCommerce."
+                      width="100%"
+                      height="auto"
+                      loading="lazy"
+                      fetchpriority="low"
+                      style="border-radius:1.5em; object-fit:cover; width:100%; height:auto;"
                     />
-                  </picture> 
+                  </picture>
                 </a>
                 <div>
                   <h3>
@@ -470,22 +487,24 @@
                   <picture>
                     <source
                       srcset="
-                        https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_470,fl_lossy/v1732800119/iot_innovations_desktop_tpoo0t.avif
+                        https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_230,fl_lossy/v1732800119/iot_innovations_desktop_tpoo0t.avif 230w,
+                        https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_332,fl_lossy/v1732800119/iot_innovations_desktop_tpoo0t.avif 332w,
+                        https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1732800119/iot_innovations_desktop_tpoo0t.avif 480w
                       "
-                      media="(min-width: 1200px)"
-                    />
-                    <source
-                      srcset="/img/iot_innovations_tablet.webp"
-                      media="(min-width: 768px)"
+                      sizes="(min-width: 992px) 332px,
+                            (min-width: 768px) 480px,
+                            230px"
+                      type="image/avif"
+                      fetchpriority="high"
                     />
                     <img
-                      src="/img/iot_innovations_tablet.webp"
-                        loading="lazy"
-                        alt="A retro comic-style depiction of IoT innovations, highlighting how industries use IoT to drive transformation and enhance connectivity."
-                        width="340"
-                        height="200"
-                        style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
-                        type="image/webp"
+                      src="/img/iot_innovations_mobile.avif"
+                      alt="A retro comic-style depiction of IoT innovations, highlighting how industries use IoT to drive transformation and enhance connectivity."
+                      width="100%"
+                      height="auto"
+                      loading="lazy"
+                      fetchpriority="low"
+                      style="border-radius:1.5em; object-fit:cover; width:100%; height:auto;"
                     />
                   </picture>                
                 </a>
@@ -514,27 +533,29 @@
                   <picture>
                     <source
                       srcset="
-                        https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_470,c_fill,fl_lossy/v1741221196/iot-smart-cites-thumbnail_ntl1wr.webp
+                        https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_230,fl_lossy/v1741221196/iot-smart-cites-thumbnail_ntl1wr.avif 230w,
+                        https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_332,fl_lossy/v1741221196/iot-smart-cites-thumbnail_ntl1wr.avif 332w,
+                        https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741221196/iot-smart-cites-thumbnail_ntl1wr.avif 480w
                       "
-                      media="(min-width: 1200px)"
-                    />
-                    <source
-                      srcset="/img/iot-smart-cites-thumbnail.webp"
-                      media="(min-width: 768px)"
+                      sizes="(min-width: 992px) 332px,
+                            (min-width: 768px) 480px,
+                            230px"
+                      type="image/avif"
+                      fetchpriority="high"
                     />
                     <img
-                      src="/img/iot-smart-cites-thumbnail.webp"
-                        loading="lazy"
-                        alt="A futuristic neon-lit cityscape illustrating IoT
+                      src="/img/iot-smart-cites-thumbnail.avif"
+                      alt="A futuristic neon-lit cityscape illustrating IoT
                         innovations and their transformative impact on industry,
                         showcasing how to use IoT in industry for smarter, connected
                         solutions."
-                        width="340"
-                        height="200"
-                        style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
-                        type="image/webp"
+                      width="100%"
+                      height="auto"
+                      loading="lazy"
+                      fetchpriority="low"
+                      style="border-radius:1.5em; object-fit:cover; width:100%; height:auto;"
                     />
-                  </picture>
+                  </picture>  
                 </a>
                 <div>
                   <h3>
@@ -575,8 +596,10 @@
                       src="/img/leverage_google_search_thumbnail.webp"
                       loading="lazy"
                       alt="AI SEO Tools and Google Search Console: A magnifying glass zooming in on data, symbolizing advanced SEO insights and tools."
-                      width="340"
-                      height="200"
+                      width="100%"
+                      height="auto"
+                      loading="lazy"
+                      fetchpriority="low"
                       style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
                       type="image/webp"
                     />
@@ -607,7 +630,7 @@
                   <picture>
                     <source
                       srcset="
-                        https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_470,fl_lossy/v1741221198/max-seo-thumbnail_llbltj.avif
+                        https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_520,fl_lossy/v1741221198/max-seo-thumbnail_llbltj.avif
                       "
                       media="(min-width: 1200px)"
                     />
@@ -619,12 +642,14 @@
                       src="/img/max-seo-thumbnail.webp"
                       loading="lazy"
                       alt="A professional analyzing advanced SEO data visualizations to uncover insights into keyword research and optimize for long-tail keywords."
-                      width="340"
-                      height="200"
+                      width="100%"
+                      height="auto"
+                      loading="lazy"
+                      fetchpriority="low"
                       style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
                       type="image/webp"
                     />
-                  </picture>
+                  </picture> 
                 </a>
                 <div>
                   <h3>
@@ -651,23 +676,26 @@
                     <picture>
                       <source
                         srcset="
-                          https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_520,fl_lossy/v1741221200/top-mobile-thumbnail_nayors.avif
+                          https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_230,fl_lossy/v1741221200/top-mobile-thumbnail_nayors.avif 230w,
+                          https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_332,fl_lossy/v1741221200/top-mobile-thumbnail_nayors.avif 332w,
+                          https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741221200/top-mobile-thumbnail_nayors.avif 480w
                         "
-                          media="(min-width: 1200px)"
-                      />
-                      <source
-                        srcset="/img/top-mobile-thumbnail.webp"
-                            media="(min-width: 768px)"
+                        sizes="(min-width: 992px) 332px,
+                              (min-width: 768px) 480px,
+                              230px"
+                        type="image/avif"
+                        fetchpriority="high"
                       />
                       <img
-                        src="/img/top-mobile-thumbnail.webp"
-                          alt="A futuristic smartphone interface showcasing advanced mobile development tools for iOS and Android, representing the top mobile app development solutions."
-                          width="319"
-                          height="179"
-                          style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
-                          type="image/webp"
+                        src="/img/top-mobile-thumbnail.avif"
+                        alt="A futuristic smartphone interface showcasing advanced mobile development tools for iOS and Android, representing the top mobile app development solutions."
+                        width="100%"
+                        height="auto"
+                        loading="lazy"
+                        fetchpriority="low"
+                        style="border-radius:1.5em; object-fit:cover; width:100%; height:auto;"
                       />
-                    </picture>
+                    </picture> 
                   </a>
                 <div>
                   <h3>
@@ -710,9 +738,11 @@
                     <img
                       src="/img/semrush_article_hero_mobile.webp"
                       loading="lazy"
-                      alt="Futuristic digital workspace with screens showing SEO tools, keyword research, and analytics, in a soft neon glow with floating holograms and modern devices"
-                      width="317"
-                      height="179"
+                      alt="A professional analyzing advanced SEO data visualizations to uncover insights into keyword research and optimize for long-tail keywords."
+                      width="100%"
+                      height="auto"
+                      loading="lazy"
+                      fetchpriority="low"
                       style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
                       type="image/webp"
                     />
@@ -749,21 +779,22 @@
                 <picture>
                   <source
                     srcset="
-                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_520,fl_lossy/v1741221199/sidebar-future-city_eoy5fp.avif
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_165,fl_lossy/v1741221199/sidebar-future-city_eoy5fp.avif
                     "
                     media="(min-width: 1200px)"
                   />
                   <source
-                    srcset="/img/sidebar-future-city.webp"
+                    srcset="/img/sidebar-future-city.avif"
                     media="(min-width: 768px)"
                   />
                   <img
-                    src="/img/sidebar-future-city.webp"
+                    src="/img/sidebar-future-city.avif"
                     alt="A woman from the 1940's arriving to a futuristic city"
                     type="image/avif"
                     loading="eager"
-                    width="265"
-                    height="472"
+                    fetchpriority="high"
+                    width="165"
+                    height="293"
                     style="object-fit: cover;  aspect-ratio: 9 / 16; border-radius: 1.5em"
                     />
                 </picture>
@@ -841,15 +872,30 @@
                 </div>
               </div>
             </div>
-            <div class="cta-section sidebar-cta">
+            <div class="cta-section sidebar-cta" id="sidebar-cta">
               <div class="newsletter-img">
-                <img
-                  src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_200,fl_lossy/v1741221199/newsletter_oxwway.webp"
-                  alt="Envelope on a paper plane representing updates"
-                  loading="lazy"
-                  width="120"
-                  height="120"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_120,fl_lossy/v1741221199/newsletter_oxwway.webp
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="/img/newsletter.webp"
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="/img/newsletter.webp"
+                    alt="Envelope on a paper plane representing updates"
+                    type="image/webp"
+                    loading="lazy"
+                    width="120"
+                    height="auto"
+                    style="object-fit: cover;  aspect-ratio: 9 / 16; border-radius: 1.5em"
+                    />
+                </picture>
+
               </div>
               <div class="cta-sub">
                 <h2>Discover Tech Trends and More</h2>

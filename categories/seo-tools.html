@@ -42,28 +42,170 @@
       }
     </script>
     <style>
-      .hero {
-        position: relative;
-      }
+      
+        .hero {
+          position: relative;
+          max-width: 1600px;
+          max-height:1168px;
+        }
+        
+        .hero-content {
+          display: flex;
+          position: relative;
+          flex-direction: column;
+        }
 
-      .hero-content {
-        display: flex;
-        position: relative;
-        flex-direction: column;
-      }
+        .hero img {
+          width: 100%;
+          max-width: 1200px;
+          max-height: 675px;
+          aspect-ratio: 16/9;
+          height: auto;
+          object-fit: cover;
+          border-radius: 1.5em;
+          box-shadow: rgb(0 0 0 / 20%) 0px 0px 1.5625em 0.5em;
+        }
 
-      .hero img {
-        width: 100%;
-        aspect-ratio: 16/9;
-        height: auto;
-        object-fit: cover;
-        border-radius: 1.5em;
-        box-shadow: rgb(0 0 0 / 20%) 0px 0px 1.5625em 0.5em;
-      }
+        .hero h1 a {
+          font-size: 2.5rem;
+          position: absolute;
+          bottom: 3em;
+          left: 1em;
+          color: #f7f7f7;
+          font-family: sans-serif;
+          font-weight: 900;
+          font-style: normal;
+          text-decoration: none;
+          overflow-wrap: break-word;
+        }
 
-      .content-creator {
-        width: 100%;
-      }
+        .page-title h1 a:hover,
+        .hero h1 a:hover {
+          color: #843F06;
+          opacity: 1;
+          transition: opacity 0.1s ease-in-out, transform 0.2s ease-in-out;
+        }
+
+        .hero h2 {
+          font-size: 2rem;
+          color: #262626;
+          letter-spacing: .5px;
+          overflow-wrap: break-word;
+        }
+
+        .cat-btn {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: left;
+          gap: 0.625em;
+          padding: 1em 0 1.5em 0;
+        }
+
+        .cat-btn a {
+          display: inline-flex;
+          border-radius: 6.25em;
+          border: 0.0625em solid #262626;
+          padding: 1em;
+          box-shadow: rgb(0 0 0 / 10%) 0px 0px 0.3125em 0.125em;
+          text-align: center;
+          overflow-wrap: break-word;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          color: white;
+          font-weight: 700;
+          margin: 0 1em 0 0;
+          width: auto;
+          min-width: min(120px, 6.25vw);
+          background-color: #247b91;
+          opacity: 1;
+          transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        .cat-btn a:hover {
+          border: 0.09375em solid #a8a6a6;
+          background-color: #f7985aaf;
+          color: #FFFFFF;
+          opacity: 1;
+          transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        .search-popup {
+          display: none;
+          position: relative;
+          top: 0;
+          right: 0;
+          width: auto;
+          margin-left: 0.625em;
+        }
+
+        .search-popup.show {
+          display: block;
+        }
+
+        .menu-toggle {
+          display: none;
+        }
+
+        .icons-container {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          gap: 0.125em;
+          margin-top: 0.625em;
+        }
+
+        .content-creator {
+          width: 100%;
+        }
+
+        @media (max-width: 480px) {
+            .hero img {
+              width: 304px;
+              margin: 0 auto;
+              height: 181px;
+              max-width: 95%;
+              max-height: auto;
+            }
+
+            .cat-btn {
+              width: 80%;
+              margin: 0 auto;
+            }
+
+            .page-title h3 {
+              font-size: 1.2rem;
+            }
+
+            .page-title p,
+            .page-title h3 {
+              padding: 0.5em 1em 0.8em;
+              margin: 0 auto;
+              width: 320px;
+              max-width: 480px;
+            }
+
+            .page-title h2 {
+              padding: 0.5em 1em 0;
+              margin: 0 auto;
+              width: 320px;
+              max-width: 480px;
+              font-size: 1.4rem;
+              max-width: 100%;
+            }
+
+            .page-title h1 {
+              font-size: 1.5rem;
+              padding: 1em 0 1em 0.5em;
+              width: 320px;
+              max-width: 480px;
+            }
+
+            #intro-paragraph p {
+              font-size: 1.2rem;
+            }
+        }
 
     </style>
   </head>
@@ -265,25 +407,36 @@
               <div class="hero-content-all">
                 <picture>
                   <source
-                    srcset="
-                     https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1200,fl_lossy/v1732834289/seo_tools_hero_desktop_a5sula.avif
-                    "
+                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1200,fl_lossy/v1732834289/seo_tools_hero_desktop_a5sula.avif"
                     media="(min-width: 1200px)"
+                    type="image/avif"
+                    fetchpriority="high"
                   />
                   <source
-                    srcset="/img/seo_tools_hero_tablet.webp"
+                    srcset="/img/seo-tools-thumbnail-tablet.avif"
                     media="(min-width: 768px)"
+                    fetchpriority="high"
+                  />
+                  <source
+                    srcset="/img/seo-tools-thumbnail-mobile.avif"
+                    media="(min-width: 480px)"
+                    fetchpriority="high"
+                  />
+                  <source
+                    srcset="/img/seo-tools-thumbnail-mobile.avif"
+                    media="(max-width: 479px)"
+                    fetchpriority="high"
                   />
                   <img
-                    src="/img/seo_tools_hero_mobile.webp"
+                    src="/img/seo-tools-thumbnail-mobile.avif"
                     alt="An AI-powered SEO tool helping optimize digital content"
-                    width="332"
-                    height="186"
+                    width="1200"
+                    height="675"
+                    style="border-radius: 1.5em; object-fit: cover;"
                     loading="eager"
                     fetchpriority="high"
-                    style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
                   />
-                </picture>              
+                </picture>               
                 <div class="cat-btn">
                   <a href="/categories/categorized.html">Categories</a>
                   <a href="/categories/uncategorized.html">All</a>
@@ -291,7 +444,151 @@
               </div>
             </section>
           </header>
-          <div class="article3-viewall empty-box"></div>
+          <div class="article-grid3">
+            <div class="article3-viewall">
+              <a href="/Articles/leveraging-google.html"
+                aria-label="A link to an Editor's Pick Article, Leveraging Google Search Console"
+                >
+                <picture>
+                  <source
+                    srcset="
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_470,c_fill,fl_lossy/v1741221197/leveraging-google-thumbnail_s6hkfn.webp
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="/img/leverage_google_search_thumbnail.webp"
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="/img/leverage_google_search_thumbnail.webp"
+                    loading="lazy"
+                    alt="AI SEO Tools and Google Search Console: A magnifying glass zooming in on data, symbolizing advanced SEO insights and tools."
+                    width="100%"
+                    height="auto"
+                    loading="lazy"
+                    fetchpriority="low"
+                    style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
+                    type="image/webp"
+                  />
+                </picture>
+              </a>
+              <div>
+                <h3>
+                  <a href="/Articles/leveraging-google.html">
+                    Leveraging Google Search Console with AI SEO Tools for Superior Insights
+                  </a>
+                </h3>
+              </div>
+              <div class="article-date">
+                <p>July 12, 2024</p>
+              </div>
+              <div class="article-author">
+                <p><i>Allison Stock Inc.</i></p>
+              </div>
+              <div class="article-descr">
+                <p>
+                  Understand how GSC plays a pivotal role in optimizing your website's search engine performance.…
+                </p>
+              </div>
+            </div>
+            <div class="article3-viewall">
+              <a href="/articles/max-seo-ranking.html">
+                <picture>
+                  <source
+                    srcset="
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_520,fl_lossy/v1741221198/max-seo-thumbnail_llbltj.avif
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="/img/max-seo-thumbnail.webp"
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="/img/max-seo-thumbnail.webp"
+                    loading="lazy"
+                    alt="A professional analyzing advanced SEO data visualizations to uncover insights into keyword research and optimize for long-tail keywords."
+                    width="100%"
+                    height="auto"
+                    loading="lazy"
+                    fetchpriority="low"
+                    style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
+                    type="image/webp"
+                  />
+                </picture> 
+              </a>
+              <div>
+                <h3>
+                  <a
+                    href="/articles/max-seo-ranking.html"
+                    aria-label="A link to an article on how to maximize your SEO ranking."
+                  >
+                      Maximizing Keyword Research with AI SEO tools such as Ahrefs
+                  </a>
+                </h3>
+              </div>
+              <div class="article-date">
+                <p>August 1, 2024</p>
+              </div>
+              <div class="article-author">
+                <p><i>Allison Stock Inc.</i></p>
+              </div>
+              <div class="article-descr">
+                <p>
+                  In the ever-evolving world of SEO, staying ahead of the competition requires a strong strategy...
+                </p>
+              </div>
+            </div>
+            <div class="article3-viewall">
+              <a href="/articles/seo-semrush.html">
+                <picture>
+                  <source
+                    srcset="
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_520,fl_lossy/v1741221199/semrush-article_kpkomc.avif
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="/img/semrush_article_hero_tablet.webp"
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="/img/semrush_article_hero_mobile.webp"
+                    loading="lazy"
+                    alt="A professional analyzing advanced SEO data visualizations to uncover insights into keyword research and optimize for long-tail keywords."
+                    width="100%"
+                    height="auto"
+                    loading="lazy"
+                    fetchpriority="low"
+                    style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
+                    type="image/webp"
+                  />
+                </picture>
+              </a>
+              <div>
+                <h3>
+                  <a
+                    href="/articles/seo-semrush.html"
+                    aria-label="A link to an article on how to maximize your SEO ranking."
+                  >
+                     Improve Your Websites Search
+                  </a>
+                </h3>
+              </div>
+              <div class="article-date">
+                <p>August 1, 2024</p>
+              </div>
+              <div class="article-author">
+                <p><i>Allison Stock Inc.</i></p>
+              </div>
+              <div class="article-descr">
+                <p>
+                  As the world becomes more digital, businesses are constantly looking for ways to stay competitive and increase their online visibility. AI SEO Tools plays...
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
         <section id="sidebar">
           <aside class="sidebar">
@@ -299,21 +596,22 @@
                 <picture>
                   <source
                     srcset="
-                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_520,fl_lossy/v1741221199/sidebar-future-city_eoy5fp.avif
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_165,fl_lossy/v1741221199/sidebar-future-city_eoy5fp.avif
                     "
                     media="(min-width: 1200px)"
                   />
                   <source
-                    srcset="/img/sidebar-future-city.webp"
+                    srcset="/img/sidebar-future-city.avif"
                     media="(min-width: 768px)"
                   />
                   <img
-                    src="/img/sidebar-future-city.webp"
+                    src="/img/sidebar-future-city.avif"
                     alt="A woman from the 1940's arriving to a futuristic city"
                     type="image/avif"
                     loading="eager"
-                     width="265"
-                    height="472"
+                    fetchpriority="high"
+                    width="165"
+                    height="293"
                     style="object-fit: cover;  aspect-ratio: 9 / 16; border-radius: 1.5em"
                     />
                 </picture>
@@ -391,15 +689,30 @@
                 </div>
               </div>
             </div>
-            <div class="cta-section sidebar-cta">
+            <div class="cta-section sidebar-cta" id="sidebar-cta">
               <div class="newsletter-img">
-                <img
-                  src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_200,fl_lossy/v1741221199/newsletter_oxwway.webp"
-                  alt="Envelope on a paper plane representing updates"
-                  loading="lazy"
-                  width="120"
-                  height="120"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_120,fl_lossy/v1741221199/newsletter_oxwway.webp
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="/img/newsletter.webp"
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="/img/newsletter.webp"
+                    alt="Envelope on a paper plane representing updates"
+                    type="image/webp"
+                    loading="lazy"
+                    width="120"
+                    height="auto"
+                    style="object-fit: cover;  aspect-ratio: 9 / 16; border-radius: 1.5em"
+                    />
+                </picture>
+
               </div>
               <div class="cta-sub">
                 <h2>Discover Tech Trends and More</h2>

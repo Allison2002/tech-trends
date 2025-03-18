@@ -455,11 +455,6 @@ main {
   word-break: keep-all;
 }
 
-.newsletter-img img {
-  width: min(120px, 6.25vw);
-  height: min(120px, 11.11vh);
-}
-
 .cta-section img {
   width: 22vw;
   height: auto;
@@ -871,9 +866,8 @@ article {
   padding: 0;
 }
 
-.sidebar-cta {
+#sidebar-cta {
   display: flex;
-  width: 100%;
   flex-direction: column;
   align-items: center;
   background-color: #247b91;
@@ -882,24 +876,18 @@ article {
   overflow-wrap: break-word;
 }
 
-.sidebar-cta img {
-  width: min(120px, 6.25vw);
-  height: auto;
-  margin-bottom: 1.5em;
-}
-
-.sidebar-cta h2 {
+#sidebar-cta h2 {
   font-size: 1.5rem;
   margin-bottom: 1em;
   color: white;
 }
 
-.sidebar-cta p {
+#sidebar-cta p {
   font-size: 1.2rem;
   color: white;
 }
 
-.sidebar-cta a {
+#sidebar-cta a {
   text-decoration: underline;
   color: white;
   font-weight: bold;
@@ -907,8 +895,14 @@ article {
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-.sidebar-cta a:hover {
+#sidebar-cta a:hover {
   color: #843F06;
+}
+
+.newsletter-img img {
+  width: 80px;
+  height: auto;
+  margin: 0 auto;
 }
 
 form input {
@@ -1368,11 +1362,6 @@ form button:hover {
     padding: 0.75em;
   }
 
-  .newsletter-img img {
-    max-width: 120px;
-    height: auto;
-  }
-
   .menu-toggle img,
   .search-icon img {
     width: min(40px, 2.08vw);
@@ -1815,11 +1804,6 @@ form button:hover {
     height: 400px;
     aspect-ratio: 9 / 16;
     margin-left: 4.8em;
-  }
-
-  .newsletter-img img {
-    max-width: 120px;
-    height: auto;
   }
 
   .cta-section img {
@@ -2291,13 +2275,6 @@ form button:hover {
     margin: 0 auto 1em;
   }
 
-  .sidebar-article img {
-    margin: 1em auto;
-    width: 265;
-    height: 472;
-
-  }
-
   .sidebar-text {
     display: flex;
     align-items: center;
@@ -2305,7 +2282,7 @@ form button:hover {
   }
 
   .cta-section,
-  .sidebar-cta,
+  #sidebar-cta,
   #stay-connected-sidebar,
   .sidebar-article ul li {
     max-width: 300px;

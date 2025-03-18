@@ -176,13 +176,40 @@
       <div class="grid-wrapper">
         <div class="main-content">
           <header>
-            <div class="hero" role="banner">                 
-              <div class="hero-content-all">
-                <picture>
-                  <source srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1200/v1732800595/leveraging_google_article_hero_desktop_dm1xp3.png" media="(min-width: 1200px)">
-                  <source srcset="/img/leveraging_google_article_hero_tablet.webp" media="(min-width: 768px)">
-                  <img src="/img/leveraging_google_article_hero_mobile.webp" alt="A professional using AI SEO tools and Google Search Console to analyze data on a vintage-style computer" width="320" height="180" loading="eager">
-                </picture>
+            <div class="hero" role="banner">    
+                <div class="hero-content-all">
+                  <picture>
+                    <source
+                      srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1200,fl_lossy/v1732800595/leveraging_google_article_hero_desktop_dm1xp3.avif"
+                      media="(min-width: 1200px)"
+                      type="image/avif"
+                      fetchpriority="high"
+                    />
+                    <source
+                      srcset="/img/leveraging_google_article_hero_tablet.avif"
+                      media="(min-width: 768px)"
+                      fetchpriority="high"
+                    />
+                    <source
+                      srcset="/img/leveraging_google_article_hero_mobile.avif"
+                      media="(min-width: 480px)"
+                      fetchpriority="high"
+                    />
+                    <source
+                      srcset="/img/leveraging_google_article_hero_mobile.avif"
+                      media="(max-width: 479px)"
+                      fetchpriority="high"
+                    />
+                    <img
+                      src="/img/leveraging_google_article_hero_mobile.avif"
+                      alt="A professional using AI SEO tools and Google Search Console to analyze data on a vintage-style computer"
+                      width="1200"
+                      height="675"
+                      style="border-radius: 1.5em; object-fit: cover;"
+                      loading="eager"
+                      fetchpriority="high"
+                    />
+                  </picture>
                 <div class="cat-btn">
                   <a href="/categories/categorized.html" class="btn" aria-label="View all Article Categories" role="button">Categories</a>
                   <a href="/categories/uncategorized.html" class="btn" aria-label="view all articles, un-categorized" role="button">All</a>
@@ -827,23 +854,23 @@
                 <picture>
                   <source
                     srcset="
-                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_520,fl_lossy/v1741221199/sidebar-future-city_eoy5fp.avif
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_165,fl_lossy/v1741221199/sidebar-future-city_eoy5fp.avif
                     "
                     media="(min-width: 1200px)"
                   />
                   <source
-                    srcset="/img/sidebar-future-city.webp"
+                    srcset="/img/sidebar-future-city.avif"
                     media="(min-width: 768px)"
                   />
                   <img
-                    src="/img/sidebar-future-city.webp"
+                    src="/img/sidebar-future-city.avif"
                     alt="A woman from the 1940's arriving to a futuristic city"
                     type="image/avif"
                     loading="eager"
-                    width="265"
-                    height="472"
+                    fetchpriority="high"
+                    width="165"
+                    height="293"
                     style="object-fit: cover;  aspect-ratio: 9 / 16; border-radius: 1.5em"
-                    type="image/webp"
                     />
                 </picture>
               <div class="sidebar-text">
@@ -920,15 +947,30 @@
                 </div>
               </div>
             </div>
-            <div class="cta-section sidebar-cta">
+            <div class="cta-section sidebar-cta" id="sidebar-cta">
               <div class="newsletter-img">
-                <img
-                  src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_200,fl_lossy/v1741221199/newsletter_oxwway.webp"
-                  alt="Envelope on a paper plane representing updates"
-                  loading="lazy"
-                  width="120"
-                  height="120"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_120,fl_lossy/v1741221199/newsletter_oxwway.webp
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="/img/newsletter.webp"
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="/img/newsletter.webp"
+                    alt="Envelope on a paper plane representing updates"
+                    type="image/webp"
+                    loading="lazy"
+                    width="120"
+                    height="auto"
+                    style="object-fit: cover;  aspect-ratio: 9 / 16; border-radius: 1.5em"
+                    />
+                </picture>
+
               </div>
               <div class="cta-sub">
                 <h2>Discover Tech Trends and More</h2>
@@ -1028,95 +1070,97 @@
         <div class="bottom-img-container">
           <div class="bottom-img-box">
             <picture>
-              <source
-                srcset="
-                  https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_480,fl_lossy/v1741645926/footer-comic1_pjhsjk.avif
-                "
-                media="(min-width: 1200px)"
-              />
-              <source
-                srcset="/img/footer-comic1.webp"
-                media="(min-width: 768px)"
-              />
-              <img
-                src="/img/footer-comic1.webp"
-                alt="A 1940s comic-style image featuring a lady driving and a robot waving, symbolizing how AI SEO tools welcome you to the future of technology."
-                type="image/webp"
-                loading="lazy"
-                width="480"
-                height="320" 
-                style="object-fit: cover; aspect-ratio: 3/2;"
-              />
+                <source
+                  srcset="
+                    https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_480,fl_lossy/v1741645926/footer-comic1_pjhsjk.avif
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="/img/footer-comic1.webp"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="/img/footer-comic1.webp"
+                  alt="A 1940s comic-style image featuring a lady driving and a robot waving, symbolizing how AI SEO tools welcome you to the future of technology."
+                  type="image/webp"
+                  loading="lazy"
+                  width="480"
+                  height="320" 
+                  style="object-fit: cover; aspect-ratio: 3/2;"
+                />
             </picture>
+          
+          
           </div>
           <div class="bottom-img-box">
-            <picture>
-              <source
-                srcset="
-                  https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_480,fl_lossy/v1741645926/footer-comic2_msckfs.avif
-                "
-                media="(min-width: 1200px)"
-              />
-              <source
-                srcset="/img/footer-comic2.webp"
-                media="(min-width: 768px)"
-              />
-              <img
-                src="/img/footer-comic2.webp"
-                alt="A 1940s comic-style image featuring a lady driving and a robot waving, symbolizing how AI SEO tools welcome you to the future of technology."
-                type="image/webp"
-                loading="lazy"
-                width="480"
-                height="320" 
-                style="object-fit: cover; aspect-ratio: 3/2;"
-              />
-            </picture>
+              <picture>
+                <source
+                  srcset="
+                    https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_480,fl_lossy/v1741645926/footer-comic2_msckfs.avif
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="/img/footer-comic2.webp"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="/img/footer-comic2.webp"
+                  alt="A 1940s comic-style image featuring a lady driving and a robot waving, symbolizing how AI SEO tools welcome you to the future of technology."
+                  type="image/webp"
+                  loading="lazy"
+                  width="480"
+                  height="320" 
+                  style="object-fit: cover; aspect-ratio: 3/2;"
+                />
+              </picture>
           </div>
           <div class="bottom-img-box">
-            <picture>
-              <source
-                srcset="
-                  https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_480,fl_lossy/v1741645925/footer-comic3_atowkg.avif
-                "
-                media="(min-width: 1200px)"
-              />
-              <source
-                srcset="/img/footer-comic3.webp"
-                media="(min-width: 768px)"
-              />
-              <img
-                src="/img/footer-comic3.webp"
-                alt="A 1940s comic-style image featuring a lady driving and a robot waving, symbolizing how AI SEO tools welcome you to the future of technology."
-                type="image/webp"
-                loading="lazy"
-                width="480"
-                height="320" 
-                style="object-fit: cover; aspect-ratio: 3/2;"
-              />
-            </picture>
+              <picture>
+                <source
+                  srcset="
+                    https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_480,fl_lossy/v1741645925/footer-comic3_atowkg.avif
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="/img/footer-comic3.webp"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="/img/footer-comic3.webp"
+                  alt="A 1940s comic-style image featuring a lady driving and a robot waving, symbolizing how AI SEO tools welcome you to the future of technology."
+                  type="image/webp"
+                  loading="lazy"
+                  width="480"
+                  height="320" 
+                  style="object-fit: cover; aspect-ratio: 3/2;"
+                />
+              </picture>
           </div>
           <div class="bottom-img-box">
-            <picture>
-              <source
-                srcset="
-                  https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_480,fl_lossy/v1741645925/footer-comic4_qx0km4.avif
-                "
-                media="(min-width: 1200px)"
-              />
-              <source
-                srcset="/img/footer-comic4.webp"
-                media="(min-width: 768px)"
-              />
-              <img
-                src="/img/footer-comic4.webp"
-                alt="A 1940s comic-style image featuring a lady driving and a robot waving, symbolizing how AI SEO tools welcome you to the future of technology."
-                type="image/webp"
-                loading="lazy"
-                width="480"
-                height="320" 
-                style="object-fit: cover; aspect-ratio: 3/2;"
-              />
-            </picture>
+              <picture>
+                <source
+                  srcset="
+                    https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_480,fl_lossy/v1741645925/footer-comic4_qx0km4.avif
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="/img/footer-comic4.webp"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="/img/footer-comic4.webp"
+                  alt="A 1940s comic-style image featuring a lady driving and a robot waving, symbolizing how AI SEO tools welcome you to the future of technology."
+                  type="image/webp"
+                  loading="lazy"
+                  width="480"
+                  height="320" 
+                  style="object-fit: cover; aspect-ratio: 3/2;"
+                />
+              </picture>
           </div>
         </div>
         <hr />
@@ -1198,4 +1242,3 @@
     <script src="/script.js" defer></script>
   </body>
 </html>
- 
