@@ -2108,15 +2108,15 @@ form button:hover {
   }
 
   .hero {
-    width: 305px;
-    height: 293px
+    width: 100%;
+    height: auto;
   }
 
   .hero img {
-    width: 304px;
+    width: 315px;
     margin: 0 auto;
-    height: 181px;
-    max-width: 95%;
+    height: 177px;
+    max-width: 100%;
     max-height: auto;
   }
 
@@ -2152,8 +2152,6 @@ form button:hover {
     font-size: 1.2rem;
   }
 
-
-
   .article2-viewall p {
     font-size: 1.2rem;
   }
@@ -2165,6 +2163,11 @@ form button:hover {
 
   .cat-btn a {
     width: 80%;
+  }
+
+  #intro-paragraph {
+    display: flex;
+    flex-direction: column;
   }
 
   #featured-topics,
