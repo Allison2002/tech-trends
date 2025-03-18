@@ -433,31 +433,52 @@
           </ul>
         </div>
         <div class="icons-container">
-          <!--hamburger icon-->
-          <div class="menu-toggle" id="menu-toggle" role="button">
-            <img
-              src="https://res.cloudinary.com/dnptzisuf/image/upload/q_auto,w_40,fl_lossy/v1741274766/hamburger-icon_k4midx.svg"
-              alt="Hamburger Menu Icon"
-              class="hamburger-icon"
-              type="image/svg"
-              aria-label="Menu"
-              width="40"
-              height="40"
-              loading="eager"
-            />
-          </div>
-          <!-- search icon -->
-          <div class="search-icon" id="search-icon" title="Search">
-            <img
-              src="https://res.cloudinary.com/dnptzisuf/image/upload/q_auto,w_40,fl_lossy/v1741274767/search-icon_lcdcrr.svg"
-              alt="search icon"
-              aria-label="Search"
-              type="image/svg"
-              width="40"
-              height="40"
-              loading="lazy"
-            />
-          </div>
+            <div class="menu-toggle" id="menu-toggle" role="button">
+              <picture>
+                <source
+                  srcset="
+                    https://res.cloudinary.com/dnptzisuf/image/upload/fl_lossy,q_auto:best,w_52,fl_lossy/v1741313863/hamburger_ozf2so.png
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="/img/hamburger-icon.webp"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="/img/hamburger-icon.webp"
+                  alt="Hamburger menu icon"
+                  aria-label="Open menu"
+                  type="image/png"
+                  width="48"
+                  height="48"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div class="search-icon" id="search-icon" title="Search">
+              <picture>
+                <source
+                  srcset="
+                    https://res.cloudinary.com/dnptzisuf/image/upload/fl_lossy,q_auto:best,w_52,fl_lossy/v1741313864/search_fk7mcc.png
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="/img/search-icon.webp"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="/img/search-icon.webp"
+                  alt="search icon"
+                  aria-label="Open Search"
+                  type="image/png"
+                  width="48"
+                  height="48"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
           <!-- search box popup -->
           <div class="search-popup" id="search-popup">
             <div class="search-container">

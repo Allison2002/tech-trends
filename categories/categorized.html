@@ -293,7 +293,6 @@
           </ul>
         </div>
         <div class="icons-container">
-          <!--hamburger icon-->
             <div class="menu-toggle" id="menu-toggle" role="button">
               <picture>
                 <source
@@ -309,7 +308,7 @@
                 <img
                   src="/img/hamburger-icon.webp"
                   alt="Hamburger menu icon"
-                  aria-label="Menu Icon"
+                  aria-label="Open menu"
                   type="image/png"
                   width="48"
                   height="48"
@@ -317,7 +316,30 @@
                 />
               </picture>
             </div>
-            <!-- search icon -->
+        <div class="icons-container">
+            <div class="menu-toggle" id="menu-toggle" role="button">
+              <picture>
+                <source
+                  srcset="
+                    https://res.cloudinary.com/dnptzisuf/image/upload/fl_lossy,q_auto:best,w_52,fl_lossy/v1741313863/hamburger_ozf2so.png
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="/img/hamburger-icon.webp"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="/img/hamburger-icon.webp"
+                  alt="Hamburger menu icon"
+                  aria-label="Open menu"
+                  type="image/png"
+                  width="48"
+                  height="48"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
             <div class="search-icon" id="search-icon" title="Search">
               <picture>
                 <source
@@ -333,7 +355,7 @@
                 <img
                   src="/img/search-icon.webp"
                   alt="search icon"
-                  aria-label="Search"
+                  aria-label="Open Search"
                   type="image/png"
                   width="48"
                   height="48"
@@ -341,6 +363,14 @@
                 />
               </picture>
             </div>
+          <!-- search box popup -->
+          <div class="search-popup" id="search-popup">
+            <div class="search-container">
+              <i class="fas fa-search"></i>
+              <input type="text" placeholder="Search..." id="search-input" />
+            </div>
+          </div>
+        </div>
           <!-- search box popup -->
           <div class="search-popup" id="search-popup">
             <div class="search-container">
@@ -400,7 +430,6 @@
             </li>
           </ul>
         </div>
-      </div>
     </nav>
     <main class="content-container">
       <div class="page-title">
