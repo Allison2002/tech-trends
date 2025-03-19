@@ -2205,7 +2205,7 @@ form button:hover {
     display: none;
   }
 
-  .cat-btn {
+  .cat-btn a {
     width: 80%;
     margin: 0 auto;
   }
@@ -2274,6 +2274,12 @@ form button:hover {
 
   #intro-paragraph p {
     font-size: 1.2rem;
+  }
+
+  .article3-viewall h3,
+  .article-author p,
+  .article-date p {
+    text-align: left;
   }
 
   .article2-viewall p {

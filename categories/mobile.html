@@ -38,171 +38,201 @@
       }
     </script>
     <style>
+      .hero {
+        position: relative;
+        max-width: 1600px;
+        max-height: auto;
+      }
       
-        .hero {
-          position: relative;
-          max-width: 1600px;
-          max-height:1168px;
-        }
-        
-        .hero-content {
-          display: flex;
-          position: relative;
-          flex-direction: column;
-        }
+      .hero-content {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+      }
 
+      .hero img {
+        width: 100%;
+        max-width: 1600px;
+        max-height: auto;
+        aspect-ratio: 16/9;
+        height: auto;
+        object-fit: cover;
+        border-radius: 1.5em;
+        box-shadow: rgb(0 0 0 / 20%) 0px 0px 1.5625em 0.5em;
+      }
+
+      .hero h1 a {
+        font-size: 2.5rem;
+        position: absolute;
+        bottom: 3em;
+        left: 1em;
+        color: #f7f7f7;
+        font-family: sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        text-decoration: none;
+        overflow-wrap: break-word;
+      }
+
+      .page-title h1 a:hover,
+      .hero h1 a:hover {
+        color: #843F06;
+        opacity: 1;
+        transition: opacity 0.1s ease-in-out, transform 0.2s ease-in-out;
+      }
+
+      .hero h2 {
+        font-size: 2rem;
+        color: #262626;
+        letter-spacing: .5px;
+        overflow-wrap: break-word;
+      }
+
+      .cat-btn {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        gap: 0.625em;
+        padding: 1em 0 1.5em 0;
+        height: auto;
+      }
+
+      .cat-btn a {
+        display: inline-flex;
+        border-radius: 6.25em;
+        border: 0.0625em solid #262626;
+        padding: 1em;
+        box-shadow: rgb(0 0 0 / 10%) 0px 0px 0.3125em 0.125em;
+        text-align: center;
+        overflow-wrap: break-word;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+        margin: 0 1em 0 0;
+        width: auto;
+        min-width: min(120px, 6.25vw);
+        background-color: #247b91;
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+      }
+
+      .cat-btn a:hover {
+        border: 0.09375em solid #a8a6a6;
+        background-color: #f7985aaf;
+        color: #FFFFFF;
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+      }
+
+      .search-popup {
+        display: none;
+        position: relative;
+        top: 0;
+        right: 0;
+        width: auto;
+        margin-left: 0.625em;
+      }
+
+      .search-popup.show {
+        display: block;
+      }
+
+      .menu-toggle {
+        display: none;
+      }
+
+      .icons-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 0.125em;
+        margin-top: 0.625em;
+      }
+
+      @media (max-width: 786px) {
         .hero img {
-          width: 100%;
-          max-width: 1200px;
-          max-height: 675px;
-          aspect-ratio: 16/9;
+          width: 90%;
+          max-width: 640px;
           height: auto;
-          object-fit: cover;
-          border-radius: 1.5em;
-          box-shadow: rgb(0 0 0 / 20%) 0px 0px 1.5625em 0.5em;
-        }
-
-        .hero h1 a {
-          font-size: 2.5rem;
-          position: absolute;
-          bottom: 3em;
-          left: 1em;
-          color: #f7f7f7;
-          font-family: sans-serif;
-          font-weight: 900;
-          font-style: normal;
-          text-decoration: none;
-          overflow-wrap: break-word;
-        }
-
-        .page-title h1 a:hover,
-        .hero h1 a:hover {
-          color: #843F06;
-          opacity: 1;
-          transition: opacity 0.1s ease-in-out, transform 0.2s ease-in-out;
-        }
-
-        .hero h2 {
-          font-size: 2rem;
-          color: #262626;
-          letter-spacing: .5px;
-          overflow-wrap: break-word;
-        }
-
-        .cat-btn {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: left;
-          gap: 0.625em;
-          padding: 1em 0 1.5em 0;
+          margin: 0 auto;
         }
 
         .cat-btn a {
-          display: inline-flex;
-          border-radius: 6.25em;
-          border: 0.0625em solid #262626;
-          padding: 1em;
-          box-shadow: rgb(0 0 0 / 10%) 0px 0px 0.3125em 0.125em;
-          text-align: center;
-          overflow-wrap: break-word;
-          align-items: center;
-          justify-content: center;
-          text-decoration: none;
-          color: white;
-          font-weight: 700;
-          margin: 0 1em 0 0;
-          width: auto;
-          min-width: min(120px, 6.25vw);
-          background-color: #247b91;
-          opacity: 1;
-          transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+          width: 80%;
+          margin: 0 auto;
         }
 
-        .cat-btn a:hover {
-          border: 0.09375em solid #a8a6a6;
-          background-color: #f7985aaf;
-          color: #FFFFFF;
-          opacity: 1;
-          transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        #featured-topics,
+        #intro-paragraph,
+        #recommended-articles h3,
+        #recommended-articles p,
+        #recommended-articles h2 a {
+          margin: 0 0.5em 0;
+          width: 580px;
+          height: auto;
+          max-width: 100%;
+          margin: 0 auto;
         }
 
-        .search-popup {
-          display: none;
-          position: relative;
-          top: 0;
-          right: 0;
-          width: auto;
-          margin-left: 0.625em;
+        #intro-paragraph {
+          padding: 2em 1em;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .hero {
+          height: auto;
+          margin: 0 auto;
         }
 
-        .search-popup.show {
-          display: block;
+        .hero img {
+          width: 315px;
+          margin: 0 auto;
+          height: 177px;
+          max-width: 100%;
+          max-height: auto;
         }
 
-        .menu-toggle {
-          display: none;
+        .cat-btn a {
+          width: 80%;
+          margin: 0 auto;
         }
 
-        .icons-container {
-          position: relative;
-          display: flex;
-          align-items: center;
-          justify-content: flex-end;
-          gap: 0.125em;
-          margin-top: 0.625em;
+        .page-title h3 {
+          font-size: 1.2rem;
         }
 
-        .content-creator {
-          width: 100%;
+        .page-title p,
+        .page-title h3 {
+          padding: 0.5em 1em 0.8em;
+          margin: 0 auto;
+          width: 320px;
+          max-width: 480px;
         }
 
-        @media (max-width: 480px) {
-            .hero img {
-              width: 304px;
-              margin: 0 auto;
-              height: 181px;
-              max-width: 95%;
-              max-height: auto;
-            }
-
-            .cat-btn {
-              width: 80%;
-              margin: 0 auto;
-            }
-
-            .page-title h3 {
-              font-size: 1.2rem;
-            }
-
-            .page-title p,
-            .page-title h3 {
-              padding: 0.5em 1em 0.8em;
-              margin: 0 auto;
-              width: 320px;
-              max-width: 480px;
-            }
-
-            .page-title h2 {
-              padding: 0.5em 1em 0;
-              margin: 0 auto;
-              width: 320px;
-              max-width: 480px;
-              font-size: 1.4rem;
-              max-width: 100%;
-            }
-
-            .page-title h1 {
-              font-size: 1.5rem;
-              padding: 1em 0 1em 0.5em;
-              width: 320px;
-              max-width: 480px;
-            }
-
-            #intro-paragraph p {
-              font-size: 1.2rem;
-            }
+        .page-title h2 {
+          padding: 0.5em 1em 0;
+          margin: 0 auto;
+          width: 320px;
+          max-width: 480px;
+          font-size: 1.4rem;
+          max-width: 100%;
         }
 
+        .page-title h1 {
+          font-size: 1.5rem;
+          padding: 1em 0 1em 0.5em;
+          width: 320px;
+          max-width: 480px;
+        }
+
+        #intro-paragraph p {
+          font-size: 1.2rem;
+        }
+      }
     </style>
   </head>
   <body>
@@ -571,9 +601,10 @@
             <div class="article3-viewall empty-box"></div>
           </div>
         </div>
-        <section id="sidebar">
+       <section id="sidebar">
           <aside class="sidebar">
             <div class="sidebar-article">
+              <div class="city-img">
                 <picture>
                   <source
                     srcset="
@@ -596,6 +627,7 @@
                     style="object-fit: cover;  aspect-ratio: 9 / 16; border-radius: 1.5em"
                     />
                 </picture>
+              </div>
               <div class="sidebar-text">
                 <ul>
                   <li class="featured-topics">
@@ -616,61 +648,65 @@
                   </li>
                 </ul>
               </div>
+
             </div>
-            <div id="stay-connected-sidebar" class="featured-topics2">
+            <div id="stay-connected-sidebar" class="sidebar-box featured-topics">
               <div class="stay-connected">
                 <h3>Stay Connected</h3>
                 <p>Follow us on social media for updates and insights.</p>
-                <div class="social-media-icons">
-                  <a
-                    href="https://facebook.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Follow us on Facebook"
-                  >
-                    <img
-                      src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_80,fl_lossy/v1741221192/facebook-icon_cfmjwc.webp"
-                      alt="Follow us on Facebook (opens in a new tab)"
-                      loading="lazy"
-                      width="47"
-                      height="47"
-                    />
-                    <span>Facebook</span>
-                  </a>
-                  <a
-                    href="https://twitter.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Follow us on Twitter"
-                  >
-                    <img
-                      src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_80,fl_lossy/v1741221202/twitter-x-icon_bx3vua.webp"
-                      alt="Follow us on Twitter (opens in a new tab)"
-                      loading="lazy"
-                      width="47"
-                      height="47"
-                    />
-                    <span>Twitter</span>
-                  </a>
-                  <a
-                    href="https://instagram.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Follow us on Instagram"
-                  >
-                    <img
-                      src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_80,fl_lossy/v1741221589/instagram_oajfgx.webp"
-                      alt="Follow us on Instagram (opens in a new tab)"
-                      loading="lazy"
-                      width="47"
-                      height="47"
-                    />
-                    <span>Instagram</span>
-                  </a>
-                </div>
+              </div>
+              <div class="social-media-imgs">
+                <!-- Facebook -->
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Follow us on Facebook"
+                >
+                  <img
+                    src="/img/facebook-icon.webp"
+                    alt="Facebook icon"
+                    loading="lazy"
+                    width="52"
+                    height="52"
+                  />
+                  <div class="social-media-text">Facebook</div>
+                </a>
+                <!-- Twitter -->
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Follow us on Twitter"
+                >
+                  <img
+                    src="/img/twitter-x-icon.webp"
+                    alt="Twitter icon"
+                    loading="lazy"
+                    width="52"
+                    height="52"
+                  />
+                  <div class="social-media-text">Twitter</div>
+                </a>
+                <!-- Instagram -->
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Follow us on Instagram"
+                >
+                  <img
+                    src="/img/instagram.webp"
+                    alt="Instagram icon"
+                    loading="lazy"
+                    width="52"
+                    height="52"
+                  />
+                  <div class="social-media-text">Instagram</div>
+                </a>
               </div>
             </div>
-            <div class="cta-section sidebar-cta" id="sidebar-cta">
+            <div class="sidebar-box" id="sidebar-cta">
               <div class="newsletter-img">
                 <picture>
                   <source
@@ -688,14 +724,14 @@
                     alt="Envelope on a paper plane representing updates"
                     type="image/webp"
                     loading="lazy"
-                    width="120"
+                    width="80"
                     height="auto"
-                    style="object-fit: cover;  aspect-ratio: 9 / 16; border-radius: 1.5em"
+                    style="object-fit: cover;  aspect-ratio: 1.45 / 1; border-radius: 1.5em"
                     />
                 </picture>
 
               </div>
-              <div class="cta-sub">
+              <div class="cta-sub" id="cta-sub">
                 <h2>Discover Tech Trends and More</h2>
                 <p>
                   <i
@@ -719,7 +755,7 @@
               </div>
             </div>
           </aside>
-        </section>
+      </section>
       </div>
       <section id="content-creator">
         <hr class="hr" />
@@ -787,6 +823,7 @@
           </div>
         </div>
       </section>
+      <div class="padding"></div>
     </main>
     <footer>
       <div class="bottom-section">

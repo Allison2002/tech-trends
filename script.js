@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
             searchPopup.classList.add('show');
             body.classList.add('with-popup');
             if (windowWidth <= 1024) {
-                body.style.paddingTop = '6em'; // Add padding for small screens
+                body.style.paddingTop = '5em'; // Add padding for small screens
             }
         }
     }

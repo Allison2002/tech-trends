@@ -130,16 +130,16 @@
               <picture>
                 <source
                   srcset="
-                    https://res.cloudinary.com/dnptzisuf/image/upload/fl_lossy,q_auto:best,w_52,fl_lossy/v1741313863/hamburger_ozf2so.png
+                  https://res.cloudinary.com/dnptzisuf/image/upload/fl_lossy,q_auto:best,w_52/v1741313863/hamburger_ozf2so.png
                   "
                   media="(min-width: 1200px)"
                 />
                 <source
-                  srcset="/img/hamburger-icon.webp"
+                  srcset="/img/hamburger.webp"
                   media="(min-width: 768px)"
                 />
                 <img
-                  src="/img/hamburger-icon.webp"
+                  src="/img/hamburger.webp"
                   alt="Hamburger menu icon"
                   aria-label="Open menu"
                   type="image/png"
@@ -199,7 +199,7 @@
       <div class="page-title">
         <h1><i>The Future of eCommerce</i></h1>
       </div>          
-      <div class="grid-wrapper">
+      <div class="grid-wrapper" id="grid-wrapper">
         <div class="main-content">
           <header>
             <div class="hero" role="banner">                 
@@ -439,11 +439,11 @@
                         media="(min-width: 1200px)"
                       />
                       <source
-                        srcset="/img/iot-smart-cites-thumbnail.webp"
+                        srcset="/img/iot-smart-cites-thumbnail.avif"
                         media="(min-width: 768px)"
                       />
                       <img
-                        src="/img/iot-smart-cites-thumbnail.webp"
+                        src="/img/iot-smart-cites-thumbnail.avif"
                         alt="A futuristic neon-lit cityscape illustrating IoT
                         innovations and their transformative impact on industry,
                         showcasing how to use IoT in industry for smarter, connected
@@ -548,11 +548,11 @@
                     media="(min-width: 1200px)"
                   />
                   <source
-                    srcset="/img/iot_innovations_tablet.webp"
+                    srcset="/img/iot_innovations_tablet.avif"
                     media="(min-width: 768px)"
                   />
                   <img
-                    src="/img/iot_innovations_mobile.webp"
+                    src="/img/iot_innovations_mobile.avif"
                       alt="A retro comic-style depiction of IoT innovations, highlighting how industries use IoT to drive transformation and enhance connectivity."
                       width="317"
                       height="179"
@@ -595,11 +595,11 @@
                         media="(min-width: 1200px)"
                       />
                       <source
-                        srcset="/img/semrush_article_hero_tablet.webp"
+                        srcset="/img/semrush_article_hero_tablet.avif"
                         media="(min-width: 768px)"
                       />
                       <img
-                        src="/img/semrush_article_hero_mobile.webp"
+                        src="/img/semrush_article_hero_mobile.avif"
                         loading="lazy"
                         alt="A professional analyzing advanced SEO data visualizations to uncover insights into keyword research and optimize for long-tail keywords."
                         width="317"
@@ -761,11 +761,11 @@
                           media="(min-width: 1200px)"
                       />
                       <source
-                        srcset="/img/top-mobile-thumbnail.webp"
+                        srcset="/img/top-mobile-thumbnail.avif"
                            media="(min-width: 768px)"
                       />
                       <img
-                        src="/img/top-mobile-thumbnail.webp"
+                        src="/img/top-mobile-thumbnail.avif"
                           alt="A futuristic smartphone interface showcasing advanced mobile development tools for iOS and Android, representing the top mobile app development solutions."
                           width="319"
                           height="179"
@@ -801,11 +801,11 @@
                       media="(min-width: 1200px)"
                     />
                     <source
-                      srcset="/img/future_mobile_thumbnail.webp"
+                      srcset="/img/future_mobile_thumbnail.avif"
                       media="(min-width: 768px)"
                     />
                     <img
-                      src="/img/future_mobile_thumbnail.webp"
+                      src="/img/future_mobile_thumbnail.avif"
                       loading="lazy"
                         alt="A retro-inspired comic illustration of a woman at a computer with a smartphone, representing trends in mobile development and apps development."
                         width="319"
@@ -833,9 +833,10 @@
             </div>
           </section>
         </div>
-        <section id="sidebar">
+       <section id="sidebar">
           <aside class="sidebar">
             <div class="sidebar-article">
+              <div class="city-img">
                 <picture>
                   <source
                     srcset="
@@ -858,6 +859,7 @@
                     style="object-fit: cover;  aspect-ratio: 9 / 16; border-radius: 1.5em"
                     />
                 </picture>
+              </div>
               <div class="sidebar-text">
                 <ul>
                   <li class="featured-topics">
@@ -878,61 +880,65 @@
                   </li>
                 </ul>
               </div>
+
             </div>
-            <div id="stay-connected-sidebar" class="featured-topics2">
+            <div id="stay-connected-sidebar" class="sidebar-box featured-topics">
               <div class="stay-connected">
                 <h3>Stay Connected</h3>
                 <p>Follow us on social media for updates and insights.</p>
-                <div class="social-media-icons">
-                  <a
-                    href="https://facebook.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Follow us on Facebook"
-                  >
-                    <img
-                      src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_80,fl_lossy/v1741221192/facebook-icon_cfmjwc.webp"
-                      alt="Follow us on Facebook (opens in a new tab)"
-                      loading="lazy"
-                      width="47"
-                      height="47"
-                    />
-                    <span>Facebook</span>
-                  </a>
-                  <a
-                    href="https://twitter.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Follow us on Twitter"
-                  >
-                    <img
-                      src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_80,fl_lossy/v1741221202/twitter-x-icon_bx3vua.webp"
-                      alt="Follow us on Twitter (opens in a new tab)"
-                      loading="lazy"
-                      width="47"
-                      height="47"
-                    />
-                    <span>Twitter</span>
-                  </a>
-                  <a
-                    href="https://instagram.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Follow us on Instagram"
-                  >
-                    <img
-                      src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_80,fl_lossy/v1741221589/instagram_oajfgx.webp"
-                      alt="Follow us on Instagram (opens in a new tab)"
-                      loading="lazy"
-                      width="47"
-                      height="47"
-                    />
-                    <span>Instagram</span>
-                  </a>
-                </div>
+              </div>
+              <div class="social-media-imgs">
+                <!-- Facebook -->
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Follow us on Facebook"
+                >
+                  <img
+                    src="/img/facebook-icon.webp"
+                    alt="Facebook icon"
+                    loading="lazy"
+                    width="52"
+                    height="52"
+                  />
+                  <div class="social-media-text">Facebook</div>
+                </a>
+                <!-- Twitter -->
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Follow us on Twitter"
+                >
+                  <img
+                    src="/img/twitter-x-icon.webp"
+                    alt="Twitter icon"
+                    loading="lazy"
+                    width="52"
+                    height="52"
+                  />
+                  <div class="social-media-text">Twitter</div>
+                </a>
+                <!-- Instagram -->
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Follow us on Instagram"
+                >
+                  <img
+                    src="/img/instagram.webp"
+                    alt="Instagram icon"
+                    loading="lazy"
+                    width="52"
+                    height="52"
+                  />
+                  <div class="social-media-text">Instagram</div>
+                </a>
               </div>
             </div>
-            <div class="cta-section sidebar-cta" id="sidebar-cta">
+            <div class="sidebar-box" id="sidebar-cta">
               <div class="newsletter-img">
                 <picture>
                   <source
@@ -950,14 +956,14 @@
                     alt="Envelope on a paper plane representing updates"
                     type="image/webp"
                     loading="lazy"
-                    width="120"
+                    width="80"
                     height="auto"
-                    style="object-fit: cover;  aspect-ratio: 9 / 16; border-radius: 1.5em"
+                    style="object-fit: cover;  aspect-ratio: 1.45 / 1; border-radius: 1.5em"
                     />
                 </picture>
 
               </div>
-              <div class="cta-sub">
+              <div class="cta-sub" id="cta-sub">
                 <h2>Discover Tech Trends and More</h2>
                 <p>
                   <i
@@ -981,7 +987,7 @@
               </div>
             </div>
           </aside>
-        </section>
+      </section>
       </div>
       <section id="content-creator">
         <hr class="hr" />
@@ -1049,6 +1055,7 @@
           </div>
         </div>
       </section>
+      <div class="padding"></div>
     </main>
     <footer>
       <div class="bottom-section">
