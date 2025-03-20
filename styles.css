@@ -1897,6 +1897,10 @@ form button:hover {
     max-width: 500px;
   }
 
+  #stay-connected-text h2 {
+    font-size: 1.2rem;
+  }
+
   .social-media-imgs {
     flex-direction: row;
     margin: 0 auto;
