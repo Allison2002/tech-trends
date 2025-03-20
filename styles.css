@@ -138,6 +138,11 @@ span {
   /* no extra margin or padding unless you specifically want some */
 }
 
+.article-textbox h2 {
+  font-size: 1.2rem;
+  padding: 1em 0.5em 0.5em;
+}
+
 .article-grid1,
 .article-grid2,
 .article-grid3 {
@@ -1742,10 +1747,6 @@ form button:hover {
     height: auto;
   }
 
-  .article-textbox h2 {
-    font-size: 1.10rem;
-  }
-
   main {
     max-width: 95%;
   }
@@ -1814,6 +1815,7 @@ form button:hover {
   }
 
   /* Ensure all sections clear floats */
+
   .article-section {
     clear: both;
   }
