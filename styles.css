@@ -2158,6 +2158,7 @@ form button:hover {
     margin: 0 auto;
     border-radius: 1.5em;
     object-fit: cover;
+    aspect-ratio: 16 / 9;
   }
 
   .cat-btn {
