@@ -2292,6 +2292,26 @@ form button:hover {
     font-size: 1.2rem;
   }
 
+  .article3-viewall,
+  .article2-viewall,
+  .article1-viewall {
+    width: 250px;
+    max-width: 480px;
+    margin: 1em auto;
+  }
+
+  .article-grid1 img,
+  .article3-viewall img,
+  .article2-viewall img,
+  .article1-viewall img {
+    width: 250px;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 1.5em;
+    display: block;
+    margin: 0 auto;
+  }
+
   .article3-viewall h3,
   .article-author p,
   .article-date p {
