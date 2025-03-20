@@ -2217,8 +2217,6 @@ form button:hover {
     width: 80%;
     margin: 0 auto;
   }
-
-
 }
 
 @media (max-width: 480px) {
@@ -2240,7 +2238,7 @@ form button:hover {
   body {
     position: relative;
     top: 100px;
-    margin-top: 2em;
+    margin-top: 0;
   }
 
   main {
@@ -2249,8 +2247,9 @@ form button:hover {
   }
 
   .hero {
-    width: 100%;
-    height: auto;
+    width: 315px;
+    height: 177;
+    margin: 0 auto;
   }
 
   .hero img {
@@ -2367,7 +2366,7 @@ form button:hover {
     display: flex;
     flex-direction: column;
     gap: 0;
-    margin: 1em auto;
+    margin: 0em auto;
   }
 
   .article-grid3 img {
@@ -2408,7 +2407,7 @@ form button:hover {
     width: 100%;
     max-width: 480px;
     height: auto;
-    margin: 1em auto 2em;
+    margin: 0 auto 2em;
   }
 
   .sidebar-text ul {
