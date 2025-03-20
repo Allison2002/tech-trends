@@ -2003,8 +2003,8 @@ form button:hover {
   .article3-viewall,
   .article2-viewall,
   .article1-viewall {
-    width: 100%;
-    max-width: 580px;
+    width: 1088px;
+    max-width: 1200px;
     margin: 2em auto;
   }
 
@@ -2012,7 +2012,8 @@ form button:hover {
   .article3-viewall img,
   .article2-viewall img,
   .article1-viewall img {
-    width: 580px;
+    width: 100%;
+    height: auto;
     aspect-ratio: 16/9;
     object-fit: cover;
     border-radius: 1.5em;
@@ -2261,7 +2262,7 @@ form button:hover {
   }
 
   .page-title h3 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .page-title p,
@@ -2282,9 +2283,10 @@ form button:hover {
 
   .page-title h1 {
     font-size: 1.5rem;
-    padding: 1em 0 1em 1em;
+    padding: 1em 0 0 1em;
     width: 100%;
     max-width: 580px;
+    text-align: left;
   }
 
   #intro-paragraph p {
@@ -2328,6 +2330,7 @@ form button:hover {
 
   .cat-btn a {
     width: 80%;
+    padding: 0.4em;
   }
 
   #intro-paragraph {
@@ -2341,17 +2344,54 @@ form button:hover {
   #recommended-articles p,
   #recommended-articles h2 a {
     margin: 0 0.5em 0;
-    width: 319px;
-    max-width: 100%;
+    width: 250px;
+    max-width: 250px;
     margin: 0 auto;
+    gap: 0;
   }
 
-  #recommended-articles img {
-    max-width: 480px;
+  #recommended-articles {
+    display: flex;
+    flex-direction: column;
     width: 319px;
-    height: 179px;
-    aspect-ratio: 16/9;
+    max-width: 480px;
     margin: 0 auto;
+    margin: 0 auto;
+    gap: 0;
+  }
+
+  .article-grid1,
+  #featured-topics,
+  #intro-paragraph,
+  #recommended-articles,
+  #recommended-articles,
+  #recommended-articles {
+    gap: 0.5em;
+  }
+
+  .article-grid3 {
+    display: flex;
+    flex-direction: column;
+    width: 319px;
+    max-width: 480px;
+    margin: 0 auto;
+    margin: 0 auto;
+    gap: 0;
+  }
+
+  .article-grid3 img {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .editors-pick {
+    padding: 0;
+  }
+
+  .iot-updates {
+    margin: 0;
+    padding: 0;
   }
 
   .grid-wrapper {
@@ -2362,17 +2402,6 @@ form button:hover {
     display: none;
   }
 
-  .article-grid3 {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    margin: 0em auto;
-  }
-
-  .article-grid3 img {
-    margin: 0 auto;
-    max-width: 100%;
-  }
 
   .content-creator {
     margin-bottom: 5em;
