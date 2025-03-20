@@ -268,11 +268,11 @@
           <header>
             <section class="hero" role="banner">
               <div class="hero-content-all">
-                                <picture>
+                <picture>
                   <source
-                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1200,fl_lossy/v1741237706/all_articles_hero_desktop_x0q23u.avif"
-                    media="(min-width: 1200px)"
+                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_1200,fl_lossy/v1742494169/all_articles_hero_desktop_jxigas.avif"
                     type="image/avif"
+                    media="(min-width: 1200px)"
                     fetchpriority="high"
                   />
                   <source
@@ -280,24 +280,16 @@
                     media="(min-width: 768px)"
                     fetchpriority="high"
                   />
-                  <source
-                    srcset="/img/all_articles_hero_mobile.avif"
-                    media="(min-width: 480px)"
-                    fetchpriority="high"
-                  />
-                  <source
-                    srcset="/img/all_articles_hero_mobile.avif"
-                    media="(max-width: 479px)"
-                    fetchpriority="high"
-                  />
                   <img
                     src="/img/all_articles_hero_mobile.avif"
                     alt="a cute robot in a futuristic neon city holding a sign that says 'Tech Trends'"
-                    width="1200"
-                    height="675"
-                    style="border-radius: 1.5em; object-fit: cover;"
+                    width="315"
+                    height="177"
                     loading="eager"
                     fetchpriority="high"
+                    object-fit="cover"
+                    asoect-ratio="16 / 9"
+                    style="border-radius: 1.5em;"
                   />
                 </picture>
                 <div class="cat-btn">
@@ -310,32 +302,33 @@
             <div class="article-grid3">
               <div class="article3-viewall">
                 <a href="/articles/welcome.html">
-                  <picture>
-                    <source
-                      srcset="
-                        https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_480/v1741696026/tech-trends-category_e2j18j.webp
-                      "
-                      media="(min-width: 1200px)"
-                    />
-                    <source
-                      srcset="/img/tech_trends_welcome_hero-mobile.avif"
-                      media="(min-width: 768px)"
-                    />
-                    <img
-                      src="/img/tech_trends_welcome_hero-mobile.avif"
-                      loading="lazy"
-                      alt="a robot saying 'Welcome to tech trends' with the city skyline behind him"
-                      width="317"
-                      height="179"
-                      style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
-                      type="image/webp"
-                    />
-                  </picture>
+                <picture>
+                  <source
+                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_350,fl_lossy/v1741221202/welcome-techtrends_j7ksbd.avif"
+                    type="image/avif"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="/img/welcome-thumbnail.avif"
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="/img/welcome-thumbnail.avif"
+                    alt="a robot saying 'Welcome to tech trends' with the city skyline behind him"
+                    width="250"
+                    height="auto"
+                    loading="lazy"
+                    fetchpriority="low"
+                    object-fit="cover"
+                    asoect-ratio="16 / 9"
+                    style="border-radius: 1.5em;"
+                  />
+                </picture>
                 </a>
-                <div>
-                  <h3>
+                <div id="thumbnail-titles">
+                  <h2>
                     <a href="/articles/welcome.html"> Welcome! </a>
-                  </h3>
+                  </h2>
                 </div>
                 <div class="article-date">
                   <p>January 8, 2024</p>
@@ -349,36 +342,35 @@
               </div>
               <div class="article3-viewall">
                 <a href="/articles/ai-ecommerce.html">
-                 <picture>
-                  <source
-                    srcset="
-                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_230,fl_lossy/v1741221192/ai-commerce-thumbnail_sqpje9.avif 230w,
-                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_332,fl_lossy/v1741221192/ai-commerce-thumbnail_sqpje9.avif 332w,
-                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741221192/ai-commerce-thumbnail_sqpje9.avif 480w
-                    "
-                    sizes="(min-width: 992px) 332px,
-                          (min-width: 768px) 480px,
-                          230px"
-                    type="image/avif"
-                    fetchpriority="high"
-                  />
-                  <img
-                    src="/img/ai-ecommerce-hero-mobile.avif"
-                    alt="A 1940s-style woman interacting with a futuristic robot in a modern store, symbolizing the future of eCommerce and the role of eCommerce AI in revolutionizing online retail."
-                    width="100%"
-                    height="auto"
-                    loading="lazy"
-                    fetchpriority="low"
-                    style="border-radius:1.5em; object-fit:cover; width:100%; height:auto;"
-                  />
-                </picture> 
+                  <picture>
+                    <source
+                      srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_350,fl_lossy/v1741221192/ai-commerce-thumbnail_sqpje9.avif"
+                      type="image/avif"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="/img/ai-commerce-thumbnail.avif"
+                      media="(min-width: 768px)"
+                    />
+                    <img
+                      src="/img/ai-commerce-thumbnail.avif"
+                      alt="A 1940s-style woman interacting with a futuristic robot in a modern store, symbolizing the future of eCommerce and the role of eCommerce AI in revolutionizing online retail."
+                      width="250"
+                      height="auto"
+                      loading="lazy"
+                      fetchpriority="low"
+                      object-fit="cover"
+                      asoect-ratio="16 / 9"
+                      style="border-radius: 1.5em;"
+                    />
+                  </picture> 
                 </a>
-                <div>
-                  <h3>
+                <div id="thumbnail-titles">
+                  <h2>
                     <a href="/articles/ai-ecommerce.html">
                       The Future of eCommerce
                     </a>
-                  </h3>
+                  </h2>
                 </div>
                 <div class="article-date">
                   <p>February 14, 2024</p>
@@ -397,34 +389,33 @@
                 <a href="/articles/future-mobile-app.html">
                   <picture>
                     <source
-                      srcset="
-                        https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_230,fl_lossy/v1741221192/future_mobile_thumbnail_mp3xni.avif 230w,
-                        https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_332,fl_lossy/v1741221192/future_mobile_thumbnail_mp3xni.avif 332w,
-                        https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741221192/future_mobile_thumbnail_mp3xni.avif 480w
-                      "
-                      sizes="(min-width: 992px) 332px,
-                            (min-width: 768px) 480px,
-                            230px"
+                      srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_350,fl_lossy/v1741221192/future_mobile_thumbnail_mp3xni.avif"
                       type="image/avif"
-                      fetchpriority="high"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="/img/future-mobile-thumbnail.avif"
+                      media="(min-width: 768px)"
                     />
                     <img
-                      src="/img/future_mobile_thumbnail.avif"
+                      src="/img/future-mobile-thumbnail.avif"
                       alt="A retro-inspired comic illustration of a woman at a computer with a smartphone, representing trends in mobile development and apps development."
-                      width="100%"
+                      width="250"
                       height="auto"
                       loading="lazy"
                       fetchpriority="low"
-                      style="border-radius:1.5em; object-fit:cover; width:100%; height:auto;"
+                      object-fit="cover"
+                      asoect-ratio="16 / 9"
+                      style="border-radius: 1.5em;"
                     />
-                  </picture>
+                  </picture> 
                 </a>
-                <div>
-                  <h3>
+                <div id="thumbnail-titles">
+                  <h2>
                     <a href="/articles/future-mobile-app.html">
                       The Future of Mobile Development
                     </a>
-                  </h3>
+                  </h2>
                 </div>
                 <div class="article-date">
                   <p>March 3, 2024</p>
@@ -445,34 +436,33 @@
                 <a href="/articles/headless-ecommerce.html">
                   <picture>
                     <source
-                      srcset="
-                        https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_230,fl_lossy/v1741221195/headless-commerce-thumbnail_jcm5ze.avif 230w,
-                        https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_332,fl_lossy/v1741221195/headless-commerce-thumbnail_jcm5ze.avif 332w,
-                        https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741221195/headless-commerce-thumbnail_jcm5ze.avif 480w
-                      "
-                      sizes="(min-width: 992px) 332px,
-                            (min-width: 768px) 480px,
-                            230px"
+                      srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_350,fl_lossy/v1741221195/headless-commerce-thumbnail_jcm5ze.avif"
                       type="image/avif"
-                      fetchpriority="high"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="/img/headless-commerce-thumbnail.avif"
+                      media="(min-width: 768px)"
                     />
                     <img
-                      src="/img/headless-commerce-hero-mobile.avif"
+                      src="/img/headless-commerce-thumbnail.avif"
                       alt="A futuristic storefront with a professional exploring headless commerce solutions, showcasing the flexibility and scalability of headless eCommerce."
-                      width="100%"
+                      width="250"
                       height="auto"
                       loading="lazy"
                       fetchpriority="low"
-                      style="border-radius:1.5em; object-fit:cover; width:100%; height:auto;"
+                      object-fit="cover"
+                      asoect-ratio="16 / 9"
+                      style="border-radius: 1.5em;"
                     />
-                  </picture>
+                  </picture> 
                 </a>
-                <div>
-                  <h3>
+                <div id="thumbnail-titles">
+                  <h2>
                     <a href="/articles/headless-ecommerce.html">
                       Headless eCommerce
                     </a>
-                  </h3>
+                  </h2>
                 </div>
                 <div class="article-date">
                   <p>April 10, 2024</p>
@@ -491,34 +481,33 @@
                 <a href="/articles/iot-industries.html">
                   <picture>
                     <source
-                      srcset="
-                        https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_230,fl_lossy/v1732800119/iot_innovations_desktop_tpoo0t.avif 230w,
-                        https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_332,fl_lossy/v1732800119/iot_innovations_desktop_tpoo0t.avif 332w,
-                        https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1732800119/iot_innovations_desktop_tpoo0t.avif 480w
-                      "
-                      sizes="(min-width: 992px) 332px,
-                            (min-width: 768px) 480px,
-                            230px"
+                      srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_350,fl_lossy/v1732800119/iot_innovations_desktop_tpoo0t.avif"
                       type="image/avif"
-                      fetchpriority="high"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="/img/iot-innovations-thumbnail.avif"
+                      media="(min-width: 768px)"
                     />
                     <img
-                      src="/img/iot_innovations_mobile.avif"
+                      src="/img/iot-innovations-thumbnail.avif"
                       alt="A retro comic-style depiction of IoT innovations, highlighting how industries use IoT to drive transformation and enhance connectivity."
-                      width="100%"
+                      width="250"
                       height="auto"
                       loading="lazy"
                       fetchpriority="low"
-                      style="border-radius:1.5em; object-fit:cover; width:100%; height:auto;"
+                      object-fit="cover"
+                      asoect-ratio="16 / 9"
+                      style="border-radius: 1.5em;"
                     />
-                  </picture>                
+                  </picture>              
                 </a>
-                <div>
-                  <h3>
+                <div id="thumbnail-titles">
+                  <h2>
                     <a href="/articles/iot-industries.html">
                       IoT Innovations
                     </a>
-                  </h3>
+                  </h2>
                 </div>
                 <div class="article-date">
                   <p>May 21, 2024</p>
@@ -537,37 +526,33 @@
                 <a href="/articles/iot-smart-cities.html">
                   <picture>
                     <source
-                      srcset="
-                        https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_230,fl_lossy/v1741221196/iot-smart-cites-thumbnail_ntl1wr.avif 230w,
-                        https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_332,fl_lossy/v1741221196/iot-smart-cites-thumbnail_ntl1wr.avif 332w,
-                        https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741221196/iot-smart-cites-thumbnail_ntl1wr.avif 480w
-                      "
-                      sizes="(min-width: 992px) 332px,
-                            (min-width: 768px) 480px,
-                            230px"
+                      srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_350,fl_lossy/v1741221196/iot-smart-cites-thumbnail_ntl1wr.avif"
                       type="image/avif"
-                      fetchpriority="high"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="/img/iot-smart-city-thumbnail.avif"
+                      media="(min-width: 768px)"
                     />
                     <img
-                      src="/img/iot-smart-cites-thumbnail.avif"
-                      alt="A futuristic neon-lit cityscape illustrating IoT
-                        innovations and their transformative impact on industry,
-                        showcasing how to use IoT in industry for smarter, connected
-                        solutions."
-                      width="100%"
+                      src="/img/iot-smart-city-thumbnail.avif"
+                      alt="A futuristic neon-lit cityscape illustrating IoT innovations and their transformative impact on industry, showcasing how to use IoT in industry for smarter, connected solutions."
+                      width="250"
                       height="auto"
                       loading="lazy"
                       fetchpriority="low"
-                      style="border-radius:1.5em; object-fit:cover; width:100%; height:auto;"
+                      object-fit="cover"
+                      asoect-ratio="16 / 9"
+                      style="border-radius: 1.5em;"
                     />
-                  </picture>  
+                  </picture>    
                 </a>
-                <div>
-                  <h3>
+                <div id="thumbnail-titles">
+                  <h2>
                     <a href="/articles/iot-smart-cities.html">
                       IoT in Smart Cities
                     </a>
-                  </h3>
+                  </h2>
                 </div>
                 <div class="article-date">
                   <p>June 5, 2024</p>
@@ -588,34 +573,33 @@
                 <a href="/articles/leveraging-google.html">
                   <picture>
                     <source
-                      srcset="
-                        https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_470,c_fill,fl_lossy/v1741221197/leveraging-google-thumbnail_s6hkfn.webp
-                      "
+                      srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_350,fl_lossy/v1741221197/leveraging-google-thumbnail_s6hkfn.avif"
+                      type="image/avif"
                       media="(min-width: 1200px)"
                     />
                     <source
-                      srcset="/img/leverage_google_search_thumbnail.webp"
+                      srcset="/img/leveraging-google-thumbnail.avif"
                       media="(min-width: 768px)"
                     />
                     <img
-                      src="/img/leverage_google_search_thumbnail.webp"
-                      loading="lazy"
+                      src="/img/leveraging-google-thumbnail.avif"
                       alt="AI SEO Tools and Google Search Console: A magnifying glass zooming in on data, symbolizing advanced SEO insights and tools."
-                      width="100%"
+                      width="250"
                       height="auto"
                       loading="lazy"
                       fetchpriority="low"
-                      style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
-                      type="image/webp"
+                      object-fit="cover"
+                      asoect-ratio="16 / 9"
+                      style="border-radius: 1.5em;"
                     />
                   </picture>
                 </a>
-                <div>
-                  <h3>
+                <div id="thumbnail-titles">
+                  <h2>
                     <a href="/articles/leveraging-google.html">
                       Leveraging Google Search Console
                     </a>
-                  </h3>
+                  </h2>
                 </div>
                 <div class="article-date">
                   <p>July 12, 2024</p>
@@ -634,34 +618,33 @@
                 <a href="/articles/max-seo-ranking.html">
                   <picture>
                     <source
-                      srcset="
-                        https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_520,fl_lossy/v1741221198/max-seo-thumbnail_llbltj.avif
-                      "
+                      srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_350,fl_lossy/v1741221198/max-seo-thumbnail_llbltj.avif"
+                      type="image/avif"
                       media="(min-width: 1200px)"
                     />
                     <source
-                      srcset="/img/max-seo-thumbnail.webp"
+                      srcset="/img/max-seo-thumbnail.avif"
                       media="(min-width: 768px)"
                     />
                     <img
-                      src="/img/max-seo-thumbnail.webp"
-                      loading="lazy"
+                      src="/img/max-seo-thumbnail.avif"
                       alt="A professional analyzing advanced SEO data visualizations to uncover insights into keyword research and optimize for long-tail keywords."
-                      width="100%"
+                      width="250"
                       height="auto"
                       loading="lazy"
                       fetchpriority="low"
-                      style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
-                      type="image/webp"
+                      object-fit="cover"
+                      asoect-ratio="16 / 9"
+                      style="border-radius: 1.5em;"
                     />
-                  </picture> 
+                  </picture>
                 </a>
-                <div>
-                  <h3>
+                <div id="thumbnail-titles">
+                  <h2>
                     <a href="/articles/max-seo-ranking.html">
                       Keyword Research with Ahrefs
                     </a>
-                  </h3>
+                  </h2>
                 </div>
                 <div class="article-date">
                   <p>August 1, 2024</p>
@@ -677,40 +660,39 @@
                 </div>
               </div>
               <div class="article3-viewall">
-                  <a href="/articles/top-mobile-app.html">
-                    <picture>
-                      <source
-                        srcset="
-                          https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_230,fl_lossy/v1741221200/top-mobile-thumbnail_nayors.avif 230w,
-                          https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_332,fl_lossy/v1741221200/top-mobile-thumbnail_nayors.avif 332w,
-                          https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:eco,w_480,fl_lossy/v1741221200/top-mobile-thumbnail_nayors.avif 480w
-                        "
-                        sizes="(min-width: 992px) 332px,
-                              (min-width: 768px) 480px,
-                              230px"
-                        type="image/avif"
-                        fetchpriority="high"
-                      />
-                      <img
-                        src="/img/top-mobile-thumbnail.avif"
-                        alt="A futuristic smartphone interface showcasing advanced mobile development tools for iOS and Android, representing the top mobile app development solutions."
-                        width="100%"
-                        height="auto"
-                        loading="lazy"
-                        fetchpriority="low"
-                        style="border-radius:1.5em; object-fit:cover; width:100%; height:auto;"
-                      />
-                    </picture> 
-                  </a>
-                <div>
-                  <h3>
+                <a href="/articles/top-mobile-app.html">
+                  <picture>
+                    <source
+                      srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_350,fl_lossy/v1741221200/top-mobile-thumbnail_nayors.avif"
+                      type="image/avif"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="/img/top-mobile-thumbnail.avif"
+                      media="(min-width: 768px)"
+                    />
+                    <img
+                      src="/img/top-mobile-thumbnail.avif"
+                      alt="A futuristic smartphone interface showcasing advanced mobile development tools for iOS and Android, representing the top mobile app development solutions."
+                      width="250"
+                      height="auto"
+                      loading="lazy"
+                      fetchpriority="low"
+                      object-fit="cover"
+                      asoect-ratio="16 / 9"
+                      style="border-radius: 1.5em;"
+                    />
+                  </picture>
+                </a>
+                <div id="thumbnail-titles">
+                  <h2>
                     <a
                       href="/articles/top-mobile-app.html"
                       aria-label="A link to a Mobile Apps article, Top Mobile App Development Tools Enhancing Mobile Development Platforms"
                     >
                       Top Mobile App Development
                     </a>
-                  </h3>
+                  </h2>
                 </div>
                 <div class="article-date">
                   <p>August 22, 2024</p>
@@ -737,11 +719,11 @@
                       media="(min-width: 1200px)"
                     />
                     <source
-                      srcset="/img/semrush_article_hero_tablet.avif"
+                      srcset="/img/sem-rush-thumbnail.avif"
                       media="(min-width: 768px)"
                     />
                     <img
-                      src="/img/semrush_article_hero_mobile.avif"
+                      src="/img/sem-rush-thumbnail.avif"
                       loading="lazy"
                       alt="A professional analyzing advanced SEO data visualizations to uncover insights into keyword research and optimize for long-tail keywords."
                       width="100%"
@@ -753,12 +735,12 @@
                     />
                   </picture>
                 </a>
-                <div>
-                  <h3>
+                <div id="thumbnail-titles">
+                  <h2>
                     <a href="/articles/seo-semrush.html">
                       How to Use SEMrush for SEO
                     </a>
-                  </h3>
+                  </h2>
                 </div>
                 <div class="article-date">
                   <p>September 15, 2024</p>

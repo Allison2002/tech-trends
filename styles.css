@@ -1084,6 +1084,7 @@ form button:hover {
 
 .article3-viewall img {
   width: 100%;
+  height: auto;
   aspect-ratio: 16 / 9;
   object-fit: cover;
   border-radius: 1.5em;
@@ -1092,6 +1093,11 @@ form button:hover {
 .article3-viewall img .article3-viewall h2,
 .article2-viewall h2 {
   font-size: 1.3rem;
+}
+
+#thumbnail-titles h2 {
+  font-size: 1.2rem;
+  padding-left: 0.5em;
 }
 
 .article3-viewall h3,
