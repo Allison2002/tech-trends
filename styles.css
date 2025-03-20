@@ -883,7 +883,7 @@ article {
   text-align: center;
 }
 
-.seo-text h2 {
+.article-title h2 {
   font-size: 1rem;
   padding: 1em 0;
 }
@@ -1742,7 +1742,7 @@ form button:hover {
     height: auto;
   }
 
-  .article-title h2 {
+  .article-textbox h2 {
     font-size: 1.10rem;
   }
 
