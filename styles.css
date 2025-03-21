@@ -361,12 +361,22 @@ main {
 .article-index h2,
 .featured-topics h2 {
   color: #247b91;
-  font-size: 1.8rem;
   padding-bottom: 1em;
   text-align: left;
   font-weight: 700;
   word-break: keep-all;
 }
+
+
+#stay-connected-text h2 {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.featured-topics h2 {
+  font-size: 1.8rem;
+}
+
 
 .article-index ul,
 .featured-topics ul {
@@ -416,8 +426,9 @@ main {
 
 .featured-topics {
   margin-bottom: 2em;
-  border-bottom-left-radius: 1.5em;
-  border-bottom-right-radius: 1.5em;
+  margin-top: 2em;
+  border-bottom-left-radius: 0.75em;
+  border-bottom-right-radius: 0.75em;
   box-shadow: rgb(0 0 0 / 20%) 0px 0px 1.5625em 0.5em;
   border-radius: 0.75em;
 }
@@ -490,8 +501,12 @@ main {
   margin: 0 auto;
 }
 
+.section-title {
+  padding: 2em 0 0.5em;
+}
+
 .article-sub p {
-  padding: 1em;
+  padding: 0;
   word-break: keep-all;
   width: 100%;
 }
@@ -515,6 +530,15 @@ main {
   box-shadow: rgb(0 0 0 / 10%) 0px 4px 8px;
 }
 
+#choosing-tools h2,
+#choosing-tolls p,
+.article-list h2,
+.article-list p,
+.article-section h2,
+.article-section p {
+  padding: 0.7em 1em 0;
+}
+
 .article-sub p a {
   color: #853E05;
   font-weight: bold;
@@ -532,7 +556,7 @@ main {
 }
 
 .article-list p {
-  padding: 0 0 0.5em;
+  padding: 0.7em 1em 0;
   overflow-wrap: break-word;
 }
 
@@ -708,23 +732,6 @@ main {
 
 .iot-updates {
   padding: 1.5em 0 2em 0;
-}
-
-.article-grid3 {
-  grid-template-columns: repeat(3, 1fr);
-  max-width: 100%;
-}
-
-.article-grid1,
-.article-grid3 {
-  padding: 1em 0;
-  gap: 2em;
-  object-fit: cover;
-}
-
-.article-grid2 {
-  gap: 3em;
-  padding: 0;
 }
 
 .sidebar-article {
@@ -1095,26 +1102,73 @@ form button:hover {
 }
 
 .article3-viewall {
-  width: 342px;
-  height: auto;
-  max-width: 400px;
-  max-height: auto;
   padding-bottom: 3em;
 }
+
+.article-grid3 {
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+}
+
+.article-grid1,
+.article-grid3 {
+  padding: 1em 0;
+  gap: 2em;
+  object-fit: cover;
+}
+
+.article-grid2 {
+  gap: 3em;
+  padding: 0;
+}
+
+.article-grid3,
+.iot-updates,
+.article-grid2,
+.article-grid1,
+.article2-viewall,
+.article1-viewall {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+
+}
+
+.article3-viewall {
+  width: 310px;
+  max-width: 390px;
+}
+
+.article-grid3 img,
+.article-grid2 img,
+.article-grid1 img,
+.article-grid1 img,
+.article3-viewall img,
+.article2-viewall img,
+.article1-viewall img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 1.5em;
+  display: block;
+
+}
+
+.iot-update h2,
+#editors-pick h2 {
+  margin: 2em auto 0;
+  padding: 0 0 1em 1em;
+}
+
 
 .article3-viewlall h2 a {
   padding-bottom: 3em;
 }
 
-.article3-viewall img {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  border-radius: 1.5em;
-}
 
-.article3-viewall img .article3-viewall h2,
+.article3-viewall img,
+.article3-viewall h2,
 .article2-viewall h2 {
   font-size: 1.3rem;
 }
@@ -1618,6 +1672,7 @@ form button:hover {
     max-width: 100%;
     text-align: left;
     margin-bottom: -1em;
+
   }
 
   .iot-updates {
@@ -2025,6 +2080,7 @@ form button:hover {
     margin: 0 auto;
   }
 
+
   .article-grid3 img,
   .article-grid2 img,
   .article-grid1 img,
@@ -2407,7 +2463,9 @@ form button:hover {
   .article-grid3 {
     display: flex;
     flex-direction: column;
-    width: 319px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
     max-width: 480px;
     margin: 0 auto;
     margin: 0 auto;
