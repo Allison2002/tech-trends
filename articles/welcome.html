@@ -258,7 +258,7 @@
         <input type="text" placeholder="Search..." id="search-input" />
       </div>
     </div> 
-    <main>
+    <main class="content-container">
       <div class="page-title">
         <h1><i>Welcome to Tech Trends</i></h1>
       </div> 
@@ -269,9 +269,9 @@
               <div class="hero-content-all">
                 <picture>
                   <source
-                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1200,fl_lossy//v1741221202/welcome-techtrends_j7ksbd.avif"
-                    media="(min-width: 1200px)"
+                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_1200,fl_lossy/v1741221202/welcome-techtrends_j7ksbd.avif"
                     type="image/avif"
+                    media="(min-width: 1200px)"
                     fetchpriority="high"
                   />
                   <source
@@ -279,26 +279,18 @@
                     media="(min-width: 768px)"
                     fetchpriority="high"
                   />
-                  <source
-                    srcset="/img/welcome_article_hero_mobile.avif"
-                    media="(min-width: 480px)"
-                    fetchpriority="high"
-                  />
-                  <source
-                    srcset="/img/welcome_article_hero_mobile.avif"
-                    media="(max-width: 479px)"
-                    fetchpriority="high"
-                  />
                   <img
                     src="/img/welcome_article_hero_mobile.avif"
                     alt="A futuristic robot holding a neon Tech Trends sign, representing AI SEO tools in a vibrant cityscape"
-                    width="1200"
-                    height="675"
-                    style="border-radius: 1.5em; object-fit: cover;"
+                    width="315"
+                    height="177"
                     loading="eager"
                     fetchpriority="high"
+                    object-fit="cover"
+                    aspect-ratio="16 / 9"
+                    style="border-radius: 1.5em;"
                   />
-                </picture>
+                </picture> 
                 <div class="cat-btn">
                   <a href="/categories/categorized.html" class="btn" role="button">Categories</a>
                   <a href="/categories/uncategorized.html" class="btn" role="button">All</a>

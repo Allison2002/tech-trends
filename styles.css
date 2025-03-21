@@ -824,6 +824,7 @@ article {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 1.5em;
   margin: 2em auto;
+  width: 170px;
   max-width: 300px;
   text-align: center;
 }
@@ -1003,7 +1004,7 @@ article {
   flex-direction: column;
   width: 170px;
   max-width: auto;
-  margin: 0 0 2em;
+  margin: 0 auto 2em;
   background-color: #247b91;
   text-align: center;
   overflow-wrap: break-word;
@@ -1905,8 +1906,8 @@ form button:hover {
     max-width: 500px;
   }
 
-  #stay-connected-text h2 {
-    font-size: 1.2rem;
+  .stay-connected-text h2 {
+    font-size: 1rem;
   }
 
   .social-media-imgs {
