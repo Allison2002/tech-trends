@@ -1390,6 +1390,7 @@ form button:hover {
   overflow-wrap: break-word
 }
 
+/* purgecss start ignore */
 @media (max-width:1024px) {
   .menu-toggle {
     display: inline-block
@@ -2491,3 +2492,5 @@ form button:hover {
     margin: 0 auto
   }
 }
+
+/* purgecss end ignore */
