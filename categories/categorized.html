@@ -64,7 +64,7 @@
           .hero {
             position: relative;
             max-width: 1600px;
-            max-height: auto;
+            max-height: 100%;
           }
           
           .hero-content {
@@ -80,7 +80,7 @@
             max-width: 1600px;
             max-height: auto;
             aspect-ratio: 16/9;
-            height: auto;
+            max-height: 100%;
             object-fit: cover;
             border-radius: 1.5em;
             box-shadow: rgb(0 0 0 / 20%) 0px 0px 1.5625em 0.5em;
@@ -209,12 +209,13 @@
         
         @media (max-width: 480px) {
           .hero {
+            width: 315px;
             height: auto;
             margin: 0 auto;
           }
 
           .hero img {
-            width: 315px;
+            width: 100%;
             margin: 0 auto;
             height: 177px;
             max-width: 100%;
@@ -301,6 +302,7 @@
                   src="/img/hamburger-icon.avif"
                   alt="Hamburger menu icon"
                   aria-label="Open menu"
+                  type="image/png"
                   width="30"
                   height="30"
                   loading="eager"
@@ -362,7 +364,7 @@
         <h1><i>Explore Topics</i></h1>
       </div>
       <div class="grid-wrapper">
-        <div class="main-content">
+        <div class="main-content>
           <header>
             <section class="hero" role="banner">
               <div class="hero-content-all">
@@ -397,12 +399,12 @@
             </section>
           </header>
           <div class="article-grid3">
-            <div class="article3-viewall">
+            <div class="article3-viewall article-textbox">
               <a href="/categories/ecommerce.html"
                 >
                 <picture>
                   <source
-                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_350,fl_lossy/v1741696027/robot-ecommerce_ht8owp.avif"
+                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_350,fl_lossy/v1741696027/robot-ecommerce_ht8owp.avif"
                     type="image/avif"
                     media="(min-width: 1200px)"
                   />
@@ -432,13 +434,12 @@
                 </a>
               </h2>
             </div>
-            <div class="article3-viewall">
+            <div class="article3-viewall article-textbox">
               <a href="/categories/iot.html"
                 >
                 <picture>
-
                   <source
-                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_350,fl_lossy/v1741696027/iot-robot_eshc1l.avif"
+                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_350,fl_lossy/v1741696027/iot-robot_eshc1l.avif"
                     type="image/avif"
                     media="(min-width: 1200px)"
                   />
@@ -475,7 +476,7 @@
                 >
                 <picture>
                   <source
-                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_350,fl_lossy/v1741696027/future-mobile-robot_fcnjez.avif"
+                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_350,fl_lossy/v1741696027/future-mobile-robot_fcnjez.avif"
                     type="image/avif"
                     media="(min-width: 1200px)"
                   />
@@ -512,7 +513,7 @@
                 >
                 <picture>
                   <source
-                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_350,fl_lossy/v1741696027/seo-tools-robot_jin5qc.avif"
+                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_350,fl_lossy/v1741696027/seo-tools-robot_jin5qc.avif"
                     type="image/avif"
                     media="(min-width: 1200px)"
                   />
@@ -521,7 +522,7 @@
                     media="(min-width: 768px)"
                   />
                   <img
-                    src="/img//img/seo-tools-thumbnail.avif"
+                    src="/img/seo-tools-thumbnail.avif"
                     alt="An AI-powered SEO tool helping optimize digital content"
                     width="319"
                     height="179"
@@ -547,7 +548,7 @@
                 >
                 <picture>
                   <source
-                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_350,fl_lossy/v1741696026/tech-trends-category_e2j18j.avif"
+                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_350,fl_lossy/v1741696026/tech-trends-category_e2j18j.avif"
                     type="image/avif"
                     media="(min-width: 1200px)"
                   />
