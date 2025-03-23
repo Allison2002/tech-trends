@@ -131,6 +131,7 @@ span {
 .grid-wrapper {
   width: 100%;
   height: auto;
+  max-width: 100vw;
   display: grid;
   grid-template-columns: 3fr 0.65fr;
   gap: 1em;
