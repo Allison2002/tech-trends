@@ -811,7 +811,7 @@ article {
 #stay-connected-sidebar {
   background-color: #fff;
   color: #262626;
-  padding: 2em;
+  padding: 1em;
   box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
   border-radius: 1.5em;
   margin: 2em auto;
@@ -820,11 +820,12 @@ article {
   text-align: center
 }
 
-#stay-connected-sidebar .stay-connected h3 {
-  font-size: 1.5rem;
+#stay-connected-sidebar .stay-connected h2 {
+  font-size: 1.2rem;
   font-weight: 700;
   color: #262626;
-  margin-bottom: .5em
+  margin-bottom: .5em;
+  text-align: center;
 }
 
 #stay-connected-sidebar .stay-connected p {
