@@ -63,9 +63,12 @@
     }
     </script>
     <style>
+
       .hero {
         position: relative;
         max-width: 1600px;
+        width: 100%;
+        height: auto;
         max-height: auto;
       }
       
@@ -73,6 +76,8 @@
         display: flex;
         position: relative;
         flex-direction: column;
+        width: 100%;
+        max-width: 1600px;
       }
 
       .hero img {
@@ -292,35 +297,33 @@
         <div class="main-content">
           <header>
             <section class="hero" role="banner">                 
-              <div class="hero-content-all">
-                <picture>
-                  <source
-                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_1200,fl_lossy/v1742794118/keyword_research_article_hero_desktop_gncjmk.avif"
-                    type="image/avif"
-                    media="(min-width: 1200px)"
-                    fetchpriority="high"
-                  />
-                  <source
-                    srcset="/img/keyword_research_article_hero__tablet.avif"
-                    media="(min-width: 768px)"
-                    fetchpriority="high"
-                  />
-                  <img
-                    src="/img/keyword_research_article_hero_mobile.avif"
-                    alt="Keyword research using Ahrefs for SEO: Understanding the difference between headless and traditional eCommerce platformss"
-                    width="315"
-                    height="177"
-                    loading="eager"
-                    fetchpriority="high"
-                    object-fit="cover"
-                    aspect-ratio="16 / 9"
-                    style="border-radius: 1.5em;"
-                  />
-                </picture>
-                <div class="cat-btn">
-                  <a href="/categories/categorized.html" class="btn" role="button">Categories</a>
-                  <a href="/categories/uncategorized.html" class="btn" role="button">All</a>
-                </div>
+              <picture>
+                <source
+                  srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_1200,fl_lossy/v1742794118/keyword_research_article_hero_desktop_gncjmk.avif"
+                  type="image/avif"
+                  media="(min-width: 1200px)"
+                  fetchpriority="high"
+                />
+                <source
+                  srcset="/img/keyword_research_article_hero__tablet.avif"
+                  media="(min-width: 768px)"
+                  fetchpriority="high"
+                />
+                <img
+                  src="/img/keyword_research_article_hero_mobile.avif"
+                  alt="Keyword research using Ahrefs for SEO: Understanding the difference between headless and traditional eCommerce platformss"
+                  width="315"
+                  height="177"
+                  loading="eager"
+                  fetchpriority="high"
+                  object-fit="cover"
+                  aspect-ratio="16 / 9"
+                  style="border-radius: 1.5em;"
+                />
+              </picture>
+              <div class="cat-btn">
+                <a href="/categories/categorized.html" class="btn" role="button">Categories</a>
+                <a href="/categories/uncategorized.html" class="btn" role="button">All</a>
               </div>
             </section> 
           </header>
