@@ -323,7 +323,15 @@
           <article>      
             <div class="welcome-container">                 
                 <div class="hero-post-author article-sub">
-                  <div class="author-img"><a href="https://gennyallison.netlify.app" target="_blank" rel="noopener noreferrer" aria-label="Visit Genny Allison's professional portfolio on a new tab"><img src="/img/b&wHeadShot.webp" alt="Genny Allison, AI Content Specialist at Allison Stock Inc." width="138" height="138" loading="lazy"></a></div>
+                  <div class="author-img">
+                    <a href="https://gennyallison.netlify.app" target="_blank" rel="noopener noreferrer" aria-label="Visit Genny Allison's professional portfolio on a new tab">
+                      <img src="/img/b&wHeadShot.webp" 
+                      alt="Genny Allison, AI Content Specialist at Allison Stock Inc." 
+                      width="138" 
+                      height="138" 
+                      loading="lazy">
+                    </a>
+                  </div>
                   <div>
                     <p><a href="https://gennyallison.netlify.app" aria-label="Visit Genny Allison's professional portfolio on a new tab" target="_blank" rel="noopener noreferrer">by Allison Stock Inc | Genny Allison, AI Content Specialist</a></p>
                     <p>Published on February 14, 2024</p>
@@ -498,8 +506,8 @@
             </div>
           </article>
           <section id="recommended-articles">
-            <div class="editors-pick" id="editor-pick">
-              <div class="section-title">
+            <div class="editors-pick">
+              <div class="section-title" id="editors-pick"  >
                 <h2>Editor's Pick</h2>
               </div>
               <div class="article-grid3">
@@ -511,25 +519,28 @@
                     <picture>
                       <source
                         srcset="
-                          https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_470,c_fill,fl_lossy/v1741221196/iot-smart-cites-thumbnail_ntl1wr.webp
+                          https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_470,c_fill,fl_lossy/v1741221196/iot-smart-cites-thumbnail_ntl1wr.avif
                         "
                         media="(min-width: 1200px)"
                         type="image/avif"
                       />
                       <source
-                        srcset="/img/iot-smart-cites-thumbnail.avif"
+                        srcset="/img/iot-smart-city-thumbnail.avif"
                         media="(min-width: 768px)"
                       />
                       <img
-                        src="/img/iot-smart-cites-thumbnail.avif"
+                        src="/img/iot-smart-city-thumbnail.avif"
                         alt="A futuristic neon-lit cityscape illustrating IoT
                         innovations and their transformative impact on industry,
                         showcasing how to use IoT in industry for smarter, connected
                         solutions."
+                        width="319"
+                        height="auto"
                         loading="lazy"
-                        width="317"
-                        height="179"
-                        style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
+                        fetchpriority="low"
+                        object-fit="cover"
+                        aspect-ratio="16 / 9"
+                        style="border-radius: 1.5em;"
                       />
                     </picture>                    
                   </a>
@@ -550,26 +561,26 @@
                     >
                     <picture>
                       <source
-                        srcset="
-                          https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_470,c_fill,fl_lossy/v1741221197/leveraging-google-thumbnail_s6hkfn.webp
-                        "
-                        media="(min-width: 1200px)"
+                        srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_350,fl_lossy/v1741221197/leveraging-google-thumbnail_s6hkfn.avif"
                         type="image/avif"
+                        media="(min-width: 1200px)"
                       />
                       <source
-                        srcset="/img/leverage_google_search_thumbnail.webp"
+                        srcset="/img/leveraging-google-thumbnail.avif"
                         media="(min-width: 768px)"
                       />
                       <img
-                        src="/img/leverage_google_search_thumbnail.webp"
-                        loading="lazy"
+                        src="/img/leveraging-google-thumbnail.avif"
                         alt="AI SEO Tools and Google Search Console: A magnifying glass zooming in on data, symbolizing advanced SEO insights and tools."
-                        width="317"
-                        height="179"
-                        style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
+                        width="250"
+                        height="auto"
+                        loading="lazy"
+                        fetchpriority="low"
+                        object-fit="cover"
+                        asoect-ratio="16 / 9"
+                        style="border-radius: 1.5em;"
                       />
-                    </picture> 
-                    
+                    </picture>                   
                   </a>
                   <h3>
                     <a href="/Articles/leveraging-google.html">
@@ -584,23 +595,24 @@
                     >
                     <picture>
                       <source
-                        srcset="
-                          https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_470,c_fill,fl_lossy/v1741221195/headless-commerce-thumbnail_jcm5ze.webp
-                        "
-                        media="(min-width: 1200px)"
+                        srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_350,fl_lossy/v1741221195/headless-commerce-thumbnail_jcm5ze.avif"
                         type="image/avif"
+                        media="(min-width: 1200px)"
                       />
                       <source
-                        srcset="/img/headless-commerce-thumbnail.webp"
+                        srcset="/img/headless-commerce-thumbnail.avif"
                         media="(min-width: 768px)"
                       />
                       <img
-                        src="/img/headless-commerce-thumbnail.webp"
-                          alt="A futuristic storefront with a professional exploring headless commerce solutions, showcasing the flexibility and scalability of headless eCommerce."
-                          loading="lazy"
-                          width="317"
-                          height="179"
-                          style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
+                        src="/img/headless-commerce-thumbnail.avif"
+                        alt="A futuristic storefront with a professional exploring headless commerce solutions, showcasing the flexibility and scalability of headless eCommerce."
+                        width="250"
+                        height="auto"
+                        loading="lazy"
+                        fetchpriority="low"
+                        object-fit="cover"
+                        asoect-ratio="16 / 9"
+                        style="border-radius: 1.5em;"
                       />
                     </picture> 
                   </a>
@@ -622,38 +634,42 @@
                     srcset="
                       https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_1200,fl_lossy/v1732800119/iot_innovations_desktop_tpoo0t.avif
                     "
-                    media="(min-width: 1200px)"
                     type="image/avif"
+                    media="(min-width: 1200px)"
                   />
                   <source
-                    srcset="/img/iot_innovations_tablet.avif"
+                    srcset="/img/iot-innovations-thumbnail.avif"
                     media="(min-width: 768px)"
                   />
                   <img
-                    src="/img/iot_innovations_mobile.avif"
+                    src="/img/iot-innovations-thumbnail.avif"
                       alt="A retro comic-style depiction of IoT innovations, highlighting how industries use IoT to drive transformation and enhance connectivity."
-                      width="317"
-                      height="179"
+                      width="319"
+                      height="auto"
                       loading="lazy"
-                      style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
+                      fetchpriority="low"
+                      object-fit="cover"
+                      aspect-ratio="16 / 9"
+                      style="border-radius: 1.5em;"
+
                   />
                 </picture> 
-                  <h3>
-                    <a
-                      href="/articles/iot-industries.html"
-                      aria-label="A link to the article IoT Innovations Transforming Industries and Revolutionizing Connected Technology"
-                    >
-                      IoT Innovations: Transforming Industries and Revolutionizing
-                    </a>
-                  </h3>
-                  <p>
-                    <a
-                      href="/articles/iot-industries.html"
-                      aria-label="A link to the article IoT Innovations Transforming Industries and Revolutionizing Connected Technology"
-                      >The internet of things (IoT) is a rapidly growing industry
-                      that is transforming the way we live and work. IoT...</a
-                    >
-                  </p>
+                <h3>
+                  <a
+                    href="/articles/iot-industries.html"
+                    aria-label="A link to the article IoT Innovations Transforming Industries and Revolutionizing Connected Technology"
+                  >
+                    IoT Innovations: Transforming Industries and Revolutionizing
+                  </a>
+                </h3>
+                <p>
+                  <a
+                    href="/articles/iot-industries.html"
+                    aria-label="A link to the article IoT Innovations Transforming Industries and Revolutionizing Connected Technology"
+                    >The internet of things (IoT) is a rapidly growing industry
+                    that is transforming the way we live and work. IoT...</a
+                  >
+                </p>
               </div>
             </div>
             <div class="must-reads">
@@ -670,19 +686,23 @@
                           https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_520,fl_lossy/v1741221199/semrush-article_kpkomc.avif
                         "
                         media="(min-width: 1200px)"
-                        type="image/avif"
+                        tupe="image/avif"
                       />
                       <source
-                        srcset="/img/semrush_article_hero_tablet.avif"
+                        srcset="/img/semrush-thumbnail.avif"
                         media="(min-width: 768px)"
                       />
                       <img
-                        src="/img/semrush_article_hero_mobile.avif"
+                        src="/img/semrush-thumbnail.avif"
                         loading="lazy"
                         alt="A professional analyzing advanced SEO data visualizations to uncover insights into keyword research and optimize for long-tail keywords."
-                        width="317"
-                        height="179"
-                        style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
+                        width="100%"
+                        height="auto"
+                        loading="lazy"
+                        fetchpriority="low"
+                        object-fit="cover"
+                        aspect-ratio="16 / 9"
+                        style="border-radius: 1.5em;"
                       />
                     </picture>  
                   </a>
@@ -692,9 +712,7 @@
                     </a>
                   </h3>
                   <p>
-                    As the world becomes more digital, businesses are constantly
-                    looking for ways to stay competitive and increase their
-                    online visibility. AI SEO Tools plays...
+                    As the world becomes more digital, businesses are constantly looking for ways to stay competitive and increase their online visibility. AI SEO Tools plays...
                   </p>
                 </div>
                 <div class="article2-viewall">
@@ -704,25 +722,26 @@
                     >
                     <picture>
                       <source
-                        srcset="
-                          https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_520,fl_lossy/v1741221192/ai-commerce-thumbnail_sqpje9.avif
-                        "
-                        media="(min-width: 1200px)"
+                        srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_350,fl_lossy/v1741221192/ai-commerce-thumbnail_sqpje9.avif"
                         type="image/avif"
+                        media="(min-width: 1200px)"
                       />
                       <source
-                        srcset="/img/ai-commerce-thumbnail.webp"
+                        srcset="/img/ai-commerce-thumbnail.avif"
                         media="(min-width: 768px)"
                       />
                       <img
-                        src="/img/ai-commerce-thumbnail.webp"
+                        src="/img/ai-commerce-thumbnail.avif"
+                        alt="A 1940s-style woman interacting with a futuristic robot in a modern store, symbolizing the future of eCommerce and the role of eCommerce AI in revolutionizing online retail."
+                        width="250"
+                        height="auto"
                         loading="lazy"
-                        alt="AI-powered chatbots revolutionizing customer service and online retail"
-                        width="317"
-                        height="179"
-                        style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
+                        fetchpriority="low"
+                        object-fit="cover"
+                        asoect-ratio="16 / 9"
+                        style="border-radius: 1.5em;"
                       />
-                    </picture>  
+                    </picture> 
                   </a>
                   <h3>
                     <a href="/articles/ai-ecommerce.html">
@@ -748,23 +767,24 @@
                     >
                     <picture>
                       <source
-                        srcset="
-                          https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_520,fl_lossy/v1741221197/leveraging-google-thumbnail_s6hkfn.avif
-                        "
-                        media="(min-width: 1200px)"
+                        srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_350,fl_lossy/v1741221197/leveraging-google-thumbnail_s6hkfn.avif"
                         type="image/avif"
+                        media="(min-width: 1200px)"
                       />
                       <source
-                        srcset="/img/leverage_google_search_thumbnail.webp"
+                        srcset="/img/leveraging-google-thumbnail.avif"
                         media="(min-width: 768px)"
                       />
                       <img
-                        src="/img/leverage_google_search_thumbnail.webp"
+                        src="/img/leveraging-google-thumbnail.avif"
                         alt="AI SEO Tools and Google Search Console: A magnifying glass zooming in on data, symbolizing advanced SEO insights and tools."
+                        width="250"
+                        height="auto"
                         loading="lazy"
-                        width="317"
-                        height="179"
-                        style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
+                        fetchpriority="low"
+                        object-fit="cover"
+                        asoect-ratio="16 / 9"
+                        style="border-radius: 1.5em;"
                       />
                     </picture>
                   </a>
@@ -794,16 +814,20 @@
                         type="image/avif"
                       />
                       <source
-                        srcset="/img/max-seo-thumbnail.webp"
+                        srcset="/img/max-seo-thumbnail.avif"
                         media="(min-width: 768px)"
                       />
                       <img
-                        src="/img/max-seo-thumbnail.webp"
+                        src="/img/max-seo-thumbnail.avif"
                         loading="lazy"
                         alt="A professional analyzing advanced SEO data visualizations to uncover insights into keyword research and optimize for long-tail keywords."
-                        width="317"
-                        height="179"
-                        style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
+                        width="100%"
+                          height="auto"
+                        loading="lazy"
+                        fetchpriority="low"
+                        object-fit="cover"
+                        aspect-ratio="16 / 9"
+                        style="border-radius: 1.5em;"
                       />
                     </picture>
                   </a>
@@ -814,8 +838,7 @@
                     </a>
                   </h3>
                   <p>
-                    In the ever-evolving world of SEO, staying ahead of the
-                    competition requires a strong strategy...
+                    In the ever-evolving world of SEO, staying ahead of the competition requires a strong strategy...
                   </p>
                 </div>
               </div>
@@ -832,11 +855,9 @@
                     >
                     <picture>
                       <source
-                        srcset="
-                          https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_520,fl_lossy/v1741221200/top-mobile-thumbnail_nayors.avif
-                        "
-                          media="(min-width: 1200px)"
-                          type="image/avif"           
+                        srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_350,fl_lossy/v1741221200/top-mobile-thumbnail_nayors.avif"
+                        type="image/avif"
+                        media="(min-width: 1200px)"
                       />
                       <source
                         srcset="/img/top-mobile-thumbnail.avif"
@@ -844,10 +865,14 @@
                       />
                       <img
                         src="/img/top-mobile-thumbnail.avif"
-                          alt="A futuristic smartphone interface showcasing advanced mobile development tools for iOS and Android, representing the top mobile app development solutions."
-                          width="319"
-                          height="179"
-                          style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
+                        alt="A futuristic smartphone interface showcasing advanced mobile development tools for iOS and Android, representing the top mobile app development solutions."
+                        width="250"
+                        height="auto"
+                        loading="lazy"
+                        fetchpriority="low"
+                        object-fit="cover"
+                        asoect-ratio="16 / 9"
+                        style="border-radius: 1.5em;"
                       />
                     </picture>
                   </a>
@@ -870,27 +895,28 @@
                     href="/articles/future-mobile-app.html"
                     aria-label="A link to a mobile apps article, The future of mobile app development"
                     >
-                  <picture>
-                    <source
-                      srcset="
-                        https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_520,fl_lossy/v1741221192/future_mobile_thumbnail_mp3xni.avif
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/avif"
-                    />
-                    <source
-                      srcset="/img/future_mobile_thumbnail.avif"
-                      media="(min-width: 768px)"
-                    />
-                    <img
-                      src="/img/future_mobile_thumbnail.avif"
-                      loading="lazy"
+                    <picture>
+                      <source
+                        srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_350,fl_lossy/v1741221192/future_mobile_thumbnail_mp3xni.avif"
+                        type="image/avif"
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="/img/future-mobile-thumbnail.avif"
+                        media="(min-width: 768px)"
+                      />
+                      <img
+                        src="/img/future-mobile-thumbnail.avif"
                         alt="A retro-inspired comic illustration of a woman at a computer with a smartphone, representing trends in mobile development and apps development."
-                        width="319"
-                        height="179"
-                        style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
-                    />
-                  </picture>
+                        width="250"
+                        height="auto"
+                        loading="lazy"
+                        fetchpriority="low"
+                        object-fit="cover"
+                        asoect-ratio="16 / 9"
+                        style="border-radius: 1.5em;"
+                      />
+                    </picture> 
                   </a>
                   <h3>
                     <a
@@ -910,7 +936,7 @@
             </div>
           </section>
         </div>
-        <section id="sidebar">
+       <section id="sidebar">
           <aside class="sidebar">
             <div class="sidebar-article">
               <div class="city-img">
@@ -960,8 +986,8 @@
 
             </div>
             <div id="stay-connected-sidebar" class="sidebar-box featured-topics">
-              <div class="stay-connected article-textbox">
-                <h2>Stay Connected</h2>
+              <div class="stay-connected" id="stay-connected-text">
+                <h3>Stay Connected</h3>
                 <p>Follow us on social media for updates and insights.</p>
               </div>
               <div class="social-media-imgs">
@@ -1023,7 +1049,6 @@
                       https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_120,fl_lossy/v1741221199/newsletter_oxwway.webp
                     "
                     media="(min-width: 1200px)"
-                    type="image/webp"
                   />
                   <source
                     srcset="/img/newsletter.webp"
@@ -1032,6 +1057,7 @@
                   <img
                     src="/img/newsletter.webp"
                     alt="Envelope on a paper plane representing updates"
+                    type="image/webp"
                     loading="lazy"
                     width="80"
                     height="auto"
@@ -1064,7 +1090,7 @@
               </div>
             </div>
           </aside>
-       </section>
+      </section>
       </div>
       <section id="content-creator">
         <hr class="hr" />
@@ -1076,7 +1102,6 @@
                   https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_460,fl_lossy/v1741221193/genny_allison_portfolio_mobile_eakltj.webp
                 "
                 media="(min-width: 1200px)"
-                type="image/webp"
               />
               <source
                 srcset="/img/genny_allison_portfolio_tablet.webp"
@@ -1090,6 +1115,7 @@
                 loading="eager"
                 fetchpriority="high"
                 style="border-radius:1.5em;"
+                type="image/webp"
               />
             </picture>
           </div>
@@ -1144,15 +1170,15 @@
                     https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_480,fl_lossy/v1741645926/footer-comic1_pjhsjk.avif
                   "
                   media="(min-width: 1200px)"
-                  type="image/avif"         
                 />
                 <source
-                  srcset="/img/footer-comic1.avif"
+                  srcset="/img/footer-comic1.webp"
                   media="(min-width: 768px)"
                 />
                 <img
-                  src="/img/footer-comic1.avif"
+                  src="/img/footer-comic1.webp"
                   alt="A 1940s comic-style image featuring a lady driving and a robot waving, symbolizing how AI SEO tools welcome you to the future of technology."
+                  type="image/webp"
                   loading="lazy"
                   width="480"
                   height="320" 
@@ -1169,15 +1195,15 @@
                     https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_480,fl_lossy/v1741645926/footer-comic2_msckfs.avif
                   "
                   media="(min-width: 1200px)"
-                  type="image/avif"
                 />
                 <source
-                  srcset="/img/footer-comic2.avif"
+                  srcset="/img/footer-comic2.webp"
                   media="(min-width: 768px)"
                 />
                 <img
-                  src="/img/footer-comic2.avif"
+                  src="/img/footer-comic2.webp"
                   alt="A 1940s comic-style image featuring a lady driving and a robot waving, symbolizing how AI SEO tools welcome you to the future of technology."
+                  type="image/webp"
                   loading="lazy"
                   width="480"
                   height="320" 
@@ -1192,15 +1218,15 @@
                     https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_480,fl_lossy/v1741645925/footer-comic3_atowkg.avif
                   "
                   media="(min-width: 1200px)"
-                  type="image/avif"
                 />
                 <source
-                  srcset="/img/footer-comic3.avif"
+                  srcset="/img/footer-comic3.webp"
                   media="(min-width: 768px)"
                 />
                 <img
-                  src="/img/footer-comic3.avif"
+                  src="/img/footer-comic3.webp"
                   alt="A 1940s comic-style image featuring a lady driving and a robot waving, symbolizing how AI SEO tools welcome you to the future of technology."
+                  type="image/webp"
                   loading="lazy"
                   width="480"
                   height="320" 
@@ -1215,15 +1241,15 @@
                     https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_480,fl_lossy/v1741645925/footer-comic4_qx0km4.avif
                   "
                   media="(min-width: 1200px)"
-                  type="image/avif"
                 />
                 <source
-                  srcset="/img/footer-comic4.avif"
+                  srcset="/img/footer-comic4.webp"
                   media="(min-width: 768px)"
                 />
                 <img
-                  src="/img/footer-comic4.avif"
+                  src="/img/footer-comic4.webp"
                   alt="A 1940s comic-style image featuring a lady driving and a robot waving, symbolizing how AI SEO tools welcome you to the future of technology."
+                  type="image/webp"
                   loading="lazy"
                   width="480"
                   height="320" 
