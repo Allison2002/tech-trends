@@ -242,21 +242,13 @@
       }
 
       body.with-popup .content-container {
-        margin-top: 4em
-      }
-
-      .search-popup.show {
-        display: block
-      }
-
-      .search-popup.show {
-        display: block
+        margin-top: 6em
       }
 
       .menu-toggle {
         display: none
       }
-
+      
       .icons-container {
         position: relative;
         display: flex;
@@ -264,6 +256,15 @@
         justify-content: flex-end;
         gap: .125em;
         margin-top: .625em
+      }
+
+      .content-container {
+        max-width: 90vw;
+        margin: 11em auto 5em;
+        padding: 2em;
+        background-color: #f7f7f7;
+        border-radius: 1.5em;
+        box-shadow: 0 0 3em rgba(0, 0, 0, .4)
       }
 
       .hero {
@@ -298,6 +299,12 @@
         overflow-wrap: break-word;
       }
 
+      .page-title h1 {
+        font-size: 3rem;
+        text-decoration: none;
+        overflow-wrap: break-word
+      }
+
       .page-title h1 a:hover,
       .hero h1 a:hover {
         color: #843F06;
@@ -311,6 +318,7 @@
         letter-spacing: .5px;
         overflow-wrap: break-word;
       }
+      
 
       .sidebar-article {
         margin: 0 auto;
@@ -429,13 +437,17 @@
         transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
       }
 
+
       .search-popup {
         display: none;
-        position: relative;
-        top: 0;
-        right: 0;
-        width: auto;
-        margin-left: 0.625em;
+        margin: 8em auto 1em;
+        max-width: 600px;
+        width: 316px;
+        padding: .5em;
+        background-color: rgb(247 247 247 / 1);
+        box-shadow: rgb(0 0 0 / 40%) 0 0 3.125em .5em;
+        z-index: 10;
+        border-radius: 1em
       }
 
       .search-popup.show {
@@ -619,7 +631,7 @@
                       />
                     </a>
                   </div>
-                  <div>
+                  <div id="author-img-text">
                     <p><a href="https://gennyallison.netlify.app" target="_blank" rel="noopener noreferrer" aria-label="Visit Genny Allison's professional portfolio on a new tab">by Allison Stock Inc | Genny Allison, AI Content Specialist</a></p>
                     <p>Published on July 12, 2024</p>
                   </div>                     
