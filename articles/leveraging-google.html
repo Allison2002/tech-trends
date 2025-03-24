@@ -13,9 +13,6 @@
       name="google-site-verification"
       content="P19ZwIYzDuW5Qi-e7ps4IF88g_mqUgXB67kU3sQep78"
     />
-
-    <link rel="preload" href="/styles.css" as="style">
-    <link rel="stylesheet" href="/styles.css" />
     
     <link rel="preconnect" href="https://res.cloudinary.com" crossorigin />
     <link rel="dns-prefetch" href="https://res.cloudinary.com" />
@@ -181,6 +178,7 @@
       }
 
     </style>
+    <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
     <nav class="navbar" id="navbar">
@@ -294,11 +292,13 @@
                   srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_1200,fl_lossy/v1742793935/leveraging_google_article_hero_desktop_pfqe5b.avif"
                   type="image/avif"
                   media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 1200px"
                   fetchpriority="high"
                 />
                 <source
                   srcset="/img/leveraging_google_article_hero_tablet.avif"
                   media="(min-width: 768px)"
+                  sizes="(min-width: 768px) 768px"
                   fetchpriority="high"
                 />
                 <img
