@@ -4,21 +4,31 @@ document.addEventListener('DOMContentLoaded', () => {
     const hamburgerIcon = document.getElementById('menu-toggle');
     const hamburgerMenu = document.getElementById('hamburger-menu');
     const body = document.body;
+    const backToTopButton = document.getElementById('back-to-top');
+
+    // Debounced function to optimize scroll handling
+    let scrollTimeout;
+    window.addEventListener('scroll', () => {
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(() => {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        }, 100); // Delay execution for improved performance
+    });
 
     // Function to handle search toggle
     function toggleSearch() {
         const windowWidth = window.innerWidth; // Get the current window width
-        console.log("toggleSearch triggered"); // Check if this function is triggered
-
         if (searchPopup.classList.contains('show')) {
-            console.log("Search is currently visible. Hiding it..."); // See if it's already visible
             searchPopup.classList.remove('show');
             body.classList.remove('with-popup');
             if (windowWidth <= 1024) {
                 body.style.paddingTop = '0'; // Reset padding only for small screens
             }
         } else {
-            console.log("Search is currently hidden. Showing it..."); // See if it's hidden
             searchPopup.classList.add('show');
             body.classList.add('with-popup');
             if (windowWidth <= 1024) {
@@ -29,14 +39,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to handle hamburger menu toggle
     function toggleHamburger() {
-        console.log("toggleHamburger triggered"); // Check if this function is triggered
-
         if (hamburgerMenu.classList.contains('show')) {
-            console.log("Hamburger menu is currently visible. Hiding it..."); // Check if the menu is visible
             hamburgerMenu.classList.remove('show');
             document.body.classList.remove('modal-open');
         } else {
-            console.log("Hamburger menu is currently hidden. Showing it..."); // Check if the menu is hidden
             hamburgerMenu.classList.add('show');
             document.body.classList.add('modal-open');
         }
@@ -44,24 +50,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Search bar toggle event listener
     searchIcon.addEventListener('click', () => {
-        console.log("Search icon clicked");
         toggleSearch();
     });
 
     // Hamburger menu toggle event listener
     hamburgerIcon.addEventListener('click', (e) => {
         e.stopPropagation();
-        console.log("Hamburger icon clicked");
         toggleHamburger();
     });
 
     // Close the search popup and hamburger menu when clicking outside
     window.addEventListener('click', (e) => {
-        console.log("Window clicked");
-
-        // Close the search popup if clicked outside
         if (!searchPopup.contains(e.target) && !searchIcon.contains(e.target)) {
-            console.log("Clicked outside search icon. Closing search.");
             searchPopup.classList.remove('show');
             body.classList.remove('with-popup');
             if (window.innerWidth <= 1024) {
@@ -69,26 +69,19 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
-        // Close the hamburger menu if clicked outside
         if (!hamburgerMenu.contains(e.target) && !hamburgerIcon.contains(e.target)) {
-            console.log("Clicked outside hamburger menu. Closing menu.");
             hamburgerMenu.classList.remove('show');
             document.body.classList.remove('modal-open');
         }
     });
 
-    // Show "Back to Top" button when scrolled down
-    const backToTopButton = document.getElementById('back-to-top');
+    // Remove console logs in production (optional: wrap with environment check)
+    if (window.location.hostname !== 'production') {
+        console.log = function() {}; // Disable logging in production
+    }
 
-    window.onscroll = function() {
-        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-            backToTopButton.style.display = 'block';
-        } else {
-            backToTopButton.style.display = 'none';
-        }
-    };
-
-    if ('PerformanceObserver' in window) {
+    // Performance Observer to measure LCP (remove in production)
+    if ('PerformanceObserver' in window && window.location.hostname !== 'production') {
         const observer = new PerformanceObserver((entryList) => {
             const entries = entryList.getEntries();
             entries.forEach(entry => {
