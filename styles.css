@@ -849,7 +849,7 @@ form button:hover {
 .article-descr {
   text-align: left;
   padding: 0 .625em;
-  max-width: 80%;
+  max-width: 100%;
   word-break: break-all
 }
 
