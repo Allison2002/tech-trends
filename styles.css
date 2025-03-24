@@ -1288,6 +1288,10 @@ form button:hover {
 }
 
 @media (max-width: 480px) {
+  .article-grid2 {
+    gap: 0;
+  }
+
   .featured-topics {
     padding: 0.5em;
     font-size: 1rem;
@@ -1493,6 +1497,8 @@ form button:hover {
   }
 
   .sidebar-article {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     margin: 0 auto;
     padding: 1.5em 0;
