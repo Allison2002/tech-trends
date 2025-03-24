@@ -876,6 +876,37 @@
           max-width: 768px;
         }
 
+        #author-img-text p {
+          padding: 0;
+        }
+
+        .hero-post-author {
+          display: flex;
+          flex-direction: column;
+          justify-content: left;
+          align-items: start
+        }
+
+        .author-img {
+          display: flex;
+          height: 15vh
+        }
+
+        .article {
+          width: 100%;
+          margin: 0;
+        }
+
+        .hero-post-author p {
+          text-align: left
+        }
+
+        .author-img img {
+          height: 100%;
+          width: auto;
+          text-align: left
+        }
+
         .sidebar-article {
           padding: 1.5em 0;
           margin: 0 auto
@@ -1045,12 +1076,40 @@
           max-width:100%;
           text-align: left
         }
+
+          .article {
+            width: 100%;
+            margin: 0;
+          }
+
+          .hero-post-author {
+            display: flex;
+            flex-direction: column;
+          }
+
+          .hero-post-author p {
+            text-align: left
+          }
+
+          .welcome-container {
+            text-align: center;
+            padding: 0;
+            width: 100%;
+            max-width: 480px;
+          }
+
+          .author-img img {
+            height: 100%;
+            width: auto;
+            text-align: left
+          }
       }
 
       /* purgecss end ignore */
 
     </style>
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="preload" href="styles.css" as="style">
+    <link href="styles.css" rel="stylesheet">
   </head>
   <body>
     <nav class="navbar" id="navbar">
