@@ -2117,8 +2117,8 @@ form button:hover {
     display: none
   }
 
-  .content-creator {
-    margin-bottom: 5em
+  .content-container {
+    margin: 5em auto 2em;
   }
 
   .empty-box {
