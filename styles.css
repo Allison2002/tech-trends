@@ -1149,10 +1149,6 @@ form button:hover {
     height: auto
   }
 
-  .navbar-items {
-    display: none
-  }
-
   .menu {
     flex-direction: row;
     justify-content: space-between
@@ -1624,11 +1620,6 @@ form button:hover {
     padding: .75em
   }
 
-  .bottom-img-box img {
-    height: 4.63vh;
-    aspect-ratio: 16/9
-  }
-
   #recommended-articles {
     display: flex;
     flex-direction: column;
@@ -1703,7 +1694,6 @@ form button:hover {
     border-radius: .75em
   }
 
-  .bottom-section,
   .stay-connected-footer {
     padding: 1em 0
   }
@@ -1860,10 +1850,6 @@ form button:hover {
   .cat-btn {
     width: 80%;
     margin: 0 auto
-  }
-
-  .empty-box {
-    display: none
   }
 
   .cat-btn a {
