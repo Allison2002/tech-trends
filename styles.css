@@ -368,11 +368,6 @@ p a {
   grid-template-columns: repeat(2, 1fr)
 }
 
-article {
-  max-width: 80%;
-  margin: 0 auto
-}
-
 .hr {
   margin-bottom: 6em
 }
@@ -939,26 +934,6 @@ form button:hover {
     align-items: start
   }
 
-  .author-img {
-    display: flex;
-    height: 15vh
-  }
-
-  .article {
-    width: 100%;
-    margin: 0;
-  }
-
-  .hero-post-author p {
-    text-align: left
-  }
-
-  .author-img img {
-    height: 100%;
-    width: auto;
-    text-align: left
-  }
-
   .featured-topics {
     padding: 1em;
     font-size: 1rem;
@@ -1307,40 +1282,9 @@ form button:hover {
   .empty-box {
     display: none
   }
-
-
-
-
 }
 
-@media (max-width: 480px; ) {
-  .article {
-    width: 100%;
-    margin: 0;
-  }
-
-  .hero-post-author {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .hero-post-author p {
-    text-align: left
-  }
-
-  .welcome-container {
-    text-align: center;
-    padding: 0;
-    width: 100%;
-    max-width: 480px;
-  }
-
-  .author-img img {
-    height: 100%;
-    width: auto;
-    text-align: left
-  }
-
+@media (max-width: 480px) {
   .featured-topics {
     padding: 0.5em;
     font-size: 1rem;
