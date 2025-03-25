@@ -1519,7 +1519,8 @@ form button:hover {
   }
 
   .city-img img {
-    margin: 1em auto
+    margin: 1em auto;
+    aspect-ratio: 9 / 16;
   }
 
   .cta-section,
