@@ -15,12 +15,12 @@
       name="google-site-verification"
       content="P19ZwIYzDuW5Qi-e7ps4IF88g_mqUgXB67kU3sQep78"
     />
-    
+
     <link rel="preconnect" href="https://res.cloudinary.com" crossorigin />
     <link rel="dns-prefetch" href="https://res.cloudinary.com" />
-
-    <link rel="icon" href="/img/tab_logo_robot.webp">
-    <link rel="preload" href="/img/tech-trends-logo.webp" as="image">
+    
+    <link href="/img/tab_logo_robot.webp" rel="icon">
+    <link as="image" href="/img/tech-trends-logo.webp" rel="preload">
     <link
       rel="preload"
       as="font"
@@ -1135,12 +1135,7 @@
       <!--tech trends logo-->
       <div class="menu">
         <div class="logo-container">
-          <img src="/img/tech-trends-logo.webp" 
-            alt="Tech Trends Blog Logo featuring AI-powered insights and technology" 
-            width="150" 
-            height="85"
-            loading="eager"
-          />
+          <img src="/img/tech-trends-logo.webp" alt="Tech Trends Blog Logo featuring AI-powered insights and technology" width="150" height="85" loading="eager">
         </div>
         <!--full screen navbar-->
         <div class="navbar-items">
@@ -1163,7 +1158,7 @@
                   https://res.cloudinary.com/dnptzisuf/image/upload/fl_lossy,q_auto:best,w_100/v1741313863/hamburger_ozf2so.avif
                   "
                   media="(min-width: 1200px)"
-                  type="image/avif"         
+                  type="image/avif"
                 />
                 <source
                   srcset="/img/hamburger-icon.avif"
@@ -1233,10 +1228,10 @@
       <div class="page-title">
         <h1><i>Keyword Research with Ahrefs</i></h1>
       </div>          
-      <div class="grid-wrapper">
+      <div class="grid-wrapper" id="grid-wrapper">
         <div class="main-content">
           <header>
-            <section class="hero" role="banner">                 
+            <div class="hero" role="banner">                 
               <picture>
                 <source
                   srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_1200,fl_lossy/v1742794118/keyword_research_article_hero_desktop_gncjmk.avif"
@@ -1258,7 +1253,6 @@
                   width="320"
                   height="180"
                   loading="eager"
-                  fetchpriority="high"
                   object-fit="cover"
                   aspect-ratio="16 / 9"
                   style="border-radius: 1.5em;"
@@ -1268,7 +1262,7 @@
                 <a href="/categories/categorized.html" class="btn" role="button">Categories</a>
                 <a href="/categories/uncategorized.html" class="btn" role="button">All</a>
               </div>
-            </section> 
+            </div> 
           </header>
           <article>      
             <div class="welcome-container">                 
@@ -1281,6 +1275,7 @@
                         width="138" 
                         height="138" 
                         loading="lazy"
+                        fetchpriority="low"
                         aspect-ratio="1 / 1"
                         object-fit="cover"
                       />
@@ -1400,6 +1395,7 @@
                         width="300" 
                         height="200" 
                         loading="lazy"
+                        fetchpriority="low"
                       />
                     </div>
                     <p>
@@ -1546,6 +1542,8 @@
                         width="300" 
                         height="200" 
                         loading="lazy"
+                        fetchpriority="low"
+                        aspect-ratio="1 / 5"
                       />
                     </div> 
                     <p>
@@ -1579,7 +1577,6 @@
                     </p>
                   </div>
                 </section>
-
                 <section class="article-section" id="competitor-analysis">
                   <div class="article-sub">
                     <h2>Exploring Ahrefs’ Features: A Comprehensive Guide</h2>
@@ -1647,7 +1644,6 @@
                     </p>
                   </div>
                 </section>
-
                 <section class="article-section" id="long-tail-keywords"> 
                   <div class="article-sub">
                     <h2>How to Analyze Competitors Using Ahrefs: Gaining a Competitive Edge</h2>
@@ -1658,7 +1654,6 @@
                       By leveraging Ahrefs, you can identify high-performing keywords, analyze backlink profiles, and uncover content gaps where your site can shine. Here’s how to make the most of Ahrefs’ competitor analysis features.
                     </p>
                   </div>
-
                   <div class="article-sub">
                     <h3>Start with Competitor URLs</h3>
                     <p>
@@ -1668,7 +1663,6 @@
                       For instance, if a competitor ranks highly for "best SEO tools," study their content to understand what makes it effective. Evaluate their use of internal linking, keyword integration, and overall structure. This analysis not only helps you identify successful tactics but also highlights areas where you can offer something better—whether through enhanced formatting, deeper insights, or engaging visuals.
                     </p>
                   </div>
-
                   <div class="article-sub">
                     <h3>Understanding Backlink Profiles</h3>
                     <div class="image-left-small">
@@ -1689,7 +1683,6 @@
                       Analyzing anchor text used in backlinks also provides context for targeting. If "free SEO tools" is a common anchor text, it indicates demand for content around this topic, allowing you to create a resource that appeals to a similar audience.
                     </p>
                   </div>
-
                   <div class="article-sub">
                     <h3>Content Gap Analysis: Uncover Untapped Opportunities</h3>
                     <p>
@@ -1702,7 +1695,6 @@
                       Addressing content gaps positions your site as an authoritative resource in your niche, giving you a competitive edge and attracting a more targeted audience.
                     </p>
                   </div>
-
                   <div class="article-sub">
                     <h3>Track Competitor Rankings Over Time</h3>
                     <p>
@@ -1715,7 +1707,6 @@
                       Additionally, trend analysis within the Rank Tracker helps you anticipate seasonal or market-driven shifts, ensuring your strategy remains relevant and impactful.
                     </p>
                   </div>
-
                   <div class="article-sub">
                     <h3>Real-Life Applications of Ahrefs Competitor Analysis</h3>
                     <p>
@@ -1725,7 +1716,6 @@
                       Competitor analysis can also reveal seasonal trends. If a competitor experiences a traffic spike during the holidays due to their "best holiday travel deals" page, you can create a similar resource with richer content and timely updates to capture the same audience.
                     </p>
                   </div>
-
                   <div class="article-sub">
                     <h3>Turning Insights into Action</h3>
                     <p>
@@ -1736,7 +1726,6 @@
                     </p>
                   </div>
                 </section>
-
                 <section class="article-section" id="search-intent">
                   <div class="article-sub">
                     <h2>Best Practices for Using Ahrefs to Maximize Your SEO Strategy</h2>
@@ -1829,7 +1818,6 @@
                     </ul>
                   </div>  
                 </section>
-
                 <section class="article-section" id="pro-tips">
                   <div class="article-sub">
                     <h2>The Role of Keyword Research in Content Creation</h2>
@@ -1921,7 +1909,6 @@
                     </p>
                   </section>
                 </section>
-
               </section>                       
             </div>
             <hr class="hr"/>
@@ -2174,164 +2161,6 @@
                   </p>
                 </div>
               </div>
-            </div>            <div class="must-reads">
-              <div class="section-title">
-                <h2>Must Reads</h2>
-              </div>
-              <div class="article-grid2">
-                <div class="article2-viewall">
-                  <a href="/articles/seo-semrush.html"
-                    >
-                    <picture>
-                      <source
-                        srcset="
-                          https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_520,fl_lossy/v1742800736/semrush_article_hero_mobile_uetikj.avif
-                        "
-                        media="(min-width: 1200px)"
-                        tupe="image/avif"
-                      />
-                      <source
-                        srcset="/img/semrush-thumbnail.avif"
-                        media="(min-width: 768px)"
-                      />
-                      <img
-                        src="/img/semrush-thumbnail.avif"
-                        alt="A professional analyzing advanced SEO data visualizations to uncover insights into keyword research and optimize for long-tail keywords."
-                        width="250"
-                        height="auto"
-                        loading="lazy"
-                        fetchpriority="low"
-                        object-fit="cover"
-                        aspect-ratio="16 / 9"
-                        style="border-radius: 1.5em;"
-                      />
-                    </picture>  
-                  </a>
-                  <h3>
-                    <a href="/articles/seo-semrush.html">
-                      Improve Your Websites Search
-                    </a>
-                  </h3>
-                  <p>
-                    As the world becomes more digital, businesses are constantly looking for ways to stay competitive and increase their online visibility. AI SEO Tools plays...
-                  </p>
-                </div>
-                <div class="article2-viewall">
-                  <a
-                    href="/articles/ai-ecommerce.html"
-                    aria-label="A link to an article, The Future of eCommerce"
-                    >
-                    <picture>
-                      <source
-                        srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_350,fl_lossy/v1741221192/ai-commerce-thumbnail_sqpje9.avif"
-                        type="image/avif"
-                        media="(min-width: 1200px)"
-                      />
-                      <source
-                        srcset="/img/ai-commerce-thumbnail.avif"
-                        media="(min-width: 768px)"
-                      />
-                      <img
-                        src="/img/ai-commerce-thumbnail.avif"
-                        alt="A 1940s-style woman interacting with a futuristic robot in a modern store, symbolizing the future of eCommerce and the role of eCommerce AI in revolutionizing online retail."
-                        width="250"
-                        height="auto"
-                        loading="lazy"
-                        fetchpriority="low"
-                        object-fit="cover"
-                        aspect-ratio="16 / 9"
-                        style="border-radius: 1.5em;"
-                      />
-                    </picture> 
-                  </a>
-                  <h3>
-                    <a href="/articles/ai-ecommerce.html">
-                      The Future of eCommerce
-                    </a>
-                  </h3>
-                  <p>
-                    Explore how AI is reshaping the future of online shopping,
-                    driving innovation and personalization...
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="article-grid2">
-              <div class="article2-viewall">
-                <a href="/articles/seo-semrush.html"
-                  >
-                  <picture>
-                    <source
-                      srcset="
-                        https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_520,fl_lossy/v1741221199/semrush-article_kpkomc.avif
-                      "
-                      media="(min-width: 1200px)"
-                      tupe="image/avif"
-                    />
-                    <source
-                      srcset="/img/semrush-thumbnail.avif"
-                      media="(min-width: 768px)"
-                    />
-                    <img
-                      src="/img/semrush-thumbnail.avif"
-                      alt="A professional analyzing advanced SEO data visualizations to uncover insights into keyword research and optimize for long-tail keywords."
-                      width="100%"
-                      height="auto"
-                      loading="lazy"
-                      fetchpriority="low"
-                      object-fit="cover"
-                      aspect-ratio="16 / 9"
-                      style="border-radius: 1.5em;"
-                    />
-                  </picture>  
-                </a>
-                <h3>
-                  <a href="/articles/seo-semrush.html">
-                    Improve Your Websites Search
-                  </a>
-                </h3>
-                <p>
-                  As the world becomes more digital, businesses are constantly looking for ways to stay competitive and increase their online visibility. AI SEO Tools plays...
-                </p>
-              </div>
-              <div class="article2-viewall">
-                <a
-                  href="/articles/ai-ecommerce.html"
-                  aria-label="A link to an article, The Future of eCommerce"
-                  >
-                  <picture>
-                    <source
-                      srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_350,fl_lossy/v1741221192/ai-commerce-thumbnail_sqpje9.avif"
-                      type="image/avif"
-                      media="(min-width: 1200px)"
-                    />
-                    <source
-                      srcset="/img/ai-commerce-thumbnail.avif"
-                      media="(min-width: 768px)"
-                    />
-                    <img
-                      src="/img/ai-commerce-thumbnail.avif"
-                      alt="A 1940s-style woman interacting with a futuristic robot in a modern store, symbolizing the future of eCommerce and the role of eCommerce AI in revolutionizing online retail."
-                      width="250"
-                      height="auto"
-                      loading="lazy"
-                      fetchpriority="low"
-                      object-fit="cover"
-                      aspect-ratio="16 / 9"
-                      style="border-radius: 1.5em;"
-                    />
-                  </picture> 
-                </a>
-                <h3>
-                  <a href="/articles/ai-ecommerce.html">
-                    The Future of eCommerce
-                  </a>
-                </h3>
-                <p>
-                  Explore how AI is reshaping the future of online shopping,
-                  driving innovation and personalization...
-                </p>
-              </div>
             </div>
             <div class="seo">
               <div class="section-title">
@@ -2361,7 +2190,7 @@
                         loading="lazy"
                         fetchpriority="low"
                         object-fit="cover"
-                        asoect-ratio="16 / 9"
+                        aspect-ratio="16 / 9"
                         style="border-radius: 1.5em;"
                       />
                     </picture>
@@ -2448,7 +2277,7 @@
                         loading="lazy"
                         fetchpriority="low"
                         object-fit="cover"
-                        asoect-ratio="16 / 9"
+                        aspect-ratio="16 / 9"
                         style="border-radius: 1.5em;"
                       />
                     </picture>
@@ -2490,7 +2319,7 @@
                         loading="lazy"
                         fetchpriority="low"
                         object-fit="cover"
-                        asoect-ratio="16 / 9"
+                        aspect-ratio="16 / 9"
                         style="border-radius: 1.5em;"
                       />
                     </picture> 
@@ -2667,7 +2496,7 @@
               </div>
             </div>
           </aside>
-        </section>
+      </section>
       </div>
       <section id="content-creator">
         <hr class="hr" />
@@ -2687,9 +2516,8 @@
               <img
                 src="/img/genny_allison_portfolio_mobile.webp"
                 alt="Welcome to Tech Trends! An AI-powered SEO tool helping optimize digital content"
-                width="300"
-                height="115"
-                aspect-ratio: 2.61;
+                width="250"
+                height="110"
                 loading="lazy"
                 fetchpriority="low"
                 style="border-radius:1.5em;"

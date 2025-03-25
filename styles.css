@@ -194,6 +194,11 @@ p a {
   padding: 2em 0 .5em
 }
 
+#author-sig p {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .article-sub p {
   padding: 0;
   word-break: keep-all;
@@ -215,7 +220,7 @@ p a {
 .article-section {
   background-color: #fff;
   color: #262626;
-  padding: 1em;
+  padding: 2em;
   box-shadow: rgb(0 0 0 / 10%) 0 4px 8px
 }
 
@@ -835,7 +840,6 @@ form button:hover {
 
 .article-sub p {
   text-align: center;
-  width: 1200px;
 }
 
 .article-sub {
