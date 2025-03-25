@@ -9,10 +9,6 @@
     <link rel="preload" href="/img/welcome_article_hero_mobile.avif" as="image">
     <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_1200,fl_lossy/v1742494169/topics-hero-desktop_bkhaw9.avif" as="image" type="image/avif" media="(min-width: 1200px)" fetchpriority="high">
 
-      <!-- Preload CSS -->
-    <link rel="preload" href="/styles.css" as="style">
-    <link rel="stylesheet" href="/styles.css" />
-
     <link rel="preconnect" href="https://res.cloudinary.com" crossorigin />
     <link rel="dns-prefetch" href="https://res.cloudinary.com" />
 
@@ -1130,6 +1126,8 @@
       /* purgecss end ignore */
 
     </style>
+    <link rel="preload" href="/styles.css" as="style">
+    <link rel="stylesheet" href="/styles.css" />
 </head>
   <body>
     <nav class="navbar" id="navbar">
@@ -1534,7 +1532,6 @@
                       />
                       <img
                         src="/img/semrush-thumbnail.avif"
-                        loading="lazy"
                         alt="A professional analyzing advanced SEO data visualizations to uncover insights into keyword research and optimize for long-tail keywords."
                         width="250"
                         height="auto"
@@ -1659,10 +1656,9 @@
                       />
                       <img
                         src="/img/max-seo-thumbnail.avif"
-                        loading="lazy"
                         alt="A professional analyzing advanced SEO data visualizations to uncover insights into keyword research and optimize for long-tail keywords."
                         width="100%"
-                          height="auto"
+                        height="auto"
                         loading="lazy"
                         fetchpriority="low"
                         object-fit="cover"

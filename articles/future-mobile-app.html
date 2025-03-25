@@ -1135,8 +1135,8 @@
       /* purgecss end ignore */
 
     </style>
-    <link rel="stylesheet" href="/styles.css" />
-  </head>
+    <link rel="preload" href="/styles.css" as="style">
+    <link rel="stylesheet" href="/styles.css" />  </head>
   <body>
     <nav class="navbar" id="navbar">
       <!--tech trends logo-->
@@ -1282,6 +1282,7 @@
                       width="138" 
                       height="138" 
                       loading="lazy"
+                      fetchpriority="low"
                       aspect-ratio="1 / 1"
                       object-fit="cover"
                     />
@@ -1627,7 +1628,6 @@
                       />
                       <img
                         src="/img/semrush-thumbnail.avif"
-                        loading="lazy"
                         alt="A professional analyzing advanced SEO data visualizations to uncover insights into keyword research and optimize for long-tail keywords."
                         width="250"
                         height="auto"
@@ -1752,7 +1752,6 @@
                       />
                       <img
                         src="/img/max-seo-thumbnail.avif"
-                        loading="lazy"
                         alt="A professional analyzing advanced SEO data visualizations to uncover insights into keyword research and optimize for long-tail keywords."
                         width="100%"
                           height="auto"
@@ -2045,7 +2044,7 @@
                 alt="Welcome to Tech Trends! An AI-powered SEO tool helping optimize digital content"
                 width="250"
                 height="110"
-                loading="eager"
+                loading="lazy"
                 fetchpriority="high"
                 style="border-radius:1.5em;"
                 type="image/webp"

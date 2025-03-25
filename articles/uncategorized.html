@@ -20,9 +20,6 @@
       content="P19ZwIYzDuW5Qi-e7ps4IF88g_mqUgXB67kU3sQep78"
     />
     
-    <link rel="preload" href="/styles.css" as="style">
-    <link rel="stylesheet" href="/styles.css" />
-
     <link rel="preconnect" href="https://res.cloudinary.com" crossorigin />
     <link rel="dns-prefetch" href="https://res.cloudinary.com" />
 
@@ -1117,6 +1114,8 @@
       /* purgecss end ignore */
 
     </style>
+    <link rel="preload" href="/styles.css" as="style">
+    <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
     <nav class="navbar" id="navbar">
@@ -1264,16 +1263,19 @@
                       type="image/avif"           
                     />
                     <source
-                      srcset="/img/welcome-techtrends.webp"
+                      srcset="/img/welcome-thumbnail.avif"
                       media="(min-width: 768px)"
                     />
                     <img
-                      src="/img/welcome-techtrends.webp"
-                      loading="lazy"
+                      src="/img/welcome-thumbnail.avif"
                       alt="a robot saying 'Welcome to tech trends' with the city skyline behind him"
-                      width="317"
-                      height="179"
-                      style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
+                        width="250"
+                        height="auto"
+                        loading="lazy"
+                        fetchpriority="low"
+                        object-fit="cover"
+                        asoect-ratio="16 / 9"
+                        style="border-radius: 1.5em;"
                     />
                   </picture>
                 </a>
@@ -1303,16 +1305,19 @@
                       type="image/avif"           
                     />
                     <source
-                      srcset="/img/ai-commerce-thumbnail.webp"
+                      srcset="/img/ecommerce-thumbnail.avif"
                       media="(min-width: 768px)"
                     />
                     <img
-                      src="/img/ai-commerce-thumbnail.webp"
+                      src="/img/ecommerce-thumbnail.avif"
+                      alt="A 1940s-style woman interacting with a   futuristic robot in a modern store, symbolizing the future of eCommerce and the role of eCommerce AI in revolutionizing online retail."
+                      width="250"
+                      height="auto"
                       loading="lazy"
-                      alt="A 1940s-style woman interacting with a futuristic robot in a modern store, symbolizing the future of eCommerce and the role of eCommerce AI in revolutionizing online retail."
-                      width="340"
-                      height="200"
-                      style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
+                      fetchpriority="low"
+                      object-fit="cover"
+                      asoect-ratio="16 / 9"
+                      style="border-radius: 1.5em;"
                     />
                   </picture>  
                 </a>
@@ -1347,16 +1352,19 @@
                       type="image/avif"           
                     />
                     <source
-                      srcset="/img/future_mobile_thumbnail.avif"
+                      srcset="/img/future-mobile-thumbnail.avif"
                       media="(min-width: 768px)"
                     />
                     <img
-                      src="/img/future_mobile_thumbnail.avif"
-                      loading="lazy"
+                      src="/img/future-mobile-thumbnail.avif"
                         alt="A retro-inspired comic illustration of a woman at a computer with a smartphone, representing trends in mobile development and apps development."
-                        width="340"
-                        height="200"
-                        style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
+                        width="250"
+                        height="auto"
+                        loading="lazy"
+                        fetchpriority="low"
+                        object-fit="cover"
+                        asoect-ratio="16 / 9"
+                        style="border-radius: 1.5em;"
                     />
                   </picture>
                 </a>
@@ -1393,16 +1401,19 @@
                       type="image/avif"           
                     />
                     <source
-                      srcset="/img/headless-commerce-thumbnail.webp"
+                      srcset="/img/headless-commerce-thumbnail.avif"
                       media="(min-width: 768px)"
                     />
                     <img
-                      src="/img/headless-commerce-thumbnail.webp"
+                      src="/img/headless-commerce-thumbnail.avif"
                         alt="A futuristic storefront with a professional exploring headless commerce solutions, showcasing the flexibility and scalability of headless eCommerce."
+                        width="250"
+                        height="auto"
                         loading="lazy"
-                        width="340"
-                        height="200"
-                        style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
+                        fetchpriority="low"
+                        object-fit="cover"
+                        asoect-ratio="16 / 9"
+                        style="border-radius: 1.5em;"
                     />
                   </picture> 
                 </a>
@@ -1437,16 +1448,19 @@
                       type="image/avif"         
                     />
                     <source
-                      srcset="/img/iot_innovations_tablet.avif"
+                      srcset="/img/iot-innovations-thumbnail.avif"
                       media="(min-width: 768px)"
                     />
                     <img
-                      src="/img/iot_innovations_tablet.avif"
-                        loading="lazy"
+                      src="/img/iot-innovations-thumbnail.avif"
                         alt="A retro comic-style depiction of IoT innovations, highlighting how industries use IoT to drive transformation and enhance connectivity."
-                        width="340"
-                        height="200"
-                        style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
+                        width="250"
+                        height="auto"
+                        loading="lazy"
+                        fetchpriority="low"
+                        object-fit="cover"
+                        asoect-ratio="16 / 9"
+                        style="border-radius: 1.5em;"
                     />
                   </picture>                
                 </a>
@@ -1481,19 +1495,22 @@
                       type="image/avif"         
                     />
                     <source
-                      srcset="/img/iot-smart-cites-thumbnail.avif"
+                      srcset="/img/iot-smart-city-thumbnail.avif"
                       media="(min-width: 768px)"
                     />
                     <img
-                      src="/img/iot-smart-cites-thumbnail.avif"
-                        loading="lazy"
+                      src="/img/iot-smart-city-thumbnail.avif"
                         alt="A futuristic neon-lit cityscape illustrating IoT
                         innovations and their transformative impact on industry,
                         showcasing how to use IoT in industry for smarter, connected
                         solutions."
-                        width="340"
-                        height="200"
-                        style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
+                        width="250"
+                        height="auto"
+                        loading="lazy"
+                        fetchpriority="low"
+                        object-fit="cover"
+                        asoect-ratio="16 / 9"
+                        style="border-radius: 1.5em;"
                     />
                   </picture>
                 </a>
@@ -1530,16 +1547,19 @@
                       type="image/avif"         
                     />
                     <source
-                      srcset="/img/leverage_google_search_thumbnail.webp"
+                      srcset="/img/leveraging-google-thumbnail.avif"
                       media="(min-width: 768px)"
                     />
                     <img
-                      src="/img/leverage_google_search_thumbnail.webp"
-                      loading="lazy"
+                      src="/img/leveraging-google-thumbnail.avif"
                       alt="AI SEO Tools and Google Search Console: A magnifying glass zooming in on data, symbolizing advanced SEO insights and tools."
-                      width="340"
-                      height="200"
-                      style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
+                        width="250"
+                        height="auto"
+                        loading="lazy"
+                        fetchpriority="low"
+                        object-fit="cover"
+                        asoect-ratio="16 / 9"
+                        style="border-radius: 1.5em;"
                     />
                   </picture>
                 </a>
@@ -1574,16 +1594,19 @@
                       type="image/avif"         
                     />
                     <source
-                      srcset="/img/max-seo-thumbnail.webp"
+                      srcset="/img/max-seo-thumbnail.avif"
                       media="(min-width: 768px)"
                     />
                     <img
-                      src="/img/max-seo-thumbnail.webp"
-                      loading="lazy"
+                      src="/img/max-seo-thumbnail.avif"
                       alt="A professional analyzing advanced SEO data visualizations to uncover insights into keyword research and optimize for long-tail keywords."
-                      width="340"
-                      height="200"
-                      style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
+                        width="250"
+                        height="auto"
+                        loading="lazy"
+                        fetchpriority="low"
+                        object-fit="cover"
+                        asoect-ratio="16 / 9"
+                        style="border-radius: 1.5em;"
                     />
                   </picture>
                 </a>
@@ -1624,9 +1647,13 @@
                       <img
                         src="/img/top-mobile-thumbnail.avif"
                           alt="A futuristic smartphone interface showcasing advanced mobile development tools for iOS and Android, representing the top mobile app development solutions."
-                          width="319"
-                          height="179"
-                          style="object-fit: cover; aspect-ratio: 16/9; border-radius: 1.5em;"
+                          width="250"
+                          height="auto"
+                          loading="lazy"
+                          fetchpriority="low"
+                          object-fit="cover"
+                          asoect-ratio="16 / 9"
+                          style="border-radius: 1.5em;"
                       />
                     </picture>
                   </a>

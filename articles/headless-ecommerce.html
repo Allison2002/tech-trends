@@ -11,8 +11,6 @@
       name="google-site-verification"
       content="P19ZwIYzDuW5Qi-e7ps4IF88g_mqUgXB67kU3sQep78"
     />
-    <link rel="preload" href="/styles.css" as="style">
-    <link rel="stylesheet" href="/styles.css" />
 
     <link rel="preconnect" href="https://res.cloudinary.com" crossorigin />
     <link rel="dns-prefetch" href="https://res.cloudinary.com" />
@@ -1131,6 +1129,8 @@
       /* purgecss end ignore */
 
     </style>
+    <link rel="preload" href="/styles.css" as="style">
+    <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
     <nav class="navbar" id="navbar">
@@ -1278,6 +1278,7 @@
                         width="138" 
                         height="138" 
                         loading="lazy"
+                        fetchpriority="low"
                         aspect-ratio="1 / 1"
                         object-fit="cover"
                       />
@@ -1653,7 +1654,6 @@
                       />
                       <img
                         src="/img/semrush-thumbnail.avif"
-                        loading="lazy"
                         alt="A professional analyzing advanced SEO data visualizations to uncover insights into keyword research and optimize for long-tail keywords."
                         width="250"
                         height="auto"
@@ -1778,10 +1778,9 @@
                       />
                       <img
                         src="/img/max-seo-thumbnail.avif"
-                        loading="lazy"
                         alt="A professional analyzing advanced SEO data visualizations to uncover insights into keyword research and optimize for long-tail keywords."
                         width="100%"
-                          height="auto"
+                        height="auto"
                         loading="lazy"
                         fetchpriority="low"
                         object-fit="cover"
@@ -2071,8 +2070,8 @@
                 alt="Welcome to Tech Trends! An AI-powered SEO tool helping optimize digital content"
                 width="250"
                 height="110"
-                loading="eager"
-                fetchpriority="high"
+                loading="lazy"
+                fetchpriority="low"
                 style="border-radius:1.5em;"
                 type="image/webp"
               />

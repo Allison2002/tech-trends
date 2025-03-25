@@ -1126,6 +1126,7 @@
       /* purgecss end ignore */
 
     </style>
+    <link rel="preload" href="/styles.css" as="style">
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
@@ -1273,6 +1274,7 @@
                         width="138" 
                         height="138" 
                         loading="lazy"
+                        fetchpriority="low"
                         aspect-ratio="1 / 1"
                         object-fit="cover"
                       />
@@ -1637,7 +1639,6 @@
                       />
                       <img
                         src="/img/semrush-thumbnail.avif"
-                        loading="lazy"
                         alt="A professional analyzing advanced SEO data visualizations to uncover insights into keyword research and optimize for long-tail keywords."
                         width="250"
                         height="auto"
@@ -1762,10 +1763,9 @@
                       />
                       <img
                         src="/img/max-seo-thumbnail.avif"
-                        loading="lazy"
                         alt="A professional analyzing advanced SEO data visualizations to uncover insights into keyword research and optimize for long-tail keywords."
                         width="100%"
-                          height="auto"
+                        height="auto"
                         loading="lazy"
                         fetchpriority="low"
                         object-fit="cover"
@@ -1898,8 +1898,8 @@
                     src="/img/sidebar-future-city.avif"
                     alt="A woman from the 1940's arriving to a futuristic city"
                     type="image/avif"
-                    loading="eager"
-                    fetchpriority="high"
+                    loading="lazy"
+                    fetchpriority="low"
                     width="165"
                     height="293"
                     style="object-fit: cover;  aspect-ratio: 9 / 16; border-radius: 1.5em"

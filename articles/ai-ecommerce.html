@@ -16,9 +16,6 @@
 
   <link rel="preconnect" href="https://res.cloudinary.com" crossorigin />
   <link rel="dns-prefetch" href="https://res.cloudinary.com" />
-
-  <link rel="preload" href="/styles.css" as="style">
-  <link rel="stylesheet" href="/styles.css" />  
   
   <link href="/img/tab_logo_robot.webp" rel="icon">
   <link as="image" href="/img/tech-trends-logo.webp" rel="preload">
@@ -1129,6 +1126,8 @@
       /* purgecss end ignore */
 
     </style>
+    <link rel="preload" href="/styles.css" as="style">
+    <link rel="stylesheet" href="/styles.css" />
 </head>
   <body>
     <nav class="navbar" id="navbar">
@@ -1278,6 +1277,7 @@
                         width="138" 
                         height="138" 
                         loading="lazy"
+                        fetchpriority="low"
                         aspect-ratio="1 / 1"
                         object-fit="cover"
                       />
@@ -1645,7 +1645,6 @@
                       />
                       <img
                         src="/img/semrush-thumbnail.avif"
-                        loading="lazy"
                         alt="A professional analyzing advanced SEO data visualizations to uncover insights into keyword research and optimize for long-tail keywords."
                         width="250"
                         height="auto"
@@ -1770,7 +1769,6 @@
                       />
                       <img
                         src="/img/max-seo-thumbnail.avif"
-                        loading="lazy"
                         alt="A professional analyzing advanced SEO data visualizations to uncover insights into keyword research and optimize for long-tail keywords."
                         width="100%"
                           height="auto"

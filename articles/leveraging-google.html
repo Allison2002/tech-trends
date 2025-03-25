@@ -1126,8 +1126,7 @@
 
     </style>
     <link rel="preload" href="/styles.css" as="style">
-    <link href="/styles.css" rel="stylesheet">
-  </head>
+    <link rel="stylesheet" href="/styles.css" />
   <body>
     <nav class="navbar" id="navbar">
       <!--tech trends logo-->
@@ -1258,6 +1257,7 @@
                     width="320"
                     height="180"
                     loading="eager"
+                    fetchpriority="high"
                     object-fit="cover"
                     aspect-ratio="16 / 9"
                     style="border-radius: 1.5em;"
@@ -1281,6 +1281,7 @@
                         width="138" 
                         height="138" 
                         loading="lazy"
+                        fetchpriority="low"
                         aspect-ratio="1 / 1"
                         object-fit="cover"
                       />
@@ -1689,7 +1690,6 @@
                       />
                       <img
                         src="/img/semrush-thumbnail.avif"
-                        loading="lazy"
                         alt="A professional analyzing advanced SEO data visualizations to uncover insights into keyword research and optimize for long-tail keywords."
                         width="250"
                         height="auto"
@@ -1814,10 +1814,9 @@
                       />
                       <img
                         src="/img/max-seo-thumbnail.avif"
-                        loading="lazy"
                         alt="A professional analyzing advanced SEO data visualizations to uncover insights into keyword research and optimize for long-tail keywords."
                         width="100%"
-                          height="auto"
+                        height="auto"
                         loading="lazy"
                         fetchpriority="low"
                         object-fit="cover"
