@@ -830,7 +830,12 @@ form button:hover {
 
 .article-sub h2 {
   padding: 1em 0 1em;
-  left: 0
+  text-align: center;
+}
+
+.article-sub p {
+  text-align: center;
+  width: 1200px;
 }
 
 .article-sub {
@@ -1520,7 +1525,7 @@ form button:hover {
 
   .city-img img {
     margin: 1em auto;
-    aspect-ratio: 9 / 16;
+
   }
 
   .cta-section,
