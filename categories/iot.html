@@ -530,6 +530,7 @@
         height: auto;
         object-fit: cover;
         margin: 0 auto;
+        aspect-ratio: 9 / 16;
       }
 
       .cat-btn {
@@ -1117,6 +1118,8 @@
     </style>
     <link rel="preload" href="/styles.css" as="style">
     <link rel="stylesheet" href="/styles.css" />
+    <link rel="preload" href="/styles.css" as="style">
+    <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
     <nav class="navbar" id="navbar">
@@ -1225,7 +1228,7 @@
                   srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:best,w_1200,fl_lossy/v1742785263/iot_hero_desktop_e5wcxk.avif"
                   type="image/avif"
                   media="(min-width: 1200px)"
-                  sizes="(min-width: 1200px) 1200px"
+                  sizes="(min-width: 1200px) 1200px, 100vw"
                   fetchpriority="high"
                 />
                 <source
