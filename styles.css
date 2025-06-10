@@ -184,7 +184,8 @@ p a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 100%;
+  width: 100%;
+  max-width: 100vw;
   padding: 2rem;
   border-radius: .5em;
   margin: 0 auto
@@ -194,15 +195,11 @@ p a {
   padding: 2em 0 .5em
 }
 
-#author-sig p {
-  width: 1200px;
-  margin: 0 auto;
-}
-
 .article-sub p {
   padding: 0;
   word-break: keep-all;
-  width: 100%
+  width: 90%;
+  max-width: 90vw;
 }
 
 .article-list ol li a,
@@ -833,17 +830,38 @@ form button:hover {
   list-style: circle
 }
 
+
+.article-sub {
+  display: flex;
+  flex-direction: column;
+  display: block;
+  padding: 0;
+  width: 90%;
+  max-width: 90vw;
+  padding: 1em 2em;
+}
+
 .article-sub h2 {
-  padding: 1em 0 1em;
+  padding: 1em;
   text-align: center;
+  width: 100%;
+  max-width: 100vw;
 }
 
 .article-sub p {
+  padding: 1em;
   text-align: center;
+  width: 100%;
+  max-width: 100vw;
+  font-size: 1.3rem;
 }
 
-.article-sub {
-  padding: 1em
+.cta-sub-text {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100vw;
+  padding: 1em;
 }
 
 .challenges-section {
@@ -944,6 +962,8 @@ form button:hover {
     align-items: start
   }
 
+  #author-sig,
+  #intro-paragraph,
   .featured-topics {
     padding: 1em;
     font-size: 1rem;
@@ -959,6 +979,13 @@ form button:hover {
   ul li {
     text-align: left;
     font-size: 1rem
+  }
+
+  .content-creator {
+    display: flex;
+    width: 90%;
+    max-width: 90vw;
+    margin: 0 auto;
   }
 
   .article-list h2,
@@ -978,7 +1005,8 @@ form button:hover {
   .welcome-container {
     width: 100%;
     max-width: 100%;
-    text-align: left
+    text-align: left;
+    margin: 0 auto;
   }
 
   ol li,
@@ -994,13 +1022,20 @@ form button:hover {
   }
 
   .article-sub {
-    padding: 0
+    display: flex;
+    flex-direction: column;
+    display: block;
+    padding: 0;
+    width: 90%;
+    max-width: 90vw;
+    padding: 1em 2em;
   }
 
   .article-sub p {
     padding: .5em;
     width: 100%;
-    text-align: left
+    text-align: left;
+
   }
 
   .article-sub p a:hover {
@@ -1220,22 +1255,18 @@ form button:hover {
     text-align: left
   }
 
+  #author-sig,
   #intro-paragraph,
   #recommended-articles h2 a,
   #recommended-articles h3,
   #recommended-articles p {
     margin: 0 .5em 0;
-    width: 475px;
-    margin: 0 auto;
+    width: 80%;
+    max-width: 80vw;
+    margin: 2em auto;
     text-align: left
   }
 
-  #intro-paragraph {
-    margin: 2em 2em 3em;
-    padding: 1em;
-    width: 580px;
-    border-radius: .75em
-  }
 
   .stay-connected-footer {
     padding: 1em 0
@@ -1301,6 +1332,7 @@ form button:hover {
     gap: 0;
   }
 
+  #intro-paragraph,
   .featured-topics {
     padding: 0.5em;
     font-size: 1rem;
@@ -1376,8 +1408,6 @@ form button:hover {
     flex-direction: column
   }
 
-  #featured-topics,
-  #intro-paragraph,
   #recommended-articles h2 a,
   #recommended-articles h3,
   #recommended-articles p {
@@ -1386,6 +1416,14 @@ form button:hover {
     max-width: 250px;
     margin: 0 auto;
     gap: 0
+  }
+
+  #author-sig,
+  #featured-topics,
+  #intro-paragraph {
+    width: 90%;
+    max-width: 90vw;
+    margin: 2em auto 2em;
   }
 
   #recommended-articles {
@@ -1459,6 +1497,7 @@ form button:hover {
   .article-list,
   .article-section {
     width: 100%;
+    max-width: 100vw;
     margin: 0 auto;
   }
 
@@ -1532,7 +1571,6 @@ form button:hover {
 
   }
 
-  .cta-section,
   .sidebar-article ul li {
     max-width: 300px;
     max-height: auto;
