@@ -27,13 +27,13 @@ p a {
 .article-grid2,
 .article-grid3 {
   display: grid;
-  max-width: 100%;
+  max-width: 100vw;
   height: auto;
   object-fit: cover
 }
 
 .article-grid3 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   object-fit: cover
 }
@@ -72,6 +72,10 @@ p a {
   margin: 0
 }
 
+.featured-topics ul li {
+  font-size: 1.5rem;
+}
+
 .article-index li,
 .featured-topics li {
   padding: 1em 0;
@@ -85,11 +89,13 @@ p a {
 }
 
 .featured-topics h3 {
-  font-size: 1.3rem;
+  font-size: 2rem;
   color: #247b91;
   font-weight: 700;
   margin: 0
 }
+
+
 
 .featured-topics h3 a {
   text-decoration: none;
@@ -135,11 +141,17 @@ p a {
 }
 
 #author-sig img {
-  width: 300px;
-  height: 115px;
+  width: 100%;
+  max-width: 460px;
+  height: auto;
   justify-content: left;
   align-items: center;
   aspect-ratio: 2.61;
+  margin: 0 auto;
+}
+
+.cta-sub-text {
+  text-align: center;
 }
 
 .author-bio img {
@@ -155,7 +167,7 @@ p a {
   align-items: center;
   width: 100%;
   max-width: 100vw;
-  padding: 2rem;
+  padding: 0;
   border-radius: .5em;
   margin: 0 auto
 }
@@ -197,6 +209,10 @@ p a {
 .article-section h2,
 .article-section p {
   padding: .7em 1em 0
+}
+
+.article-section p {
+  font-size: 2rem;
 }
 
 .article-sub p a {
@@ -536,7 +552,9 @@ form button:hover {
 
 .article-grid3 {
   grid-template-columns: repeat(3, 1fr);
-  width: 100%
+  width: 90%;
+  max-width: 90vw;
+  margin: 0 auto;
 }
 
 .article-grid1,
@@ -563,8 +581,8 @@ form button:hover {
 }
 
 .article3-viewall {
-  width: 310px;
-  max-width: 390px
+  width: 100%;
+  max-width: 100vw;
 }
 
 .article-grid1 img,
@@ -581,8 +599,7 @@ form button:hover {
   display: block
 }
 
-#editors-pick h2,
-.iot-update h2 {
+.section-title h2 {
   margin: 2em auto 0;
   padding: 0 0 1em 1em
 }
@@ -828,9 +845,15 @@ form button:hover {
 .cta-sub-text {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  max-width: 100vw;
-  padding: 1em;
+  width: 80%;
+  max-width: 80vw;
+  padding: 2em 4em;
+  margin: 0 auto;
+
+}
+
+.cta-sub-text h2 {
+  padding: 1em 0;
 }
 
 .challenges-section {
@@ -890,7 +913,10 @@ form button:hover {
 
   .article-grid3 {
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    width: 100%;
+    max-width: 100vw;
+    margin: 0 auto;
   }
 
   .article-grid3 img {
@@ -942,6 +968,17 @@ form button:hover {
     margin: 0 auto 2em;
   }
 
+
+  .cta-sub-text {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    max-width: 95vw;
+    padding: 1em;
+    margin: 0 auto;
+
+  }
+
   ol li,
   ul li {
     text-align: left;
@@ -954,6 +991,13 @@ form button:hover {
     flex-direction: column;
     width: 90%;
     max-width: 90vw;
+  }
+
+  .content-container {
+    margin: 2em auto 2em;
+  }
+
+  .content-creator {
     margin: 0 auto;
   }
 
@@ -1117,13 +1161,6 @@ form button:hover {
     align-items: center
   }
 
-  #author-sig img {
-    width: 300px;
-    height: 130px;
-    aspect-ratio: 2.61;
-    padding: 1em 0 0
-  }
-
   .menu-toggle img,
   .search-icon img {
     width: 30px;
@@ -1188,10 +1225,10 @@ form button:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 475px;
-    max-width: 700px;
+    width: 90%;
+    max-width: 90vw;
     height: auto;
-    margin: 0 auto
+    margin: 1rem auto 1rem;
   }
 
   .article-grid1 img,
@@ -1208,19 +1245,10 @@ form button:hover {
     margin: 0 auto
   }
 
-  #editors-pick h2,
-  .iot-update h2 {
-    margin: 2em auto 0;
-    padding: 0 0 1em 1em
-  }
-
   .section-title h2 {
-    max-width: 500px;
-    width: 475px;
-    height: auto;
-    margin: 1em auto 1em;
+    margin: 2em auto 0;
+    padding: 0;
     padding-left: 1em;
-    text-align: left
   }
 
   #author-sig,
@@ -1312,22 +1340,6 @@ form {
     margin: 0 auto
   }
 
-  .article-grid1,
-  .article-grid2,
-  .article-grid3,
-  .article1-viewall,
-  .article2-viewall,
-  .article3-viewall,
-  .iot-updates {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    max-width: 355px;
-    height: auto;
-    margin: 0 auto
-  }
-
   .article-author p,
   .article-date p,
   .article3-viewall h3 {
@@ -1380,7 +1392,10 @@ form {
   }
 
   .editors-pick {
-    padding: 0
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100vw;
   }
 
   .iot-updates {

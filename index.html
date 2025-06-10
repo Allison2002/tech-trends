@@ -341,6 +341,12 @@
             font-size: 1.3rem;
           }
 
+          .menu {
+            height: 5rem;
+            width: 100%;
+            max-width: 100vw;
+          }
+
           .cat-btn:focus,
           a:focus,
           button:focus,
@@ -390,12 +396,15 @@
             left: 0;
             top: 0;
             z-index: 10;
+            max-height: 72px;
+            height: 72px;
+            width:auto;
           }
 
           .logo-container img {
-            max-height: 9.26vh;
+            height: 100%
             width: auto;
-            aspect-ratio: 16/9;
+            display: block;
           }
 
           .search-icon {
@@ -577,6 +586,7 @@
           }
 
           .content-container {
+            width: 90%;
             max-width: 90vw;
             margin: 11em auto 5em;
             padding: 2em;
@@ -635,6 +645,11 @@
             font-style: normal;
             text-decoration: none;
             overflow-wrap: break-word;
+          }
+
+          .page-title h1 {
+            font-size: 3rem;
+            padding: 1rem 0;
           }
           
 
@@ -856,10 +871,6 @@
             display: inline-block;
           }
 
-          .content-container {
-            margin-top: 7em;
-          }
-
           .search-icon {
             margin-top: 2em;
           }
@@ -952,14 +963,6 @@
             position: static;
           }
 
-          .logo-container {
-            position: static;
-          }
-
-          .logo-container img {
-            max-height: 4.63vh;
-          }
-
           .menu-toggle,
           .search-icon {
             display: inline-block;
@@ -973,11 +976,6 @@
 
           #navbar.me {
             border-bottom: none;
-          }
-
-          .content-container {
-            padding-top: 1.5em;
-            margin: 0 auto;
           }
 
         }
@@ -997,14 +995,6 @@
 
           .search-popup {
             margin: 1em auto 0.5em;
-          }
-
-          .content-container {
-            width: 100%;
-            max-width: 768px;
-            margin: 6em auto 5em;
-            padding: 0;
-            text-align: center
           }
 
           .hero-content {
@@ -1030,10 +1020,10 @@
           }
 
           .section-title {
-            width: 640px;
-            max-width: 100%;
+            width:90%;
+            max-width: 90vw;
             text-align: left;
-            margin-bottom: -1em
+            margin: 0 auto;
           }
 
           .page-title h3,
@@ -1279,13 +1269,6 @@
             max-width: 480px;
           }
 
-          .content-container {
-            width: 100%;
-            max-width: 100%;
-            margin: 5em auto 2em;
-            padding: 1em; 
-          }
-
           .search-icon {
             margin-top: 0;
           }
@@ -1398,7 +1381,7 @@
         <!--tech trends logo-->
         <div class="menu">
           <div class="logo-container">
-            <img src="/img/tech-trends-logo.webp" alt="Tech Trends Blog Logo featuring AI-powered insights and technology" width="150" height="85" loading="eager">
+            <img src="/img/tech-trends-logo.webp" alt="Tech Trends Blog Logo featuring AI-powered insights and technology" width="127px" height="72px" loading="eager">
           </div>
           <!--full screen navbar-->
           <div class="navbar-items">
@@ -1499,24 +1482,24 @@
                 <div class="hero-content">
                   <picture>
                     <source
-                      srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_1200,fl_lossy/v1742647059/welcome_to_tech_trends_desktop_gxfoz3.avif"
+                      srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_2708,h_1522,fl_lossy/v1742647059/welcome_to_tech_trends_desktop_gxfoz3.avif"
                       type="image/avif"
                       media="(min-width: 1200px)"
                       sizes="(min-width: 1200px) 1200px, 100vw"
                       fetchpriority="high"
                     />
                     <source
-                      srcset="/img/welcome_to_tech_trends_tablet.avif"
+                      srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_1036,h_582,fl_lossy/v1742647059/welcome_to_tech_trends_desktop_gxfoz3.avif"
                       type="image/avif"
                       media="(min-width: 1200px)"
                       sizes="(min-width: 1200px) 1200px, 100vw"
                       fetchpriority="high"
                     />                 
                     <img
-                      src="/img/welcome_to_tech_trends_mobile.avif"
+                      src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_710,h_398,fl_lossy/v1742647059/welcome_to_tech_trends_desktop_gxfoz3.avif"
                       alt="Welcome to Tech Trends! An AI-powered SEO tool helping optimize digital content"
-                      width="320"
-                      height="180"
+                      width="355"
+                      height="199"
                       loading="eager"
                       fetchpriority="high"
                       object-fit="cover"
@@ -1628,28 +1611,26 @@
                       <picture>
                         <source
                           srcset="
-                            https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_470,c_fill,fl_lossy/v1741221196/iot-smart-cites-thumbnail_ntl1wr.avif
+                            https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_756,h_424,c_fill,fl_lossy/v1741221196/iot-smart-cites-thumbnail_ntl1wr.avif
                           "
                           media="(min-width: 1200px)"
                           type="image/avif"
                         />
                         <source
-                          srcset="/img/iot-smart-city-thumbnail.avif"
+                          srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_932,h_524,c_fill,fl_lossy/v1741221196/iot-smart-cites-thumbnail_ntl1wr.avif"
                           media="(min-width: 768px)"
                         />
                         <img
-                          src="/img/iot-smart-city-thumbnail.avif"
+                          src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_516,h_290,c_fill,fl_lossy/v1741221196/iot-smart-cites-thumbnail_ntl1wr.avif"
                           alt="A futuristic neon-lit cityscape illustrating IoT
                           innovations and their transformative impact on industry,
                           showcasing how to use IoT in industry for smarter, connected
                           solutions."
-                          width="319"
-                          height="auto"
+                          width="258"
+                          height="145"
                           loading="lazy"
                           fetchpriority="low"
-                          object-fit="cover"
-                          aspect-ratio="16 / 9"
-                          style="border-radius: 1.5em;"
+                          style="border-radius: 1.5em; object-fit: cover;"
                         />
                       </picture>                    
                     </a>
@@ -1670,24 +1651,22 @@
                       >
                       <picture>
                         <source
-                          srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_350,fl_lossy/v1741221197/leveraging-google-thumbnail_s6hkfn.avif"
+                          srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_756,h_424,fl_lossy/v1741221197/leveraging-google-thumbnail_s6hkfn.avif"
                           type="image/avif"
                           media="(min-width: 1200px)"
                         />
                         <source
-                          srcset="/img/leveraging-google-thumbnail.avif"
+                          srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_932,h_524,fl_lossy/v1741221197/leveraging-google-thumbnail_s6hkfn.avif"
                           media="(min-width: 768px)"
                         />
                         <img
-                          src="/img/leveraging-google-thumbnail.avif"
+                          src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_516,h_290,fl_lossy/v1741221197/leveraging-google-thumbnail_s6hkfn.avif"
                           alt="AI SEO Tools and Google Search Console: A magnifying glass zooming in on data, symbolizing advanced SEO insights and tools."
-                          width="250"
-                          height="auto"
+                          width="258"
+                          height="145"
                           loading="lazy"
                           fetchpriority="low"
-                          object-fit="cover"
-                          aspect-ratio="16 / 9"
-                          style="border-radius: 1.5em;"
+                          style="border-radius: 1.5em; object-fit: cover;"
                         />
                       </picture>                   
                     </a>
@@ -1704,24 +1683,22 @@
                       >
                       <picture>
                         <source
-                          srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_350,fl_lossy/v1741221195/headless-commerce-thumbnail_jcm5ze.avif"
+                          srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_756,h_424,fl_lossy/v1741221195/headless-commerce-thumbnail_jcm5ze.avif"
                           type="image/avif"
                           media="(min-width: 1200px)"
                         />
                         <source
-                          srcset="/img/headless-commerce-thumbnail.avif"
+                          srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_932,h_524,fl_lossy/v1741221195/headless-commerce-thumbnail_jcm5ze.avif"
                           media="(min-width: 768px)"
                         />
                         <img
-                          src="/img/headless-commerce-thumbnail.avif"
+                          src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_516,h_290,fl_lossy/v1741221195/headless-commerce-thumbnail_jcm5ze.avif"
                           alt="A futuristic storefront with a professional exploring headless commerce solutions, showcasing the flexibility and scalability of headless eCommerce."
-                          width="250"
-                          height="auto"
+                          width="258"
+                          height="145"
                           loading="lazy"
                           fetchpriority="low"
-                          object-fit="cover"
-                          aspect-ratio="16 / 9"
-                          style="border-radius: 1.5em;"
+                          style="border-radius: 1.5em; object-fit: cover;"
                         />
                       </picture> 
                     </a>
@@ -2043,228 +2020,228 @@
               </div>
             </section>
           </div>
-        <section id="sidebar">
-            <aside class="sidebar">
-              <div class="sidebar-article">
-                <div class="city-img">
-                  <picture>
-                    <source
-                      srcset="
-                        https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_165,fl_lossy/v1741221199/sidebar-future-city_eoy5fp.avif
-                      "
-                      media="(min-width: 1200px)"
-                    />
-                    <source
-                      srcset="/img/sidebar-future-city.avif"
-                      media="(min-width: 768px)"
-                    />
-                    <img
-                      src="/img/sidebar-future-city.avif"
-                      alt="A woman from the 1940's arriving to a futuristic city"
-                      type="image/avif"
-                      loading="eager"
-                      fetchpriority="high"
-                      width="165"
-                      height="293"
-                      style="object-fit: cover;  aspect-ratio: 9 / 16; border-radius: 1.5em"
+          <section id="sidebar">
+              <aside class="sidebar">
+                <div class="sidebar-article">
+                  <div class="city-img">
+                    <picture>
+                      <source
+                        srcset="
+                          https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_165,fl_lossy/v1741221199/sidebar-future-city_eoy5fp.avif
+                        "
+                        media="(min-width: 1200px)"
                       />
-                  </picture>
-                </div>
-                <div class="sidebar-text">
-                  <ul>
-                    <li class="featured-topics">
-                      <a href="/articles/iot-industries.html"
-                        >The Latest Trends in IoT and How They're impacting
-                        Industries</a
-                      >
-                    </li>
-                    <li class="featured-topics">
-                      <a href="/articles/top-mobile-app.html"
-                        >Top Mobile App Development Tools: A Comprehensive Guide</a
-                      >
-                    </li>
-                    <li class="featured-topics">
-                      <a href="/articles/headless-ecommerce.html"
-                        >Headless Commerce: What It Is and Why It's Important</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-
-              </div>
-              <div id="stay-connected-sidebar" class="sidebar-box featured-topics">
-                <div class="stay-connected" id="stay-connected-text">
-                  <h3>Stay Connected</h3>
-                  <p>Follow us on social media for updates and insights.</p>
-                </div>
-                <div class="social-media-imgs">
-                  <!-- Facebook -->
-                  <a
-                    href="https://facebook.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Follow us on Facebook"
-                  >
-                    <img
-                      src="/img/facebook-icon.webp"
-                      alt="Facebook icon"
-                      loading="lazy"
-                      width="52"
-                      height="52"
-                    />
-                    <div class="social-media-text">Facebook</div>
-                  </a>
-                  <!-- Twitter -->
-                  <a
-                    href="https://twitter.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Follow us on Twitter"
-                  >
-                    <img
-                      src="/img/twitter-x-icon.webp"
-                      alt="Twitter icon"
-                      loading="lazy"
-                      width="52"
-                      height="52"
-                    />
-                    <div class="social-media-text">Twitter</div>
-                  </a>
-                  <!-- Instagram -->
-                  <a
-                    href="https://instagram.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Follow us on Instagram"
-                  >
-                    <img
-                      src="/img/instagram.webp"
-                      alt="Instagram icon"
-                      loading="lazy"
-                      width="52"
-                      height="52"
-                    />
-                    <div class="social-media-text">Instagram</div>
-                  </a>
-                </div>
-              </div>
-              <div class="sidebar-box" id="sidebar-cta">
-                <div class="newsletter-img">
-                  <picture>
-                    <source
-                      srcset="
-                        https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_120,fl_lossy/v1741221199/newsletter_oxwway.webp
-                      "
-                      media="(min-width: 1200px)"
-                    />
-                    <source
-                      srcset="/img/newsletter.webp"
-                      media="(min-width: 768px)"
-                    />
-                    <img
-                      src="/img/newsletter.webp"
-                      alt="Envelope on a paper plane representing updates"
-                      type="image/webp"
-                      loading="lazy"
-                      width="80"
-                      height="auto"
-                      style="object-fit: cover;  aspect-ratio: 1.45 / 1; border-radius: 1.5em"
+                      <source
+                        srcset="/img/sidebar-future-city.avif"
+                        media="(min-width: 768px)"
                       />
-                  </picture>
+                      <img
+                        src="/img/sidebar-future-city.avif"
+                        alt="A woman from the 1940's arriving to a futuristic city"
+                        type="image/avif"
+                        loading="eager"
+                        fetchpriority="high"
+                        width="165"
+                        height="293"
+                        style="object-fit: cover;  aspect-ratio: 9 / 16; border-radius: 1.5em"
+                        />
+                    </picture>
+                  </div>
+                  <div class="sidebar-text">
+                    <ul>
+                      <li class="featured-topics">
+                        <a href="/articles/iot-industries.html"
+                          >The Latest Trends in IoT and How They're impacting
+                          Industries</a
+                        >
+                      </li>
+                      <li class="featured-topics">
+                        <a href="/articles/top-mobile-app.html"
+                          >Top Mobile App Development Tools: A Comprehensive Guide</a
+                        >
+                      </li>
+                      <li class="featured-topics">
+                        <a href="/articles/headless-ecommerce.html"
+                          >Headless Commerce: What It Is and Why It's Important</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
 
                 </div>
-                <div class="cta-sub" id="cta-sub">
-                  <h2>Discover Tech Trends and More</h2>
-                  <p>
-                    <i
-                      >Dive into the latest in AI-driven tools, IoT innovations, and
-                      eCommerce advancements right here on Tech Trends. Explore a
-                      wealth of articles designed to inspire and inform.</i
-                    >
-                  </p>
-                  <p>
-                    If you're seeking an experienced Content Specialist or Web
-                    Developer,
+                <div id="stay-connected-sidebar" class="sidebar-box featured-topics">
+                  <div class="stay-connected" id="stay-connected-text">
+                    <h3>Stay Connected</h3>
+                    <p>Follow us on social media for updates and insights.</p>
+                  </div>
+                  <div class="social-media-imgs">
+                    <!-- Facebook -->
                     <a
-                      href="https://gennyallison.netlify.app"
+                      href="https://facebook.com"
                       target="_blank"
                       rel="noopener noreferrer"
-                      aria-label="Visit Genny Allison's professional portfolio on a new tab"
-                      >visit my portfolio</a
+                      aria-label="Follow us on Facebook"
                     >
-                    to see how I can bring your vision to life.
-                  </p>
+                      <img
+                        src="/img/facebook-icon.webp"
+                        alt="Facebook icon"
+                        loading="lazy"
+                        width="52"
+                        height="52"
+                      />
+                      <div class="social-media-text">Facebook</div>
+                    </a>
+                    <!-- Twitter -->
+                    <a
+                      href="https://twitter.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Follow us on Twitter"
+                    >
+                      <img
+                        src="/img/twitter-x-icon.webp"
+                        alt="Twitter icon"
+                        loading="lazy"
+                        width="52"
+                        height="52"
+                      />
+                      <div class="social-media-text">Twitter</div>
+                    </a>
+                    <!-- Instagram -->
+                    <a
+                      href="https://instagram.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Follow us on Instagram"
+                    >
+                      <img
+                        src="/img/instagram.webp"
+                        alt="Instagram icon"
+                        loading="lazy"
+                        width="52"
+                        height="52"
+                      />
+                      <div class="social-media-text">Instagram</div>
+                    </a>
+                  </div>
                 </div>
-              </div>
-            </aside>
-        </section>
+                <div class="sidebar-box" id="sidebar-cta">
+                  <div class="newsletter-img">
+                    <picture>
+                      <source
+                        srcset="
+                          https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_120,fl_lossy/v1741221199/newsletter_oxwway.webp
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="/img/newsletter.webp"
+                        media="(min-width: 768px)"
+                      />
+                      <img
+                        src="/img/newsletter.webp"
+                        alt="Envelope on a paper plane representing updates"
+                        type="image/webp"
+                        loading="lazy"
+                        width="80"
+                        height="auto"
+                        style="object-fit: cover;  aspect-ratio: 1.45 / 1; border-radius: 1.5em"
+                        />
+                    </picture>
+
+                  </div>
+                  <div class="cta-sub" id="cta-sub">
+                    <h2>Discover Tech Trends and More</h2>
+                    <p>
+                      <i
+                        >Dive into the latest in AI-driven tools, IoT innovations, and
+                        eCommerce advancements right here on Tech Trends. Explore a
+                        wealth of articles designed to inspire and inform.</i
+                      >
+                    </p>
+                    <p>
+                      If you're seeking an experienced Content Specialist or Web
+                      Developer,
+                      <a
+                        href="https://gennyallison.netlify.app"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Visit Genny Allison's professional portfolio on a new tab"
+                        >visit my portfolio</a
+                      >
+                      to see how I can bring your vision to life.
+                    </p>
+                  </div>
+                </div>
+              </aside>
+          </section>
         </div>
         <section id="content-creator">
-        <hr class="hr" />
-        <div class="cta-section featured-topics" id="author-sig">
-          <div>
-            <picture>
-              <source
-                srcset="
-                  https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_460,fl_lossy/v1741221193/genny_allison_portfolio_mobile_eakltj.webp
-                "
-                media="(min-width: 1200px)"
-                type="image/webp"
-              />
-              <source
-                srcset="/img/genny_allison_portfolio_tablet.webp"
-                media="(min-width: 768px)"
-              />
-              <img
-                src="/img/genny_allison_portfolio_mobile.webp"
-                alt="Welcome to Tech Trends! An AI-powered SEO tool helping optimize digital content"
-                width="250"
-                height="110"
-                loading="lazy"
-                fetchpriority="low"
-                style="border-radius:1.5em;"
-              />
-            </picture>
+          <hr class="hr" />
+          <div class="cta-section" id="author-sig">
+            <div>
+              <picture>
+                <source
+                  srcset="
+                    https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_920,h_352,fl_lossy/v1741221193/genny_allison_portfolio_mobile_eakltj.webp
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_250,h_110,fl_lossy/v1741221193/genny_allison_portfolio_mobile_eakltj.webp"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_500,h_220,fl_lossy/v1741221193/genny_allison_portfolio_mobile_eakltj.webp"
+                  alt="Welcome to Tech Trends! An AI-powered SEO tool helping optimize digital content"
+                  width="250"
+                  height="110"
+                  loading="lazy"
+                  fetchpriority="low"
+                  style="border-radius:1.5em;"
+                />
+              </picture>
+            </div>
+            <div class="cta-sub-text">
+              <h2>Partner with an AI Content Specialist & Web Developer</h2>
+              <p>
+                <i
+                  >Looking for someone who can combine creativity,
+                  cutting-edge AI tools, and technical expertise to build<br />
+                  stunning web platforms and engaging content? You've come to
+                  the right place.</i
+                >
+              </p>
+              <p>
+                At <strong>Allison Stock Inc.</strong>, I specialize in
+                AI-powered content creation and web development using tools
+                like ChatGPT, Midjourney, Figma, and Uizard. My portfolio
+                showcases my ability to integrate AI solutions seamlessly into
+                modern web design, delivering high-performing, SEO-optimized
+                websites and content tailored to today's digital demands.
+              </p>
+              <p>
+                <a
+                  href="https://www.linkedin.com/in/genny-allison/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit Genny Allison's LinkedIn on a new tab"
+                  >Connect with me on LinkedIn</a
+                >
+                or
+                <a
+                  href="https://gennyallison.netlify.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit Genny Allison's professional portfolio on a new tab"
+                  >explore my portfolio</a
+                >
+                to see how I can help bring your vision to life.
+              </p>
+            </div>
           </div>
-          <div class="cta-sub article-sub">
-            <h2>Partner with an AI Content Specialist & Web Developer</h2>
-            <p>
-              <i
-                >Looking for someone who can combine creativity,
-                cutting-edge AI tools, and technical expertise to build<br />
-                stunning web platforms and engaging content? You've come to
-                the right place.</i
-              >
-            </p>
-            <p>
-              At <strong>Allison Stock Inc.</strong>, I specialize in
-              AI-powered content creation and web development using tools
-              like ChatGPT, Midjourney, Figma, and Uizard. My portfolio
-              showcases my ability to integrate AI solutions seamlessly into
-              modern web design, delivering high-performing, SEO-optimized
-              websites and content tailored to today's digital demands.
-            </p>
-            <p>
-              <a
-                href="https://www.linkedin.com/in/genny-allison/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Visit Genny Allison's LinkedIn on a new tab"
-                >Connect with me on LinkedIn</a
-              >
-              or
-              <a
-                href="https://gennyallison.netlify.app"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Visit Genny Allison's professional portfolio on a new tab"
-                >explore my portfolio</a
-              >
-              to see how I can help bring your vision to life.
-            </p>
-          </div>
-        </div>
-      </section>
+        </section>
         <div class="padding"></div>
       </main>
       <footer>
