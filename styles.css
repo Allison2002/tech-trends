@@ -103,37 +103,6 @@ p a {
   color: #843f06
 }
 
-.featured-topics span {
-  display: block;
-  color: #262626;
-  font-size: 1rem;
-  margin-top: .2em;
-  line-height: 1.5
-}
-
-.featured-topics {
-  margin-bottom: 2em;
-  margin-top: 2em;
-  border-bottom-left-radius: .75em;
-  border-bottom-right-radius: .75em;
-  box-shadow: rgb(0 0 0 / 20%) 0 0 1.5625em .5em;
-  border-radius: .75em
-}
-
-#intro-paragraph {
-  text-align: justify;
-  word-break: keep-all;
-  border-top-left-radius: 1.5em;
-  border-top-right-radius: 1.5em;
-  padding: 2em;
-  box-shadow: rgb(0 0 0 / 20%) 0 0 1.5625em .5em;
-  border-radius: .75em;
-  margin-bottom: 2em
-}
-
-#intro-paragraph p {
-  font-size: 1.3rem
-}
 
 .hero-post-author {
   display: flex;
@@ -962,16 +931,14 @@ form button:hover {
     align-items: start
   }
 
-  #author-sig,
-  #intro-paragraph,
-  .featured-topics {
+  #author-sig {
     padding: 1em;
     font-size: 1rem;
     box-shadow: rgb(0 0 0 / 20%) 0 0 1.5625em .5em;
     border-radius: .75em;
     cursor: pointer;
-    width: 100%;
-    max-width: 100%;
+    width: 95%;
+    max-width: 95%;
     margin: 0 auto 2em;
   }
 
@@ -981,8 +948,10 @@ form button:hover {
     font-size: 1rem
   }
 
+  .content-container,
   .content-creator {
     display: flex;
+    flex-direction: column;
     width: 90%;
     max-width: 90vw;
     margin: 0 auto;
@@ -1220,7 +1189,7 @@ form button:hover {
     flex-direction: column;
     justify-content: center;
     width: 475px;
-    max-width: 768px;
+    max-width: 700px;
     height: auto;
     margin: 0 auto
   }
@@ -1233,7 +1202,6 @@ form button:hover {
   .article3-viewall img {
     width: 100%;
     height: auto;
-    aspect-ratio: 16/9;
     object-fit: cover;
     border-radius: 1.5em;
     display: block;
@@ -1256,10 +1224,8 @@ form button:hover {
   }
 
   #author-sig,
-  #intro-paragraph,
   #recommended-articles h2 a,
-  #recommended-articles h3,
-  #recommended-articles p {
+  #recommended-articles h3 {
     margin: 0 .5em 0;
     width: 80%;
     max-width: 80vw;
@@ -1267,85 +1233,78 @@ form button:hover {
     text-align: left
   }
 
-
-  .stay-connected-footer {
-    padding: 1em 0
-  }
-
-  .footer-social a img {
-    width: 10vw
-  }
-
-  .footer-social a img {
-    margin-right: 1em
-  }
-
-  .bottom-nav {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 1em 0
-  }
-
-  .bottom-nav ul {
-    display: block;
-    width: 100%
-  }
-
-  .bottom-nav ul li {
-    width: 100%;
-    text-align: center
-  }
-
-  .subscribe-container {
-    padding: 1.5em
-  }
-
-  .subscribe-title p {
-    font-size: 2.3rem
-  }
-
-  .subscribe-p p {
-    font-size: 2rem
-  }
-
-  form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  #recommended-articles p {
+    margin: 0 .5em 0;
+    width: 80%;
+    max-width: 80vw;
     margin: 0 auto;
-    text-align: center
-  }
-
-  .bottom-nav {
-    flex-direction: column;
-    padding: 1em 0
-  }
-
-  .empty-box {
-    display: none
+    text-align: left
   }
 }
+
+
+.stay-connected-footer {
+  padding: 1em 0
+}
+
+.footer-social a img {
+  width: 10vw
+}
+
+.footer-social a img {
+  margin-right: 1em
+}
+
+.bottom-nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 1em 0
+}
+
+.bottom-nav ul {
+  display: block;
+  width: 100%
+}
+
+.bottom-nav ul li {
+  width: 100%;
+  text-align: center
+}
+
+.subscribe-container {
+  padding: 1.5em
+}
+
+.subscribe-title p {
+  font-size: 2.3rem
+}
+
+.subscribe-p p {
+  font-size: 2rem
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center
+}
+
+.bottom-nav {
+  flex-direction: column;
+  padding: 1em 0
+}
+
+.empty-box {
+  display: none
+}
+
 
 @media (max-width: 480px) {
   .article-grid2 {
     gap: 0;
-  }
-
-  #intro-paragraph,
-  .featured-topics {
-    padding: 0.5em;
-    font-size: 1rem;
-    box-shadow: rgb(0 0 0 / 20%) 0 0 1.5625em .5em;
-    border-radius: .75em;
-    cursor: pointer;
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto 2em;
-  }
-
-  #intro-paragraph p {
-    font-size: 1.2rem
   }
 
   .iot-updates {
@@ -1355,6 +1314,7 @@ form button:hover {
 
   .article-grid1,
   .article-grid2,
+  .article-grid3,
   .article1-viewall,
   .article2-viewall,
   .article3-viewall,
@@ -1362,24 +1322,9 @@ form button:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 250px;
-    max-width: 480px;
-    height: auto;
-    margin: 1em auto
-  }
-
-  .article-grid1 img,
-  .article-grid2 img,
-  .article-grid3 img,
-  .article1-viewall img,
-  .article2-viewall img,
-  .article3-viewall img {
     width: 100%;
+    max-width: 355px;
     height: auto;
-    aspect-ratio: 16/9;
-    object-fit: cover;
-    border-radius: 1.5em;
-    display: block;
     margin: 0 auto
   }
 
@@ -1403,11 +1348,6 @@ form button:hover {
     padding: .4em
   }
 
-  #intro-paragraph {
-    display: flex;
-    flex-direction: column
-  }
-
   #recommended-articles h2 a,
   #recommended-articles h3,
   #recommended-articles p {
@@ -1418,11 +1358,9 @@ form button:hover {
     gap: 0
   }
 
-  #author-sig,
-  #featured-topics,
-  #intro-paragraph {
-    width: 90%;
-    max-width: 90vw;
+  #author-sig {
+    width: 95%;
+    max-width: 95%;
     margin: 2em auto 2em;
   }
 
@@ -1435,32 +1373,8 @@ form button:hover {
     gap: 0
   }
 
-  #featured-topics,
-  #intro-paragraph,
-  #recommended-articles,
-  .article-grid1 {
-    gap: .5em
-  }
 
-  .article-grid3 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16/9;
-    max-width: 480px;
-    margin: 0 auto;
-    margin: 0 auto;
-    gap: 0
-  }
-
-  .article-grid3 {
-    margin: 0 auto;
-    width: 100%;
-    height: auto;
-  }
-
-  .article-grid3 .article3-viewall h2 a {
+  .article3-viewall h2 a {
     font-size: 1.3rem;
     padding: 0.5em 0 1em;
   }
