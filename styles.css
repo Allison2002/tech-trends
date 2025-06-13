@@ -29,7 +29,7 @@ p a {
 
 .article-textbox h2 {
   font-size: 1.2rem;
-  padding: 1em .5em .5em
+  padding: 1em .5em .5em;
 }
 
 .article-grid1,
@@ -71,7 +71,7 @@ p a {
 }
 
 .featured-topics h2 {
-  font-size: 1.8rem
+  font-size: 1.6rem
 }
 
 .article-index ul,
@@ -82,7 +82,7 @@ p a {
 }
 
 .featured-topics ul li {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .article-index li,
@@ -97,7 +97,7 @@ p a {
 }
 
 .featured-topics h3 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: #247b91;
   font-weight: 700;
   margin: 0
@@ -115,14 +115,6 @@ p a {
 .article-index ul li a:hover,
 .featured-topics h3 a:hover {
   color: #843f06
-}
-
-
-.hero-post-author {
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  align-items: flex-end
 }
 
 .author-img {
@@ -180,7 +172,11 @@ p a {
 }
 
 .section-title {
-  padding: 2em 0 .5em
+  padding: 1em 0;
+  max-width: 1200px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 
 .article-sub p {
@@ -203,7 +199,7 @@ p a {
 .article-section {
   background-color: #fff;
   color: #262626;
-  padding: 2em;
+  padding: 0 3em;
   box-shadow: rgb(0 0 0 / 10%) 0 4px 8px
 }
 
@@ -211,13 +207,13 @@ p a {
 #choosing-tools h2,
 .article-list h2,
 .article-list p,
-.article-section h2,
-.article-section p {
-  padding: .7em 1em 0
+.article-section h2 {
+  padding: 1em 1em 0
 }
 
 .article-section p {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  padding: 2rem 0 0;
 }
 
 .article-sub p a {
@@ -246,12 +242,16 @@ p a {
 .article-list ul li::marker {
   font-size: 1.8rem;
   font-weight: 700;
-  padding: .5em 0;
+  padding: .2em 0;
   color: #262626
 }
 
 .article-list ul li {
   font-weight: 400
+}
+
+.article-list ul li {
+  line-height: 1.6;
 }
 
 .article-sub a:hover,
@@ -298,7 +298,7 @@ p a {
 
 .text-around-img {
   margin: 0;
-  padding: 1em;
+  padding: 0;
   line-height: 1.6;
   overflow: hidden
 }
@@ -605,11 +605,6 @@ form button:hover {
   display: block
 }
 
-.section-title h2 {
-  margin: 2em auto 0;
-  padding: 0 0 1em 1em
-}
-
 .article3-viewlall h2 a {
   padding-bottom: 3em
 }
@@ -696,7 +691,7 @@ form button:hover {
 
 .navbar-footer-items ul {
   display: flex;
-  padding: 1em 0
+  padding: 1em;
 }
 
 .navbar-footer-items ul li {
@@ -705,7 +700,8 @@ form button:hover {
 
 .navbar-footer-items ul li a {
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  line-height: 1.5;
   font-weight: 500;
   padding: 2em;
   color: #fff
@@ -739,7 +735,8 @@ form button:hover {
 }
 
 .footer-social a img {
-  width: min(80px, 4.17vw);
+  width: min(60px, 4.17vw);
+  max-width: 80px;
   height: auto;
   object-fit: cover
 }
@@ -780,20 +777,10 @@ form button:hover {
   background-color: #f7985a
 }
 
-.article-text {
-  padding-bottom: 4em
-}
-
 .article-title {
   padding: 2em 0 0;
   word-break: break-all;
   max-width: 100%
-}
-
-.article-title h2 {
-  font-size: 1.75rem;
-  font-style: italic;
-  padding: 0 0 1em
 }
 
 .article-list,
@@ -815,13 +802,12 @@ form button:hover {
 
 .article-list ol,
 .article-list ul {
-  padding: 0 2em
+  padding: 0 1em
 }
 
 .article-list ul li {
   list-style: circle
 }
-
 
 .article-sub {
   display: flex;
@@ -830,18 +816,19 @@ form button:hover {
   padding: 0;
   width: 90%;
   max-width: 90vw;
-  padding: 1em 2em;
+  padding: 0.5em 1em;
 }
 
 .article-sub h2 {
-  padding: 1em;
-  text-align: center;
+  padding: 1em 0.5em;
+  text-align: left;
   width: 100%;
   max-width: 100vw;
+  font-size: 1.5rem;
 }
 
 .article-sub p {
-  padding: 1em;
+  padding: 0.5 1em;
   text-align: center;
   width: 100%;
   max-width: 100vw;
@@ -954,13 +941,6 @@ form button:hover {
 
   #author-img-text p {
     padding: 0;
-  }
-
-  .hero-post-author {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: start
   }
 
   #author-sig {
@@ -1100,7 +1080,7 @@ form button:hover {
 
   .text-around-img {
     margin: 0 auto;
-    padding: 1em;
+    padding: 1em 0;
     line-height: 1.6
   }
 
@@ -1300,7 +1280,8 @@ form button:hover {
 }
 
 .footer-social a img {
-  width: 10vw
+  width: 80px;
+  max-width: 80px;
 }
 
 .footer-social a img {

@@ -399,7 +399,7 @@
         margin: 0 auto;   
       }
 
-      .article-section {
+      .article-text {
         box-shadow: rgb(0 0 0 / 20%) 0 0 1.5625em .5em;
         border-radius: .75em;
       }
@@ -469,12 +469,14 @@
       .sidebar-article {
         margin: 0 auto;
         width: 170px;
-        max-width: auto;
+        max-width: auto;  
       }
 
       .article-title h2 {
-        font-size: 1rem;
-        padding: 1em 0;
+        font-size: 2rem;
+        font-style: italic;
+        padding: 1em;
+        margin: 0 auto;
       }
 
       .sidebar-article li,
@@ -901,6 +903,15 @@
           flex-direction: column;
           justify-content: left;
           align-items: start
+          margin: 1em auto 2em;
+          height: auto;
+          width: 100%;
+          max-width: 1200px;
+        }
+
+        .author-image-text P {
+          text-align: left;
+          font-size: 1.3rem;
         }
 
         .author-img {
@@ -972,6 +983,7 @@
 
         .article-title h2 {
           font-size: 1.2rem;
+      
         }
 
         .article-sub p {
@@ -1268,7 +1280,7 @@
           </header>
           <article>      
             <div class="welcome-container">                 
-                <div class="hero-post-author article-sub">
+                <div class="hero-post-author">
                   <div class="author-img">
                     <a href="https://gennyallison.netlify.app"
                       target="_blank" rel="noopener noreferrer" aria-label="Visit Genny Allison's professional portfolio on a new tab">
@@ -1277,16 +1289,17 @@
                         width="138" 
                         height="138" 
                         loading="lazy"
+                        fetchpriority="low"
                         aspect-ratio="1 / 1"
                         object-fit="cover"
                       />
                     </a>
                   </div>
                   <div id="author-img-text">
-                    <p><a href="https://gennyallison.netlify.app" target="_blank" rel="noopener noreferrer" aria-label="Visit Genny Allison's professional portfolio on a new tab">by Allison Stock Inc | Genny Allison, AI Content Specialist</a></p>
-                    <p>Published on January 8, 2024</p>
+                    <p><a href="https://gennyallison.netlify.app" aria-label="Visit Genny Allison's professional portfolio on a new tab" target="_blank" rel="noopener noreferrer">by Allison Stock Inc | Genny Allison, AI Content Specialist</a></p>
+                    <p>Published on February 14, 2024</p>
                   </div>                     
-                </div>
+                </div>  
                 <div class="article-text">
                   <div class="article-title" id="future-of-ecommerce">
                     <h2>Welcome to Tech Trends:<br> Your Gateway to the Future of Technology and Innovation</h2>
@@ -1340,6 +1353,15 @@
                       <p>
                         Stay connected with our <a href="/index.html#editor-pick">Editor's Picks</a>, where we highlight essential reads for tech enthusiasts like you. Bookmark Tech Trends today and embark on a journey to navigate and master the ever-changing tech landscape.
                       </p>
+                      <p style="margin-top:2rem;font-style:italic;">
+                      <strong>About the author:</strong>
+                      I’m <a href="https://gennyallison.netlify.app" target="_blank" rel="noopener">Genny Allison</a>,
+                      an AI-powered Content Specialist & Web Developer.  
+                      Using tools like <em>ChatGPT</em>, custom prompt engineering, and modern front-end workflows,  
+                      I help brands build lightning-fast, SEO-optimized digital experiences.  
+                      Curious how AI-driven content or performance tuning can elevate your next project?  
+                      <a href="https://www.linkedin.com/in/genny-allison/" target="_blank" rel="noopener">Let’s connect on LinkedIn</a>.
+                    </p>
                     </section>
                   </section>
                 </div>
