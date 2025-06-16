@@ -829,7 +829,7 @@ form button:hover {
 
 .article-sub p {
   padding: 0.5 1em;
-  text-align: center;
+  text-align: left;
   width: 100%;
   max-width: 100vw;
   font-size: 1.3rem;
