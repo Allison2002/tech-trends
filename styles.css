@@ -1,3 +1,20 @@
+body.fonts-loading h1,
+body.fonts-loading h2,
+body.fonts-loading p,
+body.fonts-loading a {
+  font-family: sans-serif !important;
+  /* fallback font */
+  visibility: hidden;
+  /* optional: prevent flash of unstyled text */
+}
+
+body.fonts-loaded h1,
+body.fonts-loaded h2,
+body.fonts-loaded p,
+body.fonts-loaded a {
+  visibility: visible;
+}
+
 p,
 a,
 h1,
