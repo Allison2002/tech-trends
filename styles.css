@@ -599,19 +599,6 @@ form button:hover {
   margin: 0 auto;
 }
 
-.article-grid1,
-.article-grid2,
-.article1-viewall,
-.article2-viewall,
-.iot-updates {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  max-width: 1200px;
-  height: auto;
-}
 
 .article3-viewall {
   width: 100%;
@@ -642,6 +629,19 @@ form button:hover {
 .article3-viewall img {
   font-size: 1.3rem;
   text-align: left;
+}
+
+.cta-section p {
+  font-size: 1.3rem;
+  width: 100%;
+  height: auto
+}
+
+.author-bio-text p {
+  width: 100%;
+  font-size: 1.3rem;
+  padding: .3em;
+  font-weight: 600
 }
 
 #conclusion {
@@ -934,6 +934,29 @@ form button:hover {
   padding: 1em 0;
 }
 
+.cta-section,
+.author-bio {
+  max-width: 95%;
+  height: auto;
+  min-height: 3rem;
+}
+
+.cta-section img,
+.author-bio img {
+  width: 100%;
+  max-width: 832px;
+  height: auto;
+  margin: 2em auto 0;
+  object-fit: cover;
+  aspect-ratio: inherit;
+}
+
+.cta-section p {
+  font-size: 1.3rem;
+  width: 100%;
+  height: auto;
+}
+
 /* purgecss start ignore */
 @media (max-width:1024px) {
   .empty-box {
@@ -970,6 +993,10 @@ form button:hover {
 }
 
 @media (max-width:768px) {
+  .cta-section {
+    padding: .2em;
+  }
+
   .iot-updates {
     margin-bottom: 1em;
     padding-top: 0;
