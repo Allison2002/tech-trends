@@ -23,10 +23,36 @@
     <meta name="twitter:site" content="@YourTwitterHandle" />
     <meta name="twitter:creator" content="@GennyAllison" />
 
+      <!-- Preload for desktop AVIF (2400px wide) -->
+      <link
+        rel="preload"
+        as="image"
+        href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_2708,h_1522/v1742794118/keyword_research_article_hero_desktop_gncjmk.avif"
+        type="image/avif"
+        media="(min-width: 1200px)"
+        fetchpriority="high"
+      />
 
-    <link rel="preload" href="/img/keyword_research_article_hero_mobile.avif" as="image" />
+      <!-- Preload for fallback AVIF desktop (1056px wide) -->
+      <link
+        rel="preload"
+        as="image"
+        href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_1056,h_582/v1742794118/keyword_research_article_hero_desktop_gncjmk.avif"
+        type="image/avif"
+        media="(max-width: 768px)"
+        fetchpriority="low"
+      />
 
-    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_1200,fl_lossy/v1742794118/keyword_research_article_hero_desktop_gncjmk.avif" as="image" type="image/avif" media="(min-width: 1200px)" fetchpriority="high">
+      <!-- Preload for mobile image (375px wide) -->
+      <link
+        rel="preload"
+        as="image"
+        href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_750,h_422/v1742794118/keyword_research_article_hero_desktop_gncjmk.avif"
+        type="image/avif"
+        media="(max-width: 480px)"
+        fetchpriority="low"
+      />
+
 
     <meta
       name="google-site-verification"
@@ -53,30 +79,30 @@
       crossorigin="anonymous"
     />
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BlogPosting",
-      "headline": "Mastering Keyword Research with Ahrefs: Boost SEO Rankings and Drive Traffic",
-      "image": "https://tech-trends-blog.netlify.app/img/max-seo-thumbnail.webp",
-      "author": { 
-        "@type": "Person", 
-        "name": "Genny Allison" 
-      },
-      "publisher": { 
-        "@type": "Organization", 
-        "name": "Allison Stock Inc.", 
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://tech-trends-blog.netlify.app/img/tech-trends-logo.webp",
-          "width": 1600,
-          "height": 900
-        }
-      },
-      "datePublished": "2024-08-01",
-      "dateModified": "2024-11-15",
-      "url": "https://tech-trends-blog.netlify.app/articles/max-seo-ranking",
-      "description": "Explore the ultimate guide to mastering keyword research with Ahrefs. Learn how to boost SEO rankings, drive organic traffic, and outperform competitors with actionable insights and long-tail keyword strategies."
-    }
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Mastering Keyword Research with Ahrefs: Boost SEO Rankings and Drive Traffic",
+        "image": "https://tech-trends-blog.netlify.app/img/max-seo-thumbnail.webp",
+        "author": { 
+          "@type": "Person", 
+          "name": "Genny Allison" 
+        },
+        "publisher": { 
+          "@type": "Organization", 
+          "name": "Allison Stock Inc.", 
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://tech-trends-blog.netlify.app/img/tech-trends-logo.webp",
+            "width": 1600,
+            "height": 900
+          }
+        },
+        "datePublished": "2024-08-01",
+        "dateModified": "2024-11-15",
+        "url": "https://tech-trends-blog.netlify.app/articles/max-seo-ranking",
+        "description": "Explore the ultimate guide to mastering keyword research with Ahrefs. Learn how to boost SEO rankings, drive organic traffic, and outperform competitors with actionable insights and long-tail keyword strategies."
+      }
     </script>
     <style>
       * {
@@ -1160,27 +1186,25 @@
             <div class="hero" role="banner">                 
               <picture>
                 <source
-                  srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_1200,fl_lossy/v1742794118/keyword_research_article_hero_desktop_gncjmk.avif"
+                  srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_2708,h_1522/v1742794118/keyword_research_article_hero_desktop_gncjmk.avif"
                   type="image/avif"
                   media="(min-width: 1200px)"
                   sizes="(min-width: 1200px) 1200px, 100vw"
                   fetchpriority="high"
                 />
                 <source
-                  srcset="/img/keyword_research_article_hero__tablet.avif"
+                  srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_1056,h_582/v1742794118/keyword_research_article_hero_desktop_gncjmk.avif"
                   type="image/avif"
                   media="(max-width: 768px)"
                 />
                 <img
-                  src="/img/keyword_research_article_hero_mobile.avif"
+                  src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_750,h_422/v1742794118/keyword_research_article_hero_desktop_gncjmk.avif"
                   alt="Keyword research using Ahrefs for SEO: Understanding the difference between headless and traditional eCommerce platformss"
-                  width="320"
-                  height="180"
+                  width="375"
+                  height="211"
                   loading="eager"
                   fetchpriority="high"
-                  object-fit="cover"
-                  aspect-ratio="16 / 9"
-                  style="border-radius: 1.5em;"
+                  style="border-radius: 1.5em; object-fit: cover;"
                 />
               </picture>
               <div class="cat-btn">

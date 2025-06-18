@@ -29,10 +29,35 @@
     <meta name="twitter:image" content="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1200,fl_lossy/v1742494169/all_articles_hero_desktop_jxigas.avif" />
     <meta name="twitter:image:alt" content="A cute robot holding a 'Tech Trends' sign in a futuristic city" />
 
+            <!-- Preload for desktop AVIF (2400px wide) -->
+      <link
+        rel="preload"
+        as="image"
+        href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_2708,h_1522/v1742494169/all_articles_hero_desktop_jxigas.avif"
+        type="image/avif"
+        media="(min-width: 1200px)"
+        fetchpriority="high"
+      />
 
-    <link rel="preload" href="/img/all_articles_hero_mobile.avif" as="image" />
+      <!-- Preload for fallback AVIF desktop (1056px wide) -->
+      <link
+        rel="preload"
+        as="image"
+        href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_1056,h_582/v1742494169/all_articles_hero_desktop_jxigas.avif"
+        type="image/avif"
+        media="(max-width: 768px)"
+        fetchpriority="low"
+      />
 
-    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_1200,fl_lossy/v1742494169/all_articles_hero_desktop_jxigas.avif" as="image" type="image/avif" media="(min-width: 1200px)" fetchpriority="high">
+      <!-- Preload for mobile image (375px wide) -->
+      <link
+        rel="preload"
+        as="image"
+        href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_750,h_422/v1742494169/all_articles_hero_desktop_jxigas.avif"
+        type="image/avif"
+        media="(max-width: 480px)"
+        fetchpriority="low"
+      />
 
     <meta
       name="google-site-verification"
@@ -1149,26 +1174,25 @@
             <section class="hero" role="banner">
               <picture>
                 <source
-                  srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_1200,fl_lossy/v1742494169/all_articles_hero_desktop_jxigas.avif"
+                  srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_2708,h_1522/v1742494169/all_articles_hero_desktop_jxigas.avif"
                   type="image/avif"
                   media="(min-width: 1200px)"
                   sizes="(min-width: 1200px) 1200px, 100vw"
                   fetchpriority="high"
                 />
                 <source
-                  srcset="/img/all_articles_hero_tablet.avif"
+                  srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_1056,h_582/v1742494169/all_articles_hero_desktop_jxigas.avif"
                   type="image/avif"
                   media="(max-width: 768px)"
                 />
                 <img
-                  src="/img/all_articles_hero_mobile.avif"
+                  src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_750,h_422/v1742494169/all_articles_hero_desktop_jxigas.avif"
                   alt="a cute robot in a futuristic neon city holding a sign that says 'Tech Trends'"
-                  width="320"
-                  height="180"
+                  width="375"
+                  height="211"
                   loading="eager"
-                  object-fit="cover"
-                  aspect-ratio="16 / 9"
-                  style="border-radius: 1.5em;"
+                  fetchpriority="high"
+                  style="border-radius: 1.5em; object-fit: cover;"
                 />
               </picture>
               <div class="cat-btn">
