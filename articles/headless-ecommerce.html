@@ -5,34 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Explore Headless eCommerce and discover the advantages of headless commerce solutions for flexibility, speed, and scalability in the modern retail landscape.">
     <title>Headless eCommerce: Revolutionizing Digital Retail with Flexibility and Scalability</title>
+
     <!-- Open Graph Meta Tags -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Submit Your Article – Sports Tube Community Upload Page" />
-    <meta property="og:description" content="Share your sports stories, highlights, and insights with the Sports Tube Community. Submit articles in categories like NFL, NBA, MLB, MMA, and more!" />
-    <meta property="og:url" content="https://sports-tube.netlify.app/pages/upload/upload" />
-    <meta property="og:image" content="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,w_1200,h_630/v1749677530/sports-tube-upload-mobile_kg28er" />
-    <meta property="og:image:alt" content="Sports Tube upload screen prompting users to submit sports articles" />
-    <meta property="og:site_name" content="Sports Tube Community" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Headless eCommerce: Revolutionizing Digital Retail with Flexibility and Scalability" />
+    <meta property="og:description" content="Explore Headless eCommerce and discover the advantages of headless commerce solutions for flexibility, speed, and scalability in the modern retail landscape." />
+    <meta property="og:image" content="https://tech-trends-blog.netlify.app/img/headless-commerce-thumbnail.webp" />
+    <meta property="og:url" content="https://tech-trends-blog.netlify.app/articles/headless-ecommerce" />
+    <meta property="og:site_name" content="Tech Trends Blog" />
+    <meta property="article:author" content="Genny Allison" />
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Submit Your Article – Sports Tube Community Upload Page" />
-    <meta name="twitter:description" content="Upload your sports article and become part of the fan-powered Sports Tube Community." />
-    <meta name="twitter:image" content="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,w_1200,h_630/v1749677530/sports-tube-upload-mobile_kg28er" />
-    <meta name="twitter:image:alt" content="Sports Tube upload screen prompting users to submit sports articles" />
-    <meta name="twitter:site" content="@SportsTube" />
-    <meta name="twitter:creator" content="@GennyAllison" />
+    <meta name="twitter:title" content="Headless eCommerce: Revolutionizing Digital Retail with Flexibility and Scalability" />
+    <meta name="twitter:description" content="Explore Headless eCommerce and discover the advantages of headless commerce solutions for flexibility, speed, and scalability in the modern retail landscape." />
+    <meta name="twitter:image" content="https://tech-trends-blog.netlify.app/img/headless-commerce-thumbnail.webp" />
+    <meta name="twitter:site" content="@GennyAllison" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="preload" href="/img/headless_article_hero_tablet.avif" as="image" />
-
-    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_1200,fl_lossy/v1742793028/headless_article_hero_desktop_qa3jju.avif" as="image" type="image/avif" media="(min-width: 1200px)" fetchpriority="high">
-
     <meta
       name="google-site-verification"
       content="P19ZwIYzDuW5Qi-e7ps4IF88g_mqUgXB67kU3sQep78"
     />
+
+    <!-- Preload for desktop AVIF (2400px wide) -->
+      <link
+        rel="preload"
+        as="image"
+        href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_2708,h_1522/v1742793028/headless_article_hero_desktop_qa3jju.avif"
+        type="image/avif"
+        media="(min-width: 1200px)"
+        fetchpriority="high"
+      />
+
+      <!-- Preload for fallback AVIF desktop (1056px wide) -->
+      <link
+        rel="preload"
+        as="image"
+        href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_1036,h_582/v1742793028/headless_article_hero_desktop_qa3jju.avif"
+        type="image/avif"
+        media="(max-width: 768px)"
+        fetchpriority="low"
+      />
+
+      <!-- Preload for mobile image (375px wide) -->
+      <link
+        rel="preload"
+        as="image"
+        href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_750,h_422/v1742793028/headless_article_hero_desktop_qa3jju.avif"
+        type="image/avif"
+        media="(max-width: 480px)"
+        fetchpriority="low"
+      />
 
     <link rel="preconnect" href="https://res.cloudinary.com" crossorigin />
     <link rel="dns-prefetch" href="https://res.cloudinary.com" />
@@ -1163,21 +1188,20 @@
               <div class="hero" role="banner">                 
                 <picture>
                   <source
-                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_1200,fl_lossy/v1742793028/headless_article_hero_desktop_qa3jju.avif"
+                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_2708,h_1522/v1742793028/headless_article_hero_desktop_qa3jju.avif"
                     type="image/avif"
                     media="(min-width: 1200px)"
                     sizes="(min-width: 1200px) 1200px, 100vw"
                     fetchpriority="high"
                   />
                   <source
-                    srcset="/img/headless_article_hero_tablet.avif"
+                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_1036,h_582/v1742793028/headless_article_hero_desktop_qa3jju.avif"
                     type="image/avif"
-                    media="(min-width: 1200px)"
-                    sizes="(min-width: 1200px) 1200px, 100vw"
-                    fetchpriority="high"
+                    media="(max-width: 768px)"
+                    fetchpriority="low"
                   />
                   <img
-                    src="/img/headless__article_hero_mobile.avif"
+                    src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_750,h_422/v1742793028/headless_article_hero_desktop_qa3jju.avif"
                     alt="Comparing headless eCommerce and traditional eCommerce platforms"
                     width="320"
                     height="180"
