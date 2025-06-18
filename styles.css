@@ -1448,16 +1448,21 @@ form {
     max-width: 100vw;
   }
 
+  .article-grid2,
   .article-grid3 {
     width: 100%;
     max-width: 100vw;
+    gap: 3em;
   }
 
+  .seo,
+  .mobile,
+  .must-reads,
   .iot-updates {
     width: 319px;
     max-width: 480px;
     margin: 0;
-    padding: 0
+    padding: 1em 0;
   }
 
   .grid-wrapper {
