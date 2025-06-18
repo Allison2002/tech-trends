@@ -584,29 +584,33 @@ form button:hover {
   width: 90%;
   max-width: 90vw;
   margin: 0 auto;
+  gap: 2em;
 }
 
 .article-grid1,
 .article-grid3 {
   padding: 1em 0;
-  gap: 2em;
   object-fit: cover
 }
 
 .article-grid2 {
   gap: 3em;
-  padding: 0
+  padding: 0;
+  margin: 0 auto;
 }
 
 .article-grid1,
 .article-grid2,
-.article-grid3,
 .article1-viewall,
 .article2-viewall,
 .iot-updates {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   max-width: 1200px;
-  height: auto
+  height: auto;
 }
 
 .article3-viewall {
@@ -634,8 +638,10 @@ form button:hover {
 
 .article2-viewall h2,
 .article3-viewall h2,
+.article3-viewall p,
 .article3-viewall img {
-  font-size: 1.3rem
+  font-size: 1.3rem;
+  text-align: left;
 }
 
 #conclusion {
@@ -920,8 +926,20 @@ form button:hover {
   overflow-wrap: break-word
 }
 
+.seo,
+.mobile,
+.must-reads,
+.iot-updates {
+  margin: 2em auto;
+  padding: 1em 0;
+}
+
 /* purgecss start ignore */
 @media (max-width:1024px) {
+  .empty-box {
+    display: none;
+  }
+
   .iot-updates {
     width: 100%
   }
@@ -948,6 +966,7 @@ form button:hover {
     width: 100%;
     height: auto
   }
+
 }
 
 @media (max-width:768px) {
@@ -985,6 +1004,7 @@ form button:hover {
     padding: 2em 0 0;
   }
 
+  .hero,
   .article-grid1,
   .article-grid3 {
     padding: 0;
@@ -1250,6 +1270,8 @@ form button:hover {
     padding: 0
   }
 
+  .hero,
+  .hero-content,
   .article-grid1,
   .article-grid2,
   .article-grid3,
@@ -1266,6 +1288,7 @@ form button:hover {
     margin: 1rem auto 1rem;
   }
 
+  .hero img,
   .article-grid1 img,
   .article-grid2 img,
   .article-grid3 img,
@@ -1361,7 +1384,10 @@ form {
 }
 
 .empty-box {
-  display: none
+  opacity: 0;
+  height: auto;
+  width: 250px;
+  max-width: 378px;
 }
 
 
@@ -1612,6 +1638,10 @@ form {
     width: 40px;
     /* Adjust social media icons for mobile */
     height: 40px;
+  }
+
+  .thumbnail-section {
+    margin: 2em auto 1em;
   }
 }
 

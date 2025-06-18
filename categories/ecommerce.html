@@ -12,7 +12,7 @@
       content="Explore the latest in eCommerce trends, from AI-powered innovations to headless commerce solutions. Stay informed about the future of online retail with Tech Trends."
     />
 
-    <link rel="preload" href="/img/robot-ecommerce-mobile.avif" as="image" />
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_1200,fl_lossy/v1732833225/ecommerce_hero_desktop_vxcozh.avif" as="image" />
 
     <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_1200,fl_lossy/v1732833225/ecommerce_hero_desktop_vxcozh.avif" as="image" type="image/avif" media="(min-width: 1200px)" fetchpriority="high">
 
@@ -40,6 +40,35 @@
       as="font"
       type="font/woff2"
       crossorigin="anonymous"
+    />
+    <!-- Preload for desktop AVIF (2400px wide) -->
+    <link
+      rel="preload"
+      as="image"
+      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,fl_lossy,w_2400,h_1350/v1732833225/ecommerce_hero_desktop_vxcozh.avif"
+      type="image/avif"
+      media="(min-width: 1200px)"
+      fetchpriority="high"
+    />
+
+    <!-- Preload for fallback AVIF desktop (1056px wide) -->
+    <link
+      rel="preload"
+      as="image"
+      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,fl_lossy,w_1056,h_594/v1750256932/robot-ecommerce-tablet_wcbul5.avif"
+      type="image/avif"
+      media="(min-width: 1200px)"
+      fetchpriority="high"
+    />
+
+    <!-- Preload for mobile image (375px wide) -->
+    <link
+      rel="preload"
+      as="image"
+      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_750,h_422/v1750256931/robot-ecommerce-mobile_qsv1ts.avif"
+      type="image/avif"
+      media="(max-width: 768px)"
+      fetchpriority="low"
     />
 
     <script type="application/ld+json">
@@ -180,16 +209,15 @@
       }
 
       .logo-container {
-        position: absolute;
-        left: 0;
-        top: 0;
-        z-index: 10;
+        display: flex;
+        align-items: center;
+        height: 100px;
+        width: auto;
       }
 
       .logo-container img {
-        max-height: 9.26vh;
+        height: 100%;
         width: auto;
-        aspect-ratio: 16/9;
       }
 
       .search-icon {
@@ -388,7 +416,7 @@
         margin: 0 auto;   
       }
 
-      .article-section {
+      .article-text {
         box-shadow: rgb(0 0 0 / 20%) 0 0 1.5625em .5em;
         border-radius: .75em;
       }
@@ -458,12 +486,14 @@
       .sidebar-article {
         margin: 0 auto;
         width: 170px;
-        max-width: auto;
+        max-width: auto;  
       }
 
       .article-title h2 {
-        font-size: 1rem;
-        padding: 1em 0;
+        font-size: 2rem;
+        font-style: italic;
+        padding: 1em;
+        margin: 0 auto;
       }
 
       .sidebar-article li,
@@ -592,8 +622,51 @@
         display: none;
       }
 
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.75em 1em;
+        height: auto;
+      }
+
+      .nav-left,
+      .nav-right {
+        display: flex;
+        align-items: center;
+      }
+
+      .nav-logo {
+        max-height: 48px;
+        width: auto;
+      }
+
+      .nav-icons {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+      }
+
+      .nav-icon {
+        height: 32px;
+        width: 32px;
+        cursor: pointer;
+      }
+
       /* purgecss start ignore */
       @media (max-width:1024px) {
+        .icons-container {
+          gap: 2em;
+        }
+        .navbar-items {
+          display: none;  
+        }
+
+        .menu-toggle {
+          display: inline-block;
+        }
+
+        
         body {
           font-size: 1.2rem;
           margin-top: 0;
@@ -601,18 +674,13 @@
         }
 
         .menu {
+          display: flex;
           padding: .5em 1em;
           z-index: 1003;
           font-size: .875rem;
           background-color: #fff;
           flex-direction: row;
           justify-content: space-between;
-        }
-
-        .icons-container {
-          z-index: 10;
-          position: relative;
-          padding-bottom: 0;
         }
 
         .hero {
@@ -648,86 +716,13 @@
           width: 60%;
         }
         
-
-        .menu-toggle {
-          display: inline-block;
-        }
-
         .content-container {
           margin-top: 7em;
-        }
-
-        .search-icon {
-          margin-top: 2em;
-        }
-
-        .search-container {
-          margin-top: 3em;
-        }
-
-        nav {
-          margin: 0 auto;
-        }
-
-        .navbar-items {
-          display: none;
-        }
-
-        nav.navbar {
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          z-index: 1003;
-        }
-
-        .navbar {
-          flex-direction: column;
-          align-items: center;
-        }
-
-        .navbar-footer-items ul {
-          display: flex;
-          flex-direction: column;
-          text-align: center;
-        }
-
-        .navbar-items ul li {
-          margin-bottom: .625em;
-        }
-
-        .navbar-footer-items ul li {
-          list-style: none;
-          margin-bottom: .625em;
-        }
-
-        .navbar-footer-items ul li a {
-          font-size: 1.3rem;
-          padding: 1em;
-        }
-
-        .navbar-footer-item {
-          max-width: 100%;
         }
 
         .cat-btn a {
           width: 100%;
           padding: .75em;
-        }
-
-        .menu-toggle img,
-        .search-icon img {
-          width: min(40px, 2.08vw);
-          height: auto;
-        }
-
-        .search-icon {
-          position: static;
-          text-align: center;
-        }
-
-        .search-icon img {
-          position: static;
         }
 
         #sidebar {
@@ -739,63 +734,12 @@
           width: 100%;
         }
 
-        .search-popup.show {
-          display: block;
-        }
-
-        .logo-container,
-        .menu-toggle,
-        .search-icon {
-          position: static;
-        }
-
-        .logo-container {
-          position: static;
-        }
-
-        .logo-container img {
-          max-height: 4.63vh;
-        }
-
-        .menu-toggle,
-        .search-icon {
-          display: inline-block;
-        }
-
-        .menu-toggle img,
-        .search-icon img {
-          width: min(40px, 2.08vw);
-          height: auto;
-        }
-
-        #navbar.me {
-          border-bottom: none;
-        }
-
         .content-container {
           padding-top: 1.5em;
           margin: 0 auto;
-        }
-
       }
 
       @media (max-width:768px) {
-        .search-icon {
-          margin-top: 0;
-        }
-
-        .search-container {
-          margin-top: 2em;
-        }
-
-        .search-container {
-          margin-top: 0;
-        }
-
-        .search-popup {
-          margin: 1em auto 0.5em;
-        }
-
         .content-container {
           width: 100%;
           max-width: 768px;
@@ -890,6 +834,15 @@
           flex-direction: column;
           justify-content: left;
           align-items: start
+          margin: 1em auto 2em;
+          height: auto;
+          width: 100%;
+          max-width: 1200px;
+        }
+
+        .author-image-text P {
+          text-align: left;
+          font-size: 1.3rem;
         }
 
         .author-img {
@@ -961,6 +914,7 @@
 
         .article-title h2 {
           font-size: 1.2rem;
+      
         }
 
         .article-sub p {
@@ -1016,29 +970,6 @@
           max-width: 100%;
           margin: 5em auto 2em;
           padding: 1em; 
-        }
-
-        .search-icon {
-          margin-top: 0;
-        }
-
-        .search-container {
-          margin-top: 2em;
-        }
-
-        .search-container {
-          margin-top: 1em;
-        }
-
-        .search-popup {
-          margin: 1em auto 0.5em;
-        }
-
-        .menu-toggle img,
-        .search-icon img {
-          width: 30px;
-          max-width: 30px;
-          height: 30px;
         }
         
         .hero {
@@ -1231,22 +1162,21 @@
                   fetchpriority="high"
                 />
                 <source
-                  srcset="/img/robot-ecommerce-tablet.avif"
+                  srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,fl_lossy,w_1056,h_594/v1750256932/robot-ecommerce-tablet_wcbul5.avif"
                   type="image/avif"
                   media="(min-width: 1200px)"
                   sizes="(min-width: 1200px) 1200px, 100vw"
                   fetchpriority="high"
                 />
                 <img
-                  src="/img/robot-ecommerce-mobile.avif"
+                  src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_750,h_422/v1750256931/robot-ecommerce-mobile_qsv1ts.avif"
                   alt="An AI-powered SEO tool helping optimize digital content"
-                  width="320"
-                  height="180"
-                  loading="eager"
-                  fetchpriority="high"
+                  width="375"
+                  height="211"
+                  loading="lazy"
+                  fetchpriority="low"
                   object-fit="cover"
-                  aspect-ratio="16 / 9"
-                  style="border-radius: 1.5em;"
+                  style="border-radius: 1.5em; aspect-ratio: 375 / 211"
                 />
               </picture>
               <div class="cat-btn">
@@ -1260,27 +1190,27 @@
               <a href="/articles/ai-ecommerce.html">
                 <picture>
                   <source
-                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_350,fl_lossy/v1741221192/ai-commerce-thumbnail_sqpje9.avif"
+                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_1168,h_656,fl_lossy/v1741221192/ai-commerce-thumbnail_sqpje9.avif"
                     type="image/avif"
                     media="(min-width: 1200px)"
                     sizes="(min-width: 1200px) 1200px, 100vw"
-                />
                   />
+                  
                   <source
-                    srcset="/img/ai-commerce-thumbnail.avif"
+                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,w_1056,h_594/v1741221192/ai-commerce-thumbnail_sqpje9.avif"
                     type="image/avif"
                     media="(min-width: 1200px)"
                     sizes="(min-width: 1200px) 1200px, 100vw"
                   />
                   <img
-                    src="/img/ai-commerce-thumbnail.avif"
+                    src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,w_750,h_422/v1741221192/ai-commerce-thumbnail_sqpje9.avif"
                     alt="A 1940s-style woman interacting with a futuristic robot in a modern store, symbolizing the future of eCommerce and the role of eCommerce AI in revolutionizing online retail."
-                    width="320"
-                    height="180"
-                    loading="eager"
-                    fetchpriority="high"
+                    width="375"
+                    height="211"
+                    loading="lazy"
+                    fetchpriority="low"
                     object-fit="cover"
-                    aspect-ratio="16 / 9"
+                    aspect-ratio="375 / 211"
                     style="border-radius: 1.5em;"
                   />
                 </picture> 
@@ -1309,23 +1239,23 @@
               <a href="/articles/headless-ecommerce.html">
                 <picture>
                   <source
-                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_350,fl_lossy/v1741221195/headless-commerce-thumbnail_jcm5ze.avif"
+                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_1168,h_656,fl_lossy/v1741221195/headless-commerce-thumbnail_jcm5ze.avif"
                     type="image/avif"
                     media="(min-width: 1200px)"
                   />
                   <source
-                    srcset="/img/headless-commerce-thumbnail.avif"
+                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,w_1056,h_594/v1741221195/headless-commerce-thumbnail_jcm5ze.avif"
                     media="(min-width: 768px)"
                   />
                   <img
-                    src="/img/headless-commerce-thumbnail.avif"
+                    src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,w_750,h_422/v1741221195/headless-commerce-thumbnail_jcm5ze.avif"
                     alt="A futuristic storefront with a professional exploring headless commerce solutions, showcasing the flexibility and scalability of headless eCommerce."
-                    width="250"
-                    height="auto"
+                    width="375"
+                    height="211"
                     loading="lazy"
                     fetchpriority="low"
                     object-fit="cover"
-                    aspect-ratio="16 / 9"
+                    aspect-ratio="375 / 211"
                     style="border-radius: 1.5em;"
                   />
                 </picture> 
@@ -1354,30 +1284,30 @@
             <div class="article3-viewall empty-box"></div>
           </div>
         </div>
-       <section id="sidebar">
+        <section id="sidebar">
           <aside class="sidebar">
             <div class="sidebar-article">
               <div class="city-img">
                 <picture>
                   <source
                     srcset="
-                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_165,fl_lossy/v1741221199/sidebar-future-city_eoy5fp.avif
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_165,h_293,fl_lossy/v1741221199/sidebar-future-city_eoy5fp.avif
                     "
                     media="(min-width: 1200px)"
                   />
                   <source
-                    srcset="/img/sidebar-future-city.avif"
+                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_420,h_800,fl_lossy/v1741221199/sidebar-future-city_eoy5fp.avif"
                     media="(min-width: 768px)"
                   />
                   <img
-                    src="/img/sidebar-future-city.avif"
+                    src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,330,h_586,fl_lossy/v1741221199/sidebar-future-city_eoy5fp.avif"
                     alt="A woman from the 1940's arriving to a futuristic city"
                     type="image/avif"
                     loading="eager"
                     fetchpriority="high"
                     width="165"
                     height="293"
-                    style="object-fit: cover;  aspect-ratio: 9 / 16; border-radius: 1.5em"
+                    style="object-fit: cover;  aspect-ratio: 165 / 293; border-radius: 1.5em"
                     />
                 </picture>
               </div>

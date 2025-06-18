@@ -190,16 +190,15 @@
       }
 
       .logo-container {
-        position: absolute;
-        left: 0;
-        top: 0;
-        z-index: 10;
+        display: flex;
+        align-items: center;
+        height: 100px;
+        width: auto;
       }
 
       .logo-container img {
-        max-height: 9.26vh;
+        height: 100%;
         width: auto;
-        aspect-ratio: 16/9;
       }
 
       .search-icon {
@@ -604,8 +603,51 @@
         display: none;
       }
 
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.75em 1em;
+        height: auto;
+      }
+
+      .nav-left,
+      .nav-right {
+        display: flex;
+        align-items: center;
+      }
+
+      .nav-logo {
+        max-height: 48px;
+        width: auto;
+      }
+
+      .nav-icons {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+      }
+
+      .nav-icon {
+        height: 32px;
+        width: 32px;
+        cursor: pointer;
+      }
+
       /* purgecss start ignore */
       @media (max-width:1024px) {
+        .icons-container {
+          gap: 2em;
+        }
+        .navbar-items {
+          display: none;  
+        }
+
+        .menu-toggle {
+          display: inline-block;
+        }
+
+        
         body {
           font-size: 1.2rem;
           margin-top: 0;
@@ -613,18 +655,13 @@
         }
 
         .menu {
+          display: flex;
           padding: .5em 1em;
           z-index: 1003;
           font-size: .875rem;
           background-color: #fff;
           flex-direction: row;
           justify-content: space-between;
-        }
-
-        .icons-container {
-          z-index: 10;
-          position: relative;
-          padding-bottom: 0;
         }
 
         .hero {
@@ -660,86 +697,13 @@
           width: 60%;
         }
         
-
-        .menu-toggle {
-          display: inline-block;
-        }
-
         .content-container {
           margin-top: 7em;
-        }
-
-        .search-icon {
-          margin-top: 2em;
-        }
-
-        .search-container {
-          margin-top: 3em;
-        }
-
-        nav {
-          margin: 0 auto;
-        }
-
-        .navbar-items {
-          display: none;
-        }
-
-        nav.navbar {
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          z-index: 1003;
-        }
-
-        .navbar {
-          flex-direction: column;
-          align-items: center;
-        }
-
-        .navbar-footer-items ul {
-          display: flex;
-          flex-direction: column;
-          text-align: center;
-        }
-
-        .navbar-items ul li {
-          margin-bottom: .625em;
-        }
-
-        .navbar-footer-items ul li {
-          list-style: none;
-          margin-bottom: .625em;
-        }
-
-        .navbar-footer-items ul li a {
-          font-size: 1.3rem;
-          padding: 1em;
-        }
-
-        .navbar-footer-item {
-          max-width: 100%;
         }
 
         .cat-btn a {
           width: 100%;
           padding: .75em;
-        }
-
-        .menu-toggle img,
-        .search-icon img {
-          width: min(40px, 2.08vw);
-          height: auto;
-        }
-
-        .search-icon {
-          position: static;
-          text-align: center;
-        }
-
-        .search-icon img {
-          position: static;
         }
 
         #sidebar {
@@ -751,63 +715,12 @@
           width: 100%;
         }
 
-        .search-popup.show {
-          display: block;
-        }
-
-        .logo-container,
-        .menu-toggle,
-        .search-icon {
-          position: static;
-        }
-
-        .logo-container {
-          position: static;
-        }
-
-        .logo-container img {
-          max-height: 4.63vh;
-        }
-
-        .menu-toggle,
-        .search-icon {
-          display: inline-block;
-        }
-
-        .menu-toggle img,
-        .search-icon img {
-          width: min(40px, 2.08vw);
-          height: auto;
-        }
-
-        #navbar.me {
-          border-bottom: none;
-        }
-
         .content-container {
           padding-top: 1.5em;
           margin: 0 auto;
-        }
-
       }
 
       @media (max-width:768px) {
-        .search-icon {
-          margin-top: 0;
-        }
-
-        .search-container {
-          margin-top: 2em;
-        }
-
-        .search-container {
-          margin-top: 0;
-        }
-
-        .search-popup {
-          margin: 1em auto 0.5em;
-        }
-
         .content-container {
           width: 100%;
           max-width: 768px;
@@ -1038,29 +951,6 @@
           max-width: 100%;
           margin: 5em auto 2em;
           padding: 1em; 
-        }
-
-        .search-icon {
-          margin-top: 0;
-        }
-
-        .search-container {
-          margin-top: 2em;
-        }
-
-        .search-container {
-          margin-top: 1em;
-        }
-
-        .search-popup {
-          margin: 1em auto 0.5em;
-        }
-
-        .menu-toggle img,
-        .search-icon img {
-          width: 30px;
-          max-width: 30px;
-          height: 30px;
         }
         
         .hero {
@@ -2401,23 +2291,23 @@
                 <picture>
                   <source
                     srcset="
-                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_165,fl_lossy/v1741221199/sidebar-future-city_eoy5fp.avif
+                      https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_165,h_293,fl_lossy/v1741221199/sidebar-future-city_eoy5fp.avif
                     "
                     media="(min-width: 1200px)"
                   />
                   <source
-                    srcset="/img/sidebar-future-city.avif"
+                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_420,h_800,fl_lossy/v1741221199/sidebar-future-city_eoy5fp.avif"
                     media="(min-width: 768px)"
                   />
                   <img
-                    src="/img/sidebar-future-city.avif"
+                    src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,330,h_586,fl_lossy/v1741221199/sidebar-future-city_eoy5fp.avif"
                     alt="A woman from the 1940's arriving to a futuristic city"
                     type="image/avif"
                     loading="eager"
                     fetchpriority="high"
                     width="165"
                     height="293"
-                    style="object-fit: cover;  aspect-ratio: 9 / 16; border-radius: 1.5em"
+                    style="object-fit: cover;  aspect-ratio: 165 / 293; border-radius: 1.5em"
                     />
                 </picture>
               </div>
@@ -2444,8 +2334,8 @@
 
             </div>
             <div id="stay-connected-sidebar" class="sidebar-box featured-topics">
-              <div class="stay-connected" id="stay-connected-text">
-                <h3>Stay Connected</h3>
+              <div class="stay-connected article-textbox">
+                <h2>Stay Connected</h2>
                 <p>Follow us on social media for updates and insights.</p>
               </div>
               <div class="social-media-imgs">
@@ -2507,6 +2397,7 @@
                       https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_120,fl_lossy/v1741221199/newsletter_oxwway.webp
                     "
                     media="(min-width: 1200px)"
+                    type="image/webp"
                   />
                   <source
                     srcset="/img/newsletter.webp"
@@ -2515,7 +2406,6 @@
                   <img
                     src="/img/newsletter.webp"
                     alt="Envelope on a paper plane representing updates"
-                    type="image/webp"
                     loading="lazy"
                     width="80"
                     height="auto"
