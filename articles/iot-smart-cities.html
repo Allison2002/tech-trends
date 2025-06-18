@@ -1039,7 +1039,13 @@
       <!--tech trends logo-->
       <div class="menu">
         <div class="logo-container">
-          <img src="/img/tech-trends-logo.webp" alt="Tech Trends Blog Logo featuring AI-powered insights and technology" width="127px" height="72px" loading="eager">
+          <img 
+            src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_354,h_200/v1746744933/tech-trends-logo_xmghq1.png" 
+            alt="Tech Trends Blog Logo featuring AI-powered insights and technology" 
+            width="177" 
+            height="100" 
+            loading="eager"
+          >
         </div>
         <!--full screen navbar-->
         <div class="navbar-items">
@@ -2282,20 +2288,98 @@
         </div>
         <hr />
       </div>
-      <nav class="bottom-nav">
-        <div class="navbar-footer-items">
-          <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/categories/categorized.html">Topics</a></li>
-            <li><a href="/categories/uncategorized.html">View All</a></li>
-            <li><a href="/categories/seo-tools.html">SEO Tools</a></li>
-            <li><a href="/categories/iot.html">IoT</a></li>
-            <li><a href="/categories/mobile.html">Mobile App</a></li>
-            <li><a href="/categories/ecommerce.html">eCommerce</a></li>
-            <li><a href="/categories/tech-trends.html">Welcome</a></li>
+      <nav class="navbar" id="navbar">
+      <!--tech trends logo-->
+      <div class="menu">
+        <div class="logo-container">
+          <img 
+            src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto/v1746744933/tech-trends-logo_xmghq1.png" 
+            alt="Tech Trends Blog Logo featuring AI-powered insights and technology" 
+            width="auto" 
+            height="100px" 
+            loading="eager">
+        </div>
+        <!--full screen navbar-->
+        <div class="navbar-items">
+          <ul >
+            <li><a href="/index.html" aria-label="Home">Home</a></li>
+            <li><a href="/categories/categorized.html" aria-label="Article category Topics">Topics</a></li>
+            <li><a href="/categories/uncategorized.html" aria-label="Article category View All">View All</a></li>            
+            <li><a href="/categories/seo-tools.html" aria-label="Article category SEO Tools">SEO Tools</a></li>
+            <li><a href="/categories/iot.html" aria-label="Article category IoT">IoT</a></li>
+            <li><a href="/categories/mobile.html" aria-label="Article category Mobile App">Mobile App</a></li>
+            <li><a href="/categories/ecommerce.html" aria-label="Article category eCommerce">eCommerce</a></li>
+            <li><a href="/categories/tech-trends.html" aria-label="Welcome">Welcome</a></li>
           </ul>
         </div>
-      </nav>
+        <div class="icons-container">
+            <div class="menu-toggle" id="menu-toggle" role="button">
+              <picture>
+                <source
+                  srcset="
+                  https://res.cloudinary.com/dnptzisuf/image/upload/fl_lossy,q_auto:best,w_100/v1741313863/hamburger_ozf2so.avif
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/avif"
+                />
+                <source
+                  srcset="/img/hamburger-icon.avif"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="/img/hamburger-icon.avif"
+                  alt="Hamburger menu icon"
+                  aria-label="Open menu"
+                  type="image/png"
+                  width="30"
+                  height="30"
+                  loading="eager"
+                  aspect-ratio="1 / 1"
+                  object-fit: cover;
+                />
+              </picture>
+            </div>
+            <div class="search-icon" id="search-icon" title="Search">
+              <picture>
+                <source
+                  srcset="
+                    https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,fl_lossy,q_auto:best,w_100/v1741313864/search_fk7mcc.avif
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/avif"
+                />
+                <source
+                  srcset="/img/search-icon.avif"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="/img/search-icon.avif"
+                  alt="search icon"
+                  aria-label="Open Search"
+                  width="30"
+                  height="30"
+                  loading="eager"
+                  aspect-ratio="1 / 1"
+                  object-fit: cover;
+                />
+              </picture>
+            </div>
+        </div>
+                    <!-- Slide-in Menu -->
+        <div class="hamburger-menu" id="hamburger-menu">
+          <ul class="hamburger-menu-items">
+            <li><a href="/index.html" aria-label="Home">Home</a></li>
+            <li><a href="/categories/categorized.html" aria-label="Article category Topics">Topics</a></li>
+            <li><a href="/categories/uncategorized.html" aria-label="Article category View All">View All</a></li>            
+            <li><a href="/categories/seo-tools.html" aria-label="Article category SEO Tools">SEO Tools</a></li>
+            <li><a href="/categories/iot.html" aria-label="Article category IoT">IoT</a></li>
+            <li><a href="/categories/mobile.html" aria-label="Article category Mobile App">Mobile App</a></li>
+            <li><a href="/categories/ecommerce.html" aria-label="Article category eCommerce">eCommerce</a></li>
+            <li><a href="/categories/tech-trends.html" aria-label="Welcome">Welcome</a></li>
+          </ul>
+        </div> 
+      </div>
+    </nav>
       <div class="stay-connected-footer">
         <div class="footer-social">
           <a
