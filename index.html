@@ -695,6 +695,10 @@
           overflow-wrap: break-word;
         }
 
+        .page-title {
+          padding: 1em 0;
+        }
+
         .page-title h1 {
           font-size: 3rem;
           text-decoration: none;
@@ -1026,13 +1030,16 @@
           }
 
           .page-title {
-            width: 100%;
+            width: 90%;
+            max-width: 90vw;
             height: auto;
+            margin: 0 auto;
+            padding: 2em 0 0;
           }
 
           .page-title h1 {
             font-size: 2.5rem;
-            padding: 1em 0 0.5em;
+            padding: 0 0.5em;
           }
 
           main {
@@ -1185,6 +1192,14 @@
         }
 
         @media (max-width:480px) {
+          #intro-paragraph {
+            margin: 1em auto;
+          }
+
+          .article-section {
+            margin: 1em auto;
+          }
+
           main {
             margin: 0 auto;
             padding: 1em;
@@ -1393,55 +1408,53 @@
         <div class="grid-wrapper" id="grid-wrapper">
           <div class="main-content">
             <header>
-              <section class="hero" role="banner">
-                <div class="hero-content">
-                  <picture>
-                    <source
-                      srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_2708,h_1522/v1742647059/welcome_to_tech_trends_desktop_gxfoz3.avif"
-                      type="image/avif"
-                      media="(min-width: 1200px)"
-                      sizes="(min-width: 1200px) 1200px, 100vw"
-                      fetchpriority="high"
-                    />
-                    <source
-                      srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_1036,h_582/v1742647059/welcome_to_tech_trends_desktop_gxfoz3.avif"
-                      media="(min-width: 768px)"
-                      type="image/avif"
-                    />                 
-                    <img
-                      src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_676,h_380/v1742647059/welcome_to_tech_trends_desktop_gxfoz3.avif"
-                      alt="Welcome to Tech Trends! An AI-powered SEO tool helping optimize digital content"
-                      width="338"
-                      height="190"
-                      loading="eager"
-                      fetchpriority="high"
-                      style="border-radius: 1.5em; object-fit: cover;"
-                    />
-                  </picture>
-                  <div class="page-sub-title">
-                    <h2><i>Welcome to Tech Trends and Innovations</i></h2>
-                    <h3>
-                      a blog dedicated to exploring the latest advancements in
-                      technology, AI SEO tools, and their impact on the digital
-                      world...
-                    </h3>
-                  </div>
-                  <div class="cat-btn">
-                    <a
-                      href="/categories/categorized.html"
-                      role="button"
-                      aria-label="button"
-                      >Categories</a
-                    >
-                    <a
-                      href="/categories/uncategorized.html"
-                      role="button"
-                      aria-label="button"
-                      >All</a
-                    >
-                  </div>
+              <div class="hero hero-content" role="banner">
+                <picture>
+                  <source
+                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_2708,h_1522/v1742647059/welcome_to_tech_trends_desktop_gxfoz3.avif"
+                    type="image/avif"
+                    media="(min-width: 1200px)"
+                    sizes="(min-width: 1200px) 1200px, 100vw"
+                    fetchpriority="high"
+                  />
+                  <source
+                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_1036,h_582/v1742647059/welcome_to_tech_trends_desktop_gxfoz3.avif"
+                    media="(min-width: 768px)"
+                    type="image/avif"
+                  />                 
+                  <img
+                    src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_676,h_380/v1742647059/welcome_to_tech_trends_desktop_gxfoz3.avif"
+                    alt="Welcome to Tech Trends! An AI-powered SEO tool helping optimize digital content"
+                    width="338"
+                    height="190"
+                    loading="eager"
+                    fetchpriority="high"
+                    style="border-radius: 1.5em; object-fit: cover;"
+                  />
+                </picture>
+                <div class="page-sub-title">
+                  <h2><i>Welcome to Tech Trends and Innovations</i></h2>
+                  <h3>
+                    a blog dedicated to exploring the latest advancements in
+                    technology, AI SEO tools, and their impact on the digital
+                    world...
+                  </h3>
                 </div>
-              </section>
+                <div class="cat-btn">
+                  <a
+                    href="/categories/categorized.html"
+                    role="button"
+                    aria-label="button"
+                    >Categories</a
+                  >
+                  <a
+                    href="/categories/uncategorized.html"
+                    role="button"
+                    aria-label="button"
+                    >All</a
+                  >
+                </div>
+              </div>
             </header>
             <div class="article-section" id="intro-paragraph">
               <p>
