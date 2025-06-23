@@ -108,18 +108,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-        if ('fonts' in document) {
-        Promise.all([
-        document.fonts.load('1rem "Alegreya Sans"'),
-        document.fonts.load('1rem "Exo 2"')
-        ]).then(() => {
-        document.body.classList.add('fonts-loaded');
-        document.body.classList.remove('fonts-loading');
-        });
-    } else {
-        // Fallback for older browsers
-        document.body.classList.add('fonts-loaded');
-        document.body.classList.remove('fonts-loading');
-    }
-
+    
 });
